@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T20:57+05:00",
+ "checked_at": "2026-11-12T00:04+05:00",
  "have_key": false,
  "sources": [
   {
@@ -70,7 +70,7 @@
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9098,
+   "chars": 8943,
    "events": null,
    "error": ""
   },
@@ -345,6 +345,213 @@
    "error": ""
   },
   {
+   "name": "НПП «Атамекен» — новости",
+   "url": "https://atameken.kz/ru/news",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Client Error: Not Found for url: https://atameken.kz/ru/news"
+  },
+  {
+   "name": "QazTrade — мероприятия",
+   "url": "https://qaztrade.org.kz/ru/",
+   "group": "web",
+   "ok": true,
+   "chars": 5526,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "KazakhExport — новости",
+   "url": "https://www.kazakhexport.kz/ru/",
+   "group": "web",
+   "ok": true,
+   "chars": 6175,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Kazakh Invest — новости",
+   "url": "https://invest.gov.kz/media-center/press-releases/",
+   "group": "web",
+   "ok": true,
+   "chars": 1306,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Astana International Forum",
+   "url": "https://astanainternationalforum.org/",
+   "group": "web",
+   "ok": true,
+   "chars": 0,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "МФЦА (AIFC) — события",
+   "url": "https://aifc.kz/news",
+   "group": "web",
+   "ok": true,
+   "chars": 1670,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "KAZENERGY — новости",
+   "url": "https://www.kazenergy.com/ru/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Client Error: Not Found for url: https://www.kazenergy.com/ru/"
+  },
+  {
+   "name": "Visit Almaty — события",
+   "url": "https://visitalmaty.kz/",
+   "group": "web",
+   "ok": true,
+   "chars": 4064,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Iteca — календарь выставок",
+   "url": "https://iteca.events/ru",
+   "group": "web",
+   "ok": true,
+   "chars": 5860,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Baku Energy Week",
+   "url": "https://bakuenergyweek.com",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='bakuenergyweek.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='bakuenergyweek."
+  },
+  {
+   "name": "TIIF Ташкент",
+   "url": "https://tiif.online/",
+   "group": "web",
+   "ok": true,
+   "chars": 3399,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "ИННОПРОМ",
+   "url": "https://www.innoprom.com/en/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='www.innoprom.com', port=443): Max retries exceeded with url: /en/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_V"
+  },
+  {
+   "name": "World Hydrogen Summit",
+   "url": "https://www.world-hydrogen-summit.com",
+   "group": "web",
+   "ok": true,
+   "chars": 3948,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Акорда — график и визиты",
+   "url": "https://www.akorda.kz/ru/events",
+   "group": "state",
+   "ok": true,
+   "chars": 1398,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Премьер-министр — мероприятия",
+   "url": "https://primeminister.kz/ru/events",
+   "group": "state",
+   "ok": true,
+   "chars": 15679,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Kazinform — официальная хроника",
+   "url": "https://www.inform.kz/ru/",
+   "group": "state",
+   "ok": true,
+   "chars": 8601,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Парламент РК — новости",
+   "url": "https://www.parlam.kz/ru/news",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='www.parlam.kz', port=443): Max retries exceeded with url: /ru/news (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_"
+  },
+  {
+   "name": "Kazakh Invest — события",
+   "url": "https://invest.gov.kz/ru/media-center/events/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Client Error: Not Found for url: https://invest.gov.kz/ru/media-center/events/"
+  },
+  {
+   "name": "МИД РК — Kazakhstan Diplomatic Portal",
+   "url": "https://www.mfa.gov.kz/ru",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='www.mfa.gov.kz', port=443): Max retries exceeded with url: /ru (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mfa.gov.kz', "
+  },
+  {
+   "name": "ЕЭК (ЕАЭС) — календарь",
+   "url": "https://eec.eaeunion.org/news/",
+   "group": "state",
+   "ok": true,
+   "chars": 8408,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "СНГ — исполком",
+   "url": "https://e-cis.info/news/",
+   "group": "state",
+   "ok": true,
+   "chars": 8227,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Организация тюркских государств",
+   "url": "https://www.turkicstates.org/en/news",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://www.turkicstates.org/en/news"
+  },
+  {
+   "name": "ШОС — новости",
+   "url": "https://eng.sectsco.org/news/",
+   "group": "state",
+   "ok": true,
+   "chars": 1724,
+   "events": null,
+   "error": ""
+  },
+  {
    "name": "Календарь мероприятий KNS",
    "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
    "group": "sheets",
@@ -379,213 +586,6 @@
    "chars": 3313,
    "events": null,
    "error": ""
-  },
-  {
-   "name": "НПП «Атамекен» — новости",
-   "url": "https://atameken.kz/ru/news",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "QazTrade — мероприятия",
-   "url": "https://qaztrade.org.kz/ru/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "KazakhExport — новости",
-   "url": "https://www.kazakhexport.kz/ru/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Kazakh Invest — новости",
-   "url": "https://invest.gov.kz/media-center/press-releases/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Astana International Forum",
-   "url": "https://astanainternationalforum.org/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "МФЦА (AIFC) — события",
-   "url": "https://aifc.kz/news",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "KAZENERGY — новости",
-   "url": "https://www.kazenergy.com/ru/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Visit Almaty — события",
-   "url": "https://visitalmaty.kz/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Iteca — календарь выставок",
-   "url": "https://iteca.events/ru",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Baku Energy Week",
-   "url": "https://bakuenergyweek.com",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "TIIF Ташкент",
-   "url": "https://tiif.online/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "ИННОПРОМ",
-   "url": "https://www.innoprom.com/en/",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "World Hydrogen Summit",
-   "url": "https://www.world-hydrogen-summit.com",
-   "group": "web",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Акорда — график и визиты",
-   "url": "https://www.akorda.kz/ru/events",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Премьер-министр — мероприятия",
-   "url": "https://primeminister.kz/ru/events",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Kazinform — официальная хроника",
-   "url": "https://www.inform.kz/ru/",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Парламент РК — новости",
-   "url": "https://www.parlam.kz/ru/news",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Kazakh Invest — события",
-   "url": "https://invest.gov.kz/ru/media-center/events/",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "МИД РК — Kazakhstan Diplomatic Portal",
-   "url": "https://www.mfa.gov.kz/ru",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "ЕЭК (ЕАЭС) — календарь",
-   "url": "https://eec.eaeunion.org/news/",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "СНГ — исполком",
-   "url": "https://e-cis.info/news/",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "Организация тюркских государств",
-   "url": "https://www.turkicstates.org/en/news",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
-  },
-  {
-   "name": "ШОС — новости",
-   "url": "https://eng.sectsco.org/news/",
-   "group": "state",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "wait"
   },
   {
    "name": "WhatsApp (GREEN-API)",

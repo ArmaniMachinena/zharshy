@@ -43,8 +43,8 @@ CITIES = {  # приведение написаний к одному виду
 PROMPT = """Ты — сборщик анонсов деловых мероприятий в Казахстане для сервиса «Жаршы».
 Сегодня {today}. Ниже текст страницы «{source}» ({url}).
 
-Найди в нём ВСЕ анонсы будущих (или идущих сейчас) мероприятий, которые проходят в Казахстане
-или онлайн для казахстанской аудитории: форумы, выставки, конференции, конгрессы, саммиты, вебинары.
+Найди в нём ВСЕ анонсы будущих (или идущих сейчас) мероприятий, которые проходят в Казахстане,
+онлайн для казахстанской аудитории или за рубежом, но важны для казахстанского бизнеса (СНГ, Каспий, отраслевые мировые события): форумы, выставки, конференции, конгрессы, саммиты, вебинары.
 Пропусти прошедшие события, концерты, спорт, развлечения и новости без конкретной даты.
 
 Верни ТОЛЬКО JSON-массив (может быть пустым []). Каждый элемент:
@@ -53,7 +53,10 @@ PROMPT = """Ты — сборщик анонсов деловых меропри
   "industries": [1-3 значения из {industries}],
   "city": str (по-русски, "Онлайн" для вебинаров), "venue": str,
   "start": "YYYY-MM-DD", "end": "YYYY-MM-DD",
+  "country": str (по-русски: "Казахстан", "Узбекистан"…),
   "organizer": str, "phone": str, "email": str, "site": str (URL),
+  "program_url": str (ссылка на программу/agenda, если есть, иначе ""),
+  "speakers": [{{"name": str, "role": str, "company": str}}] (спикеры/эксперты, если перечислены; иначе []),
   "description": str (1–2 предложения своими словами, по-русски),
   "i18n": {{"kk": {{"title": str, "description": str, "venue": str}},
            "en": {{"title": str, "description": str, "venue": str}}}}
@@ -162,6 +165,10 @@ def clean(it: dict, source: str, url: str) -> dict | None:
         "site": str(it.get("site", ""))[:300] if str(it.get("site", "")).startswith("http") else "",
         "description": str(it.get("description", ""))[:600],
         "source_url": url, "source_name": source,
+        "country": str(it.get("country") or "Казахстан")[:40],
+        "program_url": str(it.get("program_url", ""))[:300] if str(it.get("program_url", "")).startswith("http") else "",
+        "speakers": [{k: str(sp.get(k, ""))[:120] for k in ("name", "role", "company")}
+                     for sp in (it.get("speakers") or [])[:60] if isinstance(sp, dict) and sp.get("name")],
         "i18n": i18n,
     }
     ev["id"] = make_id(ev)
@@ -236,6 +243,7 @@ def main() -> int:
 
     jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", [])]
     jobs += [(s["name"], s["url"], "organizers") for s in cfg.get("organizers", [])]
+    jobs += [(s["name"], s["url"], "web") for s in cfg.get("more", [])]
     jobs += [(s["name"], s["url"], "sheets") for s in cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 

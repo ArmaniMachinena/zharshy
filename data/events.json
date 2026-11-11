@@ -31,7 +31,8 @@
     }
    },
    "id": "central-asia-coatings-show-2026-8fdcbc",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Turning Points",
@@ -61,7 +62,8 @@
     }
    },
    "id": "turning-points-2026-fd659a",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "AmCham AGM — ежегодное общее собрание",
@@ -93,7 +95,8 @@
     }
    },
    "id": "amcham-agm-2026-5a3634",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Конференция АНЭК и КазАПО",
@@ -127,7 +130,8 @@
    "date_approx": "month",
    "id": "anek-kazapo-conference-2026",
    "found_at": "2026-11-11T19:47+05:00",
-   "also_in": []
+   "also_in": [],
+   "country": "Казахстан"
   },
   {
    "title": "Конференция «Возрождение Арала»",
@@ -160,7 +164,8 @@
     }
    },
    "id": "revival-of-the-aral-conference-2026",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Нетворкинг Atyrau Never Sleeps",
@@ -190,7 +195,8 @@
     }
    },
    "id": "atyrau-never-sleeps-2026-e47a6f",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Data Conference",
@@ -223,7 +229,8 @@
    },
    "date_approx": "month",
    "id": "data-conference-2026-4e621b",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroLogistics, Rental & Transportation 2026",
@@ -256,7 +263,8 @@
     }
    },
    "id": "petrologistics-rental-transportation-2026-41e5f5",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "ICNSET: International Conference on Natural Science and Engineering Technology",
@@ -288,7 +296,8 @@
     }
    },
    "id": "icnset-international-conference-on-natur-2026-86fe00",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Евразийский межправсовет и Digital Forum",
@@ -321,7 +330,8 @@
     }
    },
    "id": "digital-forum-2026-cc3781",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "ECOJER «DalaCarbon Forum» — межрегиональный экофорум",
@@ -353,7 +363,8 @@
     }
    },
    "id": "ecojer-dalacarbon-forum-2026-88bd8c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "CM EXPO",
@@ -385,7 +396,8 @@
     }
    },
    "id": "cm-expo-2026-c19f95",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Kazakhstan Machinery Fair",
@@ -417,7 +429,8 @@
     }
    },
    "id": "kazakhstan-machinery-fair-2026-a6b7b9",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "SU ARNASY — Water Expo",
@@ -449,7 +462,8 @@
     }
    },
    "id": "su-arnasy-water-expo-2026-65693c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Geoscience & Exploration of Central Asia Forum",
@@ -481,7 +495,8 @@
     }
    },
    "id": "geoscience-exploration-of-central-asia-f-2026-b0bf35",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Секция по автомобилестроению на Kazakhstan Machinery Fair",
@@ -514,7 +529,8 @@
     }
    },
    "id": "kazakhstan-machinery-fair-2026-840bf9",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Esri Central Asia GeoAI Summit",
@@ -546,7 +562,8 @@
     }
    },
    "id": "esri-central-asia-geoai-summit-2026-d3d211",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Atyrau Oil and Gas Conference 2026",
@@ -578,7 +595,8 @@
     }
    },
    "id": "atyrau-oil-and-gas-conference-2026-dc030c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroDigital 2026 — цифровизация в нефтегазе",
@@ -611,7 +629,8 @@
     }
    },
    "id": "petrodigital-2026-213706",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "MINEX Kazakhstan Forum",
@@ -643,7 +662,8 @@
     }
    },
    "id": "minex-kazakhstan-forum-2026-620a73",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Energy Trends: Gas & Petrochemicals",
@@ -676,7 +696,8 @@
     }
    },
    "id": "energy-trends-gas-petrochemicals-2026-762573",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Региональный экологический саммит 2026 (RES 2026)",
@@ -708,7 +729,8 @@
     }
    },
    "id": "res-2026-086cac",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "AstanaBuild 2026",
@@ -741,7 +763,8 @@
     }
    },
    "id": "astanabuild-2026-7d97c3",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Международный транспортный форум «ЕСЭ ASIA-2026»",
@@ -773,7 +796,8 @@
     }
    },
    "id": "asia-2026-6b4ade",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Чемпионат PetroMechChamp 2026",
@@ -806,7 +830,8 @@
    },
    "date_approx": "month",
    "id": "petromechchamp-2026-21192f",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Komtrans + Busexpo Astana и Eurasian Construction Technologies Astana 2026",
@@ -839,7 +864,8 @@
     }
    },
    "id": "komtrans-busexpo-astana-eurasian-constru-2026-19270c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Выставка по безопасности",
@@ -871,7 +897,8 @@
     }
    },
    "id": "security-exhibition-2026",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Форум-выставка автоматизации и цифровизации бизнеса",
@@ -903,7 +930,76 @@
     }
    },
    "id": "business-automation-digitalization-forum-2026",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
+  },
+  {
+   "id": "world-hydrogen-summit-2026",
+   "title": "World Hydrogen Summit & Exhibition 2026",
+   "type": "summit",
+   "level": "international",
+   "industries": [
+    "Водород",
+    "Энергетика"
+   ],
+   "country": "Нидерланды",
+   "city": "Роттердам",
+   "venue": "Rotterdam Ahoy",
+   "start": "2026-05-19",
+   "end": "2026-05-21",
+   "organizer": "Sustainable Energy Council",
+   "site": "https://www.world-hydrogen-summit.com",
+   "description": "",
+   "source_url": "https://www.exhibitoronline.com/news/article.asp?ID=25222",
+   "source_name": "exhibitoronline.com",
+   "i18n": {
+    "kk": {
+     "title": "World Hydrogen Summit & Exhibition 2026",
+     "venue": "Rotterdam Ahoy"
+    },
+    "en": {
+     "title": "World Hydrogen Summit & Exhibition 2026",
+     "venue": "Rotterdam Ahoy"
+    }
+   },
+   "phone": "",
+   "email": "",
+   "edition": null
+  },
+  {
+   "id": "baku-energy-week-2026",
+   "title": "Baku Energy Week 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 31,
+   "industries": [
+    "Нефть и газ",
+    "Энергетика"
+   ],
+   "country": "Азербайджан",
+   "city": "Баку",
+   "venue": "Baku Expo Centre",
+   "start": "2026-06-01",
+   "end": "2026-06-03",
+   "organizer": "Iteca Caspian",
+   "site": "https://bakuenergyweek.com",
+   "description": "31-я энергетическая неделя: 274 компании из 44 стран.",
+   "source_url": "https://caspianoilgas.az/en/press-releases/31st-baku-energy-week-9486",
+   "source_name": "caspianoilgas.az",
+   "i18n": {
+    "kk": {
+     "title": "Baku Energy Week 2026",
+     "description": "31-ші энергетикалық апталық: 44 елден 274 компания.",
+     "venue": "Baku Expo Centre"
+    },
+    "en": {
+     "title": "Baku Energy Week 2026",
+     "description": "31st energy week: 274 companies from 44 countries.",
+     "venue": "Baku Expo Centre"
+    }
+   },
+   "phone": "",
+   "email": ""
   },
   {
    "title": "GITEX Central Asia & Caucasus × Ai Everything Kazakhstan",
@@ -935,7 +1031,8 @@
     }
    },
    "id": "gitex-central-asia-caucasus-ai-everythin-2026-b1841b",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Международный конгресс ECOJER «Future Proof»",
@@ -967,7 +1064,8 @@
     }
    },
    "id": "ecojer-future-proof-2026-0f2b83",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Astana Mining & Metallurgy 2026 (AMM)",
@@ -999,7 +1097,15 @@
     }
    },
    "id": "astana-mining-metallurgy-amm-2026-7f4ad4",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан",
+   "speakers": [
+    {
+     "name": "Олжас Бектенов",
+     "role": "Премьер-министр РК",
+     "company": "Правительство РК"
+    }
+   ]
   },
   {
    "title": "Electronica Expo Kazakhstan",
@@ -1031,7 +1137,42 @@
     }
    },
    "id": "electronica-expo-kazakhstan-2026-9a52df",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
+  },
+  {
+   "id": "tiif-2026",
+   "title": "Ташкентский международный инвестиционный форум (TIIF-2026)",
+   "type": "forum",
+   "level": "international",
+   "edition": 5,
+   "industries": [
+    "Финансы"
+   ],
+   "country": "Узбекистан",
+   "city": "Ташкент",
+   "venue": "CAEx Uzbekistan",
+   "start": "2026-06-16",
+   "end": "2026-06-18",
+   "organizer": "Мининвестпромторг Узбекистана",
+   "site": "https://tiif.online/",
+   "description": "Главная инвестиционная площадка Центральной Азии; в 2026 году зарегистрировано более 8 300 участников из 100 стран.",
+   "source_url": "https://gov.uz/en/miit/news/view/177753",
+   "source_name": "gov.uz",
+   "i18n": {
+    "kk": {
+     "title": "Ташкент халықаралық инвестициялық форумы (TIIF-2026)",
+     "description": "Орталық Азияның басты инвестициялық алаңы; 2026 жылы 100 елден 8 300-ден астам қатысушы тіркелді.",
+     "venue": "CAEx Uzbekistan"
+    },
+    "en": {
+     "title": "Tashkent International Investment Forum (TIIF-2026)",
+     "description": "Central Asia’s main investment platform; over 8,300 participants from 100 countries registered in 2026.",
+     "venue": "CAEx Uzbekistan"
+    }
+   },
+   "phone": "",
+   "email": ""
   },
   {
    "title": "Mining Week Kazakhstan",
@@ -1063,7 +1204,8 @@
     }
    },
    "id": "mining-week-kazakhstan-2026-afbebf",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroHSE 2026 — безопасность в нефтегазе",
@@ -1096,7 +1238,8 @@
     }
    },
    "id": "petrohse-2026-885446",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Инвестфорум «Будущее региона: стратегия развития»",
@@ -1128,7 +1271,8 @@
     }
    },
    "id": "future-of-the-region-development-strateg-2026",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "FIC Plenary Session — Совет иностранных инвесторов",
@@ -1161,7 +1305,8 @@
     }
    },
    "id": "fic-plenary-session-2026-29430a",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "AmCham Independence Day",
@@ -1191,7 +1336,8 @@
     }
    },
    "id": "amcham-independence-day-2026-843e28",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroHR 2026 — управление персоналом в нефтегазе",
@@ -1223,7 +1369,8 @@
     }
    },
    "id": "petrohr-2026-562c98",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "KazDrilling 2026",
@@ -1255,7 +1402,8 @@
     }
    },
    "id": "kazdrilling-2026-0ed9c2",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Конференция «Казахстан — США: сотрудничество в нефтегазовой отрасли»",
@@ -1289,7 +1437,8 @@
    "date_approx": "month",
    "id": "kazakhstan-usa-oil-gas-cooperation-confe-2026",
    "found_at": "2026-11-11T19:47+05:00",
-   "also_in": []
+   "also_in": [],
+   "country": "Казахстан"
   },
   {
    "title": "KazBuild 2026",
@@ -1322,7 +1471,8 @@
     }
    },
    "id": "kazbuild-2026-23ae8c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Astana Finance Days 2026",
@@ -1354,7 +1504,8 @@
     }
    },
    "id": "astana-finance-days-2026-a37c2c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroScaffChamp 2026 — чемпионат по лесомонтажным работам",
@@ -1386,7 +1537,8 @@
     }
    },
    "id": "petroscaffchamp-2026-c19bdb",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "PetroMaintenance 2026 — техобслуживание в нефтегазе",
@@ -1418,7 +1570,8 @@
     }
    },
    "id": "petromaintenance-2026-96ab3d",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "KIOGE 2026 — нефтегазовая конференция и выставка",
@@ -1450,7 +1603,8 @@
     }
    },
    "id": "kioge-2026-7ab59a",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Space Days Kazakhstan 2026",
@@ -1482,7 +1636,8 @@
     }
    },
    "id": "space-days-kazakhstan-2026-00838c",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Выставка «Нефтегазохимия»",
@@ -1515,7 +1670,8 @@
    },
    "date_approx": "month",
    "id": "oil-gas-petrochemicals-exhibition-2026",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "AI & Digital Bridge 2026",
@@ -1547,7 +1703,8 @@
     }
    },
    "id": "ai-digital-bridge-2026-a3a2b4",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "TransLogistica Kazakhstan 2026",
@@ -1579,7 +1736,8 @@
     }
    },
    "id": "translogistica-kazakhstan-2026-fe9c5f",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "APEX — состязание по управленческому мышлению",
@@ -1611,7 +1769,8 @@
     }
    },
    "id": "apex-2026-a6e83b",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "People&Projects: менеджмент и биомиметика",
@@ -1643,7 +1802,8 @@
     }
    },
    "id": "people-projects-2026-f70967",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Powerexpo Almaty 2026",
@@ -1675,7 +1835,8 @@
     }
    },
    "id": "powerexpo-almaty-2026-2407de",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "Securex Kazakhstan 2026",
@@ -1708,7 +1869,8 @@
     }
    },
    "id": "securex-kazakhstan-2026-d2df15",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "United Medical Expo 2026",
@@ -1740,7 +1902,8 @@
     }
    },
    "id": "united-medical-expo-2026-47e446",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "title": "AmCham Gala Awards",
@@ -1770,7 +1933,60 @@
     }
    },
    "id": "amcham-gala-awards-2026-a83d7e",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
+  },
+  {
+   "id": "astana-esg-forum-2026",
+   "title": "Astana ESG Forum 2026",
+   "type": "forum",
+   "level": "international",
+   "edition": 2,
+   "industries": [
+    "Экология и ESG",
+    "Финансы"
+   ],
+   "country": "Казахстан",
+   "city": "Астана",
+   "venue": "МФЦА",
+   "start": "2026-11-05",
+   "end": "2026-11-05",
+   "organizer": "IFC, Qazaq Green, ПРООН",
+   "site": "",
+   "description": "«ESG-трансформация Казахстана: от обязательств к конкурентоспособности»: итоги года и рекомендации для рынка.",
+   "source_url": "https://newtimes.kz/obshchestvo/225574-astana-esg-forum-2026-proidiot-v-stolitse-kto-vystupit-i-chto-obsudiat",
+   "source_name": "newtimes.kz",
+   "speakers": [
+    {
+     "name": "Магзум Мирзагалиев",
+     "role": "советник Президента РК",
+     "company": ""
+    },
+    {
+     "name": "Алибек Куантыров",
+     "role": "министр экологии и природных ресурсов РК",
+     "company": ""
+    },
+    {
+     "name": "Сунгат Есимханов",
+     "role": "депутат Курултая РК",
+     "company": ""
+    }
+   ],
+   "i18n": {
+    "kk": {
+     "title": "Astana ESG Forum 2026",
+     "description": "«Қазақстанның ESG-трансформациясы: міндеттемелерден бәсекеге қабілеттілікке»: жыл қорытындысы мен нарыққа ұсыныстар.",
+     "venue": "АХҚО"
+    },
+    "en": {
+     "title": "Astana ESG Forum 2026",
+     "description": "“Kazakhstan’s ESG transformation: from commitments to competitiveness” — results of the year and market recommendations.",
+     "venue": "AIFC"
+    }
+   },
+   "phone": "",
+   "email": ""
   },
   {
    "title": "PetroProcurement 2026 — круглый стол по закупкам",
@@ -1802,7 +2018,8 @@
     }
    },
    "id": "petroprocurement-2026-e64f35",
-   "found_at": "2026-11-11T19:47+05:00"
+   "found_at": "2026-11-11T19:47+05:00",
+   "country": "Казахстан"
   },
   {
    "id": "foodexpo-qazaqstan-2026",
@@ -1835,7 +2052,8 @@
      "description": "Central Asia's largest food industry exhibition: beverages, meat, ingredients, food processing equipment. About 380 exhibitors.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "horex-2026",
@@ -1869,7 +2087,8 @@
      "description": "Central Asian exhibition of equipment and services for hotels, restaurants and shops: kitchens, furniture, uniforms, cleaning.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "qazpack-2026",
@@ -1903,7 +2122,8 @@
      "description": "International exhibition of packaging materials, containers, labels and printing equipment.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "nonfood-asia-2026",
@@ -1937,7 +2157,8 @@
      "venue": "Atakent Expo",
      "organizer": "Mayer Expo Asia (Mayer Group)"
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "concrete-show-2027",
@@ -1970,7 +2191,8 @@
      "description": "Cement, concrete, dry building mixes, equipment and technology.",
      "venue": "EXPO International Exhibition Centre, 53/1 Mangilik El Ave."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "hunting-expo-2027",
@@ -2006,7 +2228,8 @@
      "venue": "TBA",
      "organizer": "TBA"
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "homedeco-2027",
@@ -2039,7 +2262,8 @@
      "description": "International exhibition of home textiles and decor.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "atyrau-oilgas-2027",
@@ -2073,7 +2297,43 @@
      "description": "North Caspian regional oil & gas exhibition, held alongside the Atyrau Build construction show.",
      "venue": "Atyrau Exhibition Centre, 79 Abulkhair Khan Ave."
     }
-   }
+   },
+   "country": "Казахстан"
+  },
+  {
+   "id": "innoprom-central-asia-2027",
+   "title": "ИННОПРОМ. Центральная Азия 2027",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 7,
+   "industries": [
+    "Машиностроение",
+    "Горнодобыча и металлургия"
+   ],
+   "country": "Узбекистан",
+   "city": "Ташкент",
+   "venue": "CAEx Uzbekistan",
+   "start": "2027-04-19",
+   "end": "2027-04-21",
+   "organizer": "Formika Event, Минпромторг Узбекистана",
+   "site": "https://www.innoprom.com/en/",
+   "description": "Крупнейшая промышленная выставка Центральной Азии. Даты по данным отраслевых каталогов — сверяйте с организатором.",
+   "source_url": "https://www.cantonfair.net/event/66823-innoprom-central-asia",
+   "source_name": "cantonfair.net",
+   "i18n": {
+    "kk": {
+     "title": "ИННОПРОМ. Орталық Азия 2027",
+     "description": "Орталық Азиядағы ең ірі өнеркәсіп көрмесі. Күндері салалық каталогтар бойынша — ұйымдастырушымен тексеріңіз.",
+     "venue": "CAEx Uzbekistan"
+    },
+    "en": {
+     "title": "INNOPROM. Central Asia 2027",
+     "description": "Central Asia’s largest industrial exhibition. Dates per industry directories — confirm with the organizer.",
+     "venue": "CAEx Uzbekistan"
+    }
+   },
+   "phone": "",
+   "email": ""
   },
   {
    "id": "kitf-2027",
@@ -2106,7 +2366,8 @@
      "description": "Kazakhstan's main travel trade show: tour operators, hotels, airlines, national pavilions.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "astana-build-2027",
@@ -2140,7 +2401,8 @@
      "description": "Construction, interiors, heating and ventilation.",
      "venue": "EXPO International Exhibition Centre"
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "interfood-astana-2027",
@@ -2174,7 +2436,8 @@
      "description": "Food, beverages, packaging and food industry equipment.",
      "venue": "Korme World Trade Center Astana"
     }
-   }
+   },
+   "country": "Казахстан"
   },
   {
    "id": "kiosh-2027",
@@ -2207,7 +2470,43 @@
      "description": "International conference and exhibition on occupational safety and industrial security.",
      "venue": "EXPO International Exhibition Centre, 53/1 Mangilik El Ave."
     }
-   }
+   },
+   "country": "Казахстан"
+  },
+  {
+   "id": "world-hydrogen-summit-2027",
+   "title": "World Hydrogen Summit & Exhibition 2027",
+   "type": "summit",
+   "level": "international",
+   "industries": [
+    "Водород",
+    "Энергетика"
+   ],
+   "country": "Нидерланды",
+   "city": "Роттердам",
+   "venue": "Rotterdam Ahoy, Ahoyweg 10",
+   "start": "2027-05-18",
+   "end": "2027-05-20",
+   "organizer": "Sustainable Energy Council, RX Global",
+   "site": "https://www.world-hydrogen-summit.com",
+   "description": "Крупнейшее в мире событие по водороду: саммит и выставка, отдельные зоны по CCUS и хранению энергии.",
+   "source_url": "https://www.world-hydrogen-summit.com/en-gb/visit.html",
+   "source_name": "world-hydrogen-summit.com",
+   "i18n": {
+    "kk": {
+     "title": "World Hydrogen Summit & Exhibition 2027",
+     "description": "Сутегі бойынша әлемдегі ең ірі іс-шара: саммит пен көрме, CCUS және энергия сақтау аймақтары.",
+     "venue": "Rotterdam Ahoy"
+    },
+    "en": {
+     "title": "World Hydrogen Summit & Exhibition 2027",
+     "description": "The world's largest hydrogen event: summit and exhibition, with CCUS and energy storage zones.",
+     "venue": "Rotterdam Ahoy, Ahoyweg 10"
+    }
+   },
+   "phone": "",
+   "email": "",
+   "edition": null
   },
   {
    "id": "kihe-2027",
@@ -2240,7 +2539,43 @@
      "description": "Medical equipment, pharmaceuticals, laboratory diagnostics.",
      "venue": "Atakent Expo"
     }
-   }
+   },
+   "country": "Казахстан"
+  },
+  {
+   "id": "baku-energy-week-2027",
+   "title": "Baku Energy Week 2027",
+   "type": "exhibition",
+   "level": "international",
+   "industries": [
+    "Нефть и газ",
+    "Энергетика"
+   ],
+   "country": "Азербайджан",
+   "city": "Баку",
+   "venue": "Baku Expo Centre",
+   "start": "2027-06-02",
+   "end": "2027-06-04",
+   "organizer": "Iteca Caspian",
+   "site": "https://bakuenergyweek.com",
+   "description": "Главная энергетическая неделя Каспия: выставки Caspian Oil & Gas, Caspian Power и Бакинский энергетический форум.",
+   "source_url": "https://www.expobeds.com/event/baku-energy-week",
+   "source_name": "expobeds.com",
+   "i18n": {
+    "kk": {
+     "title": "Baku Energy Week 2027",
+     "description": "Каспийдің басты энергетикалық апталығы: Caspian Oil & Gas, Caspian Power көрмелері және Баку энергетикалық форумы.",
+     "venue": "Baku Expo Centre"
+    },
+    "en": {
+     "title": "Baku Energy Week 2027",
+     "description": "The Caspian’s main energy week: Caspian Oil & Gas and Caspian Power exhibitions plus the Baku Energy Forum.",
+     "venue": "Baku Expo Centre"
+    }
+   },
+   "phone": "",
+   "email": "",
+   "edition": null
   },
   {
    "id": "amm-2027",
@@ -2273,7 +2608,8 @@
      "description": "The country's main mining and metallurgy congress; in 2026 it gathered over 1,500 delegates from 16 countries.",
      "venue": "Hilton Astana, 14 G. Aliyev St."
     }
-   }
+   },
+   "country": "Казахстан"
   }
  ]
 }

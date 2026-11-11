@@ -40,6 +40,7 @@ jobs:
           cp data/events.json web/data/events.json
           cp data/sources_status.json web/data/sources_status.json
           cp dist/index.html web/index.html
+          cp dist/zharshy.ics web/zharshy.ics
           cd web
           git config user.name "zharshy-bot"
           git config user.email "zharshy-bot@users.noreply.github.com"

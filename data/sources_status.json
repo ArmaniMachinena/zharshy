@@ -381,6 +381,123 @@
    "error": ""
   },
   {
+   "name": "НПП «Атамекен» — новости",
+   "url": "https://atameken.kz/ru/news",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "QazTrade — мероприятия",
+   "url": "https://qaztrade.org.kz/ru/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "KazakhExport — новости",
+   "url": "https://www.kazakhexport.kz/ru/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Kazakh Invest — новости",
+   "url": "https://invest.gov.kz/media-center/press-releases/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Astana International Forum",
+   "url": "https://astanainternationalforum.org/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "МФЦА (AIFC) — события",
+   "url": "https://aifc.kz/news",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "KAZENERGY — новости",
+   "url": "https://www.kazenergy.com/ru/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Visit Almaty — события",
+   "url": "https://visitalmaty.kz/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Iteca — календарь выставок",
+   "url": "https://iteca.events/ru",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Baku Energy Week",
+   "url": "https://bakuenergyweek.com",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "TIIF Ташкент",
+   "url": "https://tiif.online/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "ИННОПРОМ",
+   "url": "https://www.innoprom.com/en/",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "World Hydrogen Summit",
+   "url": "https://www.world-hydrogen-summit.com",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
    "name": "WhatsApp (GREEN-API)",
    "url": "https://green-api.com",
    "group": "whatsapp",

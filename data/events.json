@@ -1,0 +1,159 @@
+{
+  "updated_at": "2026-11-11T10:30:00+05:00",
+  "events": [
+    {
+      "id": "horex-2026",
+      "title": "HOREX 2026 — всё для отелей, ресторанов, супермаркетов",
+      "type": "exhibition", "level": "international", "edition": "21-я",
+      "industries": ["HoReCa", "Ритейл и FMCG"],
+      "city": "Алматы", "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+      "start": "2026-11-11", "end": "2026-11-13",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://www.horexexpo.kz",
+      "description": "Центральноазиатская выставка оборудования и услуг для гостиниц, ресторанов и магазинов: кухни, мебель, униформа, клининг.",
+      "source_url": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions/horex.htm", "source_name": "advantour.com"
+    },
+    {
+      "id": "foodexpo-qazaqstan-2026",
+      "title": "FoodExpo Qazaqstan 2026",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Агро и пищепром"],
+      "city": "Алматы", "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+      "start": "2026-11-11", "end": "2026-11-13",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://www.foodexpo.kz",
+      "description": "Крупнейшая в Центральной Азии выставка пищевой промышленности: напитки, мясо, ингредиенты, пищевое оборудование. Около 380 участников.",
+      "source_url": "https://expomap.ru/expo/foodexpo-qazaqstan/", "source_name": "expomap.ru"
+    },
+    {
+      "id": "qazpack-2026",
+      "title": "QazPack 2026 — упаковка, тара, этикетка, полиграфия",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Упаковка", "Агро и пищепром"],
+      "city": "Алматы", "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+      "start": "2026-11-11", "end": "2026-11-13",
+      "organizer": "Iteca, ICA Group", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://iteca.events",
+      "description": "Международная выставка упаковочных материалов, тары, этикетки и оборудования для полиграфии.",
+      "source_url": "https://expomap.ru/expo/qazpack/", "source_name": "expomap.ru"
+    },
+    {
+      "id": "nonfood-asia-2026",
+      "title": "Non-Food Asia Expo Kazakhstan 2026",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Ритейл и FMCG"],
+      "city": "Алматы", "venue": "ВЦ «Атакент»",
+      "start": "2026-11-25", "end": "2026-11-27",
+      "organizer": "Mayer Expo Asia (ГК Mayer)", "phone": "", "email": "", "site": "",
+      "description": "Непродовольственные товары для торговых сетей и маркетплейсов: посуда, хозтовары, текстиль, бытовая химия, косметика.",
+      "source_url": "https://expomap.ru/expo/non-food-asia-expo-kazahstan/", "source_name": "expomap.ru"
+    },
+    {
+      "id": "concrete-show-2027",
+      "title": "Central Asia Concrete Show 2027",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Строительство"],
+      "city": "Астана", "venue": "МВЦ EXPO, ул. Мәңгілік Ел, 53/1",
+      "start": "2027-01-27", "end": "2027-01-29",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://centralasiaconcreteshow.com/en/",
+      "description": "Цемент, бетон, сухие строительные смеси, оборудование и технологии.",
+      "source_url": "https://www.indembastana.gov.in/content/List-of-exhibitions-in-2026-Kazakhstan_1.pdf", "source_name": "Посольство Индии в РК"
+    },
+    {
+      "id": "hunting-expo-2027",
+      "title": "Выставка охоты, рыбалки и активного отдыха 2027",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Охота и рыбалка", "Туризм"],
+      "city": "Алматы", "venue": "уточняется",
+      "start": "2027-03-25", "end": "2027-03-28",
+      "organizer": "уточняется", "phone": "", "email": "", "site": "",
+      "description": "Международная выставка снаряжения для охоты, рыбалки и активного отдыха.",
+      "source_url": "https://expomap.ru/en/expo/kitf/", "source_name": "expomap.ru"
+    },
+    {
+      "id": "homedeco-2027",
+      "title": "HOMEDECO 2027 — домашний текстиль и декор",
+      "type": "exhibition", "level": "international", "edition": "19-я",
+      "industries": ["Дом и интерьер"],
+      "city": "Алматы", "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+      "start": "2027-03-28", "end": "2027-03-30",
+      "organizer": "Türkel Fuarcılık A.Ş.", "phone": "", "email": "", "site": "",
+      "description": "Международная выставка домашнего текстиля и декора.",
+      "source_url": "https://www.eepcindia.org/backend/files/1773307363.pdf", "source_name": "EEPC India"
+    },
+    {
+      "id": "atyrau-oilgas-2027",
+      "title": "Atyrau Oil & Gas 2027 + Atyrau Build",
+      "type": "exhibition", "level": "regional", "edition": "24-я",
+      "industries": ["Нефть и газ", "Строительство"],
+      "city": "Атырау", "venue": "Атырауский выставочный центр, пр. Абулхаир хана, 79",
+      "start": "2027-04-07", "end": "2027-04-09",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://oil-gas.kz/",
+      "description": "Северо-Каспийская региональная нефтегазовая выставка; параллельно — строительная Atyrau Build.",
+      "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html", "source_name": "eventseye.com"
+    },
+    {
+      "id": "kitf-2027",
+      "title": "KITF 2027 — Туризм и путешествия",
+      "type": "exhibition", "level": "international", "edition": "25-я",
+      "industries": ["Туризм"],
+      "city": "Алматы", "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+      "start": "2027-04-21", "end": "2027-04-23",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://kitf.kz/en/",
+      "description": "Главная туристическая выставка Казахстана: туроператоры, отели, авиакомпании, национальные павильоны.",
+      "source_url": "https://expomap.ru/en/expo/kitf/", "source_name": "expomap.ru"
+    },
+    {
+      "id": "astana-build-2027",
+      "title": "Astana Build 2027",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Строительство", "Дом и интерьер"],
+      "city": "Астана", "venue": "МВЦ EXPO",
+      "start": "2027-04-28", "end": "2027-04-30",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "http://www.astanabuild.kz/ru/",
+      "description": "Строительство, интерьеры, отопление и вентиляция.",
+      "source_url": "https://www.eventseye.com/fairs/f-astana-build-163-1.html", "source_name": "eventseye.com"
+    },
+    {
+      "id": "interfood-astana-2027",
+      "title": "InterFood Astana 2027",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Агро и пищепром", "Упаковка"],
+      "city": "Астана", "venue": "Korme World Trade Center Astana",
+      "start": "2027-04-28", "end": "2027-04-30",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "",
+      "description": "Продукты питания, напитки, упаковка и оборудование для пищевой промышленности.",
+      "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html", "source_name": "eventseye.com"
+    },
+    {
+      "id": "kiosh-2027",
+      "title": "KIOSH 2027 — охрана труда и безопасность",
+      "type": "conference", "level": "international", "edition": "",
+      "industries": ["Охрана труда"],
+      "city": "Астана", "venue": "МВЦ EXPO, ул. Мәңгілік Ел, 53/1",
+      "start": "2027-04-28", "end": "2027-04-30",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "https://www.kiosh.kz",
+      "description": "Международная конференция и выставка по охране труда и промышленной безопасности.",
+      "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html", "source_name": "eventseye.com"
+    },
+    {
+      "id": "kihe-2027",
+      "title": "KIHE 2027 — Казахстанская международная выставка здравоохранения",
+      "type": "exhibition", "level": "international", "edition": "",
+      "industries": ["Медицина"],
+      "city": "Алматы", "venue": "КЦДС «Атакент»",
+      "start": "2027-05-19", "end": "2027-05-21",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "",
+      "description": "Медицинское оборудование, фармацевтика, лабораторная диагностика.",
+      "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html", "source_name": "eventseye.com"
+    },
+    {
+      "id": "amm-2027",
+      "title": "Astana Mining & Metallurgy 2027 (AMM)",
+      "type": "congress", "level": "international", "edition": "17-й",
+      "industries": ["Горнодобыча и металлургия"],
+      "city": "Астана", "venue": "Hilton Astana, ул. Г. Алиева, 14",
+      "start": "2027-06-10", "end": "2027-06-11",
+      "organizer": "Iteca", "phone": "+7 727 258 34 34", "email": "contact@iteca.kz", "site": "",
+      "description": "Главный горно-металлургический конгресс страны; в 2026 году собрал более 1,5 тыс. делегатов из 16 стран.",
+      "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html", "source_name": "eventseye.com"
+    }
+  ]
+}

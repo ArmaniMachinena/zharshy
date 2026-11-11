@@ -1,0 +1,256 @@
+#!/usr/bin/env python3
+"""Паук Жаршы: обходит источники, вытаскивает мероприятия через Claude, склеивает дубликаты,
+пишет data/events.json. Запускается GitHub Actions каждые 3 часа (см. .github/workflows/spider.yml).
+
+Локально:  ANTHROPIC_API_KEY=... python spider/run.py
+Без ключа паук только скачивает страницы и ничего не меняет в базе.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import difflib
+import hashlib
+import json
+import os
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DB = ROOT / "data" / "events.json"
+SOURCES = Path(__file__).resolve().parent / "sources.yaml"
+TZ = dt.timezone(dt.timedelta(hours=5))  # Asia/Almaty
+MODEL = os.environ.get("ZHARSHY_MODEL", "claude-haiku-5-5")
+MAX_CHARS = 18000          # сколько текста страницы отдаём модели за раз
+UA = "Mozilla/5.0 (compatible; ZharshyBot/0.1; +https://github.com/ArmaniMachinena)"
+
+TYPES = {"forum", "exhibition", "conference", "congress", "summit", "webinar"}
+LEVELS = {"international", "republican", "regional", "industry"}
+INDUSTRIES = [
+    "Энергетика", "Водород", "Нефть и газ", "Горнодобыча и металлургия", "Строительство",
+    "Агро и пищепром", "Упаковка", "HoReCa", "Ритейл и FMCG", "Туризм", "Медицина",
+    "IT и цифровизация", "Финансы", "Экология и ESG", "Транспорт и логистика",
+    "Охрана труда", "Охота и рыбалка", "Дом и интерьер", "Образование", "Госуправление",
+]
+CITIES = {  # приведение написаний к одному виду
+    "astana": "Астана", "нур-султан": "Астана", "almaty": "Алматы", "алма-ата": "Алматы",
+    "shymkent": "Шымкент", "atyrau": "Атырау", "aktau": "Актау", "karaganda": "Караганда",
+    "qaraghandy": "Караганда", "aktobe": "Актобе", "pavlodar": "Павлодар", "oskemen": "Усть-Каменогорск",
+    "online": "Онлайн", "онлайн": "Онлайн",
+}
+
+PROMPT = """Ты — сборщик анонсов деловых мероприятий в Казахстане для сервиса «Жаршы».
+Сегодня {today}. Ниже текст страницы «{source}» ({url}).
+
+Найди в нём ВСЕ анонсы будущих (или идущих сейчас) мероприятий, которые проходят в Казахстане
+или онлайн для казахстанской аудитории: форумы, выставки, конференции, конгрессы, саммиты, вебинары.
+Пропусти прошедшие события, концерты, спорт, развлечения и новости без конкретной даты.
+
+Верни ТОЛЬКО JSON-массив (может быть пустым []). Каждый элемент:
+{{"title": str, "type": one of {types}, "level": one of {levels},
+  "edition": str ("21-я", "III" — если указан номер проведения, иначе ""),
+  "industries": [1-3 значения из {industries}],
+  "city": str (по-русски, "Онлайн" для вебинаров), "venue": str,
+  "start": "YYYY-MM-DD", "end": "YYYY-MM-DD",
+  "organizer": str, "phone": str, "email": str, "site": str (URL),
+  "description": str (1–2 предложения своими словами, по-русски)}}
+Не выдумывай: неизвестные поля оставляй пустой строкой. Если год не указан, выбери ближайший будущий.
+
+ТЕКСТ:
+{text}"""
+
+
+# ---------------------------------------------------------------- загрузка
+def fetch(url: str) -> str:
+    import requests
+    r = requests.get(url, headers={"User-Agent": UA, "Accept-Language": "ru,kk;q=0.9,en;q=0.8"}, timeout=40)
+    r.raise_for_status()
+    r.encoding = r.apparent_encoding or r.encoding
+    return r.text
+
+
+def html_to_text(html: str) -> str:
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "html.parser")
+    for t in soup(["script", "style", "noscript", "svg", "nav", "footer", "header", "form"]):
+        t.decompose()
+    text = soup.get_text("\n")
+    return re.sub(r"\n\s*\n+", "\n", text).strip()
+
+
+def telegram_text(channel: str) -> str:
+    """Публичный канал читается без API через веб-превью t.me/s/<канал> (последние ~20 постов)."""
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(fetch(f"https://t.me/s/{channel}"), "html.parser")
+    posts = []
+    for m in soup.select(".tgme_widget_message"):
+        body = m.select_one(".tgme_widget_message_text")
+        when = m.select_one("time")
+        link = m.get("data-post", "")
+        if body:
+            posts.append(f"[пост {link} от {when.get('datetime','') if when else ''}]\n{body.get_text(' ', strip=True)}")
+    return "\n\n".join(posts)
+
+
+# ---------------------------------------------------------------- извлечение
+def extract(text: str, source: str, url: str, today: str) -> list[dict]:
+    import anthropic
+    client = anthropic.Anthropic()
+    out: list[dict] = []
+    for i in range(0, min(len(text), MAX_CHARS * 3), MAX_CHARS):
+        chunk = text[i:i + MAX_CHARS]
+        msg = client.messages.create(
+            model=MODEL, max_tokens=4000,
+            messages=[{"role": "user", "content": PROMPT.format(
+                today=today, source=source, url=url, text=chunk,
+                types=sorted(TYPES), levels=sorted(LEVELS), industries=INDUSTRIES)}],
+        )
+        raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+        m = re.search(r"\[.*\]", raw, re.S)
+        if not m:
+            continue
+        try:
+            items = json.loads(m.group(0))
+        except json.JSONDecodeError:
+            continue
+        for it in items if isinstance(items, list) else []:
+            ev = clean(it, source, url)
+            if ev:
+                out.append(ev)
+    return out
+
+
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def clean(it: dict, source: str, url: str) -> dict | None:
+    if not isinstance(it, dict):
+        return None
+    title = str(it.get("title", "")).strip()
+    start = str(it.get("start", "")).strip()
+    end = str(it.get("end", "") or start).strip()
+    if not title or not DATE_RE.match(start):
+        return None
+    if not DATE_RE.match(end) or end < start:
+        end = start
+    city = str(it.get("city", "")).strip()
+    city = CITIES.get(city.lower(), city) or "уточняется"
+    inds = [x for x in it.get("industries", []) if x in INDUSTRIES][:3]
+    ev = {
+        "title": title[:200],
+        "type": it.get("type") if it.get("type") in TYPES else "conference",
+        "level": it.get("level") if it.get("level") in LEVELS else "industry",
+        "edition": str(it.get("edition", ""))[:20],
+        "industries": inds,
+        "city": city, "venue": str(it.get("venue", ""))[:200],
+        "start": start, "end": end,
+        "organizer": str(it.get("organizer", ""))[:200],
+        "phone": str(it.get("phone", ""))[:60], "email": str(it.get("email", ""))[:120],
+        "site": str(it.get("site", ""))[:300] if str(it.get("site", "")).startswith("http") else "",
+        "description": str(it.get("description", ""))[:600],
+        "source_url": url, "source_name": source,
+    }
+    ev["id"] = make_id(ev)
+    return ev
+
+
+# ---------------------------------------------------------------- склейка дубликатов
+def norm(title: str) -> str:
+    t = title.lower().replace("ё", "е")
+    t = re.sub(r"\b(19|20)\d{2}\b", " ", t)
+    t = re.sub(r"[^\w\s]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def make_id(ev: dict) -> str:
+    base = re.sub(r"[^a-z0-9]+", "-", norm(ev["title"]).encode("ascii", "ignore").decode())[:40].strip("-")
+    h = hashlib.sha1((norm(ev["title"]) + ev["start"]).encode()).hexdigest()[:6]
+    return f"{base or 'ev'}-{ev['start'][:4]}-{h}"
+
+
+def same(a: dict, b: dict) -> bool:
+    if abs((dt.date.fromisoformat(a["start"]) - dt.date.fromisoformat(b["start"])).days) > 1:
+        return False
+    na, nb = norm(a["title"]), norm(b["title"])
+    if na in nb or nb in na:
+        return True
+    wa, wb = na.split(), nb.split()
+    # один и тот же бренд в начале (HOREX, KIOGE, AMM…) и тот же день открытия
+    if wa and wb and wa[0] == wb[0] and len(wa[0]) >= 3 and a["start"] == b["start"]:
+        return True
+    sa, sb = set(wa), set(wb)
+    if sa and sb and len(sa & sb) / len(sa | sb) >= 0.6:
+        return True
+    return difflib.SequenceMatcher(None, na, nb).ratio() >= 0.82
+
+
+def merge(existing: list[dict], found: list[dict]) -> tuple[list[dict], int]:
+    added = 0
+    for ev in found:
+        twin = next((e for e in existing if same(e, ev)), None)
+        if twin is None:
+            ev["found_at"] = dt.datetime.now(TZ).isoformat(timespec="minutes")
+            existing.append(ev)
+            added += 1
+            continue
+        for k, v in ev.items():   # дополняем пустые поля, ничего не затираем
+            if k in ("id", "source_url", "source_name"):
+                continue
+            if v and not twin.get(k):
+                twin[k] = v
+        srcs = twin.setdefault("also_in", [])
+        if ev["source_url"] != twin.get("source_url") and ev["source_url"] not in srcs:
+            srcs.append(ev["source_url"])
+    return existing, added
+
+
+def prune(events: list[dict], today: str, keep_days: int = 30) -> list[dict]:
+    """Прошедшие больше месяца назад убираем из ленты (история остаётся в git)."""
+    cutoff = (dt.date.fromisoformat(today) - dt.timedelta(days=keep_days)).isoformat()
+    return [e for e in events if (e.get("end") or e["start"]) >= cutoff]
+
+
+# ---------------------------------------------------------------- main
+def main() -> int:
+    import yaml
+    today = dt.datetime.now(TZ).date().isoformat()
+    cfg = yaml.safe_load(SOURCES.read_text(encoding="utf-8"))
+    db = json.loads(DB.read_text(encoding="utf-8")) if DB.exists() else {"events": []}
+    have_key = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    if not have_key:
+        print("! ANTHROPIC_API_KEY не задан — только проверяю доступность источников")
+
+    jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", [])]
+    jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
+
+    found: list[dict] = []
+    for name, url, kind in jobs:
+        try:
+            text = telegram_text(url.rsplit("/", 1)[-1]) if kind == "telegram" else html_to_text(fetch(url))
+        except Exception as e:  # один упавший источник не останавливает остальные
+            print(f"  ✗ {name}: {e}")
+            continue
+        if not have_key:
+            print(f"  ✓ {name}: {len(text)} симв.")
+            continue
+        try:
+            evs = extract(text, name, url, today)
+            print(f"  ✓ {name}: {len(evs)} событий")
+            found += evs
+        except Exception as e:
+            print(f"  ✗ {name} (ИИ): {e}")
+
+    if not have_key:
+        return 0
+    events, added = merge(db.get("events", []), found)
+    events = prune(events, today)
+    events.sort(key=lambda e: (e["start"], e["title"]))
+    db = {"updated_at": dt.datetime.now(TZ).isoformat(timespec="minutes"), "events": events}
+    DB.parent.mkdir(parents=True, exist_ok=True)
+    DB.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Готово: найдено {len(found)}, новых {added}, всего в базе {len(events)}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

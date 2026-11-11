@@ -1,0 +1,28 @@
+name: Жаршы — паук
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # каждые 3 часа
+  workflow_dispatch: {}       # ручной запуск кнопкой
+permissions:
+  contents: write
+concurrency: { group: spider, cancel-in-progress: false }
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r spider/requirements.txt
+      - name: Обход источников
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python spider/run.py
+      - name: Сохранить базу
+        run: |
+          git config user.name "zharshy-bot"
+          git config user.email "zharshy-bot@users.noreply.github.com"
+          git add data/events.json
+          git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
+          git push

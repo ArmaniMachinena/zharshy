@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Жаршы — деловые мероприятия Казахстана</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#0094b3; --sky-d:#006f87; --sky-l:#e3f5f9;
+  --gold:#e8a900; --gold-l:#fff4d1;
+  --ink:#14232b; --muted:#5d7079; --line:#dde7ea; --bg:#f5f8f9; --card:#fff;
+  --red:#d6453d; --green:#1f9d63;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
+button,input,select{font:inherit;color:inherit}
+a{color:var(--sky-d)}
+/* header */
+header{background:linear-gradient(120deg,var(--sky-d),var(--sky));color:#fff;padding:14px 20px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,169,0,.55) 0 22%,transparent 23%),repeating-conic-gradient(rgba(232,169,0,.35) 0 4deg,transparent 4deg 12deg);opacity:.55}
+.hwrap{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+.logo{display:flex;align-items:center;gap:10px}
+.logo svg{flex:none}
+.logo b{font-size:26px;letter-spacing:.06em;font-weight:800}
+.logo small{display:block;font-size:12px;opacity:.85;font-weight:500;letter-spacing:0}
+.hmeta{margin-left:auto;font-size:12.5px;opacity:.92;text-align:right}
+.hmeta .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7dffb5;margin-right:6px;box-shadow:0 0 0 3px rgba(125,255,181,.25)}
+.hbtn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font-size:13px;font-weight:600}
+.hbtn:hover{background:rgba(255,255,255,.26)}
+/* layout */
+main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:start}
+@media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+/* left */
+.alerts{position:sticky;top:12px;padding:16px}
+@media (max-width:900px){.alerts{position:static}}
+.alerts h2{margin:0 0 2px;font-size:18px}
+.alerts .sub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+.bucket{margin-top:14px}
+.bucket h3{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bucket h3 .n{background:var(--sky-l);color:var(--sky-d);border-radius:999px;padding:1px 8px;font-size:12px}
+.bucket.today h3{color:var(--red)} .bucket.today h3 .n{background:#fde8e6;color:var(--red)}
+.bucket.tom h3{color:#b07a00} .bucket.tom h3 .n{background:var(--gold-l);color:#9a6a00}
+.mini{display:block;width:100%;text-align:left;background:var(--bg);border:1px solid transparent;border-radius:10px;padding:9px 10px;margin-bottom:6px;cursor:pointer}
+.mini:hover{border-color:var(--sky)}
+.mini .t{font-weight:700;font-size:14px;line-height:1.3}
+.mini .m{color:var(--muted);font-size:12.5px;margin-top:2px}
+.empty{color:var(--muted);font-size:13px;padding:6px 2px}
+/* right */
+.tools{padding:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tools input[type=search]{flex:1 1 220px;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:var(--bg)}
+.tools select{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;max-width:100%}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:8px 12px;cursor:pointer;font-weight:600;font-size:13.5px}
+.seg button.on{background:var(--sky);color:#fff}
+.fav-toggle{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:600;font-size:13.5px}
+.fav-toggle.on{background:var(--gold-l);border-color:var(--gold);color:#7a5400}
+.count{color:var(--muted);font-size:13px;padding:0 14px 10px}
+.list{padding:0 14px 14px}
+.month{margin:14px 0 6px;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--sky-d)}
+.ev{display:grid;grid-template-columns:62px 1fr auto;gap:12px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:#fff;cursor:pointer}
+.ev:hover{border-color:var(--sky);box-shadow:0 2px 10px rgba(0,111,135,.08)}
+.date{background:var(--sky-l);border-radius:10px;text-align:center;padding:6px 2px;color:var(--sky-d)}
+.date b{display:block;font-size:20px;line-height:1.1}
+.date span{font-size:11px;text-transform:uppercase;font-weight:700}
+.ev h4{margin:0 0 4px;font-size:15.5px;line-height:1.3}
+.ev .meta{color:var(--muted);font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.tag{font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.tag.lv-international{background:#eaf2ff;color:#2457b8;border-color:#cfdffb}
+.tag.lv-republican{background:var(--gold-l);color:#8a6000;border-color:#f3dc95}
+.tag.lv-regional{background:#eef8f1;color:#1d7b4a;border-color:#cfe9d9}
+.tag.lv-industry{background:#f4eefc;color:#6a3fb0;border-color:#e2d4f6}
+.tag.live{background:#fde8e6;color:var(--red);border-color:#f6c9c5}
+.star{border:0;background:none;font-size:22px;cursor:pointer;color:#c5d0d4;line-height:1;padding:2px}
+.star.on{color:var(--gold)}
+/* calendar */
+.cal{padding:0 14px 14px}
+.calhead{display:flex;align-items:center;gap:8px;margin:4px 0 10px}
+.calhead b{font-size:17px;flex:1;text-transform:capitalize}
+.calhead button{border:1px solid var(--line);background:#fff;border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dow{font-size:11px;font-weight:700;color:var(--muted);text-align:center;padding:4px 0;text-transform:uppercase}
+.day{min-height:82px;border:1px solid var(--line);border-radius:8px;padding:4px;background:#fff;font-size:12px;overflow:hidden}
+.day.out{background:var(--bg);color:#a9b6bb}
+.day.now{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
+.day .d{font-weight:700;margin-bottom:2px}
+.chip{display:block;width:100%;text-align:left;border:0;border-radius:4px;padding:1px 4px;margin-bottom:2px;font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;background:var(--sky-l);color:var(--sky-d)}
+@media (max-width:600px){.day{min-height:54px}.chip{font-size:0;height:6px;padding:0;margin-bottom:2px}}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(10,25,32,.5);display:none;align-items:flex-end;justify-content:center;z-index:50;padding:0}
+.modal.open{display:flex}
+@media (min-width:700px){.modal{align-items:center;padding:20px}}
+.sheet{background:#fff;width:100%;max-width:640px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:20px}
+@media (min-width:700px){.sheet{border-radius:18px}}
+.sheet h2{margin:6px 0 8px;font-size:21px;line-height:1.25}
+.x{float:right;border:0;background:var(--bg);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;margin:14px 0;font-size:14px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink)}
+.btn.pri{background:var(--sky);border-color:var(--sky);color:#fff}
+.btn.gold{background:var(--gold-l);border-color:var(--gold);color:#7a5400}
+.src{font-size:12px;color:var(--muted);margin-top:14px}
+.about h3{margin:18px 0 6px;font-size:15px}
+.about ol{padding-left:20px;margin:6px 0}
+.about li{margin-bottom:6px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <div class="logo">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="rgba(255,255,255,.15)" stroke="#e8a900" stroke-width="2"/>
+        <path d="M11 17h5l9-6v18l-9-6h-5z" fill="#fff"/>
+        <path d="M28 15c2 1.5 2 8.5 0 10M31 12c4 3 4 13 0 16" stroke="#e8a900" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div><b>ЖАРШЫ</b><small>Қазақстанның іскерлік іс-шаралары · деловые мероприятия Казахстана</small></div>
+    </div>
+    <div class="hmeta"><span class="dot"></span><span id="upd">—</span><br><button class="hbtn" id="aboutBtn">Как это работает</button></div>
+  </div>
+</header>
+
+<main>
+  <aside class="panel alerts">
+    <h2>Назар аударыңыз!</h2>
+    <div class="sub">Внимание — ближайшие события</div>
+    <div class="bucket today"><h3>Бүгін · сегодня <span class="n" id="nToday">0</span></h3><div id="bToday"></div></div>
+    <div class="bucket tom"><h3>Ертең · завтра <span class="n" id="nTom">0</span></h3><div id="bTom"></div></div>
+    <div class="bucket"><h3>5 күн ішінде · 5 дней <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
+    <div class="bucket"><h3>★ Менің · мои <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
+  </aside>
+
+  <section class="panel">
+    <div class="tools">
+      <input type="search" id="q" placeholder="Поиск: водород, нефть, Iteca…">
+      <select id="fCity"><option value="">Все города</option></select>
+      <select id="fInd"><option value="">Все отрасли</option></select>
+      <select id="fLevel">
+        <option value="">Любой уровень</option>
+        <option value="international">Международный</option>
+        <option value="republican">Республиканский</option>
+        <option value="regional">Региональный</option>
+        <option value="industry">Отраслевой</option>
+      </select>
+      <select id="fType">
+        <option value="">Все форматы</option>
+        <option value="forum">Форум</option>
+        <option value="exhibition">Выставка</option>
+        <option value="conference">Конференция</option>
+        <option value="congress">Конгресс</option>
+        <option value="summit">Саммит</option>
+        <option value="webinar">Вебинар</option>
+      </select>
+      <select id="fPeriod">
+        <option value="">Все даты</option>
+        <option value="7">7 дней</option>
+        <option value="30">30 дней</option>
+        <option value="90">3 месяца</option>
+      </select>
+      <button class="fav-toggle" id="favOnly">★ Мои</button>
+      <div class="seg"><button id="vList" class="on">Список</button><button id="vCal">Календарь</button></div>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="list" id="list"></div>
+    <div class="cal" id="cal" hidden></div>
+  </section>
+</main>
+<footer>Жаршы собирает анонсы из открытых источников. Перед поездкой сверяйте даты на сайте организатора.</footer>
+
+<div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
+
+<script id="seed" type="application/json">__SEED__</script>
+<script>
+(function(){
+const TZ='Asia/Almaty';
+const TYPES={forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'};
+const LEVELS={international:'Международный',republican:'Республиканский',regional:'Региональный',industry:'Отраслевой'};
+const MON=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
+const MONF=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
+             set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let favs=new Set(store.get('zh-favs',[]));
+let DATA={events:[]}, view='list', favOnly=false, calMonth=null;
+
+function todayISO(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+function addDays(iso,n){const d=new Date(iso+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)}
+function diffDays(a,b){return Math.round((new Date(b+'T00:00:00Z')-new Date(a+'T00:00:00Z'))/864e5)}
+function endOf(e){return e.end||e.start}
+function fmtRange(e){
+  const s=new Date(e.start+'T00:00:00Z'), en=new Date(endOf(e)+'T00:00:00Z');
+  const sd=s.getUTCDate(), ed=en.getUTCDate(), sm=s.getUTCMonth(), em=en.getUTCMonth();
+  if(e.start===endOf(e)) return `${sd} ${MON[sm]} ${s.getUTCFullYear()}`;
+  if(sm===em) return `${sd}–${ed} ${MON[sm]} ${s.getUTCFullYear()}`;
+  return `${sd} ${MON[sm]} – ${ed} ${MON[em]} ${en.getUTCFullYear()}`;
+}
+function overlaps(e,a,b){return e.start<=b && endOf(e)>=a}
+
+async function load(){
+  let d=null;
+  try{const r=await fetch('data/events.json',{cache:'no-store'}); if(r.ok) d=await r.json();}catch(e){}
+  if(!d){try{d=JSON.parse($('seed').textContent)}catch(e){d={events:[]}}}
+  DATA=d; DATA.events.sort((a,b)=>a.start.localeCompare(b.start));
+  if(d.updated_at){const u=new Date(d.updated_at);$('upd').textContent='Обновлено '+u.toLocaleString('ru-RU',{timeZone:TZ,day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'})+' · каждые 3 ч';}
+  fillSelect('fCity',[...new Set(DATA.events.map(e=>e.city))].sort());
+  fillSelect('fInd',[...new Set(DATA.events.flatMap(e=>e.industries||[]))].sort());
+  calMonth=todayISO().slice(0,7);
+  const h=location.hash.slice(1); if(h==='calendar'){setView('cal')}
+  render();
+  if(h && h!=='calendar'){const ev=DATA.events.find(e=>e.id===h); if(ev) openEv(ev.id)}
+}
+function fillSelect(id,vals){const s=$(id);vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
+
+function filtered(){
+  const q=$('q').value.trim().toLowerCase(), c=$('fCity').value, ind=$('fInd').value, lv=$('fLevel').value, ty=$('fType').value, per=$('fPeriod').value;
+  const t=todayISO();
+  return DATA.events.filter(e=>{
+    if(endOf(e)<t) return false;
+    if(c && e.city!==c) return false;
+    if(ind && !(e.industries||[]).includes(ind)) return false;
+    if(lv && e.level!==lv) return false;
+    if(ty && e.type!==ty) return false;
+    if(per && !overlaps(e,t,addDays(t,+per))) return false;
+    if(favOnly && !favs.has(e.id)) return false;
+    if(q){const hay=[e.title,e.description,e.city,e.organizer,e.venue,(e.industries||[]).join(' '),TYPES[e.type]].join(' ').toLowerCase(); if(!q.split(/\s+/).every(w=>hay.includes(w))) return false;}
+    return true;
+  });
+}
+
+function mini(e,note){return `<button class="mini" data-id="${esc(e.id)}"><div class="t">${esc(e.title)}</div><div class="m">${esc(note||'')}${esc(e.city)} · ${esc(TYPES[e.type]||'')}</div></button>`}
+function renderAlerts(){
+  const t=todayISO(), tm=addDays(t,1), d5=addDays(t,5), all=DATA.events;
+  const today=all.filter(e=>overlaps(e,t,t));
+  const tom=all.filter(e=>e.start===tm);
+  const five=all.filter(e=>e.start>tm && e.start<=d5);
+  const fav=all.filter(e=>favs.has(e.id) && endOf(e)>=t);
+  const put=(id,nid,arr,fn,emptyTxt)=>{$(nid).textContent=arr.length;$(id).innerHTML=arr.length?arr.map(fn).join(''):`<div class="empty">${emptyTxt}</div>`};
+  put('bToday','nToday',today,e=>mini(e,e.start===t?'Открытие · ':`День ${diffDays(e.start,t)+1} · `),'Сегодня ничего не найдено');
+  put('bTom','nTom',tom,e=>mini(e),'Завтра пусто');
+  put('b5','n5',five,e=>mini(e,fmtRange(e).replace(/ \d{4}$/,'')+' · '),'В ближайшие 5 дней пусто');
+  put('bFav','nFav',fav,e=>{const n=diffDays(t,e.start);return mini(e,n>0?`через ${n} дн. · `:'идёт сейчас · ')},'Нажмите ☆ у события, чтобы следить за ним');
+}
+
+function card(e){
+  const t=todayISO(), s=new Date(e.start+'T00:00:00Z'), live=overlaps(e,t,t);
+  return `<div class="ev" data-id="${esc(e.id)}">
+    <div class="date"><b>${s.getUTCDate()}</b><span>${MON[s.getUTCMonth()]}</span></div>
+    <div><h4>${esc(e.title)}</h4>
+      <div class="meta">${esc(fmtRange(e))} · ${esc(e.city)}${e.organizer?' · '+esc(e.organizer):''}</div>
+      <div class="tags">${live?'<span class="tag live">● идёт сейчас</span>':''}<span class="tag lv-${esc(e.level)}">${esc(LEVELS[e.level]||e.level)}</span><span class="tag">${esc(TYPES[e.type]||e.type)}</span>${e.edition?`<span class="tag">${esc(e.edition)}</span>`:''}${(e.industries||[]).map(i=>`<span class="tag">${esc(i)}</span>`).join('')}</div>
+    </div>
+    <button class="star ${favs.has(e.id)?'on':''}" data-fav="${esc(e.id)}" aria-label="Следить">${favs.has(e.id)?'★':'☆'}</button>
+  </div>`;
+}
+function renderList(arr){
+  let html='', last='';
+  arr.forEach(e=>{const m=e.start.slice(0,7); if(m!==last){last=m; const [y,mm]=m.split('-'); html+=`<div class="month">${MONF[+mm-1]} ${y}</div>`} html+=card(e)});
+  $('list').innerHTML=html||'<div class="empty" style="padding:20px 0">Ничего не найдено. Попробуйте снять фильтры.</div>';
+}
+function renderCal(arr){
+  const [y,m]=calMonth.split('-').map(Number), first=new Date(Date.UTC(y,m-1,1));
+  const shift=(first.getUTCDay()+6)%7, start=addDays(first.toISOString().slice(0,10),-shift), t=todayISO();
+  let h=`<div class="calhead"><button data-nav="-1">‹</button><b>${MONF[m-1]} ${y}</b><button data-nav="1">›</button></div><div class="grid">`;
+  ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'].forEach(d=>h+=`<div class="dow">${d}</div>`);
+  for(let i=0;i<42;i++){
+    const d=addDays(start,i), evs=arr.filter(e=>overlaps(e,d,d));
+    h+=`<div class="day ${d.slice(0,7)!==calMonth?'out':''} ${d===t?'now':''}"><div class="d">${+d.slice(8)}</div>${evs.map(e=>`<button class="chip" data-id="${esc(e.id)}" title="${esc(e.title)}">${esc(e.title)}</button>`).join('')}</div>`;
+  }
+  $('cal').innerHTML=h+'</div>';
+}
+function render(){
+  const arr=filtered();
+  $('count').textContent=`Найдено: ${arr.length}`;
+  renderAlerts();
+  if(view==='list') renderList(arr); else renderCal(arr);
+}
+function setView(v){view=v;$('vList').classList.toggle('on',v==='list');$('vCal').classList.toggle('on',v==='cal');$('list').hidden=v!=='list';$('cal').hidden=v!=='cal';$('count').hidden=v!=='list';}
+
+// calendar links
+const ymd=s=>s.replace(/-/g,'');
+function gcal(e){const p=new URLSearchParams({action:'TEMPLATE',text:e.title,dates:ymd(e.start)+'/'+ymd(addDays(endOf(e),1)),details:(e.description||'')+(e.site?'\n'+e.site:'')+'\n— Жаршы',location:[e.venue,e.city].filter(Boolean).join(', ')});return 'https://calendar.google.com/calendar/render?'+p}
+function ics(e){
+  const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Zharshy//KZ','BEGIN:VEVENT','UID:'+e.id+'@zharshy','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z',
+   'DTSTART;VALUE=DATE:'+ymd(e.start),'DTEND;VALUE=DATE:'+ymd(addDays(endOf(e),1)),'SUMMARY:'+e.title.replace(/[,;]/g,'\\$&'),
+   'LOCATION:'+[e.venue,e.city].filter(Boolean).join(', ').replace(/[,;]/g,'\\$&'),'DESCRIPTION:'+(e.description||'').replace(/[,;]/g,'\\$&'),
+   'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Завтра: '+e.title,'END:VALARM','END:VEVENT','END:VCALENDAR'];
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([L.join('\r\n')],{type:'text/calendar'}));a.download=e.id+'.ics';document.body.appendChild(a);a.click();a.remove();
+}
+const inFrame=(()=>{try{return window.self!==window.top}catch(e){return true}})();
+
+function openEv(id){
+  const e=DATA.events.find(x=>x.id===id); if(!e) return;
+  const row=(k,v)=>v?`<dt>${k}</dt><dd>${v}</dd>`:'';
+  $('sheet').innerHTML=`<button class="x" data-close>×</button>
+   <div class="tags"><span class="tag lv-${esc(e.level)}">${esc(LEVELS[e.level]||'')}</span><span class="tag">${esc(TYPES[e.type]||'')}</span>${e.edition?`<span class="tag">${esc(e.edition)}</span>`:''}</div>
+   <h2>${esc(e.title)}</h2>
+   <div>${esc(e.description||'')}</div>
+   <dl class="kv">
+     ${row('Даты',esc(fmtRange(e)))}${row('Город',esc(e.city))}${row('Площадка',esc(e.venue))}
+     ${row('Отрасли',esc((e.industries||[]).join(', ')))}${row('Организатор',esc(e.organizer))}
+     ${row('Телефон',e.phone?`<a href="tel:${esc(e.phone.replace(/\s/g,''))}">${esc(e.phone)}</a>`:'')}
+     ${row('E-mail',e.email?`<a href="mailto:${esc(e.email)}">${esc(e.email)}</a>`:'')}
+     ${row('Сайт',e.site?`<a href="${esc(e.site)}" target="_blank" rel="noopener">${esc(e.site.replace(/^https?:\/\//,''))}</a>`:'')}
+   </dl>
+   <div class="actions">
+     <button class="btn gold" data-fav="${esc(e.id)}">${favs.has(e.id)?'★ Слежу':'☆ Следить'}</button>
+     <a class="btn pri" href="${esc(gcal(e))}" target="_blank" rel="noopener">＋ Google Календарь</a>
+     ${inFrame?'':`<button class="btn" data-ics="${esc(e.id)}">⬇ .ics (iPhone/Outlook)</button>`}
+   </div>
+   <div class="src">Источник: ${e.source_url?`<a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_name||e.source_url)}</a>`:'—'}</div>`;
+  $('modal').classList.add('open');
+}
+function openAbout(){
+  $('sheet').innerHTML=`<button class="x" data-close>×</button><div class="about">
+  <h2>Жаршы — как это работает</h2>
+  <p>В старину жаршы объезжал аулы и объявлял людям важные новости. Здесь его работу делает паук: каждые 3 часа он обходит сайты выставочных компаний, госорганов, агрегаторов и публичные каналы, а ИИ вытаскивает из найденного текста название, даты, город, уровень, организатора и контакты. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
+  <h3>Этапы</h3>
+  <ol>
+   <li><b>Сейчас.</b> Сайты (Iteca, EXPO, Атакент, gov.kz, invest.gov.kz, Astana Hub, агрегаторы) + открытые Telegram-каналы. Дашборд, фильтры, ☆ и добавление в календарь.</li>
+   <li><b>Далее.</b> Telegram-бот @zharshy_bot: перешлите ему анонс или вебинар из любого чата (в том числе из WhatsApp) — он сам разберёт и добавит. Форма «Добавить мероприятие» для организаторов.</li>
+   <li><b>Личный кабинет.</b> Вход по телефону/Telegram, подписки по отраслям и городам, напоминания за 7 дней / 1 день / 1 час, утренняя сводка.</li>
+   <li><b>Соцсети.</b> Facebook, Instagram и TikTok — через официальные API и партнёрство с организаторами (у Meta и TikTok сбор чужих постов закрыт правилами).</li>
+  </ol></div>`;
+  $('modal').classList.add('open');
+}
+function toggleFav(id){favs.has(id)?favs.delete(id):favs.add(id);store.set('zh-favs',[...favs]);render();if($('modal').classList.contains('open')&&$('sheet').querySelector(`[data-fav="${CSS.escape(id)}"]`))openEv(id)}
+
+document.addEventListener('click',ev=>{
+  const f=ev.target.closest('[data-fav]'); if(f){ev.stopPropagation();toggleFav(f.dataset.fav);return}
+  const ic=ev.target.closest('[data-ics]'); if(ic){ics(DATA.events.find(e=>e.id===ic.dataset.ics));return}
+  if(ev.target.closest('[data-close]')||ev.target.id==='modal'){$('modal').classList.remove('open');return}
+  const n=ev.target.closest('[data-nav]'); if(n){const [y,m]=calMonth.split('-').map(Number);const d=new Date(Date.UTC(y,m-1+ +n.dataset.nav,1));calMonth=d.toISOString().slice(0,7);render();return}
+  const it=ev.target.closest('[data-id]'); if(it){openEv(it.dataset.id)}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('modal').classList.remove('open')});
+['q','fCity','fInd','fLevel','fType','fPeriod'].forEach(id=>$(id).addEventListener('input',render));
+$('favOnly').onclick=()=>{favOnly=!favOnly;$('favOnly').classList.toggle('on',favOnly);render()};
+$('vList').onclick=()=>{setView('list');render()};
+$('vCal').onclick=()=>{setView('cal');render()};
+$('aboutBtn').onclick=openAbout;
+load();
+})();
+</script>
+</body>
+</html>

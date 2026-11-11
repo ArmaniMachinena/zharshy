@@ -234,14 +234,21 @@ def main() -> int:
     if not have_key:
         print("! ANTHROPIC_API_KEY не задан — только проверяю доступность источников")
 
-    jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", []) + cfg.get("organizers", []) + cfg.get("sheets", [])]
+    jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", [])]
+    jobs += [(s["name"], s["url"], "organizers") for s in cfg.get("organizers", [])]
+    jobs += [(s["name"], s["url"], "sheets") for s in cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 
     found: list[dict] = []
+    status: list[dict] = []
     for name, url, kind in jobs:
+        st = {"name": name, "url": url, "group": kind, "ok": False, "chars": 0, "events": None, "error": ""}
+        status.append(st)
         try:
             text = telegram_text(url.rsplit("/", 1)[-1]) if kind == "telegram" else html_to_text(fetch(url))
+            st["ok"], st["chars"] = True, len(text)
         except Exception as e:  # один упавший источник не останавливает остальные
+            st["error"] = str(e)[:160]
             print(f"  ✗ {name}: {e}")
             continue
         if not have_key:
@@ -249,15 +256,20 @@ def main() -> int:
             continue
         try:
             evs = extract(text, name, url, today)
+            st["events"] = len(evs)
             print(f"  ✓ {name}: {len(evs)} событий")
             found += evs
         except Exception as e:
+            st["error"] = ("ИИ: " + str(e))[:160]
             print(f"  ✗ {name} (ИИ): {e}")
 
     # WhatsApp-группы через GREEN-API
+    wa = {"name": "WhatsApp (GREEN-API)", "url": "https://green-api.com", "group": "whatsapp", "ok": False, "chars": 0, "events": None, "error": ""}
+    status.append(wa)
     try:
         import whatsapp
         if whatsapp.configured():
+            wa["ok"] = True
             for name, text in whatsapp.jobs():
                 if not have_key:
                     continue
@@ -268,9 +280,16 @@ def main() -> int:
                 print(f"  ✓ {name}: {len(evs)} событий")
                 found += evs
         else:
+            wa["error"] = "off"
             print("  · WhatsApp не настроен (нет секретов GREEN_API_*)")
     except Exception as e:
+        wa["ok"], wa["error"] = False, str(e)[:160]
         print(f"  ✗ WhatsApp: {e}")
+
+    (ROOT / "data").mkdir(exist_ok=True)
+    (ROOT / "data" / "sources_status.json").write_text(json.dumps(
+        {"checked_at": dt.datetime.now(TZ).isoformat(timespec="minutes"), "have_key": have_key, "sources": status},
+        ensure_ascii=False, indent=1), encoding="utf-8")
 
     if not have_key:
         return 0

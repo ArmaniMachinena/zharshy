@@ -14,9 +14,13 @@ web:
     url: https://invest.gov.kz/calendar/
   - name: Astana Hub — события
     url: https://astanahub.com/en/event/
-  - name: МИД РК — мероприятия
+  - name: Акорда — новости и события
+    url: https://www.akorda.kz/ru
+  - name: Премьер-министр РК — новости
+    url: https://primeminister.kz/ru/news
+  - name: gov.kz — МИД РК, мероприятия
     url: https://www.gov.kz/memleket/entities/mfa/press/events?lang=ru
-  - name: Минпромстрой — мероприятия
+  - name: gov.kz — Минпромстрой, мероприятия
     url: https://www.gov.kz/memleket/entities/mps/press/events?lang=ru
   - name: Advantour — выставки Алматы
     url: https://www.advantour.com/rus/kazakhstan/almaty/exhibitions.htm

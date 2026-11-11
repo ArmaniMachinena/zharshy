@@ -1,0 +1,393 @@
+{
+ "checked_at": "2026-11-11T18:14+05:00",
+ "have_key": false,
+ "sources": [
+  {
+   "name": "Iteca — новости и анонсы",
+   "url": "https://iteca.events/ru/news",
+   "group": "web",
+   "ok": true,
+   "chars": 1992,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Expomap — все выставки Казахстана",
+   "url": "https://expomap.ru/expo/country/kazakhstan/",
+   "group": "web",
+   "ok": true,
+   "chars": 4719,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Expomap — Атакент",
+   "url": "https://expomap.ru/places/atakent-expo/",
+   "group": "web",
+   "ok": true,
+   "chars": 3198,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Visit Astana — бизнес и форумы",
+   "url": "https://visitastana.kz/en/exhibition-areas/",
+   "group": "web",
+   "ok": true,
+   "chars": 4172,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Invest.gov.kz — календарь",
+   "url": "https://invest.gov.kz/calendar/",
+   "group": "web",
+   "ok": true,
+   "chars": 58559,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Astana Hub — события",
+   "url": "https://astanahub.com/en/event/",
+   "group": "web",
+   "ok": true,
+   "chars": 1964,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Акорда — новости и события",
+   "url": "https://www.akorda.kz/ru",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Премьер-министр РК — новости",
+   "url": "https://primeminister.kz/ru/news",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "gov.kz — МИД РК, мероприятия",
+   "url": "https://www.gov.kz/memleket/entities/mfa/press/events?lang=ru",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Not Found"
+  },
+  {
+   "name": "gov.kz — Минпромстрой, мероприятия",
+   "url": "https://www.gov.kz/memleket/entities/mps/press/events?lang=ru",
+   "group": "web",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Not Found"
+  },
+  {
+   "name": "Advantour — выставки Алматы",
+   "url": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions.htm",
+   "group": "web",
+   "ok": true,
+   "chars": 898,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Advantour — выставки Астаны",
+   "url": "https://www.advantour.com/rus/kazakhstan/astana/exhibitions.htm",
+   "group": "web",
+   "ok": true,
+   "chars": 1522,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "EventsEye — Iteca",
+   "url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html",
+   "group": "web",
+   "ok": true,
+   "chars": 9459,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Kazakhstan Machinery Fair",
+   "url": "https://www.kmfexpo.kz/ru",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "SU ARNASY Water Expo",
+   "url": "https://waterexpo.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "CM EXPO",
+   "url": "https://cmexpo.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "MINEX Kazakhstan",
+   "url": "https://minexkazakhstan.com/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Energy Trends",
+   "url": "https://energytrends.kz",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "ESE Forum",
+   "url": "https://eseforum.ru/sobytiya",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "BT Expo",
+   "url": "https://btexpo.kz/ru",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Comtrux",
+   "url": "https://comtrux.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "GITEX Central Asia",
+   "url": "https://www.gitexcac.com/rus/home",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "AMM",
+   "url": "https://www.amm.kz",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Electronica Expo",
+   "url": "https://electronica-expo.com/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Mining Week Kazakhstan",
+   "url": "https://miningweek.kz/en/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "KazDrilling",
+   "url": "https://kaz-drilling.com/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "KIOGE",
+   "url": "https://kioge.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Astana Finance Days",
+   "url": "https://astanafindays.org/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Space Days",
+   "url": "https://spacedays.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "AI Digital Bridge",
+   "url": "https://digitalbridge.ai/en/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "People&Projects",
+   "url": "https://peopleandprojects.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "TransLogistica",
+   "url": "https://translogistica.kz/en/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Powerexpo",
+   "url": "https://powerexpo.kz/ru/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Securex",
+   "url": "https://securex.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "United Medical Expo",
+   "url": "https://unitedmedicalexpo.com/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "AmCham Kazakhstan",
+   "url": "https://amcham.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "КАО",
+   "url": "https://kao.kz/ru/novosti/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "АНЭК",
+   "url": "https://kffanek.kz/",
+   "group": "organizers",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Календарь мероприятий KNS",
+   "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
+   "group": "sheets",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Telegram @astanahub",
+   "url": "https://t.me/s/astanahub",
+   "group": "telegram",
+   "ok": true,
+   "chars": 63,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Telegram @kapitalkz",
+   "url": "https://t.me/s/kapitalkz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 22778,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "Telegram @digitalbusinesskz",
+   "url": "https://t.me/s/digitalbusinesskz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 3313,
+   "events": null,
+   "error": ""
+  },
+  {
+   "name": "WhatsApp (GREEN-API)",
+   "url": "https://green-api.com",
+   "group": "whatsapp",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "off"
+  }
+ ]
+}

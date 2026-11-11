@@ -24,7 +24,7 @@ MODEL = os.environ.get("ZHARSHY_MODEL", "claude-haiku-5-5")
 MAX_CHARS = 18000          # сколько текста страницы отдаём модели за раз
 UA = "Mozilla/5.0 (compatible; ZharshyBot/0.1; +https://github.com/ArmaniMachinena)"
 
-TYPES = {"forum", "exhibition", "conference", "congress", "summit", "webinar", "networking", "competition"}
+TYPES = {"forum", "exhibition", "conference", "congress", "summit", "webinar", "networking", "competition", "official", "visit"}
 LEVELS = {"international", "republican", "regional", "industry"}
 INDUSTRIES = [
     "Энергетика", "Водород", "Нефть и газ", "Горнодобыча и металлургия", "Строительство",
@@ -45,6 +45,8 @@ PROMPT = """Ты — сборщик анонсов деловых меропри
 
 Найди в нём ВСЕ анонсы будущих (или идущих сейчас) мероприятий, которые проходят в Казахстане,
 онлайн для казахстанской аудитории или за рубежом, но важны для казахстанского бизнеса (СНГ, Каспий, отраслевые мировые события): форумы, выставки, конференции, конгрессы, саммиты, вебинары.
+Включай и государственную повестку: официальные визиты Президента и Премьер-министра (type "visit"), саммиты,
+заседания межгосударственных советов, государственные праздники и общенациональные мероприятия (type "official").
 Пропусти прошедшие события, концерты, спорт, развлечения и новости без конкретной даты.
 
 Верни ТОЛЬКО JSON-массив (может быть пустым []). Каждый элемент:
@@ -244,6 +246,7 @@ def main() -> int:
     jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", [])]
     jobs += [(s["name"], s["url"], "organizers") for s in cfg.get("organizers", [])]
     jobs += [(s["name"], s["url"], "web") for s in cfg.get("more", [])]
+    jobs += [(s["name"], s["url"], "state") for s in cfg.get("state", [])]
     jobs += [(s["name"], s["url"], "sheets") for s in cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 

@@ -498,6 +498,96 @@
    "error": "wait"
   },
   {
+   "name": "Акорда — график и визиты",
+   "url": "https://www.akorda.kz/ru/events",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Премьер-министр — мероприятия",
+   "url": "https://primeminister.kz/ru/events",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Kazinform — официальная хроника",
+   "url": "https://www.inform.kz/ru/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Парламент РК — новости",
+   "url": "https://www.parlam.kz/ru/news",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Kazakh Invest — события",
+   "url": "https://invest.gov.kz/ru/media-center/events/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "МИД РК — Kazakhstan Diplomatic Portal",
+   "url": "https://www.mfa.gov.kz/ru",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "ЕЭК (ЕАЭС) — календарь",
+   "url": "https://eec.eaeunion.org/news/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "СНГ — исполком",
+   "url": "https://e-cis.info/news/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Организация тюркских государств",
+   "url": "https://www.turkicstates.org/en/news",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "ШОС — новости",
+   "url": "https://eng.sectsco.org/news/",
+   "group": "state",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
    "name": "WhatsApp (GREEN-API)",
    "url": "https://green-api.com",
    "group": "whatsapp",

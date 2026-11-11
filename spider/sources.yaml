@@ -83,3 +83,16 @@ more:
   - {name: TIIF Ташкент, url: https://tiif.online/}
   - {name: ИННОПРОМ, url: https://www.innoprom.com/en/}
   - {name: World Hydrogen Summit, url: https://www.world-hydrogen-summit.com}
+
+# Государственная повестка: визиты, саммиты, официальные мероприятия
+state:
+  - {name: Акорда — график и визиты, url: https://www.akorda.kz/ru/events}
+  - {name: Премьер-министр — мероприятия, url: https://primeminister.kz/ru/events}
+  - {name: Kazinform — официальная хроника, url: https://www.inform.kz/ru/}
+  - {name: Парламент РК — новости, url: https://www.parlam.kz/ru/news}
+  - {name: Kazakh Invest — события, url: https://invest.gov.kz/ru/media-center/events/}
+  - {name: МИД РК — Kazakhstan Diplomatic Portal, url: https://www.mfa.gov.kz/ru}
+  - {name: ЕЭК (ЕАЭС) — календарь, url: https://eec.eaeunion.org/news/}
+  - {name: СНГ — исполком, url: https://e-cis.info/news/}
+  - {name: Организация тюркских государств, url: https://www.turkicstates.org/en/news}
+  - {name: ШОС — новости, url: https://eng.sectsco.org/news/}

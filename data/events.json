@@ -2022,6 +2022,41 @@
    "country": "Казахстан"
   },
   {
+   "id": "cop31-antalya-2026",
+   "title": "COP31 — Конференция ООН по изменению климата",
+   "type": "official",
+   "level": "international",
+   "industries": [
+    "Экология и ESG",
+    "Госуправление"
+   ],
+   "country": "Турция",
+   "city": "Анталья",
+   "venue": "Antalya EXPO Center",
+   "start": "2026-11-09",
+   "end": "2026-11-20",
+   "organizer": "ООН (UNFCCC), Правительство Турции",
+   "phone": "",
+   "email": "",
+   "site": "https://unfccc.int/cop31",
+   "description": "Климатический саммит ООН; встреча глав государств и правительств — 11–12 ноября.",
+   "source_url": "https://unfccc.int/sites/default/files/resource/notification_to_parties_and_observer_states_cop31.pdf",
+   "source_name": "unfccc.int",
+   "edition": 31,
+   "i18n": {
+    "kk": {
+     "title": "COP31 — БҰҰ-ның климат өзгерісі жөніндегі конференциясы",
+     "description": "БҰҰ климаттық саммиті; мемлекет және үкімет басшыларының кездесуі — 11–12 қараша.",
+     "venue": "Antalya EXPO Center"
+    },
+    "en": {
+     "title": "COP31 — UN Climate Change Conference",
+     "description": "UN climate summit; heads of state and government segment on 11–12 November.",
+     "venue": "Antalya EXPO Center"
+    }
+   }
+  },
+  {
    "id": "foodexpo-qazaqstan-2026",
    "title": "FoodExpo Qazaqstan 2026",
    "type": "exhibition",
@@ -2161,6 +2196,75 @@
    "country": "Казахстан"
   },
   {
+   "id": "independence-day-2026",
+   "title": "День Независимости Республики Казахстан",
+   "type": "official",
+   "level": "republican",
+   "industries": [
+    "Госуправление"
+   ],
+   "country": "Казахстан",
+   "city": "Вся страна",
+   "venue": "",
+   "start": "2026-12-16",
+   "end": "2026-12-17",
+   "organizer": "Государственный праздник",
+   "phone": "",
+   "email": "",
+   "site": "https://www.akorda.kz",
+   "description": "Государственный праздник: официальные мероприятия, награждения, торжественные собрания по всей стране.",
+   "source_url": "https://www.akorda.kz",
+   "source_name": "akorda.kz",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "Қазақстан Республикасының Тәуелсіздік күні",
+     "description": "Мемлекеттік мереке: бүкіл елде ресми іс-шаралар, марапаттау, салтанатты жиындар.",
+     "venue": ""
+    },
+    "en": {
+     "title": "Independence Day of the Republic of Kazakhstan",
+     "description": "National holiday: official ceremonies, awards and assemblies nationwide.",
+     "venue": ""
+    }
+   }
+  },
+  {
+   "id": "wef-davos-2027",
+   "title": "Всемирный экономический форум в Давосе 2027",
+   "type": "forum",
+   "level": "international",
+   "industries": [
+    "Финансы",
+    "Госуправление"
+   ],
+   "country": "Швейцария",
+   "city": "Давос",
+   "venue": "Davos Congress Centre",
+   "start": "2027-01-18",
+   "end": "2027-01-22",
+   "organizer": "World Economic Forum",
+   "phone": "",
+   "email": "",
+   "site": "https://www.weforum.org",
+   "description": "Ежегодная встреча глав государств, CEO и экспертов; около 3 000 участников, вход по приглашениям.",
+   "source_url": "https://www.davos.ch/en/experience/events/world-economic-forum-annual-meeting-2027",
+   "source_name": "davos.ch",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "Давостағы Дүниежүзілік экономикалық форум 2027",
+     "description": "Мемлекет басшылары, CEO мен сарапшылардың жыл сайынғы кездесуі; 3 000-ға жуық қатысушы, шақыру бойынша.",
+     "venue": "Davos Congress Centre"
+    },
+    "en": {
+     "title": "World Economic Forum Annual Meeting 2027",
+     "description": "Annual meeting of heads of state, CEOs and experts; about 3,000 participants, by invitation.",
+     "venue": "Davos Congress Centre"
+    }
+   }
+  },
+  {
    "id": "concrete-show-2027",
    "title": "Central Asia Concrete Show 2027",
    "type": "exhibition",
@@ -2193,6 +2297,74 @@
     }
    },
    "country": "Казахстан"
+  },
+  {
+   "id": "gulfood-2027",
+   "title": "Gulfood 2027",
+   "type": "exhibition",
+   "level": "international",
+   "industries": [
+    "Агро и пищепром"
+   ],
+   "country": "ОАЭ",
+   "city": "Дубай",
+   "venue": "Dubai World Trade Centre, Expo City Dubai",
+   "start": "2027-03-15",
+   "end": "2027-03-19",
+   "organizer": "Dubai World Trade Centre",
+   "phone": "",
+   "email": "",
+   "site": "https://www.gulfood.com",
+   "description": "Крупнейшая в мире выставка продуктов питания и напитков; для казахстанских экспортёров агро- и пищевой продукции.",
+   "source_url": "https://www.portugalglobal.pt/pt/noticias/2026/julho/feira-internacional-gulfood-2027/",
+   "source_name": "portugalglobal.pt",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "Gulfood 2027",
+     "description": "Әлемдегі ең ірі азық-түлік пен сусындар көрмесі; қазақстандық агро- және тамақ экспорттаушыларына.",
+     "venue": "Dubai World Trade Centre, Expo City Dubai"
+    },
+    "en": {
+     "title": "Gulfood 2027",
+     "description": "The world’s largest food and beverage show; relevant for Kazakh agri-food exporters.",
+     "venue": "Dubai World Trade Centre, Expo City Dubai"
+    }
+   }
+  },
+  {
+   "id": "nauryz-2027",
+   "title": "Наурыз мейрамы 2027",
+   "type": "official",
+   "level": "republican",
+   "industries": [
+    "Госуправление"
+   ],
+   "country": "Казахстан",
+   "city": "Вся страна",
+   "venue": "",
+   "start": "2027-03-21",
+   "end": "2027-03-23",
+   "organizer": "Государственный праздник",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Государственный праздник весеннего равноденствия: народные гуляния и официальные мероприятия.",
+   "source_url": "https://www.akorda.kz",
+   "source_name": "akorda.kz",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "Наурыз мейрамы 2027",
+     "description": "Көктемгі күн мен түннің теңелу мерекесі: халықтық мерекелер мен ресми іс-шаралар.",
+     "venue": ""
+    },
+    "en": {
+     "title": "Nauryz holiday 2027",
+     "description": "Spring equinox national holiday: festivities and official events.",
+     "venue": ""
+    }
+   }
   },
   {
    "id": "hunting-expo-2027",
@@ -2264,6 +2436,42 @@
     }
    },
    "country": "Казахстан"
+  },
+  {
+   "id": "hannover-messe-2027",
+   "title": "HANNOVER MESSE 2027",
+   "type": "exhibition",
+   "level": "international",
+   "industries": [
+    "Машиностроение",
+    "Энергетика",
+    "IT и цифровизация"
+   ],
+   "country": "Германия",
+   "city": "Ганновер",
+   "venue": "Messegelände Hannover",
+   "start": "2027-04-05",
+   "end": "2027-04-08",
+   "organizer": "Deutsche Messe AG",
+   "phone": "",
+   "email": "",
+   "site": "https://www.hannovermesse.de",
+   "description": "Крупнейшая в мире промышленная выставка; страна-партнёр 2027 — Испания.",
+   "source_url": "https://www.hannovermesse.de/en/for-visitors/opening-hours/",
+   "source_name": "hannovermesse.de",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "HANNOVER MESSE 2027",
+     "description": "Әлемдегі ең ірі өнеркәсіп көрмесі; 2027 жылғы серіктес ел — Испания.",
+     "venue": "Messegelände Hannover"
+    },
+    "en": {
+     "title": "HANNOVER MESSE 2027",
+     "description": "The world’s largest industrial trade fair; 2027 partner country — Spain.",
+     "venue": "Messegelände Hannover"
+    }
+   }
   },
   {
    "id": "atyrau-oilgas-2027",
@@ -2610,6 +2818,145 @@
     }
    },
    "country": "Казахстан"
+  },
+  {
+   "id": "spief-2027",
+   "title": "ПМЭФ-2027 — Петербургский международный экономический форум",
+   "type": "forum",
+   "level": "international",
+   "industries": [
+    "Финансы",
+    "Госуправление"
+   ],
+   "country": "Россия",
+   "city": "Санкт-Петербург",
+   "venue": "КВЦ «Экспофорум»",
+   "start": "2027-06-16",
+   "end": "2027-06-19",
+   "organizer": "Фонд «Росконгресс»",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Юбилейный 30-й форум; в 2026 году — 24,5 тыс. участников из 142 стран, включая делегацию Казахстана.",
+   "source_url": "https://expert.ru/news/obyavleny-daty-yubileynogo-pmef-v-2027-godu",
+   "source_name": "expert.ru",
+   "edition": 30,
+   "i18n": {
+    "kk": {
+     "title": "ПМЭФ-2027 — Санкт-Петербург халықаралық экономикалық форумы",
+     "description": "Мерейтойлық 30-шы форум; 2026 жылы 142 елден 24,5 мың қатысушы, оның ішінде Қазақстан делегациясы.",
+     "venue": "КВЦ «Экспофорум»"
+    },
+    "en": {
+     "title": "SPIEF 2027 — St. Petersburg International Economic Forum",
+     "description": "30th anniversary forum; 24,500 participants from 142 countries in 2026, including Kazakhstan’s delegation.",
+     "venue": "КВЦ «Экспофорум»"
+    }
+   }
+  },
+  {
+   "id": "tpp-central-asia-2027",
+   "title": "Форум «ТЭС Центральной Азии» 2027",
+   "type": "forum",
+   "level": "international",
+   "industries": [
+    "Энергетика"
+   ],
+   "country": "Казахстан",
+   "city": "Астана",
+   "venue": "уточняется",
+   "start": "2027-06-23",
+   "end": "2027-06-24",
+   "organizer": "Vostock Capital",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "5-й юбилейный форум по тепловым электростанциям региона.",
+   "source_url": "https://www.cantonfair.net/event/38102-5th-anniversary-international-forum-thermal-power-plants-central-asia",
+   "source_name": "cantonfair.net",
+   "edition": 5,
+   "i18n": {
+    "kk": {
+     "title": "«Орталық Азия ЖЭС» форумы 2027",
+     "description": "Өңірдің жылу электр станциялары жөніндегі 5-ші мерейтойлық форум.",
+     "venue": "уточняется"
+    },
+    "en": {
+     "title": "Thermal Power Plants Central Asia Forum 2027",
+     "description": "5th anniversary forum on the region’s thermal power plants.",
+     "venue": "уточняется"
+    }
+   }
+  },
+  {
+   "id": "eef-2027",
+   "title": "Восточный экономический форум 2027",
+   "type": "forum",
+   "level": "international",
+   "industries": [
+    "Финансы",
+    "Транспорт и логистика"
+   ],
+   "country": "Россия",
+   "city": "Владивосток",
+   "venue": "",
+   "start": "2027-08-31",
+   "end": "2027-09-03",
+   "organizer": "Фонд «Росконгресс»",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "XII ВЭФ: сотрудничество с Азиатско-Тихоокеанским регионом и транзитные маршруты.",
+   "source_url": "https://sberbusiness.live/news/stali-izvestni-dati-provedeniya-vef-v-2027-godu",
+   "source_name": "sberbusiness.live",
+   "edition": 12,
+   "i18n": {
+    "kk": {
+     "title": "Шығыс экономикалық форумы 2027",
+     "description": "XII ШЭФ: Азия-Тынық мұхиты өңірімен ынтымақтастық және транзит бағыттары.",
+     "venue": ""
+    },
+    "en": {
+     "title": "Eastern Economic Forum 2027",
+     "description": "12th EEF: cooperation with Asia-Pacific and transit routes.",
+     "venue": ""
+    }
+   }
+  },
+  {
+   "id": "dubai-airshow-2027",
+   "title": "Dubai Airshow 2027",
+   "type": "exhibition",
+   "level": "international",
+   "industries": [
+    "Транспорт и логистика",
+    "Космос"
+   ],
+   "country": "ОАЭ",
+   "city": "Дубай",
+   "venue": "Dubai World Central",
+   "start": "2027-11-15",
+   "end": "2027-11-19",
+   "organizer": "Dubai World Trade Centre",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Одна из крупнейших авиакосмических выставок мира.",
+   "source_url": "https://www.eyeofriyadh.com/events/details/gulfood-exhibition-2027",
+   "source_name": "eyeofriyadh.com",
+   "edition": null,
+   "i18n": {
+    "kk": {
+     "title": "Dubai Airshow 2027",
+     "description": "Әлемдегі ең ірі әуе-ғарыш көрмелерінің бірі.",
+     "venue": "Dubai World Central"
+    },
+    "en": {
+     "title": "Dubai Airshow 2027",
+     "description": "One of the world’s largest aerospace shows.",
+     "venue": "Dubai World Central"
+    }
+   }
   }
  ]
 }

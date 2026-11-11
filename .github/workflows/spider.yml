@@ -22,11 +22,17 @@ jobs:
           GREEN_ID_INSTANCE: ${{ secrets.GREEN_ID_INSTANCE }}
           GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
         run: python spider/run.py
+      - name: Модерация заявок пользователей
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SUBMISSIONS_CSV: ${{ secrets.SUBMISSIONS_CSV }}
+        run: python spider/moderate.py
       - name: Сохранить базу
         run: |
           git config user.name "zharshy-bot"
           git config user.email "zharshy-bot@users.noreply.github.com"
           git add data/events.json data/sources_status.json
+          [ -f data/moderation.json ] && git add data/moderation.json || true
           git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
           git push
       - name: Выложить базу на публичный сайт (zharshy-web)

@@ -11,8 +11,7 @@
   --sky:#0094b3; --sky-d:#006f87; --sky-l:#e3f5f9;
   --gold:#e8a900; --gold-l:#fff4d1;
   --ink:#14232b; --muted:#5d7079; --line:#dde7ea; --bg:#f5f8f9; --card:#fff;
-  --red:#d6453d; --green:#1f9d63;
-  --r:14px;
+  --red:#d6453d; --green:#1f9d63; --r:14px;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -22,27 +21,36 @@ a{color:var(--sky-d)}
 /* header */
 header{background:linear-gradient(120deg,var(--sky-d),var(--sky));color:#fff;padding:14px 20px;position:relative;overflow:hidden}
 header::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;
-  background:radial-gradient(circle,rgba(232,169,0,.55) 0 22%,transparent 23%),repeating-conic-gradient(rgba(232,169,0,.35) 0 4deg,transparent 4deg 12deg);opacity:.55}
+  background:radial-gradient(circle,rgba(232,169,0,.55) 0 22%,transparent 23%),repeating-conic-gradient(rgba(232,169,0,.35) 0 4deg,transparent 4deg 12deg);opacity:.5;pointer-events:none}
 .hwrap{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
 .logo{display:flex;align-items:center;gap:10px}
 .logo svg{flex:none}
 .logo b{font-size:26px;letter-spacing:.06em;font-weight:800}
-.logo small{display:block;font-size:12px;opacity:.85;font-weight:500;letter-spacing:0}
-.hmeta{margin-left:auto;font-size:12.5px;opacity:.92;text-align:right}
-.hmeta .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7dffb5;margin-right:6px;box-shadow:0 0 0 3px rgba(125,255,181,.25)}
-.hbtn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font-size:13px;font-weight:600}
+.logo small{display:block;font-size:12.5px;opacity:.88;font-weight:500;letter-spacing:0}
+.hright{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.langs{display:inline-flex;background:rgba(0,0,0,.18);border-radius:999px;padding:3px}
+.langs button{border:0;background:none;color:#fff;font-weight:800;font-size:12.5px;letter-spacing:.04em;padding:5px 11px;border-radius:999px;cursor:pointer;opacity:.8}
+.langs button.on{background:#fff;color:var(--sky-d);opacity:1}
+.hmeta{font-size:12.5px;opacity:.92;text-align:right;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.hmeta .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7dffb5;margin-right:5px;box-shadow:0 0 0 3px rgba(125,255,181,.25)}
+.hbtn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:999px;padding:4px 11px;cursor:pointer;font-size:12.5px;font-weight:600}
 .hbtn:hover{background:rgba(255,255,255,.26)}
+@media (max-width:600px){.hright{margin-left:0;align-items:flex-start;width:100%}.hmeta{justify-content:flex-start;text-align:left}}
 /* layout */
-main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:start}
+main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:330px 1fr;gap:20px;align-items:start}
 @media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.col{display:flex;flex-direction:column;gap:16px;min-width:0}
+.ptitle{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 14px 0}
+.ptitle h2{margin:0;font-size:17px}
+.ptitle span{color:var(--muted);font-size:12.5px}
 /* left */
 .alerts{position:sticky;top:12px;padding:16px}
 @media (max-width:900px){.alerts{position:static}}
 .alerts h2{margin:0 0 2px;font-size:18px}
-.alerts .sub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+.alerts .sub{color:var(--muted);font-size:12.5px;margin-bottom:6px}
 .bucket{margin-top:14px}
-.bucket h3{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bucket h3{display:flex;align-items:center;gap:8px;margin:0 0 8px;font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .bucket h3 .n{background:var(--sky-l);color:var(--sky-d);border-radius:999px;padding:1px 8px;font-size:12px}
 .bucket.today h3{color:var(--red)} .bucket.today h3 .n{background:#fde8e6;color:var(--red)}
 .bucket.tom h3{color:#b07a00} .bucket.tom h3 .n{background:var(--gold-l);color:#9a6a00}
@@ -51,7 +59,47 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .mini .t{font-weight:700;font-size:14px;line-height:1.3}
 .mini .m{color:var(--muted);font-size:12.5px;margin-top:2px}
 .empty{color:var(--muted);font-size:13px;padding:6px 2px}
-/* right */
+/* 30 days */
+.strip{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;padding:12px 14px 14px}
+@media (max-width:1100px){.strip{grid-template-columns:repeat(7,1fr)}}
+@media (max-width:560px){.strip{grid-template-columns:repeat(5,1fr)}}
+.dcell{border:1px solid var(--line);border-radius:9px;background:#fff;padding:5px 5px 6px;text-align:left;cursor:pointer;min-height:76px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.dcell:hover{border-color:var(--sky)}
+.dcell .wd{font-size:10.5px;font-weight:700;color:var(--muted);text-transform:uppercase;display:flex;justify-content:space-between}
+.dcell .wd.we{color:#b5534d}
+.dcell .dn{font-size:18px;font-weight:800;line-height:1}
+.dcell .mo{font-size:10px;font-weight:700;color:var(--sky-d);text-transform:uppercase}
+.dcell.has{background:var(--sky-l);border-color:#bfe5ee}
+.dcell.now{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
+.dcell.sel{background:var(--sky);border-color:var(--sky);color:#fff}
+.dcell.sel .wd,.dcell.sel .mo{color:#e8fbff}
+.bars{display:flex;flex-direction:column;gap:2px;margin-top:auto}
+.bar{font-size:10px;font-weight:700;line-height:1.25;border-radius:3px;padding:1px 4px;background:#fff;color:var(--sky-d);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dcell.sel .bar{background:rgba(255,255,255,.9)}
+.bar.more{background:none;color:var(--muted);padding:0 2px}
+.dcell.sel .bar.more{color:#fff}
+@media (max-width:560px){.bar{font-size:0;height:5px;padding:0;background:var(--sky)}.bar.more{font-size:10px;height:auto;background:none}.dcell.sel .bar{background:#fff}.dcell.sel .bar.more{background:none}}
+/* map */
+.mapwrap{padding:6px 10px 12px;position:relative}
+.mapwrap svg{width:100%;height:auto;display:block}
+.land{fill:#eaf5f7;stroke:#9fcbd6;stroke-width:1.4}
+.cdot{fill:#b9c9ce}
+.clab{font-size:10.5px;fill:#6c7f86;font-weight:600;pointer-events:none}
+.city{cursor:pointer}
+.city .glow{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}
+.city.t0 .glow{fill:var(--red)} .city.t0 .st{fill:var(--red)}
+.city.t1 .glow{fill:var(--gold)} .city.t1 .st{fill:var(--gold)}
+.city.t2 .glow{fill:var(--sky)} .city.t2 .st{fill:var(--sky)}
+.city.t2 .glow{animation:none;opacity:.18}
+.city .st{stroke:#fff;stroke-width:1.2;filter:drop-shadow(0 0 4px rgba(232,169,0,.7))}
+.city.t0 .st{filter:drop-shadow(0 0 5px rgba(214,69,61,.8))}
+.city .lab{font-size:12px;font-weight:800;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:3px}
+.city .cnt{font-size:9.5px;font-weight:800;fill:#fff}
+.city.selc .st{stroke:var(--ink);stroke-width:2}
+@keyframes pulse{0%{transform:scale(.5);opacity:.75}100%{transform:scale(2.4);opacity:0}}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);padding:0 14px 14px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+/* tools/list */
 .tools{padding:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .tools input[type=search]{flex:1 1 220px;min-width:0;border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:var(--bg)}
 .tools select{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:#fff;max-width:100%}
@@ -60,7 +108,8 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .seg button.on{background:var(--sky);color:#fff}
 .fav-toggle{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:600;font-size:13.5px}
 .fav-toggle.on{background:var(--gold-l);border-color:var(--gold);color:#7a5400}
-.count{color:var(--muted);font-size:13px;padding:0 14px 10px}
+.count{color:var(--muted);font-size:13px;padding:0 14px 10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:6px;background:var(--sky);color:#fff;border:0;border-radius:999px;padding:3px 10px;font-weight:700;font-size:12.5px;cursor:pointer}
 .list{padding:0 14px 14px}
 .month{margin:14px 0 6px;font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--sky-d)}
 .ev{display:grid;grid-template-columns:62px 1fr auto;gap:12px;align-items:start;padding:12px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:#fff;cursor:pointer}
@@ -79,10 +128,10 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .tag.live{background:#fde8e6;color:var(--red);border-color:#f6c9c5}
 .star{border:0;background:none;font-size:22px;cursor:pointer;color:#c5d0d4;line-height:1;padding:2px}
 .star.on{color:var(--gold)}
-/* calendar */
+/* month calendar */
 .cal{padding:0 14px 14px}
 .calhead{display:flex;align-items:center;gap:8px;margin:4px 0 10px}
-.calhead b{font-size:17px;flex:1;text-transform:capitalize}
+.calhead b{font-size:17px;flex:1}
 .calhead button{border:1px solid var(--line);background:#fff;border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:16px}
 .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
 .dow{font-size:11px;font-weight:700;color:var(--muted);text-align:center;padding:4px 0;text-transform:uppercase}
@@ -91,18 +140,17 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .day.now{border-color:var(--red);box-shadow:inset 0 0 0 1px var(--red)}
 .day .d{font-weight:700;margin-bottom:2px}
 .chip{display:block;width:100%;text-align:left;border:0;border-radius:4px;padding:1px 4px;margin-bottom:2px;font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;background:var(--sky-l);color:var(--sky-d)}
-@media (max-width:600px){.day{min-height:54px}.chip{font-size:0;height:6px;padding:0;margin-bottom:2px}}
+@media (max-width:600px){.day{min-height:54px}.chip{font-size:0;height:6px;padding:0}}
 /* modal */
-.modal{position:fixed;inset:0;background:rgba(10,25,32,.5);display:none;align-items:flex-end;justify-content:center;z-index:50;padding:0}
+.modal{position:fixed;inset:0;background:rgba(10,25,32,.5);display:none;align-items:flex-end;justify-content:center;z-index:50}
 .modal.open{display:flex}
 @media (min-width:700px){.modal{align-items:center;padding:20px}}
 .sheet{background:#fff;width:100%;max-width:640px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:20px}
 @media (min-width:700px){.sheet{border-radius:18px}}
 .sheet h2{margin:6px 0 8px;font-size:21px;line-height:1.25}
 .x{float:right;border:0;background:var(--bg);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px}
-.kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;margin:14px 0;font-size:14px}
-.kv dt{color:var(--muted)}
-.kv dd{margin:0}
+.kv{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:14px 0;font-size:14px}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 14px;font-weight:700;font-size:14px;cursor:pointer;text-decoration:none;color:var(--ink)}
 .btn.pri{background:var(--sky);border-color:var(--sky);color:#fff}
@@ -123,58 +171,61 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
         <path d="M11 17h5l9-6v18l-9-6h-5z" fill="#fff"/>
         <path d="M28 15c2 1.5 2 8.5 0 10M31 12c4 3 4 13 0 16" stroke="#e8a900" stroke-width="2" fill="none" stroke-linecap="round"/>
       </svg>
-      <div><b>ЖАРШЫ</b><small>Қазақстанның іскерлік іс-шаралары · деловые мероприятия Казахстана</small></div>
+      <div><b>ЖАРШЫ</b><small data-i="tagline"></small></div>
     </div>
-    <div class="hmeta"><span class="dot"></span><span id="upd">—</span><br><button class="hbtn" id="aboutBtn">Как это работает</button></div>
+    <div class="hright">
+      <div class="langs" role="group" aria-label="Language">
+        <button data-lang="kk">ҚАЗ</button><button data-lang="ru">РУС</button><button data-lang="en">ENG</button>
+      </div>
+      <div class="hmeta"><span><span class="dot"></span><span id="upd">—</span></span><button class="hbtn" id="aboutBtn" data-i="how"></button></div>
+    </div>
   </div>
 </header>
 
 <main>
   <aside class="panel alerts">
-    <h2>Назар аударыңыз!</h2>
-    <div class="sub">Внимание — ближайшие события</div>
-    <div class="bucket today"><h3>Бүгін · сегодня <span class="n" id="nToday">0</span></h3><div id="bToday"></div></div>
-    <div class="bucket tom"><h3>Ертең · завтра <span class="n" id="nTom">0</span></h3><div id="bTom"></div></div>
-    <div class="bucket"><h3>5 күн ішінде · 5 дней <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
-    <div class="bucket"><h3>★ Менің · мои <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
+    <h2 data-i="attn"></h2>
+    <div class="sub" data-i="attnSub"></div>
+    <div class="bucket today"><h3><span data-i="today"></span> <span class="n" id="nToday">0</span></h3><div id="bToday"></div></div>
+    <div class="bucket tom"><h3><span data-i="tomorrow"></span> <span class="n" id="nTom">0</span></h3><div id="bTom"></div></div>
+    <div class="bucket"><h3><span data-i="in5"></span> <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
+    <div class="bucket"><h3>★ <span data-i="mine"></span> <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
   </aside>
 
-  <section class="panel">
-    <div class="tools">
-      <input type="search" id="q" placeholder="Поиск: водород, нефть, Iteca…">
-      <select id="fCity"><option value="">Все города</option></select>
-      <select id="fInd"><option value="">Все отрасли</option></select>
-      <select id="fLevel">
-        <option value="">Любой уровень</option>
-        <option value="international">Международный</option>
-        <option value="republican">Республиканский</option>
-        <option value="regional">Региональный</option>
-        <option value="industry">Отраслевой</option>
-      </select>
-      <select id="fType">
-        <option value="">Все форматы</option>
-        <option value="forum">Форум</option>
-        <option value="exhibition">Выставка</option>
-        <option value="conference">Конференция</option>
-        <option value="congress">Конгресс</option>
-        <option value="summit">Саммит</option>
-        <option value="webinar">Вебинар</option>
-      </select>
-      <select id="fPeriod">
-        <option value="">Все даты</option>
-        <option value="7">7 дней</option>
-        <option value="30">30 дней</option>
-        <option value="90">3 месяца</option>
-      </select>
-      <button class="fav-toggle" id="favOnly">★ Мои</button>
-      <div class="seg"><button id="vList" class="on">Список</button><button id="vCal">Календарь</button></div>
-    </div>
-    <div class="count" id="count"></div>
-    <div class="list" id="list"></div>
-    <div class="cal" id="cal" hidden></div>
-  </section>
+  <div class="col">
+    <section class="panel">
+      <div class="ptitle"><h2 data-i="days30"></h2><span data-i="days30sub"></span></div>
+      <div class="strip" id="strip"></div>
+    </section>
+
+    <section class="panel">
+      <div class="ptitle"><h2 data-i="map"></h2><span data-i="mapSub"></span></div>
+      <div class="mapwrap" id="map"></div>
+      <div class="legend">
+        <span><i style="background:var(--red)"></i><span data-i="legToday"></span></span>
+        <span><i style="background:var(--gold)"></i><span data-i="leg30"></span></span>
+        <span><i style="background:var(--sky)"></i><span data-i="legLater"></span></span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="tools">
+        <input type="search" id="q">
+        <select id="fCity"></select>
+        <select id="fInd"></select>
+        <select id="fLevel"></select>
+        <select id="fType"></select>
+        <select id="fPeriod"></select>
+        <button class="fav-toggle" id="favOnly" data-i="myBtn"></button>
+        <div class="seg"><button id="vList" class="on" data-i="listV"></button><button id="vCal" data-i="calV"></button></div>
+      </div>
+      <div class="count" id="count"></div>
+      <div class="list" id="list"></div>
+      <div class="cal" id="cal" hidden></div>
+    </section>
+  </div>
 </main>
-<footer>Жаршы собирает анонсы из открытых источников. Перед поездкой сверяйте даты на сайте организатора.</footer>
+<footer data-i="footer"></footer>
 
 <div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
 
@@ -182,165 +233,323 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 <script>
 (function(){
 const TZ='Asia/Almaty';
-const TYPES={forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'};
-const LEVELS={international:'Международный',republican:'Республиканский',regional:'Региональный',industry:'Отраслевой'};
-const MON=['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'];
-const MONF=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+/* ---------- словарь ---------- */
+const I18N={
+ ru:{tagline:'Деловые мероприятия Казахстана',updated:'Обновлено',every3:'каждые 3 ч',how:'Как это работает',
+  attn:'Внимание!',attnSub:'Ближайшие события',today:'Сегодня',tomorrow:'Завтра',in5:'5 дней',mine:'Мои',
+  emptyToday:'Сегодня событий нет',emptyTom:'Завтра пусто',empty5:'В ближайшие 5 дней пусто',emptyFav:'Нажмите ☆ у события, чтобы следить за ним',
+  opening:'Открытие',dayN:'День {n}',inN:'через {n} дн.',liveNow:'идёт сейчас',
+  days30:'30 дней вперёд',days30sub:'нажмите на день — покажу его события',
+  map:'Карта мероприятий',mapSub:'нажмите на город',legToday:'идёт сегодня',leg30:'в ближайшие 30 дней',legLater:'позже',
+  search:'Поиск: водород, нефть, Iteca…',allCities:'Все города',allInd:'Все отрасли',anyLevel:'Любой уровень',allTypes:'Все форматы',
+  allDates:'Все даты',d7:'7 дней',d30:'30 дней',d90:'3 месяца',myBtn:'★ Мои',listV:'Список',calV:'Календарь',
+  found:'Найдено',nothing:'Ничего не найдено. Попробуйте снять фильтры.',
+  footer:'Жаршы собирает анонсы из открытых источников. Перед поездкой сверяйте даты на сайте организатора.',
+  f_dates:'Даты',f_city:'Город',f_venue:'Площадка',f_ind:'Отрасли',f_org:'Организатор',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
+  follow:'☆ Следить',following:'★ Слежу',gcal:'＋ Google Календарь',ics:'⬇ .ics (iPhone/Outlook)',source:'Источник',
+  edition:n=>`${n}-е проведение`,
+  wd:['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
+  mon:['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'],
+  monF:['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+  types:{forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'},
+  levels:{international:'Международный',republican:'Республиканский',regional:'Региональный',industry:'Отраслевой'},
+  about:`<h2>Жаршы — как это работает</h2>
+  <p>В старину жаршы объезжал аулы и объявлял людям важные вести. Здесь его работу делает паук: каждые 3 часа он обходит сайты выставочных компаний, госорганов, агрегаторов и открытые Telegram-каналы, а ИИ вытаскивает название, даты, город, уровень, организатора и контакты — сразу на трёх языках. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
+  <h3>Этапы</h3><ol>
+  <li><b>Сейчас.</b> Сайты и открытые Telegram-каналы. Дашборд, 30 дней, карта, фильтры, ☆ и добавление в календарь.</li>
+  <li><b>Далее.</b> Telegram-бот: перешлите ему анонс или вебинар из любого чата (в том числе из WhatsApp) — он сам разберёт и добавит. Форма для организаторов.</li>
+  <li><b>Личный кабинет.</b> Подписки по отраслям и городам, напоминания за 7 дней / 1 день / 1 час, утренняя сводка.</li>
+  <li><b>Соцсети.</b> Facebook, Instagram, TikTok — через официальные API и партнёрство с организаторами.</li></ol>`},
+ kk:{tagline:'Қазақстанның іскерлік іс-шаралары',updated:'Жаңартылды',every3:'әр 3 сағат сайын',how:'Қалай жұмыс істейді',
+  attn:'Назар аударыңыз!',attnSub:'Жақын арадағы іс-шаралар',today:'Бүгін',tomorrow:'Ертең',in5:'5 күн ішінде',mine:'Менің',
+  emptyToday:'Бүгін іс-шара жоқ',emptyTom:'Ертең бос',empty5:'Алдағы 5 күнде бос',emptyFav:'Іс-шараны бақылау үшін ☆ белгісін басыңыз',
+  opening:'Ашылуы',dayN:'{n}-күн',inN:'{n} күннен кейін',liveNow:'қазір өтуде',
+  days30:'Алдағы 30 күн',days30sub:'күнді бассаңыз — сол күнгі іс-шаралар шығады',
+  map:'Іс-шаралар картасы',mapSub:'қаланы басыңыз',legToday:'бүгін өтуде',leg30:'алдағы 30 күнде',legLater:'кейінірек',
+  search:'Іздеу: сутегі, мұнай, Iteca…',allCities:'Барлық қалалар',allInd:'Барлық салалар',anyLevel:'Кез келген деңгей',allTypes:'Барлық форматтар',
+  allDates:'Барлық күндер',d7:'7 күн',d30:'30 күн',d90:'3 ай',myBtn:'★ Менің',listV:'Тізім',calV:'Күнтізбе',
+  found:'Табылды',nothing:'Ештеңе табылмады. Сүзгілерді алып тастап көріңіз.',
+  footer:'Жаршы хабарландыруларды ашық дереккөздерден жинайды. Сапар алдында күндерін ұйымдастырушының сайтынан тексеріңіз.',
+  f_dates:'Күндері',f_city:'Қала',f_venue:'Өтетін орны',f_ind:'Салалар',f_org:'Ұйымдастырушы',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
+  follow:'☆ Бақылау',following:'★ Бақылаудамын',gcal:'＋ Google Күнтізбе',ics:'⬇ .ics (iPhone/Outlook)',source:'Дереккөз',
+  edition:n=>`${n}-${kkOrd(n)} рет`,
+  wd:['Дс','Сс','Ср','Бс','Жм','Сб','Жс'],
+  mon:['қаң','ақп','нау','сәу','мам','мау','шіл','там','қыр','қаз','қар','жел'],
+  monF:['Қаңтар','Ақпан','Наурыз','Сәуір','Мамыр','Маусым','Шілде','Тамыз','Қыркүйек','Қазан','Қараша','Желтоқсан'],
+  monG:['қаңтар','ақпан','наурыз','сәуір','мамыр','маусым','шілде','тамыз','қыркүйек','қазан','қараша','желтоқсан'],
+  types:{forum:'Форум',exhibition:'Көрме',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'},
+  levels:{international:'Халықаралық',republican:'Республикалық',regional:'Өңірлік',industry:'Салалық'},
+  about:`<h2>Жаршы — қалай жұмыс істейді</h2>
+  <p>Ертеде жаршы ауыл аралап, елге маңызды хабарды жариялаған. Мұнда бұл жұмысты өрмекші-бағдарлама атқарады: әр 3 сағат сайын ол көрме компанияларының, мемлекеттік органдардың, агрегаторлардың сайттарын және ашық Telegram-арналарды аралайды, ал ЖИ атауын, күнін, қаласын, деңгейін, ұйымдастырушысы мен байланыстарын бірден үш тілде шығарады. Қайталанатын жазбалар біріктіріледі, өткен іс-шаралар мұрағатқа кетеді.</p>
+  <h3>Кезеңдер</h3><ol>
+  <li><b>Қазір.</b> Сайттар мен ашық Telegram-арналар. Дашборд, 30 күн, карта, сүзгілер, ☆ және күнтізбеге қосу.</li>
+  <li><b>Келесі.</b> Telegram-бот: кез келген чаттан (WhatsApp-тан да) хабарландыру не вебинарды жіберсеңіз — өзі талдап, қосады. Ұйымдастырушыларға арналған форма.</li>
+  <li><b>Жеке кабинет.</b> Салалар мен қалалар бойынша жазылым, 7 күн / 1 күн / 1 сағат бұрын еске салу, таңғы шолу.</li>
+  <li><b>Әлеуметтік желілер.</b> Facebook, Instagram, TikTok — ресми API және ұйымдастырушылармен серіктестік арқылы.</li></ol>`},
+ en:{tagline:'Business events in Kazakhstan',updated:'Updated',every3:'every 3 h',how:'How it works',
+  attn:'Heads up!',attnSub:'Coming up next',today:'Today',tomorrow:'Tomorrow',in5:'Next 5 days',mine:'My events',
+  emptyToday:'Nothing today',emptyTom:'Nothing tomorrow',empty5:'Nothing in the next 5 days',emptyFav:'Tap ☆ on an event to follow it',
+  opening:'Opens',dayN:'Day {n}',inN:'in {n} d',liveNow:'happening now',
+  days30:'Next 30 days',days30sub:'tap a day to see its events',
+  map:'Event map',mapSub:'tap a city',legToday:'on today',leg30:'within 30 days',legLater:'later',
+  search:'Search: hydrogen, oil, Iteca…',allCities:'All cities',allInd:'All industries',anyLevel:'Any level',allTypes:'All formats',
+  allDates:'All dates',d7:'7 days',d30:'30 days',d90:'3 months',myBtn:'★ Mine',listV:'List',calV:'Calendar',
+  found:'Found',nothing:'Nothing found. Try clearing the filters.',
+  footer:'Zharshy collects announcements from open sources. Check dates on the organizer’s website before you travel.',
+  f_dates:'Dates',f_city:'City',f_venue:'Venue',f_ind:'Industries',f_org:'Organizer',f_phone:'Phone',f_email:'E-mail',f_site:'Website',
+  follow:'☆ Follow',following:'★ Following',gcal:'＋ Google Calendar',ics:'⬇ .ics (iPhone/Outlook)',source:'Source',
+  edition:n=>`${n}${enOrd(n)} edition`,
+  wd:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
+  mon:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+  monF:['January','February','March','April','May','June','July','August','September','October','November','December'],
+  types:{forum:'Forum',exhibition:'Exhibition',conference:'Conference',congress:'Congress',summit:'Summit',webinar:'Webinar'},
+  levels:{international:'International',republican:'National',regional:'Regional',industry:'Industry'},
+  about:`<h2>Zharshy — how it works</h2>
+  <p>In the old steppe, the <i>zharshy</i> rode from village to village announcing important news. Here a crawler does that job: every 3 hours it visits exhibition organizers, government sites, aggregators and public Telegram channels, and AI extracts the title, dates, city, level, organizer and contacts — in three languages at once. Duplicates are merged and past events move to the archive.</p>
+  <h3>Roadmap</h3><ol>
+  <li><b>Now.</b> Websites and public Telegram channels. Dashboard, 30-day view, map, filters, ☆ and add-to-calendar.</li>
+  <li><b>Next.</b> A Telegram bot: forward it an announcement or webinar from any chat (WhatsApp included) and it adds it. A form for organizers.</li>
+  <li><b>Accounts.</b> Subscriptions by industry and city, reminders 7 days / 1 day / 1 hour before, a morning digest.</li>
+  <li><b>Social media.</b> Facebook, Instagram, TikTok — via official APIs and organizer partnerships.</li></ol>`}
+};
+function kkOrd(n){const d=n%10;if(d===0){const t=(n%100)/10;return [5,7,8].includes(t)||n%100===0?'ші':'шы'}return [6,9].includes(d)?'шы':'ші'}
+function enOrd(n){const v=n%100;if(v>=11&&v<=13)return'th';return{1:'st',2:'nd',3:'rd'}[n%10]||'th'}
+const CITY={ 'Алматы':['Алматы','Almaty',76.95,43.24],'Астана':['Астана','Astana',71.43,51.13],'Шымкент':['Шымкент','Shymkent',69.6,42.32],
+ 'Атырау':['Атырау','Atyrau',51.92,47.1],'Актау':['Ақтау','Aktau',51.2,43.65],'Караганда':['Қарағанды','Karaganda',73.1,49.8],
+ 'Актобе':['Ақтөбе','Aktobe',57.2,50.28],'Павлодар':['Павлодар','Pavlodar',76.95,52.29],'Усть-Каменогорск':['Өскемен','Oskemen',82.6,49.95],
+ 'Костанай':['Қостанай','Kostanay',63.62,53.21],'Петропавловск':['Петропавл','Petropavl',69.15,54.87],'Уральск':['Орал','Oral',51.37,51.23],
+ 'Кызылорда':['Қызылорда','Kyzylorda',65.5,44.85],'Тараз':['Тараз','Taraz',71.37,42.9],'Туркестан':['Түркістан','Turkistan',68.25,43.3],
+ 'Семей':['Семей','Semey',80.25,50.41],'Кокшетау':['Көкшетау','Kokshetau',69.39,53.28],'Талдыкорган':['Талдықорған','Taldykorgan',78.37,45.02],
+ 'Жезказган':['Жезқазған','Zhezkazgan',67.71,47.8],'Онлайн':['Онлайн','Online'],'уточняется':['нақтыланады','TBA']};
+const IND={'Энергетика':['Энергетика','Energy'],'Водород':['Сутегі','Hydrogen'],'Нефть и газ':['Мұнай және газ','Oil & Gas'],
+ 'Горнодобыча и металлургия':['Тау-кен және металлургия','Mining & Metals'],'Строительство':['Құрылыс','Construction'],
+ 'Агро и пищепром':['Агро және тамақ өнеркәсібі','Agri & Food'],'Упаковка':['Қаптама','Packaging'],'HoReCa':['HoReCa','HoReCa'],
+ 'Ритейл и FMCG':['Ритейл және FMCG','Retail & FMCG'],'Туризм':['Туризм','Tourism'],'Медицина':['Медицина','Healthcare'],
+ 'IT и цифровизация':['IT және цифрландыру','IT & Digital'],'Финансы':['Қаржы','Finance'],'Экология и ESG':['Экология және ESG','Ecology & ESG'],
+ 'Транспорт и логистика':['Көлік және логистика','Transport & Logistics'],'Охрана труда':['Еңбекті қорғау','Occupational Safety'],
+ 'Охота и рыбалка':['Аңшылық және балық аулау','Hunting & Fishing'],'Дом и интерьер':['Үй және интерьер','Home & Interior'],
+ 'Образование':['Білім беру','Education'],'Госуправление':['Мемлекеттік басқару','Public Administration']};
+
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},
              set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let lang=store.get('zh-lang','ru'); if(!I18N[lang]) lang='ru';
 let favs=new Set(store.get('zh-favs',[]));
-let DATA={events:[]}, view='list', favOnly=false, calMonth=null;
+let DATA={events:[]}, view='list', favOnly=false, calMonth=null, selDay=null;
+const L=()=>I18N[lang];
+const t=(k,n)=>{const v=L()[k];return typeof v==='string'&&n!=null?v.replace('{n}',n):v};
+const li=lang=>lang==='kk'?0:1;
+const cityName=c=>lang==='ru'||!CITY[c]?c:CITY[c][li(lang)];
+const indName=i=>lang==='ru'||!IND[i]?i:IND[i][li(lang)];
+const fld=(e,k)=>(e.i18n&&e.i18n[lang]&&e.i18n[lang][k])||e[k]||'';
+function edition(e){const n=typeof e.edition==='number'?e.edition:parseInt(e.edition);return n?L().edition(n):''}
 
+/* ---------- даты ---------- */
 function todayISO(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
 function addDays(iso,n){const d=new Date(iso+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)}
 function diffDays(a,b){return Math.round((new Date(b+'T00:00:00Z')-new Date(a+'T00:00:00Z'))/864e5)}
-function endOf(e){return e.end||e.start}
-function fmtRange(e){
-  const s=new Date(e.start+'T00:00:00Z'), en=new Date(endOf(e)+'T00:00:00Z');
-  const sd=s.getUTCDate(), ed=en.getUTCDate(), sm=s.getUTCMonth(), em=en.getUTCMonth();
-  if(e.start===endOf(e)) return `${sd} ${MON[sm]} ${s.getUTCFullYear()}`;
-  if(sm===em) return `${sd}–${ed} ${MON[sm]} ${s.getUTCFullYear()}`;
-  return `${sd} ${MON[sm]} – ${ed} ${MON[em]} ${en.getUTCFullYear()}`;
+const endOf=e=>e.end||e.start;
+const overlaps=(e,a,b)=>e.start<=b && endOf(e)>=a;
+const dOf=iso=>new Date(iso+'T00:00:00Z');
+function monName(m){return lang==='kk'?L().monG[m]:L().mon[m]}
+function fmtDay(iso,withYear){const d=dOf(iso);return `${d.getUTCDate()} ${monName(d.getUTCMonth())}${withYear?' '+d.getUTCFullYear():''}`}
+function fmtRange(e,noYear){
+  const s=dOf(e.start), en=dOf(endOf(e)), y=noYear?'':' '+en.getUTCFullYear();
+  if(e.start===endOf(e)) return fmtDay(e.start,!noYear);
+  if(s.getUTCMonth()===en.getUTCMonth()) return `${s.getUTCDate()}–${en.getUTCDate()} ${monName(s.getUTCMonth())}${y}`;
+  return `${s.getUTCDate()} ${monName(s.getUTCMonth())} – ${en.getUTCDate()} ${monName(en.getUTCMonth())}${y}`;
 }
-function overlaps(e,a,b){return e.start<=b && endOf(e)>=a}
+const wdIdx=iso=>(dOf(iso).getUTCDay()+6)%7;
 
+/* ---------- загрузка ---------- */
 async function load(){
   let d=null;
   try{const r=await fetch('data/events.json',{cache:'no-store'}); if(r.ok) d=await r.json();}catch(e){}
   if(!d){try{d=JSON.parse($('seed').textContent)}catch(e){d={events:[]}}}
   DATA=d; DATA.events.sort((a,b)=>a.start.localeCompare(b.start));
-  if(d.updated_at){const u=new Date(d.updated_at);$('upd').textContent='Обновлено '+u.toLocaleString('ru-RU',{timeZone:TZ,day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'})+' · каждые 3 ч';}
-  fillSelect('fCity',[...new Set(DATA.events.map(e=>e.city))].sort());
-  fillSelect('fInd',[...new Set(DATA.events.flatMap(e=>e.industries||[]))].sort());
   calMonth=todayISO().slice(0,7);
-  const h=location.hash.slice(1); if(h==='calendar'){setView('cal')}
-  render();
-  if(h && h!=='calendar'){const ev=DATA.events.find(e=>e.id===h); if(ev) openEv(ev.id)}
+  if(location.hash==='#calendar') setView('cal');
+  applyLang();
+  const h=location.hash.slice(1); if(h && h!=='calendar' && DATA.events.some(e=>e.id===h)) openEv(h);
 }
-function fillSelect(id,vals){const s=$(id);vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o)})}
 
-function filtered(){
+function fillSelect(id,first,pairs){const s=$(id),cur=s.value;s.innerHTML=`<option value="">${esc(first)}</option>`+pairs.map(([v,l])=>`<option value="${esc(v)}">${esc(l)}</option>`).join('');s.value=cur}
+function applyLang(){
+  document.documentElement.lang=lang==='kk'?'kk':lang;
+  document.querySelectorAll('[data-lang]').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  document.querySelectorAll('[data-i]').forEach(el=>{el.textContent=t(el.dataset.i)});
+  document.title='Жаршы — '+t('tagline');
+  $('q').placeholder=t('search');
+  const ev=DATA.events;
+  fillSelect('fCity',t('allCities'),[...new Set(ev.map(e=>e.city))].map(c=>[c,cityName(c)]).sort((a,b)=>a[1].localeCompare(b[1])));
+  fillSelect('fInd',t('allInd'),[...new Set(ev.flatMap(e=>e.industries||[]))].map(i=>[i,indName(i)]).sort((a,b)=>a[1].localeCompare(b[1])));
+  fillSelect('fLevel',t('anyLevel'),Object.entries(L().levels));
+  fillSelect('fType',t('allTypes'),Object.entries(L().types));
+  fillSelect('fPeriod',t('allDates'),[['7',t('d7')],['30',t('d30')],['90',t('d90')]]);
+  if(DATA.updated_at){const u=new Date(DATA.updated_at);
+    const p=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(u).map(x=>[x.type,x.value]));
+    $('upd').textContent=`${t('updated')} ${fmtDay(`${p.year}-${p.month}-${p.day}`,false)}, ${p.hour}:${p.minute} · ${t('every3')}`;}
+  render();
+  if($('modal').classList.contains('open')){const id=$('sheet').dataset.ev; id?openEv(id):openAbout()}
+}
+
+/* ---------- фильтры ---------- */
+function filtered(opts={}){
   const q=$('q').value.trim().toLowerCase(), c=$('fCity').value, ind=$('fInd').value, lv=$('fLevel').value, ty=$('fType').value, per=$('fPeriod').value;
-  const t=todayISO();
+  const td=todayISO();
   return DATA.events.filter(e=>{
-    if(endOf(e)<t) return false;
-    if(c && e.city!==c) return false;
+    if(endOf(e)<td) return false;
+    if(c && !opts.noCity && e.city!==c) return false;
     if(ind && !(e.industries||[]).includes(ind)) return false;
     if(lv && e.level!==lv) return false;
     if(ty && e.type!==ty) return false;
-    if(per && !overlaps(e,t,addDays(t,+per))) return false;
+    if(per && !opts.noPeriod && !overlaps(e,td,addDays(td,+per))) return false;
+    if(selDay && !opts.noDay && !overlaps(e,selDay,selDay)) return false;
     if(favOnly && !favs.has(e.id)) return false;
-    if(q){const hay=[e.title,e.description,e.city,e.organizer,e.venue,(e.industries||[]).join(' '),TYPES[e.type]].join(' ').toLowerCase(); if(!q.split(/\s+/).every(w=>hay.includes(w))) return false;}
+    if(q){const hay=[e.title,fld(e,'title'),e.description,fld(e,'description'),e.city,cityName(e.city),e.organizer,fld(e,'venue'),
+      ...(e.industries||[]).map(i=>e.industries&&indName(i)),...(e.industries||[]),L().types[e.type]].join(' ').toLowerCase();
+      if(!q.split(/\s+/).every(w=>hay.includes(w))) return false;}
     return true;
   });
 }
 
-function mini(e,note){return `<button class="mini" data-id="${esc(e.id)}"><div class="t">${esc(e.title)}</div><div class="m">${esc(note||'')}${esc(e.city)} · ${esc(TYPES[e.type]||'')}</div></button>`}
+/* ---------- левая колонка ---------- */
+function mini(e,note){return `<button class="mini" data-id="${esc(e.id)}"><div class="t">${esc(fld(e,'title'))}</div><div class="m">${esc(note||'')}${esc(cityName(e.city))} · ${esc(L().types[e.type]||'')}</div></button>`}
 function renderAlerts(){
-  const t=todayISO(), tm=addDays(t,1), d5=addDays(t,5), all=DATA.events;
-  const today=all.filter(e=>overlaps(e,t,t));
-  const tom=all.filter(e=>e.start===tm);
-  const five=all.filter(e=>e.start>tm && e.start<=d5);
-  const fav=all.filter(e=>favs.has(e.id) && endOf(e)>=t);
-  const put=(id,nid,arr,fn,emptyTxt)=>{$(nid).textContent=arr.length;$(id).innerHTML=arr.length?arr.map(fn).join(''):`<div class="empty">${emptyTxt}</div>`};
-  put('bToday','nToday',today,e=>mini(e,e.start===t?'Открытие · ':`День ${diffDays(e.start,t)+1} · `),'Сегодня ничего не найдено');
-  put('bTom','nTom',tom,e=>mini(e),'Завтра пусто');
-  put('b5','n5',five,e=>mini(e,fmtRange(e).replace(/ \d{4}$/,'')+' · '),'В ближайшие 5 дней пусто');
-  put('bFav','nFav',fav,e=>{const n=diffDays(t,e.start);return mini(e,n>0?`через ${n} дн. · `:'идёт сейчас · ')},'Нажмите ☆ у события, чтобы следить за ним');
+  const td=todayISO(), tm=addDays(td,1), d5=addDays(td,5), all=DATA.events;
+  const today=all.filter(e=>overlaps(e,td,td)), tom=all.filter(e=>e.start===tm);
+  const five=all.filter(e=>e.start>tm && e.start<=d5), fav=all.filter(e=>favs.has(e.id) && endOf(e)>=td);
+  const put=(id,nid,arr,fn,emptyKey)=>{$(nid).textContent=arr.length;$(id).innerHTML=arr.length?arr.map(fn).join(''):`<div class="empty">${esc(t(emptyKey))}</div>`};
+  put('bToday','nToday',today,e=>mini(e,(e.start===td?t('opening'):t('dayN',diffDays(e.start,td)+1))+' · '),'emptyToday');
+  put('bTom','nTom',tom,e=>mini(e),'emptyTom');
+  put('b5','n5',five,e=>mini(e,fmtRange(e,true)+' · '),'empty5');
+  put('bFav','nFav',fav,e=>{const n=diffDays(td,e.start);return mini(e,(n>0?t('inN',n):t('liveNow'))+' · ')},'emptyFav');
 }
 
+/* ---------- 30 дней ---------- */
+function renderStrip(){
+  const td=todayISO(), base=filtered({noDay:true,noPeriod:true});
+  let h='';
+  for(let i=0;i<30;i++){
+    const d=addDays(td,i), evs=base.filter(e=>overlaps(e,d,d)), dt=dOf(d), w=wdIdx(d);
+    const showMon=i===0||dt.getUTCDate()===1;
+    const bars=evs.slice(0,2).map(e=>`<span class="bar">${esc(fld(e,'title'))}</span>`).join('')+(evs.length>2?`<span class="bar more">+${evs.length-2}</span>`:'');
+    h+=`<button class="dcell ${evs.length?'has':''} ${d===td?'now':''} ${d===selDay?'sel':''}" data-day="${d}" title="${esc(fmtDay(d,true))}: ${evs.length}">
+      <span class="wd ${w>4?'we':''}"><span>${esc(L().wd[w])}</span>${showMon?`<span class="mo">${esc(L().mon[dt.getUTCMonth()])}</span>`:''}</span>
+      <span class="dn">${dt.getUTCDate()}</span><span class="bars">${bars}</span></button>`;
+  }
+  $('strip').innerHTML=h;
+}
+
+/* ---------- карта ---------- */
+const KZ=[[46.7,48.9],[47.1,50.4],[48.7,50.6],[48.6,51.6],[50.8,51.7],[52.3,51.8],[54.6,51.0],[55.7,50.6],[57.3,51.0],[58.5,51.1],[59.6,50.5],[61.4,50.8],[61.6,51.3],[60.0,51.9],[61.0,52.9],[60.8,53.7],[61.6,54.0],[63.3,54.2],[65.2,54.6],[68.2,54.9],[69.1,55.4],[70.8,55.3],[71.2,54.1],[73.5,54.0],[73.4,53.5],[76.3,54.2],[76.6,53.6],[77.9,53.3],[79.0,52.3],[80.0,50.9],[81.5,51.2],[83.0,51.0],[85.0,50.0],[86.0,49.6],[87.3,49.2],[86.0,48.5],[85.5,47.0],[83.0,47.2],[82.3,45.5],[80.0,45.0],[80.2,42.2],[79.0,42.8],[76.0,43.0],[74.0,43.2],[73.4,42.5],[71.8,42.8],[70.9,42.3],[70.0,41.5],[69.0,41.4],[68.6,40.7],[68.0,41.0],[66.5,41.2],[66.0,42.9],[64.0,43.6],[62.0,43.5],[61.0,44.4],[58.6,45.6],[56.0,45.0],[56.0,41.3],[55.0,41.3],[52.9,41.8],[52.4,42.5],[51.3,43.2],[51.0,44.4],[50.3,44.6],[51.4,45.3],[53.0,45.3],[53.2,46.7],[51.2,47.1],[49.2,46.4],[48.6,46.6],[49.0,47.3],[48.0,47.8]];
+const PX=(lon,lat)=>[10+(lon-46.3)*0.67*21.5,10+(55.7-lat)*21.5];
+function starPts(cx,cy,R,r){let p=[];for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,rr=i%2?r:R;p.push((cx+rr*Math.cos(a)).toFixed(1)+','+(cy+rr*Math.sin(a)).toFixed(1))}return p.join(' ')}
+function renderMap(){
+  const td=todayISO(), d30=addDays(td,30), base=filtered({noCity:true}), sel=$('fCity').value;
+  const outline=KZ.map(([a,b])=>PX(a,b).join(',')).join(' ');
+  let dots='', hot='';
+  Object.entries(CITY).forEach(([ru,v])=>{
+    if(v.length<4) return;
+    const [x,y]=PX(v[2],v[3]), evs=base.filter(e=>e.city===ru);
+    if(!evs.length){dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="2.6"/><text class="clab" x="${x+5}" y="${y+3.5}">${esc(cityName(ru))}</text>`;return}
+    const tier=evs.some(e=>overlaps(e,td,td))?0:evs.some(e=>e.start<=d30)?1:2;
+    const n=evs.length;
+    hot+=`<g class="city t${tier} ${sel===ru?'selc':''}" data-city="${esc(ru)}"><title>${esc(cityName(ru))}: ${n}</title>
+      <circle class="glow" cx="${x}" cy="${y}" r="11"/>
+      <polygon class="st" points="${starPts(x,y,11,4.8)}"/>
+      <text class="lab" x="${x+14}" y="${y+4}">${esc(cityName(ru))} · ${n}</text></g>`;
+  });
+  $('map').innerHTML=`<svg viewBox="0 0 620 340" role="img" aria-label="${esc(t('map'))}"><polygon class="land" points="${outline}"/>${dots}${hot}</svg>`;
+}
+
+/* ---------- список и месяц ---------- */
 function card(e){
-  const t=todayISO(), s=new Date(e.start+'T00:00:00Z'), live=overlaps(e,t,t);
+  const td=todayISO(), s=dOf(e.start), live=overlaps(e,td,td), ed=edition(e);
+  const org=fld(e,'organizer');
   return `<div class="ev" data-id="${esc(e.id)}">
-    <div class="date"><b>${s.getUTCDate()}</b><span>${MON[s.getUTCMonth()]}</span></div>
-    <div><h4>${esc(e.title)}</h4>
-      <div class="meta">${esc(fmtRange(e))} · ${esc(e.city)}${e.organizer?' · '+esc(e.organizer):''}</div>
-      <div class="tags">${live?'<span class="tag live">● идёт сейчас</span>':''}<span class="tag lv-${esc(e.level)}">${esc(LEVELS[e.level]||e.level)}</span><span class="tag">${esc(TYPES[e.type]||e.type)}</span>${e.edition?`<span class="tag">${esc(e.edition)}</span>`:''}${(e.industries||[]).map(i=>`<span class="tag">${esc(i)}</span>`).join('')}</div>
+    <div class="date"><b>${s.getUTCDate()}</b><span>${esc(L().mon[s.getUTCMonth()])}</span></div>
+    <div><h4>${esc(fld(e,'title'))}</h4>
+      <div class="meta">${esc(fmtRange(e))} · ${esc(cityName(e.city))}${org?' · '+esc(org):''}</div>
+      <div class="tags">${live?`<span class="tag live">● ${esc(t('liveNow'))}</span>`:''}<span class="tag lv-${esc(e.level)}">${esc(L().levels[e.level]||e.level)}</span><span class="tag">${esc(L().types[e.type]||e.type)}</span>${ed?`<span class="tag">${esc(ed)}</span>`:''}${(e.industries||[]).map(i=>`<span class="tag">${esc(indName(i))}</span>`).join('')}</div>
     </div>
-    <button class="star ${favs.has(e.id)?'on':''}" data-fav="${esc(e.id)}" aria-label="Следить">${favs.has(e.id)?'★':'☆'}</button>
+    <button class="star ${favs.has(e.id)?'on':''}" data-fav="${esc(e.id)}" aria-label="${esc(t('follow'))}">${favs.has(e.id)?'★':'☆'}</button>
   </div>`;
 }
 function renderList(arr){
   let html='', last='';
-  arr.forEach(e=>{const m=e.start.slice(0,7); if(m!==last){last=m; const [y,mm]=m.split('-'); html+=`<div class="month">${MONF[+mm-1]} ${y}</div>`} html+=card(e)});
-  $('list').innerHTML=html||'<div class="empty" style="padding:20px 0">Ничего не найдено. Попробуйте снять фильтры.</div>';
+  arr.forEach(e=>{const m=e.start.slice(0,7); if(m!==last){last=m; const [y,mm]=m.split('-'); html+=`<div class="month">${esc(L().monF[+mm-1])} ${y}</div>`} html+=card(e)});
+  $('list').innerHTML=html||`<div class="empty" style="padding:20px 0">${esc(t('nothing'))}</div>`;
 }
 function renderCal(arr){
   const [y,m]=calMonth.split('-').map(Number), first=new Date(Date.UTC(y,m-1,1));
-  const shift=(first.getUTCDay()+6)%7, start=addDays(first.toISOString().slice(0,10),-shift), t=todayISO();
-  let h=`<div class="calhead"><button data-nav="-1">‹</button><b>${MONF[m-1]} ${y}</b><button data-nav="1">›</button></div><div class="grid">`;
-  ['Пн','Вт','Ср','Чт','Пт','Сб','Вс'].forEach(d=>h+=`<div class="dow">${d}</div>`);
+  const start=addDays(first.toISOString().slice(0,10),-((first.getUTCDay()+6)%7)), td=todayISO();
+  let h=`<div class="calhead"><button data-nav="-1">‹</button><b>${esc(L().monF[m-1])} ${y}</b><button data-nav="1">›</button></div><div class="grid">`;
+  L().wd.forEach(d=>h+=`<div class="dow">${esc(d)}</div>`);
   for(let i=0;i<42;i++){
     const d=addDays(start,i), evs=arr.filter(e=>overlaps(e,d,d));
-    h+=`<div class="day ${d.slice(0,7)!==calMonth?'out':''} ${d===t?'now':''}"><div class="d">${+d.slice(8)}</div>${evs.map(e=>`<button class="chip" data-id="${esc(e.id)}" title="${esc(e.title)}">${esc(e.title)}</button>`).join('')}</div>`;
+    h+=`<div class="day ${d.slice(0,7)!==calMonth?'out':''} ${d===td?'now':''}"><div class="d">${+d.slice(8)}</div>${evs.map(e=>`<button class="chip" data-id="${esc(e.id)}" title="${esc(fld(e,'title'))}">${esc(fld(e,'title'))}</button>`).join('')}</div>`;
   }
   $('cal').innerHTML=h+'</div>';
 }
 function render(){
   const arr=filtered();
-  $('count').textContent=`Найдено: ${arr.length}`;
-  renderAlerts();
-  if(view==='list') renderList(arr); else renderCal(arr);
+  $('count').innerHTML=`<span>${esc(t('found'))}: ${arr.length}</span>`+(selDay?`<button class="pill" data-clearday>📅 ${esc(fmtDay(selDay,false))} ✕</button>`:'');
+  renderAlerts(); renderStrip(); renderMap();
+  if(view==='list') renderList(arr); else renderCal(filtered({noDay:true}));
 }
-function setView(v){view=v;$('vList').classList.toggle('on',v==='list');$('vCal').classList.toggle('on',v==='cal');$('list').hidden=v!=='list';$('cal').hidden=v!=='cal';$('count').hidden=v!=='list';}
+function setView(v){view=v;$('vList').classList.toggle('on',v==='list');$('vCal').classList.toggle('on',v==='cal');$('list').hidden=v!=='list';$('cal').hidden=v!=='cal';}
 
-// calendar links
+/* ---------- карточка события ---------- */
 const ymd=s=>s.replace(/-/g,'');
-function gcal(e){const p=new URLSearchParams({action:'TEMPLATE',text:e.title,dates:ymd(e.start)+'/'+ymd(addDays(endOf(e),1)),details:(e.description||'')+(e.site?'\n'+e.site:'')+'\n— Жаршы',location:[e.venue,e.city].filter(Boolean).join(', ')});return 'https://calendar.google.com/calendar/render?'+p}
+function gcal(e){const p=new URLSearchParams({action:'TEMPLATE',text:fld(e,'title'),dates:ymd(e.start)+'/'+ymd(addDays(endOf(e),1)),details:fld(e,'description')+(e.site?'\n'+e.site:'')+'\n— Жаршы',location:[fld(e,'venue'),cityName(e.city)].filter(Boolean).join(', ')});return 'https://calendar.google.com/calendar/render?'+p}
 function ics(e){
-  const L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Zharshy//KZ','BEGIN:VEVENT','UID:'+e.id+'@zharshy','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z',
-   'DTSTART;VALUE=DATE:'+ymd(e.start),'DTEND;VALUE=DATE:'+ymd(addDays(endOf(e),1)),'SUMMARY:'+e.title.replace(/[,;]/g,'\\$&'),
-   'LOCATION:'+[e.venue,e.city].filter(Boolean).join(', ').replace(/[,;]/g,'\\$&'),'DESCRIPTION:'+(e.description||'').replace(/[,;]/g,'\\$&'),
-   'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Завтра: '+e.title,'END:VALARM','END:VEVENT','END:VCALENDAR'];
-  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([L.join('\r\n')],{type:'text/calendar'}));a.download=e.id+'.ics';document.body.appendChild(a);a.click();a.remove();
+  const q=s=>String(s).replace(/[,;\\]/g,'\\$&');
+  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Zharshy//KZ','BEGIN:VEVENT','UID:'+e.id+'@zharshy','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').slice(0,15)+'Z',
+   'DTSTART;VALUE=DATE:'+ymd(e.start),'DTEND;VALUE=DATE:'+ymd(addDays(endOf(e),1)),'SUMMARY:'+q(fld(e,'title')),
+   'LOCATION:'+q([fld(e,'venue'),cityName(e.city)].filter(Boolean).join(', ')),'DESCRIPTION:'+q(fld(e,'description')),
+   'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:'+q(fld(e,'title')),'END:VALARM','END:VEVENT','END:VCALENDAR'];
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([lines.join('\r\n')],{type:'text/calendar'}));a.download=e.id+'.ics';document.body.appendChild(a);a.click();a.remove();
 }
 const inFrame=(()=>{try{return window.self!==window.top}catch(e){return true}})();
-
 function openEv(id){
   const e=DATA.events.find(x=>x.id===id); if(!e) return;
-  const row=(k,v)=>v?`<dt>${k}</dt><dd>${v}</dd>`:'';
+  const row=(k,v)=>v?`<dt>${esc(t(k))}</dt><dd>${v}</dd>`:'';
+  const ed=edition(e);
+  $('sheet').dataset.ev=id;
   $('sheet').innerHTML=`<button class="x" data-close>×</button>
-   <div class="tags"><span class="tag lv-${esc(e.level)}">${esc(LEVELS[e.level]||'')}</span><span class="tag">${esc(TYPES[e.type]||'')}</span>${e.edition?`<span class="tag">${esc(e.edition)}</span>`:''}</div>
-   <h2>${esc(e.title)}</h2>
-   <div>${esc(e.description||'')}</div>
+   <div class="tags"><span class="tag lv-${esc(e.level)}">${esc(L().levels[e.level]||'')}</span><span class="tag">${esc(L().types[e.type]||'')}</span>${ed?`<span class="tag">${esc(ed)}</span>`:''}</div>
+   <h2>${esc(fld(e,'title'))}</h2>
+   <div>${esc(fld(e,'description'))}</div>
    <dl class="kv">
-     ${row('Даты',esc(fmtRange(e)))}${row('Город',esc(e.city))}${row('Площадка',esc(e.venue))}
-     ${row('Отрасли',esc((e.industries||[]).join(', ')))}${row('Организатор',esc(e.organizer))}
-     ${row('Телефон',e.phone?`<a href="tel:${esc(e.phone.replace(/\s/g,''))}">${esc(e.phone)}</a>`:'')}
-     ${row('E-mail',e.email?`<a href="mailto:${esc(e.email)}">${esc(e.email)}</a>`:'')}
-     ${row('Сайт',e.site?`<a href="${esc(e.site)}" target="_blank" rel="noopener">${esc(e.site.replace(/^https?:\/\//,''))}</a>`:'')}
+     ${row('f_dates',esc(fmtRange(e)))}${row('f_city',esc(cityName(e.city)))}${row('f_venue',esc(fld(e,'venue')))}
+     ${row('f_ind',esc((e.industries||[]).map(indName).join(', ')))}${row('f_org',esc(fld(e,'organizer')))}
+     ${row('f_phone',e.phone?`<a href="tel:${esc(e.phone.replace(/\s/g,''))}">${esc(e.phone)}</a>`:'')}
+     ${row('f_email',e.email?`<a href="mailto:${esc(e.email)}">${esc(e.email)}</a>`:'')}
+     ${row('f_site',e.site?`<a href="${esc(e.site)}" target="_blank" rel="noopener">${esc(e.site.replace(/^https?:\/\//,''))}</a>`:'')}
    </dl>
    <div class="actions">
-     <button class="btn gold" data-fav="${esc(e.id)}">${favs.has(e.id)?'★ Слежу':'☆ Следить'}</button>
-     <a class="btn pri" href="${esc(gcal(e))}" target="_blank" rel="noopener">＋ Google Календарь</a>
-     ${inFrame?'':`<button class="btn" data-ics="${esc(e.id)}">⬇ .ics (iPhone/Outlook)</button>`}
+     <button class="btn gold" data-fav="${esc(e.id)}">${esc(favs.has(e.id)?t('following'):t('follow'))}</button>
+     <a class="btn pri" href="${esc(gcal(e))}" target="_blank" rel="noopener">${esc(t('gcal'))}</a>
+     ${inFrame?'':`<button class="btn" data-ics="${esc(e.id)}">${esc(t('ics'))}</button>`}
    </div>
-   <div class="src">Источник: ${e.source_url?`<a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_name||e.source_url)}</a>`:'—'}</div>`;
+   <div class="src">${esc(t('source'))}: ${e.source_url?`<a href="${esc(e.source_url)}" target="_blank" rel="noopener">${esc(e.source_name||e.source_url)}</a>`:'—'}</div>`;
   $('modal').classList.add('open');
 }
-function openAbout(){
-  $('sheet').innerHTML=`<button class="x" data-close>×</button><div class="about">
-  <h2>Жаршы — как это работает</h2>
-  <p>В старину жаршы объезжал аулы и объявлял людям важные новости. Здесь его работу делает паук: каждые 3 часа он обходит сайты выставочных компаний, госорганов, агрегаторов и публичные каналы, а ИИ вытаскивает из найденного текста название, даты, город, уровень, организатора и контакты. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
-  <h3>Этапы</h3>
-  <ol>
-   <li><b>Сейчас.</b> Сайты (Iteca, EXPO, Атакент, gov.kz, invest.gov.kz, Astana Hub, агрегаторы) + открытые Telegram-каналы. Дашборд, фильтры, ☆ и добавление в календарь.</li>
-   <li><b>Далее.</b> Telegram-бот @zharshy_bot: перешлите ему анонс или вебинар из любого чата (в том числе из WhatsApp) — он сам разберёт и добавит. Форма «Добавить мероприятие» для организаторов.</li>
-   <li><b>Личный кабинет.</b> Вход по телефону/Telegram, подписки по отраслям и городам, напоминания за 7 дней / 1 день / 1 час, утренняя сводка.</li>
-   <li><b>Соцсети.</b> Facebook, Instagram и TikTok — через официальные API и партнёрство с организаторами (у Meta и TikTok сбор чужих постов закрыт правилами).</li>
-  </ol></div>`;
-  $('modal').classList.add('open');
-}
-function toggleFav(id){favs.has(id)?favs.delete(id):favs.add(id);store.set('zh-favs',[...favs]);render();if($('modal').classList.contains('open')&&$('sheet').querySelector(`[data-fav="${CSS.escape(id)}"]`))openEv(id)}
+function openAbout(){$('sheet').dataset.ev='';$('sheet').innerHTML=`<button class="x" data-close>×</button><div class="about">${L().about}</div>`;$('modal').classList.add('open')}
+function toggleFav(id){favs.has(id)?favs.delete(id):favs.add(id);store.set('zh-favs',[...favs]);render();if($('modal').classList.contains('open')&&$('sheet').dataset.ev===id)openEv(id)}
 
+/* ---------- события ---------- */
 document.addEventListener('click',ev=>{
+  const lg=ev.target.closest('[data-lang]'); if(lg){lang=lg.dataset.lang;store.set('zh-lang',lang);applyLang();return}
   const f=ev.target.closest('[data-fav]'); if(f){ev.stopPropagation();toggleFav(f.dataset.fav);return}
   const ic=ev.target.closest('[data-ics]'); if(ic){ics(DATA.events.find(e=>e.id===ic.dataset.ics));return}
   if(ev.target.closest('[data-close]')||ev.target.id==='modal'){$('modal').classList.remove('open');return}
-  const n=ev.target.closest('[data-nav]'); if(n){const [y,m]=calMonth.split('-').map(Number);const d=new Date(Date.UTC(y,m-1+ +n.dataset.nav,1));calMonth=d.toISOString().slice(0,7);render();return}
+  if(ev.target.closest('[data-clearday]')){selDay=null;render();return}
+  const dc=ev.target.closest('[data-day]'); if(dc){selDay=selDay===dc.dataset.day?null:dc.dataset.day;if(view!=='list')setView('list');render();return}
+  const ct=ev.target.closest('[data-city]'); if(ct){const s=$('fCity');s.value=s.value===ct.dataset.city?'':ct.dataset.city;render();return}
+  const n=ev.target.closest('[data-nav]'); if(n){const [y,m]=calMonth.split('-').map(Number);calMonth=new Date(Date.UTC(y,m-1+ +n.dataset.nav,1)).toISOString().slice(0,7);render();return}
   const it=ev.target.closest('[data-id]'); if(it){openEv(it.dataset.id)}
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')$('modal').classList.remove('open')});

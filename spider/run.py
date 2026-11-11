@@ -48,12 +48,15 @@ PROMPT = """Ты — сборщик анонсов деловых меропри
 
 Верни ТОЛЬКО JSON-массив (может быть пустым []). Каждый элемент:
 {{"title": str, "type": one of {types}, "level": one of {levels},
-  "edition": str ("21-я", "III" — если указан номер проведения, иначе ""),
+  "edition": int (номер проведения, если указан: 21; иначе null),
   "industries": [1-3 значения из {industries}],
   "city": str (по-русски, "Онлайн" для вебинаров), "venue": str,
   "start": "YYYY-MM-DD", "end": "YYYY-MM-DD",
   "organizer": str, "phone": str, "email": str, "site": str (URL),
-  "description": str (1–2 предложения своими словами, по-русски)}}
+  "description": str (1–2 предложения своими словами, по-русски),
+  "i18n": {{"kk": {{"title": str, "description": str, "venue": str}},
+           "en": {{"title": str, "description": str, "venue": str}}}}
+  — переводы на казахский (грамотный литературный язык) и английский; бренды (HOREX, KIOGE) не переводи}}
 Не выдумывай: неизвестные поля оставляй пустой строкой. Если год не указан, выбери ближайший будущий.
 
 ТЕКСТ:
@@ -136,11 +139,20 @@ def clean(it: dict, source: str, url: str) -> dict | None:
     city = str(it.get("city", "")).strip()
     city = CITIES.get(city.lower(), city) or "уточняется"
     inds = [x for x in it.get("industries", []) if x in INDUSTRIES][:3]
+    try:
+        ed = int(re.match(r"\d+", str(it.get("edition") or "")).group(0))
+    except (AttributeError, ValueError):
+        ed = None
+    i18n = {}
+    for lg in ("kk", "en"):
+        src = (it.get("i18n") or {}).get(lg) or {}
+        if isinstance(src, dict):
+            i18n[lg] = {k: str(src.get(k, ""))[:600] for k in ("title", "description", "venue") if src.get(k)}
     ev = {
         "title": title[:200],
         "type": it.get("type") if it.get("type") in TYPES else "conference",
         "level": it.get("level") if it.get("level") in LEVELS else "industry",
-        "edition": str(it.get("edition", ""))[:20],
+        "edition": ed,
         "industries": inds,
         "city": city, "venue": str(it.get("venue", ""))[:200],
         "start": start, "end": end,
@@ -149,6 +161,7 @@ def clean(it: dict, source: str, url: str) -> dict | None:
         "site": str(it.get("site", ""))[:300] if str(it.get("site", "")).startswith("http") else "",
         "description": str(it.get("description", ""))[:600],
         "source_url": url, "source_name": source,
+        "i18n": i18n,
     }
     ev["id"] = make_id(ev)
     return ev

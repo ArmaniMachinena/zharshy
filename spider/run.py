@@ -254,6 +254,24 @@ def main() -> int:
         except Exception as e:
             print(f"  ✗ {name} (ИИ): {e}")
 
+    # WhatsApp-группы через GREEN-API
+    try:
+        import whatsapp
+        if whatsapp.configured():
+            for name, text in whatsapp.jobs():
+                if not have_key:
+                    continue
+                evs = extract(text, name, "", today)
+                for e in evs:
+                    e["source_url"] = ""          # ссылки на группу наружу не отдаём
+                    e["source_name"] = "WhatsApp"   # название группы тоже не публикуем
+                print(f"  ✓ {name}: {len(evs)} событий")
+                found += evs
+        else:
+            print("  · WhatsApp не настроен (нет секретов GREEN_API_*)")
+    except Exception as e:
+        print(f"  ✗ WhatsApp: {e}")
+
     if not have_key:
         return 0
     events, added = merge(db.get("events", []), found)

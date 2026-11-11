@@ -18,6 +18,9 @@ jobs:
       - name: Обход источников
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GREEN_API_URL: ${{ secrets.GREEN_API_URL }}
+          GREEN_ID_INSTANCE: ${{ secrets.GREEN_ID_INSTANCE }}
+          GREEN_API_TOKEN: ${{ secrets.GREEN_API_TOKEN }}
         run: python spider/run.py
       - name: Сохранить базу
         run: |

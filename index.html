@@ -37,7 +37,7 @@ header::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;hei
 .hbtn:hover{background:rgba(255,255,255,.26)}
 @media (max-width:600px){.hright{margin-left:0;align-items:flex-start;width:100%}.hmeta{justify-content:flex-start;text-align:left}}
 /* layout */
-main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:330px 1fr;gap:20px;align-items:start}
+main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:360px 1fr;gap:20px;align-items:start}
 @media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
@@ -45,8 +45,7 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .ptitle h2{margin:0;font-size:17px}
 .ptitle span{color:var(--muted);font-size:12.5px}
 /* left */
-.alerts{position:sticky;top:12px;padding:16px}
-@media (max-width:900px){.alerts{position:static}}
+.alerts{padding:16px}
 .alerts h2{margin:0 0 2px;font-size:18px}
 .alerts .sub{color:var(--muted);font-size:12.5px;margin-bottom:6px}
 .bucket{margin-top:14px}
@@ -98,8 +97,9 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .mapwrap{padding:6px 10px 12px;position:relative}
 .mapwrap svg{width:100%;height:auto;display:block}
 .land{fill:#eaf5f7;stroke:#9fcbd6;stroke-width:1.4}
-.cdot{fill:#b9c9ce}
-.clab{font-size:10.5px;fill:#6c7f86;font-weight:600;pointer-events:none}
+.cdot{fill:#a9bcc2}
+.left .mapwrap{padding:4px 6px 10px}
+.clab{font-size:16px;fill:#6c7f86;font-weight:600;pointer-events:none}
 .city{cursor:pointer}
 .city .glow{transform-box:fill-box;transform-origin:center;animation:pulse 2.2s ease-out infinite}
 .city.t0 .glow{fill:var(--red)} .city.t0 .st{fill:var(--red)}
@@ -108,8 +108,8 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .city.t2 .glow{animation:none;opacity:.18}
 .city .st{stroke:#fff;stroke-width:1.2;filter:drop-shadow(0 0 4px rgba(232,169,0,.7))}
 .city.t0 .st{filter:drop-shadow(0 0 5px rgba(214,69,61,.8))}
-.city .lab{font-size:12px;font-weight:800;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:3px}
-.city .cnt{font-size:9.5px;font-weight:800;fill:#fff}
+.city .lab{font-size:20px;font-weight:800;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:3px}
+.city .cnt{font-size:14px;font-weight:800;fill:#fff}
 .city.selc .st{stroke:var(--ink);stroke-width:2}
 @keyframes pulse{0%{transform:scale(.5);opacity:.75}100%{transform:scale(2.4);opacity:0}}
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--muted);padding:0 14px 14px}
@@ -198,6 +198,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 </header>
 
 <main>
+  <div class="col left">
   <aside class="panel alerts">
     <h2 data-i="attn"></h2>
     <div class="sub" data-i="attnSub"></div>
@@ -206,6 +207,16 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
     <div class="bucket"><h3><span data-i="in5"></span> <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
     <div class="bucket"><h3>★ <span data-i="mine"></span> <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
   </aside>
+    <section class="panel">
+      <div class="ptitle"><h2 data-i="map"></h2><span data-i="mapSub"></span></div>
+      <div class="mapwrap" id="map"></div>
+      <div class="legend">
+        <span><i style="background:var(--red)"></i><span data-i="legToday"></span></span>
+        <span><i style="background:var(--gold)"></i><span data-i="leg30"></span></span>
+        <span><i style="background:var(--sky)"></i><span data-i="legLater"></span></span>
+      </div>
+    </section>
+  </div>
 
   <div class="col">
     <section class="panel">
@@ -217,15 +228,6 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
       <div class="strip" id="strip"></div>
     </section>
 
-    <section class="panel">
-      <div class="ptitle"><h2 data-i="map"></h2><span data-i="mapSub"></span></div>
-      <div class="mapwrap" id="map"></div>
-      <div class="legend">
-        <span><i style="background:var(--red)"></i><span data-i="legToday"></span></span>
-        <span><i style="background:var(--gold)"></i><span data-i="leg30"></span></span>
-        <span><i style="background:var(--sky)"></i><span data-i="legLater"></span></span>
-      </div>
-    </section>
 
     <section class="panel">
       <div class="tools">
@@ -484,6 +486,7 @@ function renderStrip(){
 
 /* ---------- карта ---------- */
 const KZ=[[46.7,48.9],[47.1,50.4],[48.7,50.6],[48.6,51.6],[50.8,51.7],[52.3,51.8],[54.6,51.0],[55.7,50.6],[57.3,51.0],[58.5,51.1],[59.6,50.5],[61.4,50.8],[61.6,51.3],[60.0,51.9],[61.0,52.9],[60.8,53.7],[61.6,54.0],[63.3,54.2],[65.2,54.6],[68.2,54.9],[69.1,55.4],[70.8,55.3],[71.2,54.1],[73.5,54.0],[73.4,53.5],[76.3,54.2],[76.6,53.6],[77.9,53.3],[79.0,52.3],[80.0,50.9],[81.5,51.2],[83.0,51.0],[85.0,50.0],[86.0,49.6],[87.3,49.2],[86.0,48.5],[85.5,47.0],[83.0,47.2],[82.3,45.5],[80.0,45.0],[80.2,42.2],[79.0,42.8],[76.0,43.0],[74.0,43.2],[73.4,42.5],[71.8,42.8],[70.9,42.3],[70.0,41.5],[69.0,41.4],[68.6,40.7],[68.0,41.0],[66.5,41.2],[66.0,42.9],[64.0,43.6],[62.0,43.5],[61.0,44.4],[58.6,45.6],[56.0,45.0],[56.0,41.3],[55.0,41.3],[52.9,41.8],[52.4,42.5],[51.3,43.2],[51.0,44.4],[50.3,44.6],[51.4,45.3],[53.0,45.3],[53.2,46.7],[51.2,47.1],[49.2,46.4],[48.6,46.6],[49.0,47.3],[48.0,47.8]];
+const NOLAB=new Set(['Тараз','Туркестан','Караганда','Кокшетау','Талдыкорган','Жезказган']);
 const PX=(lon,lat)=>[10+(lon-46.3)*0.67*21.5,10+(55.7-lat)*21.5];
 function starPts(cx,cy,R,r){let p=[];for(let i=0;i<10;i++){const a=-Math.PI/2+i*Math.PI/5,rr=i%2?r:R;p.push((cx+rr*Math.cos(a)).toFixed(1)+','+(cy+rr*Math.sin(a)).toFixed(1))}return p.join(' ')}
 function renderMap(){
@@ -494,15 +497,15 @@ function renderMap(){
     if(v.length<4) return;
     const minor=v[4];
     const [x,y]=PX(v[2],v[3]), evs=base.filter(e=>e.city===ru);
-    if(!evs.length){if(minor) return;dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="2.6"/><text class="clab" x="${x+5}" y="${y+3.5}">${esc(cityName(ru))}</text>`;return}
+    if(!evs.length){if(minor) return;const lab=!NOLAB.has(ru),rt=false;dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="3.4"/>`+(lab?`<text class="clab" x="${rt?x-7:x+7}" y="${y+5.5+(ru==='Усть-Каменогорск'?16:0)}">${esc(cityName(ru))}</text>`:'');return}
     const tier=evs.some(e=>overlaps(e,td,td))?0:evs.some(e=>e.start<=d30)?1:2;
     const n=evs.length;
     hot+=`<g class="city t${tier} ${sel===ru?'selc':''}" data-city="${esc(ru)}"><title>${esc(cityName(ru))}: ${n}</title>
-      <circle class="glow" cx="${x}" cy="${y}" r="11"/>
-      <polygon class="st" points="${starPts(x,y,11,4.8)}"/>
-      <text class="lab" x="${x+14}" y="${y+4}">${esc(cityName(ru))} · ${n}</text></g>`;
+      <circle class="glow" cx="${x}" cy="${y}" r="15"/>
+      <polygon class="st" points="${starPts(x,y,15,6.5)}"/>
+      <text class="lab" x="${x+18}" y="${y+7}">${esc(cityName(ru))} · ${n}</text></g>`;
   });
-  $('map').innerHTML=`<svg viewBox="0 0 620 340" role="img" aria-label="${esc(t('map'))}"><polygon class="land" points="${outline}"/>${dots}${hot}</svg>`;
+  $('map').innerHTML=`<svg viewBox="0 0 715 340" role="img" aria-label="${esc(t('map'))}"><polygon class="land" points="${outline}"/>${dots}${hot}</svg>`;
 }
 
 /* ---------- список и месяц ---------- */

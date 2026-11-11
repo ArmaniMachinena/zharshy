@@ -59,6 +59,21 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .mini .t{font-weight:700;font-size:14px;line-height:1.3}
 .mini .m{color:var(--muted);font-size:12.5px;margin-top:2px}
 .empty{color:var(--muted);font-size:13px;padding:6px 2px}
+/* stats */
+.stats{padding:12px 14px 14px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:10px 10px 9px;background:#fff;min-width:0}
+.kpi.hero{background:linear-gradient(135deg,var(--sky-d),var(--sky));color:#fff;border-color:transparent}
+.kpi .v{font-size:26px;font-weight:800;line-height:1.05;letter-spacing:-.01em}
+.kpi .l{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:3px}
+.kpi.hero .l{color:#dff6fb}
+.kpi .fill{height:4px;border-radius:2px;background:var(--sky-l);margin-top:7px;overflow:hidden}
+.kpi .fill i{display:block;height:100%;background:var(--gold);border-radius:2px;transition:width .8s ease}
+.kpi.hero .fill{background:rgba(255,255,255,.25)} .kpi.hero .fill i{background:#fff}
+.facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:800}
+.facts .new b{color:var(--green)}
 /* 30 days */
 .strip{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;padding:12px 14px 14px}
 @media (max-width:1100px){.strip{grid-template-columns:repeat(7,1fr)}}
@@ -194,6 +209,10 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 
   <div class="col">
     <section class="panel">
+      <div class="ptitle"><h2 data-i="dbTitle"></h2><span data-i="dbSub"></span></div>
+      <div class="stats"><div class="kpis" id="kpis"></div><div class="facts" id="facts"></div></div>
+    </section>
+    <section class="panel">
       <div class="ptitle"><h2 data-i="days30"></h2><span data-i="days30sub"></span></div>
       <div class="strip" id="strip"></div>
     </section>
@@ -242,7 +261,7 @@ const I18N={
   days30:'30 дней вперёд',days30sub:'нажмите на день — покажу его события',
   map:'Карта мероприятий',mapSub:'нажмите на город',legToday:'идёт сегодня',leg30:'в ближайшие 30 дней',legLater:'позже',
   search:'Поиск: водород, нефть, Iteca…',allCities:'Все города',allInd:'Все отрасли',anyLevel:'Любой уровень',allTypes:'Все форматы',
-  allDates:'Все даты',d7:'7 дней',d30:'30 дней',d90:'3 месяца',past:'Прошедшие (архив)',approx:'дата уточняется',myBtn:'★ Мои',listV:'Список',calV:'Календарь',
+  allDates:'Все даты',d7:'7 дней',d30:'30 дней',d90:'3 месяца',past:'Прошедшие (архив)',dbTitle:'База Жаршы',dbSub:'сколько мероприятий впереди',k_total:'Всего впереди',k_week:'Неделя',k_month:'Месяц',k_q:'Квартал',k_h:'Полгода',k_y:'Год',x_all:'всего в базе',x_cities:'городов',x_ind:'отраслей',x_src:'источников',x_org:'организаторов',x_arch:'в архиве',x_new:'новых за сутки',approx:'дата уточняется',myBtn:'★ Мои',listV:'Список',calV:'Календарь',
   found:'Найдено',nothing:'Ничего не найдено. Попробуйте снять фильтры.',
   footer:'Жаршы собирает анонсы из открытых источников. Перед поездкой сверяйте даты на сайте организатора.',
   f_dates:'Даты',f_city:'Город',f_venue:'Площадка',f_ind:'Отрасли',f_org:'Организатор',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
@@ -267,7 +286,7 @@ const I18N={
   days30:'Алдағы 30 күн',days30sub:'күнді бассаңыз — сол күнгі іс-шаралар шығады',
   map:'Іс-шаралар картасы',mapSub:'қаланы басыңыз',legToday:'бүгін өтуде',leg30:'алдағы 30 күнде',legLater:'кейінірек',
   search:'Іздеу: сутегі, мұнай, Iteca…',allCities:'Барлық қалалар',allInd:'Барлық салалар',anyLevel:'Кез келген деңгей',allTypes:'Барлық форматтар',
-  allDates:'Барлық күндер',d7:'7 күн',d30:'30 күн',d90:'3 ай',past:'Өткен (мұрағат)',approx:'күні нақтыланады',myBtn:'★ Менің',listV:'Тізім',calV:'Күнтізбе',
+  allDates:'Барлық күндер',d7:'7 күн',d30:'30 күн',d90:'3 ай',past:'Өткен (мұрағат)',dbTitle:'Жаршы базасы',dbSub:'алда қанша іс-шара бар',k_total:'Алда барлығы',k_week:'Апта',k_month:'Ай',k_q:'Тоқсан',k_h:'Жарты жыл',k_y:'Жыл',x_all:'базада барлығы',x_cities:'қала',x_ind:'сала',x_src:'дереккөз',x_org:'ұйымдастырушы',x_arch:'мұрағатта',x_new:'тәулік ішінде жаңа',approx:'күні нақтыланады',myBtn:'★ Менің',listV:'Тізім',calV:'Күнтізбе',
   found:'Табылды',nothing:'Ештеңе табылмады. Сүзгілерді алып тастап көріңіз.',
   footer:'Жаршы хабарландыруларды ашық дереккөздерден жинайды. Сапар алдында күндерін ұйымдастырушының сайтынан тексеріңіз.',
   f_dates:'Күндері',f_city:'Қала',f_venue:'Өтетін орны',f_ind:'Салалар',f_org:'Ұйымдастырушы',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
@@ -293,7 +312,7 @@ const I18N={
   days30:'Next 30 days',days30sub:'tap a day to see its events',
   map:'Event map',mapSub:'tap a city',legToday:'on today',leg30:'within 30 days',legLater:'later',
   search:'Search: hydrogen, oil, Iteca…',allCities:'All cities',allInd:'All industries',anyLevel:'Any level',allTypes:'All formats',
-  allDates:'All dates',d7:'7 days',d30:'30 days',d90:'3 months',past:'Past (archive)',approx:'date TBC',myBtn:'★ Mine',listV:'List',calV:'Calendar',
+  allDates:'All dates',d7:'7 days',d30:'30 days',d90:'3 months',past:'Past (archive)',dbTitle:'Zharshy database',dbSub:'how many events lie ahead',k_total:'Upcoming total',k_week:'Week',k_month:'Month',k_q:'Quarter',k_h:'Half-year',k_y:'Year',x_all:'in database',x_cities:'cities',x_ind:'industries',x_src:'sources',x_org:'organizers',x_arch:'archived',x_new:'new in 24 h',approx:'date TBC',myBtn:'★ Mine',listV:'List',calV:'Calendar',
   found:'Found',nothing:'Nothing found. Try clearing the filters.',
   footer:'Zharshy collects announcements from open sources. Check dates on the organizer’s website before you travel.',
   f_dates:'Dates',f_city:'City',f_venue:'Venue',f_ind:'Industries',f_org:'Organizer',f_phone:'Phone',f_email:'E-mail',f_site:'Website',
@@ -430,6 +449,24 @@ function renderAlerts(){
   put('bFav','nFav',fav,e=>{const n=diffDays(td,e.start);return mini(e,(n>0?t('inN',n):t('liveNow'))+' · ')},'emptyFav');
 }
 
+/* ---------- метрики базы ---------- */
+function countUp(el,to){const from=+el.dataset.v||0;el.dataset.v=to;if(from===to){el.textContent=to.toLocaleString('ru-RU');return}
+  const t0=performance.now(),D=700;(function step(n){const k=Math.min(1,(n-t0)/D),v=Math.round(from+(to-from)*(1-Math.pow(1-k,3)));el.textContent=v.toLocaleString('ru-RU');if(k<1)requestAnimationFrame(step)})(t0)}
+function renderStats(){
+  const td=todayISO(), all=DATA.events, up=all.filter(e=>endOf(e)>=td);
+  const win=n=>up.filter(e=>e.start<=addDays(td,n)).length;
+  const k=[['k_total',up.length,1],['k_week',win(7)],['k_month',win(30)],['k_q',win(91)],['k_h',win(182)],['k_y',win(365)]];
+  const box=$('kpis');
+  if(!box.children.length) box.innerHTML=k.map((x,i)=>`<div class="kpi ${i===0?'hero':''}"><div class="v" data-v="0">0</div><div class="l"></div><div class="fill"><i style="width:0"></i></div></div>`).join('');
+  const max=Math.max(1,up.length);
+  k.forEach(([key,v],i)=>{const c=box.children[i];c.querySelector('.l').textContent=t(key);countUp(c.querySelector('.v'),v);c.querySelector('.fill i').style.width=(i===0?100:Math.round(v/max*100))+'%'});
+  const uniq=f=>new Set(all.flatMap(f).filter(Boolean)).size;
+  const dayAgo=Date.now()-864e5, fresh=all.filter(e=>e.found_at&&Date.parse(e.found_at)>dayAgo).length;
+  const facts=[[all.length,'x_all'],[uniq(e=>[e.city].filter(c=>c&&c!=='уточняется'&&c!=='Онлайн')),'x_cities'],[uniq(e=>e.industries||[]),'x_ind'],
+    [uniq(e=>[e.source_name,...(e.also_in||[])]),'x_src'],[uniq(e=>[e.organizer].filter(o=>o&&o!=='уточняется')),'x_org'],[all.length-up.length,'x_arch']];
+  $('facts').innerHTML=facts.map(([v,key])=>`<span><b>${v}</b> ${esc(t(key))}</span>`).join('')+(fresh?`<span class="new"><b>+${fresh}</b> ${esc(t('x_new'))}</span>`:'');
+}
+
 /* ---------- 30 дней ---------- */
 function renderStrip(){
   const td=todayISO(), base=filtered({noDay:true,noPeriod:true});
@@ -501,7 +538,7 @@ function renderCal(arr){
 function render(){
   const arr=filtered();
   $('count').innerHTML=`<span>${esc(t('found'))}: ${arr.length}</span>`+(selDay?`<button class="pill" data-clearday>📅 ${esc(fmtDay(selDay,false))} ✕</button>`:'');
-  renderAlerts(); renderStrip(); renderMap();
+  renderAlerts(); renderStats(); renderStrip(); renderMap();
   if(view==='list') renderList(arr); else renderCal(filtered({noDay:true}));
 }
 function setView(v){view=v;$('vList').classList.toggle('on',v==='list');$('vCal').classList.toggle('on',v==='cal');$('list').hidden=v!=='list';$('cal').hidden=v!=='cal';}

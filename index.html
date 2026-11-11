@@ -22,7 +22,7 @@ a{color:var(--sky-d)}
 header{background:linear-gradient(120deg,var(--sky-d),var(--sky));color:#fff;padding:14px 20px;position:relative;overflow:hidden}
 header::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;
   background:radial-gradient(circle,rgba(232,169,0,.55) 0 22%,transparent 23%),repeating-conic-gradient(rgba(232,169,0,.35) 0 4deg,transparent 4deg 12deg);opacity:.5;pointer-events:none}
-.hwrap{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
+.hwrap{max-width:1560px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:1}
 .logo{display:flex;align-items:center;gap:10px}
 .logo svg{flex:none}
 .logo b{font-size:26px;letter-spacing:.06em;font-weight:800}
@@ -37,8 +37,10 @@ header::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;hei
 .hbtn:hover{background:rgba(255,255,255,.26)}
 @media (max-width:600px){.hright{margin-left:0;align-items:flex-start;width:100%}.hmeta{justify-content:flex-start;text-align:left}}
 /* layout */
-main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:360px 1fr;gap:20px;align-items:start}
-@media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}}
+main{max-width:1560px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-template-columns:310px minmax(0,1fr) 340px;gap:18px;align-items:start}
+@media (max-width:1250px){main{grid-template-columns:310px minmax(0,1fr)}.col.right{grid-column:1;grid-row:2}}
+@media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}main>.col{display:contents}
+  .p-alerts{order:1}.p-list{order:2}.p-strip{order:3}.p-stats{order:4}.p-map{order:5}}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
 .ptitle{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 14px 0}
@@ -73,6 +75,20 @@ main{max-width:1280px;margin:0 auto;padding:18px 20px 40px;display:grid;grid-tem
 .facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
 .facts b{color:var(--ink);font-weight:800}
 .facts .new b{color:var(--green)}
+/* narrow left map */
+@media (min-width:901px){.left .clab{display:none}.left .city .lab{font-size:30px}.left .cdot{r:5}}
+/* narrow right column */
+@media (min-width:901px){
+ .right .kpis{grid-template-columns:repeat(2,1fr)} .right .kpi.hero{grid-column:span 2}
+ .right .kpi.hero .v{font-size:32px}
+ .right .strip,.left .strip{grid-template-columns:repeat(6,1fr);gap:4px}
+ .right .dcell{min-height:54px;padding:4px}
+ .right .dcell .dn{font-size:15px}
+ .right .bar{font-size:0;height:4px;padding:0;background:var(--sky)} .right .bar.more{font-size:9.5px;height:auto;background:none}
+ .right .dcell.sel .bar{background:#fff} .right .dcell.sel .bar.more{background:none}
+ .right .dcell .wd{font-size:9.5px}
+}
+@media (min-width:901px) and (max-width:1250px){.right .kpis{grid-template-columns:repeat(2,1fr)}}
 /* 30 days */
 .strip{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;padding:12px 14px 14px}
 @media (max-width:1100px){.strip{grid-template-columns:repeat(7,1fr)}}
@@ -199,15 +215,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 
 <main>
   <div class="col left">
-  <aside class="panel alerts">
-    <h2 data-i="attn"></h2>
-    <div class="sub" data-i="attnSub"></div>
-    <div class="bucket today"><h3><span data-i="today"></span> <span class="n" id="nToday">0</span></h3><div id="bToday"></div></div>
-    <div class="bucket tom"><h3><span data-i="tomorrow"></span> <span class="n" id="nTom">0</span></h3><div id="bTom"></div></div>
-    <div class="bucket"><h3><span data-i="in5"></span> <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
-    <div class="bucket"><h3>★ <span data-i="mine"></span> <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
-  </aside>
-    <section class="panel">
+    <section class="panel p-map">
       <div class="ptitle"><h2 data-i="map"></h2><span data-i="mapSub"></span></div>
       <div class="mapwrap" id="map"></div>
       <div class="legend">
@@ -216,20 +224,17 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
         <span><i style="background:var(--sky)"></i><span data-i="legLater"></span></span>
       </div>
     </section>
+    <aside class="panel alerts p-alerts">
+    <h2 data-i="attn"></h2>
+    <div class="sub" data-i="attnSub"></div>
+    <div class="bucket today"><h3><span data-i="today"></span> <span class="n" id="nToday">0</span></h3><div id="bToday"></div></div>
+    <div class="bucket tom"><h3><span data-i="tomorrow"></span> <span class="n" id="nTom">0</span></h3><div id="bTom"></div></div>
+    <div class="bucket"><h3><span data-i="in5"></span> <span class="n" id="n5">0</span></h3><div id="b5"></div></div>
+    <div class="bucket"><h3>★ <span data-i="mine"></span> <span class="n" id="nFav">0</span></h3><div id="bFav"></div></div>
+  </aside>
   </div>
-
-  <div class="col">
-    <section class="panel">
-      <div class="ptitle"><h2 data-i="dbTitle"></h2><span data-i="dbSub"></span></div>
-      <div class="stats"><div class="kpis" id="kpis"></div><div class="facts" id="facts"></div></div>
-    </section>
-    <section class="panel">
-      <div class="ptitle"><h2 data-i="days30"></h2><span data-i="days30sub"></span></div>
-      <div class="strip" id="strip"></div>
-    </section>
-
-
-    <section class="panel">
+  <div class="col center">
+    <section class="panel p-list">
       <div class="tools">
         <input type="search" id="q">
         <select id="fCity"></select>
@@ -243,6 +248,16 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
       <div class="count" id="count"></div>
       <div class="list" id="list"></div>
       <div class="cal" id="cal" hidden></div>
+    </section>
+  </div>
+  <div class="col right">
+    <section class="panel p-stats">
+      <div class="ptitle"><h2 data-i="dbTitle"></h2><span data-i="dbSub"></span></div>
+      <div class="stats"><div class="kpis" id="kpis"></div><div class="facts" id="facts"></div></div>
+    </section>
+    <section class="panel p-strip">
+      <div class="ptitle"><h2 data-i="days30"></h2><span data-i="days30sub"></span></div>
+      <div class="strip" id="strip"></div>
     </section>
   </div>
 </main>

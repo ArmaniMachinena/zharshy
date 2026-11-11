@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-11T18:14+05:00",
+ "checked_at": "2026-11-11T20:57+05:00",
  "have_key": false,
  "sources": [
   {
@@ -60,19 +60,19 @@
    "name": "Акорда — новости и события",
    "url": "https://www.akorda.kz/ru",
    "group": "web",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 4680,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Премьер-министр РК — новости",
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 9098,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "gov.kz — МИД РК, мероприятия",
@@ -81,7 +81,7 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "404 Not Found"
+   "error": "404 Client Error: Not Found for url: https://www.gov.kz/org/mfa/press/events?lang=ru"
   },
   {
    "name": "gov.kz — Минпромстрой, мероприятия",
@@ -90,7 +90,7 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "404 Not Found"
+   "error": "404 Client Error: Not Found for url: https://www.gov.kz/org/mps/press/events?lang=ru"
   },
   {
    "name": "Advantour — выставки Алматы",
@@ -123,19 +123,19 @@
    "name": "Kazakhstan Machinery Fair",
    "url": "https://www.kmfexpo.kz/ru",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 12917,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "SU ARNASY Water Expo",
    "url": "https://waterexpo.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 16692,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "CM EXPO",
@@ -144,52 +144,52 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "wait"
+   "error": "403 Client Error: Forbidden for url: https://cmexpo.kz/"
   },
   {
    "name": "MINEX Kazakhstan",
    "url": "https://minexkazakhstan.com/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 16515,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Energy Trends",
    "url": "https://energytrends.kz",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 5311,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "ESE Forum",
    "url": "https://eseforum.ru/sobytiya",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7386,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "BT Expo",
    "url": "https://btexpo.kz/ru",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 5526,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Comtrux",
    "url": "https://comtrux.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7882,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "GITEX Central Asia",
@@ -198,115 +198,115 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "wait"
+   "error": "500 Server Error: Internal Server Error for url: https://www.gitexcac.com/rus/home"
   },
   {
    "name": "AMM",
    "url": "https://www.amm.kz",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 1433,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Electronica Expo",
    "url": "https://electronica-expo.com/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7106,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Mining Week Kazakhstan",
    "url": "https://miningweek.kz/en/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 352,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "KazDrilling",
    "url": "https://kaz-drilling.com/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7111,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "KIOGE",
    "url": "https://kioge.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 2371,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Astana Finance Days",
    "url": "https://astanafindays.org/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 60,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Space Days",
    "url": "https://spacedays.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 2281,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "AI Digital Bridge",
    "url": "https://digitalbridge.ai/en/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 525,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "People&Projects",
    "url": "https://peopleandprojects.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7139,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "TransLogistica",
    "url": "https://translogistica.kz/en/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 1510,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Powerexpo",
    "url": "https://powerexpo.kz/ru/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 2425,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Securex",
    "url": "https://securex.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 1747,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "United Medical Expo",
@@ -315,43 +315,43 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "wait"
+   "error": "403 Client Error: Forbidden for url: https://umtexpo.com/"
   },
   {
    "name": "AmCham Kazakhstan",
    "url": "https://amcham.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 436,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "КАО",
    "url": "https://kao.kz/ru/novosti/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 645,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "АНЭК",
    "url": "https://kffanek.kz/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 7891,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Календарь мероприятий KNS",
    "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
    "group": "sheets",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 8619,
    "events": null,
-   "error": "wait"
+   "error": ""
   },
   {
    "name": "Telegram @astanahub",

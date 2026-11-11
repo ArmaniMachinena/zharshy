@@ -14,7 +14,8 @@
 ## Запуск
 1. Settings → Secrets → Actions: `ANTHROPIC_API_KEY`.
 2. Settings → Pages: ветка `main`, папка `/`.
-3. Actions → «Жаршы — паук» → Run workflow.
+3. Публичный сайт: репозиторий zharshy-web (Pages). Секрет `WEB_TOKEN` — fine-grained токен с правом Contents: write только на zharshy-web.
+4. Actions → «Жаршы — паук» → Run workflow.
 
 ## Этапы
 1. **MVP (сейчас):** сайты выставочных компаний, gov.kz, invest.gov.kz, Astana Hub, агрегаторы + открытые Telegram-каналы (t.me/s/…). Дашборд, фильтры, избранное, календарь.

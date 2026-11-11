@@ -2,38 +2,1807 @@
  "updated_at": "2026-11-11T10:30:00+05:00",
  "events": [
   {
-   "id": "horex-2026",
-   "title": "HOREX 2026 — всё для отелей, ресторанов, супермаркетов",
+   "title": "Central Asia Coatings Show 2026",
    "type": "exhibition",
    "level": "international",
-   "edition": 21,
+   "edition": 3,
    "industries": [
-    "HoReCa",
-    "Ритейл и FMCG"
+    "Строительство"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-01-28",
+   "end": "2026-01-30",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://centralasiacoatingshow.com/en/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Central Asia Coatings Show 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Central Asia Coatings Show 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "central-asia-coatings-show-2026-8fdcbc",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Turning Points",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-01-28",
+   "end": "2026-01-28",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Turning Points",
+     "venue": ""
+    },
+    "en": {
+     "title": "Turning Points",
+     "venue": ""
+    }
+   },
+   "id": "turning-points-2026-fd659a",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "AmCham AGM — ежегодное общее собрание",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Финансы"
    ],
    "city": "Алматы",
-   "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
-   "start": "2026-11-11",
-   "end": "2026-11-13",
+   "venue": "",
+   "start": "2026-01-30",
+   "end": "2026-01-30",
+   "organizer": "AmCham Kazakhstan",
+   "phone": "",
+   "email": "",
+   "site": "https://amchamkz.glueup.com/event/annual-general-meeting-163143/tickets.html",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "AmCham AGM — жыл сайынғы жалпы жиналыс",
+     "venue": ""
+    },
+    "en": {
+     "title": "AmCham Annual General Meeting",
+     "venue": ""
+    }
+   },
+   "id": "amcham-agm-2026-5a3634",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Конференция АНЭК и КазАПО",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Транспорт и логистика"
+   ],
+   "city": "Алматы",
+   "venue": "Hilton Astana",
+   "start": "2026-02-01",
+   "end": "2026-02-28",
+   "organizer": "АНЭК, КазАПО",
+   "phone": "",
+   "email": "",
+   "site": "https://kffanek.kz/konferenciya-anek-i-kazapo-2025",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "ҰЭҚ және ҚазВОТА конференциясы",
+     "venue": ""
+    },
+    "en": {
+     "title": "ANEK & KazAPO Conference",
+     "venue": ""
+    }
+   },
+   "date_approx": "month",
+   "id": "anek-kazapo-conference-2026",
+   "found_at": "2026-11-11T19:47+05:00",
+   "also_in": []
+  },
+  {
+   "title": "Конференция «Возрождение Арала»",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Экология и ESG",
+    "Водное хозяйство"
+   ],
+   "city": "Щучинск",
+   "venue": "",
+   "start": "2026-02-06",
+   "end": "2026-02-06",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "«Аралды қайта жаңғырту» конференциясы",
+     "venue": ""
+    },
+    "en": {
+     "title": "“Revival of the Aral” conference",
+     "venue": ""
+    }
+   },
+   "id": "revival-of-the-aral-conference-2026",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Нетворкинг Atyrau Never Sleeps",
+   "type": "networking",
+   "level": "regional",
+   "edition": null,
+   "industries": [],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-02-13",
+   "end": "2026-02-13",
+   "organizer": "чат Atyrau Never Sleeps",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Atyrau Never Sleeps нетворкингі",
+     "venue": ""
+    },
+    "en": {
+     "title": "Atyrau Never Sleeps networking evening",
+     "venue": ""
+    }
+   },
+   "id": "atyrau-never-sleeps-2026-e47a6f",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Data Conference",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-03-01",
+   "end": "2026-03-31",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Data Conference",
+     "venue": ""
+    },
+    "en": {
+     "title": "Data Conference",
+     "venue": ""
+    }
+   },
+   "date_approx": "month",
+   "id": "data-conference-2026-4e621b",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroLogistics, Rental & Transportation 2026",
+   "type": "forum",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ",
+    "Транспорт и логистика"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-03-13",
+   "end": "2026-03-13",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroLogistics, Rental & Transportation 2026",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroLogistics, Rental & Transportation 2026",
+     "venue": ""
+    }
+   },
+   "id": "petrologistics-rental-transportation-2026-41e5f5",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "ICNSET: International Conference on Natural Science and Engineering Technology",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Образование"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-03-14",
+   "end": "2026-03-15",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://icnset.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "ICNSET: International Conference on Natural Science and Engineering Technology",
+     "venue": ""
+    },
+    "en": {
+     "title": "ICNSET: International Conference on Natural Science and Engineering Technology",
+     "venue": ""
+    }
+   },
+   "id": "icnset-international-conference-on-natur-2026-86fe00",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Евразийский межправсовет и Digital Forum",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация",
+    "Госуправление"
+   ],
+   "city": "уточняется",
+   "venue": "",
+   "start": "2026-03-26",
+   "end": "2026-03-27",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Еуразиялық үкіметаралық кеңес және Digital Forum",
+     "venue": ""
+    },
+    "en": {
+     "title": "Eurasian Intergovernmental Council & Digital Forum",
+     "venue": ""
+    }
+   },
+   "id": "digital-forum-2026-cc3781",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "ECOJER «DalaCarbon Forum» — межрегиональный экофорум",
+   "type": "forum",
+   "level": "regional",
+   "edition": 4,
+   "industries": [
+    "Экология и ESG"
+   ],
+   "city": "Бурабай",
+   "venue": "",
+   "start": "2026-03-27",
+   "end": "2026-03-27",
+   "organizer": "ECOJER",
+   "phone": "+7 747 142 4755",
+   "email": "info@ecojer.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "ECOJER «DalaCarbon Forum» — өңіраралық экологиялық форум",
+     "venue": ""
+    },
+    "en": {
+     "title": "ECOJER DalaCarbon Forum — interregional ecology forum",
+     "venue": ""
+    }
+   },
+   "id": "ecojer-dalacarbon-forum-2026-88bd8c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "CM EXPO",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Строительство"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-04-01",
+   "end": "2026-04-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://cmexpo.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "CM EXPO",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "CM EXPO",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "cm-expo-2026-c19f95",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Kazakhstan Machinery Fair",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Машиностроение"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-04-01",
+   "end": "2026-04-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.kmfexpo.kz/ru",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Kazakhstan Machinery Fair",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Kazakhstan Machinery Fair",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "kazakhstan-machinery-fair-2026-a6b7b9",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "SU ARNASY — Water Expo",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Водное хозяйство"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-04-01",
+   "end": "2026-04-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://waterexpo.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "SU ARNASY — Water Expo",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "SU ARNASY — Water Expo",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "su-arnasy-water-expo-2026-65693c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Geoscience & Exploration of Central Asia Forum",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-04-02",
+   "end": "2026-04-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Geoscience & Exploration of Central Asia Forum",
+     "venue": ""
+    },
+    "en": {
+     "title": "Geoscience & Exploration of Central Asia Forum",
+     "venue": ""
+    }
+   },
+   "id": "geoscience-exploration-of-central-asia-f-2026-b0bf35",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Секция по автомобилестроению на Kazakhstan Machinery Fair",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Машиностроение",
+    "Транспорт и логистика"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-04-03",
+   "end": "2026-04-03",
+   "organizer": "КАО",
+   "phone": "",
+   "email": "",
+   "site": "https://www.kmfexpo.kz/ru",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Kazakhstan Machinery Fair аясындағы автомобиль жасау секциясы",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Automotive session at Kazakhstan Machinery Fair",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "kazakhstan-machinery-fair-2026-840bf9",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Esri Central Asia GeoAI Summit",
+   "type": "summit",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-04-07",
+   "end": "2026-04-07",
+   "organizer": "Esri",
+   "phone": "",
+   "email": "",
+   "site": "https://survey123.arcgis.com/share/b2d306ec563e45329ab55a6226a17e0c",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Esri Central Asia GeoAI Summit",
+     "venue": ""
+    },
+    "en": {
+     "title": "Esri Central Asia GeoAI Summit",
+     "venue": ""
+    }
+   },
+   "id": "esri-central-asia-geoai-summit-2026-d3d211",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Atyrau Oil and Gas Conference 2026",
+   "type": "conference",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-04-08",
+   "end": "2026-04-10",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Atyrau Oil and Gas Conference 2026",
+     "venue": ""
+    },
+    "en": {
+     "title": "Atyrau Oil and Gas Conference 2026",
+     "venue": ""
+    }
+   },
+   "id": "atyrau-oil-and-gas-conference-2026-dc030c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroDigital 2026 — цифровизация в нефтегазе",
+   "type": "forum",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ",
+    "IT и цифровизация"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-04-10",
+   "end": "2026-04-10",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroDigital 2026 — мұнай-газ саласын цифрландыру",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroDigital 2026 — digitalization in oil & gas",
+     "venue": ""
+    }
+   },
+   "id": "petrodigital-2026-213706",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "MINEX Kazakhstan Forum",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-04-15",
+   "end": "2026-04-16",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://minexkazakhstan.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "MINEX Kazakhstan Forum",
+     "venue": ""
+    },
+    "en": {
+     "title": "MINEX Kazakhstan Forum",
+     "venue": ""
+    }
+   },
+   "id": "minex-kazakhstan-forum-2026-620a73",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Energy Trends: Gas & Petrochemicals",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ",
+    "Энергетика"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-04-17",
+   "end": "2026-04-17",
+   "organizer": "Energy Monitor",
+   "phone": "",
+   "email": "",
+   "site": "https://energytrends.kz",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Energy Trends: Gas & Petrochemicals",
+     "venue": ""
+    },
+    "en": {
+     "title": "Energy Trends: Gas & Petrochemicals",
+     "venue": ""
+    }
+   },
+   "id": "energy-trends-gas-petrochemicals-2026-762573",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Региональный экологический саммит 2026 (RES 2026)",
+   "type": "summit",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Экология и ESG"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-04-22",
+   "end": "2026-04-24",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.instagram.com/res_2026",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Өңірлік экологиялық саммит 2026 (RES 2026)",
+     "venue": ""
+    },
+    "en": {
+     "title": "Regional Ecological Summit 2026 (RES 2026)",
+     "venue": ""
+    }
+   },
+   "id": "res-2026-086cac",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "AstanaBuild 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Строительство",
+    "Дом и интерьер"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-04-28",
+   "end": "2026-04-30",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.gov.kz/memleket/entities/mps/press/events/details/42853?lang=ru",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "AstanaBuild 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "AstanaBuild 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "astanabuild-2026-7d97c3",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Международный транспортный форум «ЕСЭ ASIA-2026»",
+   "type": "forum",
+   "level": "international",
+   "edition": 3,
+   "industries": [
+    "Транспорт и логистика"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2026-04-28",
+   "end": "2026-04-29",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://eseforum.ru/sobytiya",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "«ЕСЭ ASIA-2026» халықаралық көлік форумы",
+     "venue": ""
+    },
+    "en": {
+     "title": "ESE ASIA-2026 International Transport Forum",
+     "venue": ""
+    }
+   },
+   "id": "asia-2026-6b4ade",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Чемпионат PetroMechChamp 2026",
+   "type": "competition",
+   "level": "industry",
+   "edition": 1,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-05-01",
+   "end": "2026-05-31",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroMechChamp 2026 чемпионаты",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroMechChamp 2026 championship",
+     "venue": ""
+    }
+   },
+   "date_approx": "month",
+   "id": "petromechchamp-2026-21192f",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Komtrans + Busexpo Astana и Eurasian Construction Technologies Astana 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Транспорт и логистика",
+    "Строительство"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-05-05",
+   "end": "2026-05-07",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://comtrux.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Komtrans + Busexpo Astana и Eurasian Construction Technologies Astana 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Comtrux + Busexpo Astana & Eurasian Construction Technologies Astana 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "komtrans-busexpo-astana-eurasian-constru-2026-19270c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Выставка по безопасности",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Охрана труда"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-05-13",
+   "end": "2026-05-15",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://electronica-expo.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Қауіпсіздік көрмесі",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Security Exhibition",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "security-exhibition-2026",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Форум-выставка автоматизации и цифровизации бизнеса",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-05-13",
+   "end": "2026-05-15",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://btexpo.kz/ru",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Бизнесті автоматтандыру және цифрландыру форум-көрмесі",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Business Automation & Digitalization Forum-Expo",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "business-automation-digitalization-forum-2026",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "GITEX Central Asia & Caucasus × Ai Everything Kazakhstan",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-06-02",
+   "end": "2026-06-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.gitexcac.com/rus/home",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "GITEX Central Asia & Caucasus × Ai Everything Kazakhstan",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "GITEX Central Asia & Caucasus × Ai Everything Kazakhstan",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "gitex-central-asia-caucasus-ai-everythin-2026-b1841b",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Международный конгресс ECOJER «Future Proof»",
+   "type": "congress",
+   "level": "international",
+   "edition": 5,
+   "industries": [
+    "Экология и ESG"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-06-03",
+   "end": "2026-06-04",
+   "organizer": "ECOJER",
+   "phone": "+7 747 142 4755",
+   "email": "info@ecojer.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "ECOJER «Future Proof» халықаралық конгресі",
+     "venue": ""
+    },
+    "en": {
+     "title": "ECOJER “Future Proof” International Congress",
+     "venue": ""
+    }
+   },
+   "id": "ecojer-future-proof-2026-0f2b83",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Astana Mining & Metallurgy 2026 (AMM)",
+   "type": "congress",
+   "level": "international",
+   "edition": 16,
+   "industries": [
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Астана",
+   "venue": "Hilton Astana",
+   "start": "2026-06-11",
+   "end": "2026-06-12",
    "organizer": "Iteca",
    "phone": "+7 727 258 34 34",
    "email": "contact@iteca.kz",
-   "site": "https://www.horexexpo.kz",
-   "description": "Центральноазиатская выставка оборудования и услуг для гостиниц, ресторанов и магазинов: кухни, мебель, униформа, клининг.",
-   "source_url": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions/horex.htm",
-   "source_name": "advantour.com",
+   "site": "https://www.amm.kz",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
    "i18n": {
     "kk": {
-     "title": "HOREX 2026 — қонақүйлерге, мейрамханаларға, супермаркеттерге арналған бәрі",
-     "description": "Қонақүйлер, мейрамханалар мен дүкендерге арналған жабдықтар мен қызметтердің Орталық Азиялық көрмесі: асүй, жиһаз, арнайы киім, тазалау.",
-     "venue": "«Атакент» КЦДС, Тимирязев көшесі, 42"
+     "title": "Astana Mining & Metallurgy 2026 (AMM)",
+     "venue": "Hilton Astana"
     },
     "en": {
-     "title": "HOREX 2026 — everything for hotels, restaurants and supermarkets",
-     "description": "Central Asian exhibition of equipment and services for hotels, restaurants and shops: kitchens, furniture, uniforms, cleaning.",
-     "venue": "Atakent Expo, 42 Timiryazev St."
+     "title": "Astana Mining & Metallurgy 2026 (AMM)",
+     "venue": "Hilton Astana"
     }
-   }
+   },
+   "id": "astana-mining-metallurgy-amm-2026-7f4ad4",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Electronica Expo Kazakhstan",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-06-16",
+   "end": "2026-06-18",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://electronica-expo.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Electronica Expo Kazakhstan",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Electronica Expo Kazakhstan",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "electronica-expo-kazakhstan-2026-9a52df",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Mining Week Kazakhstan",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Караганда",
+   "venue": "",
+   "start": "2026-06-23",
+   "end": "2026-06-25",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://miningweek.kz/en/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Mining Week Kazakhstan",
+     "venue": ""
+    },
+    "en": {
+     "title": "Mining Week Kazakhstan",
+     "venue": ""
+    }
+   },
+   "id": "mining-week-kazakhstan-2026-afbebf",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroHSE 2026 — безопасность в нефтегазе",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ",
+    "Охрана труда"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-06-26",
+   "end": "2026-06-26",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroHSE 2026 — мұнай-газ саласындағы қауіпсіздік",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroHSE 2026 — safety in oil & gas",
+     "venue": ""
+    }
+   },
+   "id": "petrohse-2026-885446",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Инвестфорум «Будущее региона: стратегия развития»",
+   "type": "forum",
+   "level": "regional",
+   "edition": 2,
+   "industries": [
+    "Финансы"
+   ],
+   "city": "Уральск",
+   "venue": "Дворец культуры «Атамекен»",
+   "start": "2026-06-26",
+   "end": "2026-06-26",
+   "organizer": "KazService",
+   "phone": "",
+   "email": "info@kazservice.kz",
+   "site": "https://www.instagram.com/reel/DZWoSvXNsqo/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "«Өңірдің болашағы: даму стратегиясы» инвестициялық форумы",
+     "venue": "«Атамекен» мәдениет сарайы"
+    },
+    "en": {
+     "title": "“Future of the Region: Development Strategy” investment forum",
+     "venue": "Atameken Palace of Culture"
+    }
+   },
+   "id": "future-of-the-region-development-strateg-2026",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "FIC Plenary Session — Совет иностранных инвесторов",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Финансы",
+    "Госуправление"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-07-02",
+   "end": "2026-07-02",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "FIC пленарлық отырысы — Шетелдік инвесторлар кеңесі",
+     "venue": ""
+    },
+    "en": {
+     "title": "FIC Plenary Session — Foreign Investors’ Council",
+     "venue": ""
+    }
+   },
+   "id": "fic-plenary-session-2026-29430a",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "AmCham Independence Day",
+   "type": "networking",
+   "level": "international",
+   "edition": null,
+   "industries": [],
+   "city": "уточняется",
+   "venue": "",
+   "start": "2026-07-04",
+   "end": "2026-07-04",
+   "organizer": "AmCham Kazakhstan",
+   "phone": "",
+   "email": "",
+   "site": "https://amcham.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "AmCham Independence Day",
+     "venue": ""
+    },
+    "en": {
+     "title": "AmCham Independence Day",
+     "venue": ""
+    }
+   },
+   "id": "amcham-independence-day-2026-843e28",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroHR 2026 — управление персоналом в нефтегазе",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-08-14",
+   "end": "2026-08-14",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroHR 2026 — мұнай-газ саласындағы персоналды басқару",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroHR 2026 — HR in oil & gas",
+     "venue": ""
+    }
+   },
+   "id": "petrohr-2026-562c98",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "KazDrilling 2026",
+   "type": "conference",
+   "level": "industry",
+   "edition": 3,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "Renaissance Hotel Atyrau",
+   "start": "2026-08-28",
+   "end": "2026-08-28",
+   "organizer": "KazService",
+   "phone": "",
+   "email": "info@kazservice.kz",
+   "site": "https://kaz-drilling.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "KazDrilling 2026",
+     "venue": "Renaissance Hotel Atyrau"
+    },
+    "en": {
+     "title": "KazDrilling 2026",
+     "venue": "Renaissance Hotel Atyrau"
+    }
+   },
+   "id": "kazdrilling-2026-0ed9c2",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Конференция «Казахстан — США: сотрудничество в нефтегазовой отрасли»",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2026-09-01",
+   "end": "2026-09-30",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "«Қазақстан — АҚШ: мұнай-газ саласындағы ынтымақтастық» конференциясы",
+     "venue": ""
+    },
+    "en": {
+     "title": "Kazakhstan–USA: Oil & Gas Cooperation conference",
+     "venue": ""
+    }
+   },
+   "date_approx": "month",
+   "id": "kazakhstan-usa-oil-gas-cooperation-confe-2026",
+   "found_at": "2026-11-11T19:47+05:00",
+   "also_in": []
+  },
+  {
+   "title": "KazBuild 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Строительство",
+    "Дом и интерьер"
+   ],
+   "city": "Алматы",
+   "venue": "КЦДС «Атакент»",
+   "start": "2026-09-02",
+   "end": "2026-09-04",
+   "organizer": "Iteca",
+   "phone": "",
+   "email": "",
+   "site": "https://www.gov.kz/memleket/entities/mps/press/events/details/43202?lang=ru",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "KazBuild 2026",
+     "venue": "«Атакент» КЦДС"
+    },
+    "en": {
+     "title": "KazBuild 2026",
+     "venue": "Atakent Expo"
+    }
+   },
+   "id": "kazbuild-2026-23ae8c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Astana Finance Days 2026",
+   "type": "forum",
+   "level": "international",
+   "edition": 9,
+   "industries": [
+    "Финансы"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-09-09",
+   "end": "2026-09-10",
+   "organizer": "МФЦА",
+   "phone": "",
+   "email": "",
+   "site": "https://astanafindays.org/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Astana Finance Days 2026",
+     "venue": ""
+    },
+    "en": {
+     "title": "Astana Finance Days 2026",
+     "venue": ""
+    }
+   },
+   "id": "astana-finance-days-2026-a37c2c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroScaffChamp 2026 — чемпионат по лесомонтажным работам",
+   "type": "competition",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-09-16",
+   "end": "2026-09-16",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroScaffChamp 2026 — ағаш құрастыру жұмыстары чемпионаты",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroScaffChamp 2026 — scaffolding championship",
+     "venue": ""
+    }
+   },
+   "id": "petroscaffchamp-2026-c19bdb",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroMaintenance 2026 — техобслуживание в нефтегазе",
+   "type": "forum",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-09-18",
+   "end": "2026-09-18",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroMaintenance 2026 — мұнай-газ саласындағы техникалық қызмет",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroMaintenance 2026 — maintenance in oil & gas",
+     "venue": ""
+    }
+   },
+   "id": "petromaintenance-2026-96ab3d",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "KIOGE 2026 — нефтегазовая конференция и выставка",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 30,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Алматы",
+   "venue": "КЦДС «Атакент»",
+   "start": "2026-09-30",
+   "end": "2026-10-01",
+   "organizer": "Iteca",
+   "phone": "",
+   "email": "",
+   "site": "https://kioge.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "KIOGE 2026 — мұнай-газ конференциясы мен көрмесі",
+     "venue": "«Атакент» КЦДС"
+    },
+    "en": {
+     "title": "KIOGE 2026 — Oil & Gas Conference and Exhibition",
+     "venue": "Atakent Expo"
+    }
+   },
+   "id": "kioge-2026-7ab59a",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Space Days Kazakhstan 2026",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Космос"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-01",
+   "end": "2026-10-02",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://spacedays.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Space Days Kazakhstan 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "Space Days Kazakhstan 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "space-days-kazakhstan-2026-00838c",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Выставка «Нефтегазохимия»",
+   "type": "exhibition",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-10-01",
+   "end": "2026-10-31",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "«Мұнай-газ химиясы» көрмесі",
+     "venue": ""
+    },
+    "en": {
+     "title": "Oil, Gas & Petrochemicals Exhibition",
+     "venue": ""
+    }
+   },
+   "date_approx": "month",
+   "id": "oil-gas-petrochemicals-exhibition-2026",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "AI & Digital Bridge 2026",
+   "type": "forum",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-03",
+   "end": "2026-10-04",
+   "organizer": "Astana Hub",
+   "phone": "",
+   "email": "",
+   "site": "https://digitalbridge.ai/en/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "AI & Digital Bridge 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "AI & Digital Bridge 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "ai-digital-bridge-2026-a3a2b4",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "TransLogistica Kazakhstan 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 29,
+   "industries": [
+    "Транспорт и логистика"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-07",
+   "end": "2026-10-09",
+   "organizer": "Iteca",
+   "phone": "",
+   "email": "",
+   "site": "https://translogistica.kz/en/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "TransLogistica Kazakhstan 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "TransLogistica Kazakhstan 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "translogistica-kazakhstan-2026-fe9c5f",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "APEX — состязание по управленческому мышлению",
+   "type": "competition",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Образование"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-09",
+   "end": "2026-10-09",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://peopleandprojects.kz/apex",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "APEX — басқарушылық ойлау жарысы",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "APEX — management thinking competition",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "apex-2026-a6e83b",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "People&Projects: менеджмент и биомиметика",
+   "type": "forum",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Образование"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-09",
+   "end": "2026-10-09",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://peopleandprojects.kz/forum2026",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "People&Projects: менеджмент және биомиметика",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "People&Projects: Management and Biomimetics",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "people-projects-2026-f70967",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Powerexpo Almaty 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Энергетика"
+   ],
+   "city": "Алматы",
+   "venue": "КЦДС «Атакент»",
+   "start": "2026-10-21",
+   "end": "2026-10-23",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://powerexpo.kz/ru/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Powerexpo Almaty 2026",
+     "venue": "«Атакент» КЦДС"
+    },
+    "en": {
+     "title": "Powerexpo Almaty 2026",
+     "venue": "Atakent Expo"
+    }
+   },
+   "id": "powerexpo-almaty-2026-2407de",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "Securex Kazakhstan 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Охрана труда",
+    "IT и цифровизация"
+   ],
+   "city": "Алматы",
+   "venue": "КЦДС «Атакент»",
+   "start": "2026-10-21",
+   "end": "2026-10-23",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://securex.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "Securex Kazakhstan 2026",
+     "venue": "«Атакент» КЦДС"
+    },
+    "en": {
+     "title": "Securex Kazakhstan 2026",
+     "venue": "Atakent Expo"
+    }
+   },
+   "id": "securex-kazakhstan-2026-d2df15",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "United Medical Expo 2026",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Медицина"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2026-10-28",
+   "end": "2026-10-29",
+   "organizer": "",
+   "phone": "+90 536 810 68 98",
+   "email": "unitedexpou@gmail.com",
+   "site": "https://unitedmedicalexpo.com/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "United Medical Expo 2026",
+     "venue": "EXPO ХКО"
+    },
+    "en": {
+     "title": "United Medical Expo 2026",
+     "venue": "EXPO International Exhibition Centre"
+    }
+   },
+   "id": "united-medical-expo-2026-47e446",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "AmCham Gala Awards",
+   "type": "networking",
+   "level": "international",
+   "edition": null,
+   "industries": [],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2026-11-01",
+   "end": "2026-11-01",
+   "organizer": "AmCham Kazakhstan",
+   "phone": "",
+   "email": "",
+   "site": "https://amcham.kz/",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "AmCham Gala Awards",
+     "venue": ""
+    },
+    "en": {
+     "title": "AmCham Gala Awards",
+     "venue": ""
+    }
+   },
+   "id": "amcham-gala-awards-2026-a83d7e",
+   "found_at": "2026-11-11T19:47+05:00"
+  },
+  {
+   "title": "PetroProcurement 2026 — круглый стол по закупкам",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Нефть и газ"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2026-11-06",
+   "end": "2026-11-06",
+   "organizer": "PetroCouncil",
+   "phone": "+7 7122 206 220",
+   "email": "info@petrocouncil.kz",
+   "site": "",
+   "description": "",
+   "source_url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/edit?gid=0",
+   "source_name": "Календарь мероприятий KNS 2026",
+   "i18n": {
+    "kk": {
+     "title": "PetroProcurement 2026 — сатып алу жөніндегі дөңгелек үстел",
+     "venue": ""
+    },
+    "en": {
+     "title": "PetroProcurement 2026 — procurement round table",
+     "venue": ""
+    }
+   },
+   "id": "petroprocurement-2026-e64f35",
+   "found_at": "2026-11-11T19:47+05:00"
   },
   {
    "id": "foodexpo-qazaqstan-2026",
@@ -64,6 +1833,40 @@
     "en": {
      "title": "FoodExpo Qazaqstan 2026",
      "description": "Central Asia's largest food industry exhibition: beverages, meat, ingredients, food processing equipment. About 380 exhibitors.",
+     "venue": "Atakent Expo, 42 Timiryazev St."
+    }
+   }
+  },
+  {
+   "id": "horex-2026",
+   "title": "HOREX 2026 — всё для отелей, ресторанов, супермаркетов",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 21,
+   "industries": [
+    "HoReCa",
+    "Ритейл и FMCG"
+   ],
+   "city": "Алматы",
+   "venue": "КЦДС «Атакент», ул. Тимирязева, 42",
+   "start": "2026-11-11",
+   "end": "2026-11-13",
+   "organizer": "Iteca",
+   "phone": "+7 727 258 34 34",
+   "email": "contact@iteca.kz",
+   "site": "https://www.horexexpo.kz",
+   "description": "Центральноазиатская выставка оборудования и услуг для гостиниц, ресторанов и магазинов: кухни, мебель, униформа, клининг.",
+   "source_url": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions/horex.htm",
+   "source_name": "advantour.com",
+   "i18n": {
+    "kk": {
+     "title": "HOREX 2026 — қонақүйлерге, мейрамханаларға, супермаркеттерге арналған бәрі",
+     "description": "Қонақүйлер, мейрамханалар мен дүкендерге арналған жабдықтар мен қызметтердің Орталық Азиялық көрмесі: асүй, жиһаз, арнайы киім, тазалау.",
+     "venue": "«Атакент» КЦДС, Тимирязев көшесі, 42"
+    },
+    "en": {
+     "title": "HOREX 2026 — everything for hotels, restaurants and supermarkets",
+     "description": "Central Asian exhibition of equipment and services for hotels, restaurants and shops: kitchens, furniture, uniforms, cleaning.",
      "venue": "Atakent Expo, 42 Timiryazev St."
     }
    }

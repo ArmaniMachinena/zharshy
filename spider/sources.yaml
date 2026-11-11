@@ -30,3 +30,36 @@ telegram:
   - astanahub
   - kapitalkz
   - digitalbusinesskz
+
+# Таблица KNS (календарь 2026) — читается как CSV, пока у неё открыт доступ по ссылке
+sheets:
+  - name: Календарь мероприятий KNS
+    url: https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0
+
+# Сайты организаторов из таблицы KNS — паук ловит анонсы следующих выпусков
+organizers:
+  - {name: Kazakhstan Machinery Fair, url: https://www.kmfexpo.kz/ru}
+  - {name: SU ARNASY Water Expo, url: https://waterexpo.kz/}
+  - {name: CM EXPO, url: https://cmexpo.kz/}
+  - {name: MINEX Kazakhstan, url: https://minexkazakhstan.com/}
+  - {name: Energy Trends, url: https://energytrends.kz}
+  - {name: ESE Forum, url: https://eseforum.ru/sobytiya}
+  - {name: BT Expo, url: https://btexpo.kz/ru}
+  - {name: Comtrux, url: https://comtrux.kz/}
+  - {name: GITEX Central Asia, url: https://www.gitexcac.com/rus/home}
+  - {name: AMM, url: https://www.amm.kz}
+  - {name: Electronica Expo, url: https://electronica-expo.com/}
+  - {name: Mining Week Kazakhstan, url: https://miningweek.kz/en/}
+  - {name: KazDrilling, url: https://kaz-drilling.com/}
+  - {name: KIOGE, url: https://kioge.kz/}
+  - {name: Astana Finance Days, url: https://astanafindays.org/}
+  - {name: Space Days, url: https://spacedays.kz/}
+  - {name: AI Digital Bridge, url: https://digitalbridge.ai/en/}
+  - {name: People&Projects, url: https://peopleandprojects.kz/}
+  - {name: TransLogistica, url: https://translogistica.kz/en/}
+  - {name: Powerexpo, url: https://powerexpo.kz/ru/}
+  - {name: Securex, url: https://securex.kz/}
+  - {name: United Medical Expo, url: https://unitedmedicalexpo.com/}
+  - {name: AmCham Kazakhstan, url: https://amcham.kz/}
+  - {name: КАО, url: https://kao.kz/ru/novosti/}
+  - {name: АНЭК, url: https://kffanek.kz/}

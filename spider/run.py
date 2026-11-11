@@ -24,13 +24,14 @@ MODEL = os.environ.get("ZHARSHY_MODEL", "claude-haiku-5-5")
 MAX_CHARS = 18000          # сколько текста страницы отдаём модели за раз
 UA = "Mozilla/5.0 (compatible; ZharshyBot/0.1; +https://github.com/ArmaniMachinena)"
 
-TYPES = {"forum", "exhibition", "conference", "congress", "summit", "webinar"}
+TYPES = {"forum", "exhibition", "conference", "congress", "summit", "webinar", "networking", "competition"}
 LEVELS = {"international", "republican", "regional", "industry"}
 INDUSTRIES = [
     "Энергетика", "Водород", "Нефть и газ", "Горнодобыча и металлургия", "Строительство",
     "Агро и пищепром", "Упаковка", "HoReCa", "Ритейл и FMCG", "Туризм", "Медицина",
     "IT и цифровизация", "Финансы", "Экология и ESG", "Транспорт и логистика",
     "Охрана труда", "Охота и рыбалка", "Дом и интерьер", "Образование", "Госуправление",
+    "Машиностроение", "Водное хозяйство", "Космос",
 ]
 CITIES = {  # приведение написаний к одному виду
     "astana": "Астана", "нур-султан": "Астана", "almaty": "Алматы", "алма-ата": "Алматы",
@@ -217,8 +218,8 @@ def merge(existing: list[dict], found: list[dict]) -> tuple[list[dict], int]:
     return existing, added
 
 
-def prune(events: list[dict], today: str, keep_days: int = 30) -> list[dict]:
-    """Прошедшие больше месяца назад убираем из ленты (история остаётся в git)."""
+def prune(events: list[dict], today: str, keep_days: int = 400) -> list[dict]:
+    """Архив держим ~13 месяцев: по нему видно, когда ждать следующий выпуск ежегодного события."""
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(days=keep_days)).isoformat()
     return [e for e in events if (e.get("end") or e["start"]) >= cutoff]
 
@@ -233,7 +234,7 @@ def main() -> int:
     if not have_key:
         print("! ANTHROPIC_API_KEY не задан — только проверяю доступность источников")
 
-    jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", [])]
+    jobs = [(s["name"], s["url"], "web") for s in cfg.get("web", []) + cfg.get("organizers", []) + cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 
     found: list[dict] = []

@@ -26,3 +26,19 @@ jobs:
           git add data/events.json
           git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
           git push
+      - name: Выложить базу на публичный сайт (zharshy-web)
+        env:
+          WEB_TOKEN: ${{ secrets.WEB_TOKEN }}
+        run: |
+          if [ -z "$WEB_TOKEN" ]; then echo "WEB_TOKEN не задан — пропускаю"; exit 0; fi
+          python build.py
+          git clone --depth 1 "https://x-access-token:${WEB_TOKEN}@github.com/ArmaniMachinena/zharshy-web.git" web
+          mkdir -p web/data
+          cp data/events.json web/data/events.json
+          cp dist/index.html web/index.html
+          cd web
+          git config user.name "zharshy-bot"
+          git config user.email "zharshy-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Обновление базы $(date -u +%F\ %H:%M)"
+          git push

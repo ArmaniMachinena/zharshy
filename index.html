@@ -242,7 +242,7 @@ const I18N={
   days30:'30 дней вперёд',days30sub:'нажмите на день — покажу его события',
   map:'Карта мероприятий',mapSub:'нажмите на город',legToday:'идёт сегодня',leg30:'в ближайшие 30 дней',legLater:'позже',
   search:'Поиск: водород, нефть, Iteca…',allCities:'Все города',allInd:'Все отрасли',anyLevel:'Любой уровень',allTypes:'Все форматы',
-  allDates:'Все даты',d7:'7 дней',d30:'30 дней',d90:'3 месяца',myBtn:'★ Мои',listV:'Список',calV:'Календарь',
+  allDates:'Все даты',d7:'7 дней',d30:'30 дней',d90:'3 месяца',past:'Прошедшие (архив)',approx:'дата уточняется',myBtn:'★ Мои',listV:'Список',calV:'Календарь',
   found:'Найдено',nothing:'Ничего не найдено. Попробуйте снять фильтры.',
   footer:'Жаршы собирает анонсы из открытых источников. Перед поездкой сверяйте даты на сайте организатора.',
   f_dates:'Даты',f_city:'Город',f_venue:'Площадка',f_ind:'Отрасли',f_org:'Организатор',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
@@ -251,7 +251,7 @@ const I18N={
   wd:['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],
   mon:['янв','фев','мар','апр','мая','июн','июл','авг','сен','окт','ноя','дек'],
   monF:['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-  types:{forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'},
+  types:{forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар',networking:'Нетворкинг',competition:'Чемпионат'},
   levels:{international:'Международный',republican:'Республиканский',regional:'Региональный',industry:'Отраслевой'},
   about:`<h2>Жаршы — как это работает</h2>
   <p>В старину жаршы объезжал аулы и объявлял людям важные вести. Здесь его работу делает паук: каждые 3 часа он обходит сайты выставочных компаний, госорганов, агрегаторов и открытые Telegram-каналы, а ИИ вытаскивает название, даты, город, уровень, организатора и контакты — сразу на трёх языках. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
@@ -267,7 +267,7 @@ const I18N={
   days30:'Алдағы 30 күн',days30sub:'күнді бассаңыз — сол күнгі іс-шаралар шығады',
   map:'Іс-шаралар картасы',mapSub:'қаланы басыңыз',legToday:'бүгін өтуде',leg30:'алдағы 30 күнде',legLater:'кейінірек',
   search:'Іздеу: сутегі, мұнай, Iteca…',allCities:'Барлық қалалар',allInd:'Барлық салалар',anyLevel:'Кез келген деңгей',allTypes:'Барлық форматтар',
-  allDates:'Барлық күндер',d7:'7 күн',d30:'30 күн',d90:'3 ай',myBtn:'★ Менің',listV:'Тізім',calV:'Күнтізбе',
+  allDates:'Барлық күндер',d7:'7 күн',d30:'30 күн',d90:'3 ай',past:'Өткен (мұрағат)',approx:'күні нақтыланады',myBtn:'★ Менің',listV:'Тізім',calV:'Күнтізбе',
   found:'Табылды',nothing:'Ештеңе табылмады. Сүзгілерді алып тастап көріңіз.',
   footer:'Жаршы хабарландыруларды ашық дереккөздерден жинайды. Сапар алдында күндерін ұйымдастырушының сайтынан тексеріңіз.',
   f_dates:'Күндері',f_city:'Қала',f_venue:'Өтетін орны',f_ind:'Салалар',f_org:'Ұйымдастырушы',f_phone:'Телефон',f_email:'E-mail',f_site:'Сайт',
@@ -277,7 +277,7 @@ const I18N={
   mon:['қаң','ақп','нау','сәу','мам','мау','шіл','там','қыр','қаз','қар','жел'],
   monF:['Қаңтар','Ақпан','Наурыз','Сәуір','Мамыр','Маусым','Шілде','Тамыз','Қыркүйек','Қазан','Қараша','Желтоқсан'],
   monG:['қаңтар','ақпан','наурыз','сәуір','мамыр','маусым','шілде','тамыз','қыркүйек','қазан','қараша','желтоқсан'],
-  types:{forum:'Форум',exhibition:'Көрме',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар'},
+  types:{forum:'Форум',exhibition:'Көрме',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар',networking:'Нетворкинг',competition:'Чемпионат'},
   levels:{international:'Халықаралық',republican:'Республикалық',regional:'Өңірлік',industry:'Салалық'},
   about:`<h2>Жаршы — қалай жұмыс істейді</h2>
   <p>Ертеде жаршы ауыл аралап, елге маңызды хабарды жариялаған. Мұнда бұл жұмысты өрмекші-бағдарлама атқарады: әр 3 сағат сайын ол көрме компанияларының, мемлекеттік органдардың, агрегаторлардың сайттарын және ашық Telegram-арналарды аралайды, ал ЖИ атауын, күнін, қаласын, деңгейін, ұйымдастырушысы мен байланыстарын бірден үш тілде шығарады. Қайталанатын жазбалар біріктіріледі, өткен іс-шаралар мұрағатқа кетеді.</p>
@@ -293,7 +293,7 @@ const I18N={
   days30:'Next 30 days',days30sub:'tap a day to see its events',
   map:'Event map',mapSub:'tap a city',legToday:'on today',leg30:'within 30 days',legLater:'later',
   search:'Search: hydrogen, oil, Iteca…',allCities:'All cities',allInd:'All industries',anyLevel:'Any level',allTypes:'All formats',
-  allDates:'All dates',d7:'7 days',d30:'30 days',d90:'3 months',myBtn:'★ Mine',listV:'List',calV:'Calendar',
+  allDates:'All dates',d7:'7 days',d30:'30 days',d90:'3 months',past:'Past (archive)',approx:'date TBC',myBtn:'★ Mine',listV:'List',calV:'Calendar',
   found:'Found',nothing:'Nothing found. Try clearing the filters.',
   footer:'Zharshy collects announcements from open sources. Check dates on the organizer’s website before you travel.',
   f_dates:'Dates',f_city:'City',f_venue:'Venue',f_ind:'Industries',f_org:'Organizer',f_phone:'Phone',f_email:'E-mail',f_site:'Website',
@@ -302,7 +302,7 @@ const I18N={
   wd:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
   mon:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
   monF:['January','February','March','April','May','June','July','August','September','October','November','December'],
-  types:{forum:'Forum',exhibition:'Exhibition',conference:'Conference',congress:'Congress',summit:'Summit',webinar:'Webinar'},
+  types:{forum:'Forum',exhibition:'Exhibition',conference:'Conference',congress:'Congress',summit:'Summit',webinar:'Webinar',networking:'Networking',competition:'Championship'},
   levels:{international:'International',republican:'National',regional:'Regional',industry:'Industry'},
   about:`<h2>Zharshy — how it works</h2>
   <p>In the old steppe, the <i>zharshy</i> rode from village to village announcing important news. Here a crawler does that job: every 3 hours it visits exhibition organizers, government sites, aggregators and public Telegram channels, and AI extracts the title, dates, city, level, organizer and contacts — in three languages at once. Duplicates are merged and past events move to the archive.</p>
@@ -320,7 +320,7 @@ const CITY={ 'Алматы':['Алматы','Almaty',76.95,43.24],'Астана'
  'Костанай':['Қостанай','Kostanay',63.62,53.21],'Петропавловск':['Петропавл','Petropavl',69.15,54.87],'Уральск':['Орал','Oral',51.37,51.23],
  'Кызылорда':['Қызылорда','Kyzylorda',65.5,44.85],'Тараз':['Тараз','Taraz',71.37,42.9],'Туркестан':['Түркістан','Turkistan',68.25,43.3],
  'Семей':['Семей','Semey',80.25,50.41],'Кокшетау':['Көкшетау','Kokshetau',69.39,53.28],'Талдыкорган':['Талдықорған','Taldykorgan',78.37,45.02],
- 'Жезказган':['Жезқазған','Zhezkazgan',67.71,47.8],'Онлайн':['Онлайн','Online'],'уточняется':['нақтыланады','TBA']};
+ 'Жезказган':['Жезқазған','Zhezkazgan',67.71,47.8],'Щучинск':['Щучинск','Shchuchinsk',70.2,52.93,1],'Бурабай':['Бурабай','Burabay',70.3,53.08,1],'Онлайн':['Онлайн','Online'],'уточняется':['нақтыланады','TBA']};
 const IND={'Энергетика':['Энергетика','Energy'],'Водород':['Сутегі','Hydrogen'],'Нефть и газ':['Мұнай және газ','Oil & Gas'],
  'Горнодобыча и металлургия':['Тау-кен және металлургия','Mining & Metals'],'Строительство':['Құрылыс','Construction'],
  'Агро и пищепром':['Агро және тамақ өнеркәсібі','Agri & Food'],'Упаковка':['Қаптама','Packaging'],'HoReCa':['HoReCa','HoReCa'],
@@ -328,7 +328,8 @@ const IND={'Энергетика':['Энергетика','Energy'],'Водор�
  'IT и цифровизация':['IT және цифрландыру','IT & Digital'],'Финансы':['Қаржы','Finance'],'Экология и ESG':['Экология және ESG','Ecology & ESG'],
  'Транспорт и логистика':['Көлік және логистика','Transport & Logistics'],'Охрана труда':['Еңбекті қорғау','Occupational Safety'],
  'Охота и рыбалка':['Аңшылық және балық аулау','Hunting & Fishing'],'Дом и интерьер':['Үй және интерьер','Home & Interior'],
- 'Образование':['Білім беру','Education'],'Госуправление':['Мемлекеттік басқару','Public Administration']};
+ 'Образование':['Білім беру','Education'],'Госуправление':['Мемлекеттік басқару','Public Administration'],
+ 'Машиностроение':['Машина жасау','Machinery'],'Водное хозяйство':['Су шаруашылығы','Water'],'Космос':['Ғарыш','Space']};
 
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -355,6 +356,7 @@ const dOf=iso=>new Date(iso+'T00:00:00Z');
 function monName(m){return lang==='kk'?L().monG[m]:L().mon[m]}
 function fmtDay(iso,withYear){const d=dOf(iso);return `${d.getUTCDate()} ${monName(d.getUTCMonth())}${withYear?' '+d.getUTCFullYear():''}`}
 function fmtRange(e,noYear){
+  if(e.date_approx==='month'){const s=dOf(e.start);return `${L().monF[s.getUTCMonth()]} ${s.getUTCFullYear()} · ${t('approx')}`}
   const s=dOf(e.start), en=dOf(endOf(e)), y=noYear?'':' '+en.getUTCFullYear();
   if(e.start===endOf(e)) return fmtDay(e.start,!noYear);
   if(s.getUTCMonth()===en.getUTCMonth()) return `${s.getUTCDate()}–${en.getUTCDate()} ${monName(s.getUTCMonth())}${y}`;
@@ -386,7 +388,7 @@ function applyLang(){
   fillSelect('fInd',t('allInd'),[...new Set(ev.flatMap(e=>e.industries||[]))].map(i=>[i,indName(i)]).sort((a,b)=>a[1].localeCompare(b[1])));
   fillSelect('fLevel',t('anyLevel'),Object.entries(L().levels));
   fillSelect('fType',t('allTypes'),Object.entries(L().types));
-  fillSelect('fPeriod',t('allDates'),[['7',t('d7')],['30',t('d30')],['90',t('d90')]]);
+  fillSelect('fPeriod',t('allDates'),[['7',t('d7')],['30',t('d30')],['90',t('d90')],['past',t('past')]]);
   if(DATA.updated_at){const u=new Date(DATA.updated_at);
     const p=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(u).map(x=>[x.type,x.value]));
     $('upd').textContent=`${t('updated')} ${fmtDay(`${p.year}-${p.month}-${p.day}`,false)}, ${p.hour}:${p.minute} · ${t('every3')}`;}
@@ -399,12 +401,13 @@ function filtered(opts={}){
   const q=$('q').value.trim().toLowerCase(), c=$('fCity').value, ind=$('fInd').value, lv=$('fLevel').value, ty=$('fType').value, per=$('fPeriod').value;
   const td=todayISO();
   return DATA.events.filter(e=>{
-    if(endOf(e)<td) return false;
+    const pastMode=per==='past'&&!opts.noPeriod;
+    if(pastMode ? endOf(e)>=td : endOf(e)<td) return false;
     if(c && !opts.noCity && e.city!==c) return false;
     if(ind && !(e.industries||[]).includes(ind)) return false;
     if(lv && e.level!==lv) return false;
     if(ty && e.type!==ty) return false;
-    if(per && !opts.noPeriod && !overlaps(e,td,addDays(td,+per))) return false;
+    if(per && per!=='past' && !opts.noPeriod && !overlaps(e,td,addDays(td,+per))) return false;
     if(selDay && !opts.noDay && !overlaps(e,selDay,selDay)) return false;
     if(favOnly && !favs.has(e.id)) return false;
     if(q){const hay=[e.title,fld(e,'title'),e.description,fld(e,'description'),e.city,cityName(e.city),e.organizer,fld(e,'venue'),
@@ -432,7 +435,7 @@ function renderStrip(){
   const td=todayISO(), base=filtered({noDay:true,noPeriod:true});
   let h='';
   for(let i=0;i<30;i++){
-    const d=addDays(td,i), evs=base.filter(e=>overlaps(e,d,d)), dt=dOf(d), w=wdIdx(d);
+    const d=addDays(td,i), evs=base.filter(e=>!e.date_approx&&overlaps(e,d,d)), dt=dOf(d), w=wdIdx(d);
     const showMon=i===0||dt.getUTCDate()===1;
     const bars=evs.slice(0,2).map(e=>`<span class="bar">${esc(fld(e,'title'))}</span>`).join('')+(evs.length>2?`<span class="bar more">+${evs.length-2}</span>`:'');
     h+=`<button class="dcell ${evs.length?'has':''} ${d===td?'now':''} ${d===selDay?'sel':''}" data-day="${d}" title="${esc(fmtDay(d,true))}: ${evs.length}">
@@ -452,8 +455,9 @@ function renderMap(){
   let dots='', hot='';
   Object.entries(CITY).forEach(([ru,v])=>{
     if(v.length<4) return;
+    const minor=v[4];
     const [x,y]=PX(v[2],v[3]), evs=base.filter(e=>e.city===ru);
-    if(!evs.length){dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="2.6"/><text class="clab" x="${x+5}" y="${y+3.5}">${esc(cityName(ru))}</text>`;return}
+    if(!evs.length){if(minor) return;dots+=`<circle class="cdot" cx="${x}" cy="${y}" r="2.6"/><text class="clab" x="${x+5}" y="${y+3.5}">${esc(cityName(ru))}</text>`;return}
     const tier=evs.some(e=>overlaps(e,td,td))?0:evs.some(e=>e.start<=d30)?1:2;
     const n=evs.length;
     hot+=`<g class="city t${tier} ${sel===ru?'selc':''}" data-city="${esc(ru)}"><title>${esc(cityName(ru))}: ${n}</title>
@@ -469,7 +473,7 @@ function card(e){
   const td=todayISO(), s=dOf(e.start), live=overlaps(e,td,td), ed=edition(e);
   const org=fld(e,'organizer');
   return `<div class="ev" data-id="${esc(e.id)}">
-    <div class="date"><b>${s.getUTCDate()}</b><span>${esc(L().mon[s.getUTCMonth()])}</span></div>
+    <div class="date"><b>${e.date_approx?'~':s.getUTCDate()}</b><span>${esc(L().mon[s.getUTCMonth()])}</span></div>
     <div><h4>${esc(fld(e,'title'))}</h4>
       <div class="meta">${esc(fmtRange(e))} · ${esc(cityName(e.city))}${org?' · '+esc(org):''}</div>
       <div class="tags">${live?`<span class="tag live">● ${esc(t('liveNow'))}</span>`:''}<span class="tag lv-${esc(e.level)}">${esc(L().levels[e.level]||e.level)}</span><span class="tag">${esc(L().types[e.type]||e.type)}</span>${ed?`<span class="tag">${esc(ed)}</span>`:''}${(e.industries||[]).map(i=>`<span class="tag">${esc(indName(i))}</span>`).join('')}</div>
@@ -478,6 +482,7 @@ function card(e){
   </div>`;
 }
 function renderList(arr){
+  if($('fPeriod').value==='past') arr=[...arr].reverse();
   let html='', last='';
   arr.forEach(e=>{const m=e.start.slice(0,7); if(m!==last){last=m; const [y,mm]=m.split('-'); html+=`<div class="month">${esc(L().monF[+mm-1])} ${y}</div>`} html+=card(e)});
   $('list').innerHTML=html||`<div class="empty" style="padding:20px 0">${esc(t('nothing'))}</div>`;

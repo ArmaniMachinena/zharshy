@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T06:21+05:00",
+ "checked_at": "2026-11-12T09:01+05:00",
  "have_key": false,
  "sources": [
   {
@@ -16,7 +16,7 @@
    "url": "https://expomap.ru/expo/country/kazakhstan/",
    "group": "web",
    "ok": true,
-   "chars": 4719,
+   "chars": 4828,
    "events": null,
    "error": ""
   },
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8468,
+   "chars": 8181,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8274,
+   "chars": 8456,
    "events": null,
    "error": ""
   },
@@ -547,7 +547,7 @@
    "url": "https://eng.sectsco.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 1724,
+   "chars": 1740,
    "events": null,
    "error": ""
   },

@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T03:13+05:00",
+ "checked_at": "2026-11-12T06:21+05:00",
  "have_key": false,
  "sources": [
   {
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8559,
+   "chars": 8468,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8339,
+   "chars": 8274,
    "events": null,
    "error": ""
   },

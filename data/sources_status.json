@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T18:20+05:00",
+ "checked_at": "2026-11-12T21:09+05:00",
  "have_key": false,
  "sources": [
   {
@@ -52,7 +52,7 @@
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1964,
+   "chars": 1974,
    "events": null,
    "error": ""
   },
@@ -70,7 +70,7 @@
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9058,
+   "chars": 9169,
    "events": null,
    "error": ""
   },
@@ -144,7 +144,7 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "456 Client Error: <none> for url: https://cmexpo.kz/"
+   "error": "403 Client Error: Forbidden for url: https://cmexpo.kz/"
   },
   {
    "name": "MINEX Kazakhstan",
@@ -177,10 +177,10 @@
    "name": "BT Expo",
    "url": "https://btexpo.kz/ru",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 5526,
    "events": null,
-   "error": "456 Client Error: Unrecoverable Error for url: https://btexpo.kz/ru"
+   "error": ""
   },
   {
    "name": "Comtrux",
@@ -321,10 +321,10 @@
    "name": "AmCham Kazakhstan",
    "url": "https://amcham.kz/",
    "group": "organizers",
-   "ok": true,
-   "chars": 436,
+   "ok": false,
+   "chars": 0,
    "events": null,
-   "error": ""
+   "error": "502 Server Error: Bad Gateway for url: https://amcham.kz/"
   },
   {
    "name": "КАО",
@@ -475,7 +475,7 @@
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 15733,
+   "chars": 15692,
    "events": null,
    "error": ""
   },
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8484,
+   "chars": 8607,
    "events": null,
    "error": ""
   },
@@ -520,7 +520,7 @@
    "url": "https://eec.eaeunion.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 8427,
+   "chars": 8332,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8666,
+   "chars": 8585,
    "events": null,
    "error": ""
   },

@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T09:01+05:00",
+ "checked_at": "2026-11-12T12:28+05:00",
  "have_key": false,
  "sources": [
   {
@@ -52,7 +52,7 @@
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1964,
+   "chars": 1979,
    "events": null,
    "error": ""
   },
@@ -70,7 +70,7 @@
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 8943,
+   "chars": 9058,
    "events": null,
    "error": ""
   },
@@ -115,7 +115,7 @@
    "url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html",
    "group": "web",
    "ok": true,
-   "chars": 9459,
+   "chars": 9451,
    "events": null,
    "error": ""
   },
@@ -376,7 +376,7 @@
    "url": "https://invest.gov.kz/media-center/press-releases/",
    "group": "web",
    "ok": true,
-   "chars": 1306,
+   "chars": 1274,
    "events": null,
    "error": ""
   },
@@ -475,7 +475,7 @@
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 15679,
+   "chars": 15733,
    "events": null,
    "error": ""
   },
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8181,
+   "chars": 8591,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8456,
+   "chars": 8531,
    "events": null,
    "error": ""
   },
@@ -574,7 +574,7 @@
    "url": "https://t.me/s/kapitalkz",
    "group": "telegram",
    "ok": true,
-   "chars": 22778,
+   "chars": 20411,
    "events": null,
    "error": ""
   },

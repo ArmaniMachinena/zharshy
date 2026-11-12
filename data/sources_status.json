@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-12T12:28+05:00",
+ "checked_at": "2026-11-12T15:11+05:00",
  "have_key": false,
  "sources": [
   {
@@ -52,7 +52,7 @@
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1979,
+   "chars": 1964,
    "events": null,
    "error": ""
   },
@@ -312,10 +312,10 @@
    "name": "United Medical Expo",
    "url": "https://unitedmedicalexpo.com/",
    "group": "organizers",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 24736,
    "events": null,
-   "error": "403 Client Error: Forbidden for url: https://umtexpo.com/"
+   "error": ""
   },
   {
    "name": "AmCham Kazakhstan",
@@ -340,7 +340,7 @@
    "url": "https://kffanek.kz/",
    "group": "organizers",
    "ok": true,
-   "chars": 7891,
+   "chars": 7997,
    "events": null,
    "error": ""
   },
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8591,
+   "chars": 8671,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8531,
+   "chars": 8505,
    "events": null,
    "error": ""
   },
@@ -574,7 +574,7 @@
    "url": "https://t.me/s/kapitalkz",
    "group": "telegram",
    "ok": true,
-   "chars": 20411,
+   "chars": 21505,
    "events": null,
    "error": ""
   },

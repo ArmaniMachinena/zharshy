@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-13T17:49+05:00",
- "full_at": "2026-11-13T17:49+05:00",
+ "checked_at": "2026-11-13T17:55+05:00",
+ "full_at": "2026-11-13T17:55+05:00",
  "mode": "full",
  "have_key": true,
  "sources": [
@@ -59,7 +59,8 @@
    "ok": true,
    "chars": 1964,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Акорда — новости и события",
@@ -354,10 +355,11 @@
    "name": "QazTrade — мероприятия",
    "url": "https://qaztrade.org.kz/ru/",
    "group": "web",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 5526,
    "events": null,
-   "error": "HTTPSConnectionPool(host='qaztrade.org.kz', port=443): Max retries exceeded with url: /ru/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='qaztrade.org.kz"
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KazakhExport — новости",
@@ -503,7 +505,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8529,
+   "chars": 8522,
    "events": 0,
    "error": ""
   },
@@ -542,9 +544,9 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8560,
-   "events": null,
-   "error": "ИИ: credential validation failed"
+   "chars": 8493,
+   "events": 0,
+   "error": ""
   },
   {
    "name": "ШОС — новости",
@@ -553,7 +555,8 @@
    "ok": true,
    "chars": 1608,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "EventsEye — выставки Казахстана",
@@ -570,10 +573,9 @@
    "url": "https://www.auma.de/en/find-your-fair/",
    "group": "global",
    "ok": true,
-   "chars": 11100,
+   "chars": 10965,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "TradeFairDates",
@@ -599,7 +601,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 7472,
+   "chars": 7760,
    "events": 0,
    "error": ""
   },
@@ -690,7 +692,8 @@
    "ok": true,
    "chars": 11149,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @atamekenbusiness_qaz",
@@ -699,7 +702,8 @@
    "ok": true,
    "chars": 10230,
    "events": 2,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @astanahub",

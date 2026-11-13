@@ -2550,6 +2550,47 @@
    "found_at": "2026-11-13T13:05+05:00"
   },
   {
+   "title": "Digital Tañba 2026 «От маркировки товаров к доверию потребителей»",
+   "type": "forum",
+   "level": "republican",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация",
+    "Ритейл и FMCG",
+    "Госуправление"
+   ],
+   "country": "Казахстан",
+   "city": "Астана",
+   "venue": "AIX Trading Hall, пр. Мәңгілік Ел, 55/18, блок C3.4",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "date_approx": false,
+   "organizer": "Единый оператор маркировки и прослеживаемости товаров Tañba",
+   "phone": "",
+   "email": "",
+   "site": "https://digitaltanba.kz/",
+   "program_url": "https://digitaltanba.kz/#program",
+   "description": "Форум о цифровой маркировке и прослеживаемости товаров: госорганы, бизнес и международные организации обсуждают опыт и перспективы отрасли. Вход по спискам участников.",
+   "source_url": "https://digitaltanba.kz/",
+   "source_name": "Приглашение (WhatsApp/Telegram) + digitaltanba.kz",
+   "i18n": {
+    "kk": {
+     "title": "Digital Tañba 2026 «Тауарларды таңбалаудан тұтынушылар сеніміне дейін»",
+     "description": "Тауарларды цифрлық таңбалау және қадағалау туралы форум: мемлекеттік органдар, бизнес және халықаралық ұйымдар саланың тәжірибесі мен болашағын талқылайды. Кіру қатысушылар тізімі бойынша.",
+     "venue": "AIX Trading Hall, Мәңгілік Ел д-лы, 55/18, C3.4 блогы",
+     "organizer": "Тауарларды таңбалау мен қадағалаудың бірыңғай операторы Tañba"
+    },
+    "en": {
+     "title": "Digital Tañba 2026 “From Product Labelling to Consumer Trust”",
+     "description": "Forum on digital labelling and product traceability: government, business and international organisations discuss the industry's experience and outlook. Admission by guest list.",
+     "venue": "AIX Trading Hall, 55/18 Mangilik El Ave, block C3.4",
+     "organizer": "Tañba — Unified Operator for Product Labelling and Traceability"
+    }
+   },
+   "found_at": "2026-11-13T15:55+05:00",
+   "id": "digital-ta-ba-ot-markirovki-tovarov-k-do-2026-33125a"
+  },
+  {
    "id": "nonfood-asia-2026",
    "title": "Non-Food Asia Expo Kazakhstan 2026",
    "type": "exhibition",

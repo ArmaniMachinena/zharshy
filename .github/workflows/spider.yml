@@ -31,6 +31,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SUBMISSIONS_CSV: ${{ secrets.SUBMISSIONS_CSV }}
         run: python spider/moderate.py
+      - name: Пресса о событиях (без ИИ)
+        run: python spider/press.py || echo "пресса: ошибка, пропускаю"
       - name: Сохранить базу
         run: |
           git config user.name "zharshy-bot"

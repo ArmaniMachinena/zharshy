@@ -2442,7 +2442,39 @@
      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5GRnVMeWZaVy1FamhpRnJfVi02X2FCaTdZZG93UHJTZTI2UVgyMXpwcU5SaVU3NnJ0UEdhS21wN0ttbnNrM1BLOC0wMmE0UnlES09sQ1M5UFpVcEFoRE51Tlp1RQ?oc=5",
      "date": "2026-11-10T13:00+05:00"
     }
-   ]
+   ],
+   "press_ai": {
+    "ru": {
+     "key": "COP31 в Анталье стала самой посещаемой климатической конференцией ООН в истории; главная тема — деньги на климат для уязвимых стран.",
+     "insights": [
+      "Лидеры и глава ООН призывают ускорить действия: от «мы боремся за наши жизни» до требований удешевить займы на климатическую устойчивость.",
+      "Центральная Азия активна: Туркменистан предложил цифровой атлас климата и «Десятилетие климатической устойчивости», Ташкент — систему раннего предупреждения, запущена региональная программа устойчивости.",
+      "Есть и критика: хозяйка саммита Турция получила низкую оценку климатической политики, а ставку саммита на электроэнергию эксперты ставят под вопрос."
+     ],
+     "summary": "Конференция идёт с 9 ноября, в повестке — климатическое финансирование, адаптация и сокращение загрязнений. На полях проходят двусторонние встречи, в том числе Россия—Турция и страны Центральной Азии с Азербайджаном."
+    },
+    "kk": {
+     "key": "Анталиядағы COP31 тарихтағы ең көп қатысушы жиналған БҰҰ климат конференциясы болды; басты тақырып — осал елдерге климаттық қаржы.",
+     "insights": [
+      "Көшбасшылар мен БҰҰ басшысы әрекетті жеделдетуге шақырады, климаттық тұрақтылыққа арзан несие сұралуда.",
+      "Орталық Азия белсенді: Түрікменстан климаттың цифрлық атласын және «Климаттық тұрақтылық онжылдығын» ұсынды, Ташкент — ерте ескерту жүйесін.",
+      "Сын да бар: саммит иесі Түркияның климат саясаты төмен бағаланды, электр энергиясына басымдық беру күмән туғызуда."
+     ],
+     "summary": "Конференция 9 қарашадан бері өтуде, күн тәртібінде — климаттық қаржы, бейімделу және ластануды азайту. Кулуарда екіжақты кездесулер өтіп жатыр."
+    },
+    "en": {
+     "key": "COP31 in Antalya became the best-attended UN climate conference ever; the central issue is climate finance for vulnerable countries.",
+     "insights": [
+      "Leaders and the UN chief call for faster action, including cheaper borrowing for climate resilience.",
+      "Central Asia is active: Turkmenistan proposed a digital climate atlas and a ‘Decade of Climate Resilience’, Tashkent an early-warning system.",
+      "Criticism too: host Türkiye scored low on climate policy, and the summit’s bet on electrification is questioned."
+     ],
+     "summary": "The conference has run since 9 November, focusing on climate finance, adaptation and cutting pollution, with many bilateral meetings on the sidelines."
+    },
+    "at": "2026-11-13T19:30+05:00",
+    "n": 30,
+    "final": false
+   }
   },
   {
    "title": "CleanExpo Qazaqstan 2026",

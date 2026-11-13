@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T06:17+05:00",
+ "checked_at": "2026-11-13T09:01+05:00",
  "have_key": false,
  "sources": [
   {
@@ -16,7 +16,7 @@
    "url": "https://expomap.ru/expo/country/kazakhstan/",
    "group": "web",
    "ok": true,
-   "chars": 4856,
+   "chars": 4799,
    "events": null,
    "error": ""
   },
@@ -357,10 +357,10 @@
    "name": "QazTrade — мероприятия",
    "url": "https://qaztrade.org.kz/ru/",
    "group": "web",
-   "ok": true,
-   "chars": 5526,
+   "ok": false,
+   "chars": 0,
    "events": null,
-   "error": ""
+   "error": "HTTPSConnectionPool(host='qaztrade.org.kz', port=443): Max retries exceeded with url: /ru/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='qaztrade.org.kz"
   },
   {
    "name": "KazakhExport — новости",
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8482,
+   "chars": 8376,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8283,
+   "chars": 8053,
    "events": null,
    "error": ""
   },
@@ -547,7 +547,7 @@
    "url": "https://eng.sectsco.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 1744,
+   "chars": 1614,
    "events": null,
    "error": ""
   },

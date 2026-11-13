@@ -63,9 +63,11 @@ def to_iso(s):
 
 def rule_check(r, events, today):
     issues = []
-    for k in ("title", "start", "city", "organizer", "site"):
+    for k in ("title", "start", "city", "organizer"):
         if not r.get(k):
             issues.append(f"нет поля «{k}»")
+    if not r.get("site") and not r.get("contacts"):
+        issues.append("нет поля «ссылка или контакты»")
     text = " ".join(r.get(k, "") for k in ("title", "description", "venue", "organizer", "city", "contacts"))
     if BAD.search(text):
         issues.append("нецензурная лексика")
@@ -83,10 +85,28 @@ def rule_check(r, events, today):
     return issues
 
 
+SOCIAL = re.compile(r"(t\.me|telegram|instagram|facebook|fb\.com|wa\.me|whatsapp|zoom\.us|meet\.google|teams\.microsoft|linkedin|forms\.gle|docs\.google|youtube|tiktok|vk\.com|timepad|eventbrite|lu\.ma)", re.I)
+
+
 def site_check(r):
+    """(открылся, название найдено, пояснение). Нет ссылки или соцсеть, которую нельзя прочитать, — не ошибка."""
+    if not r.get("site"):
+        return False, False, "без ссылки — проверка по контактам"
+    url = r["site"]
+    m = re.match(r"https?://t\.me/(?!s/)([\w_]+)", url)
+    if m:  # публичный Telegram-канал читаем через t.me/s
+        try:
+            text = run.telegram_text(m.group(1)).lower()
+            words = [w for w in run.norm(r["title"]).split() if len(w) >= 4]
+            match = any(w in text for w in words) if words else False
+            return True, match, "" if match else "в канале не найдено название события"
+        except Exception:
+            pass
     try:
         text = run.html_to_text(run.fetch(r["site"])).lower()
     except Exception as e:
+        if SOCIAL.search(url):
+            return False, False, "ссылка на соцсеть/регистрацию — содержимое закрыто для робота"
         return False, False, f"сайт не открывается: {str(e)[:80]}"
     words = [w for w in run.norm(r["title"]).split() if len(w) >= 4]
     match = any(w in text for w in words) if words else False
@@ -99,7 +119,9 @@ def ai_check(r, site_text_ok, match):
     import anthropic
     prompt = (f"Ты — модератор сервиса «Жаршы» (деловые мероприятия Казахстана). Сегодня {dt.date.today()}. "
               "Проверь пользовательскую заявку. Отклоняй рекламу товаров, мошенничество, политическую агитацию, оскорбления, "
-              "бессмыслицу и частные вечеринки. Деловые, государственные, научные и отраслевые события — допустимы. "
+              "бессмыслицу и частные вечеринки. Деловые, государственные, научные и отраслевые события — допустимы, "
+              "в том числе вебинары, митапы и встречи сообществ без официального сайта (со ссылкой на Telegram, Instagram, Zoom "
+              "или только с контактами) — их одобряй, если заявка выглядит правдоподобно и не похожа на продажу. "
               f"Сайт открывается: {site_text_ok}; название найдено на сайте: {match}.\n"
               "Верни ТОЛЬКО JSON: {\"verdict\": \"approve|review|reject\", \"reasons\": [str], "
               "\"fixed\": {\"title\": str, \"description\": str (1–2 предложения), \"city\": str, \"venue\": str, \"organizer\": str}, "
@@ -123,9 +145,9 @@ def build_event(r, ai):
           "industries": [x for x in (ai or {}).get("industries", []) if x in run.INDUSTRIES][:3],
           "country": r.get("country") or "Казахстан", "city": run.CITIES.get((fx.get("city") or r["city"]).lower(), fx.get("city") or r["city"]),
           "venue": fx.get("venue") or r.get("venue", ""), "start": r["start"], "end": r.get("end") or r["start"],
-          "organizer": fx.get("organizer") or r["organizer"], "phone": phone, "email": email, "site": r["site"],
+          "organizer": fx.get("organizer") or r["organizer"], "phone": phone, "email": email, "site": r.get("site", ""),
           "description": fx.get("description") or r.get("description", "")[:600],
-          "source_url": r["site"], "source_name": "Добавлено пользователем", "user_submitted": True,
+          "source_url": r.get("site", ""), "source_name": "Добавлено пользователем", "user_submitted": True,
           "i18n": (ai or {}).get("i18n") or {}}
     if ev["type"] not in run.TYPES | {"official", "visit"}:
         ev["type"] = "conference"
@@ -155,7 +177,7 @@ def main():
             continue
         issues = rule_check(r, db["events"], today)
         hard = [i for i in issues if i in ("нецензурная лексика", "много ссылок (спам)", "дата в прошлом") or i.startswith("нет поля")]
-        ai, ok, match, why = None, False, False, ""
+        ai, ok, match, why, community = None, False, False, "", False
         if not hard:
             ok, match, why = site_check(r)
             try:
@@ -166,6 +188,10 @@ def main():
             status = "rejected"
         elif decision in YES or ((ai or {}).get("verdict") == "approve" and ok and match and not issues):
             status = "approved"
+        elif ((ai or {}).get("verdict") == "approve" and not issues
+              and (ai or {}).get("level") in ("regional", "industry")
+              and (ai or {}).get("type") not in ("official", "visit", "summit")):
+            status, community = "approved", True   # вебинар/митап без официального сайта — публикуем с пометкой
         else:
             status = "review"
         if "дубль события в базе" in issues and status != "rejected":
@@ -175,6 +201,8 @@ def main():
         reasons = issues + ([why] if why else []) + ((ai or {}).get("reasons") or [])
         if status == "approved":
             ev = build_event(r, ai)
+            if community and decision not in YES:
+                ev["verified"] = False
             ev["found_at"] = dt.datetime.now(run.TZ).isoformat(timespec="minutes")
             db["events"].append(ev)
             added += 1

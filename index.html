@@ -318,19 +318,20 @@ main{max-width:1560px;margin:0 auto;padding:14px 20px 40px;display:grid;grid-tem
 .about li{margin-bottom:6px}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30px}
 /* compact filters */
-.tools{padding:10px 10px 6px;gap:6px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-.tools .trow{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.tools .trow .toolsb{margin-left:auto}
-@media (max-width:640px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.tools input[type=search]{grid-column:1/-1}}
-.tools input[type=search]{grid-column:span 2;height:32px;padding:6px 10px;border-radius:8px;font-size:13.5px}
-.tools select{padding:5px 6px;border-radius:8px;font-size:13px;width:100%;min-width:0;height:32px}
-.tools .fav-toggle,.tools .tbtn,.tools .seg button{padding:5px 9px;font-size:12.5px;border-radius:8px}
+.tools{padding:8px 10px 4px;gap:5px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.tools input[type=search]{grid-column:span 2;height:30px;padding:4px 10px;border-radius:8px;font-size:13px}
+.tools select{padding:3px 4px;border-radius:8px;font-size:12.5px;width:100%;min-width:0;height:30px}
+.tools .trow{grid-column:1/-1;display:flex;flex-wrap:nowrap;gap:5px;align-items:center;min-width:0}
+.tools .trow .toolsb{margin-left:auto;display:flex;gap:5px}
+.tools .fav-toggle,.tools .tbtn,.tools .seg button{padding:0 9px;height:30px;font-size:12.5px;border-radius:8px;white-space:nowrap}
 .tools .seg{border-radius:8px}
-.tools .toolsb{gap:6px}
-.count{font-size:12px!important;padding-top:0!important;padding-bottom:2px!important}
-.reco.empty{padding:7px 10px;margin:4px 0 8px;font-size:13px}
-.reco.empty span{display:none}
-.reco.empty .btn{padding:5px 12px;font-size:12.5px}
+.tools .hide-d{display:none}
+.pref-btn.glow{border-color:var(--gold);box-shadow:0 0 0 3px rgba(240,180,0,.18);animation:pglow 2.4s ease-in-out infinite}
+@keyframes pglow{50%{box-shadow:0 0 0 5px rgba(240,180,0,.06)}}
+.count{font-size:12px!important;padding:0 12px 4px!important}
+.count:empty{display:none}
+@media (min-width:1750px){.tools{grid-template-columns:repeat(6,minmax(0,1fr))}.tools .trow{grid-column:span 4}}
+@media (max-width:640px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.tools input[type=search]{grid-column:1/-1}.tools .trow{flex-wrap:wrap}}
 </style>
 </head>
 <body>
@@ -386,7 +387,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
         <div class="trow"><button class="fav-toggle pref-btn" id="prefBtn">✨ <span data-i="prefBtn"></span></button>
         <button class="fav-toggle" id="favOnly" data-i="myBtn"></button>
         <div class="seg"><button id="vList" class="on" data-i="listV"></button><button id="vCal" data-i="calV"></button></div>
-        <div class="toolsb"><button class="tbtn" id="expBtn">⬇ <span data-i="expBtn"></span></button><button class="tbtn" id="subBtn">📅 <span data-i="subBtn"></span></button></div></div>
+        <div class="toolsb"><button class="tbtn ico" id="expBtn" data-tip="Excel">⬇ <span data-i="expBtn"></span></button><button class="tbtn ico" id="subBtn">📅 <span data-i="subBtn" class="hide-d"></span></button></div></div>
       </div>
       <div class="count" id="count"></div>
       <div class="list" id="list"></div>
@@ -645,7 +646,7 @@ function renderStats(){
   const uniq=f=>new Set(all.flatMap(f).filter(Boolean)).size;
   const dayAgo=Date.now()-864e5, fresh=all.filter(e=>e.found_at&&Date.parse(e.found_at)>dayAgo).length;
   const facts=[[all.length,'x_all'],[uniq(e=>[e.city].filter(c=>c&&c!=='уточняется'&&c!=='Онлайн')),'x_cities'],[uniq(e=>e.industries||[]),'x_ind'],
-    [uniq(e=>[e.source_name,...(e.also_in||[])]),'x_src'],[uniq(e=>[e.organizer].filter(o=>o&&o!=='уточняется')),'x_org'],[all.length-up.length,'x_arch','past']];
+    [uniq(e=>[e.source_name,...(e.also_in||[])]),'x_src'],[uniq(e=>[e.organizer].filter(o=>o&&o!=='уточняется')),'x_org']];
   $('facts').innerHTML=facts.map(([v,key,pp])=>pp?`<button class="linkb" data-period="${pp}"><b>${v}</b> ${esc(t(key))}</button>`:`<span><b>${v}</b> ${esc(t(key))}</span>`).join('')+(fresh?`<span class="new"><b>+${fresh}</b> ${esc(t('x_new'))}</span>`:'');
 }
 
@@ -732,7 +733,10 @@ function render(){
   const arr=filtered();
   const per=$('fPeriod').value, td0=todayISO(), nPast=DATA.events.filter(e=>endOf(e)<td0).length;
   const arch=per==='past'?`<button class="linkb" data-period="">${esc(t('backUp'))}</button>`:(nPast?`<button class="linkb" data-period="past">${esc(t('moreArch',nPast))}</button>`:'');
-  $('count').innerHTML=`<span>${esc(t('found'))}: ${arr.length}</span>`+(selDay?`<button class="pill" data-clearday>📅 ${esc(fmtDay(selDay,false))} ✕</button>`:'')+arch;
+  const anyF0=['q','fCity','fInd','fLevel','fType','fGeo'].some(id=>$(id).value)||favOnly||selDay||per;
+  $('prefBtn').classList.toggle('glow',!hasPrefs());
+  $('subBtn').title=t('subBtn'); $('expBtn').title=t('expBtn');
+  $('count').innerHTML=!anyF0?'':`<span>${esc(t('found'))}: ${arr.length}</span>`+(selDay?`<button class="pill" data-clearday>📅 ${esc(fmtDay(selDay,false))} ✕</button>`:'')+arch;
   renderAlerts(); renderStats(); renderSponsor(); renderStrip(); renderMap();
   if(view==='list') renderList(arr); else renderCal(filtered({noDay:true}));
 }
@@ -966,7 +970,8 @@ function prefScore(e){
 }
 function recoBlock(){
   const td=todayISO();
-  if(!hasPrefs())return `<div class="reco empty"><div title="${esc(t('prefNudgeSub'))}"><b>✨ ${esc(t('prefNudge'))}</b> <span>${esc(t('prefNudgeSub'))}</span></div><button class="btn pri" data-prefs>${esc(t('prefSet'))}</button></div>`;
+  if(!hasPrefs())return '';
+  if(0)return `<div class="reco empty"><div title="${esc(t('prefNudgeSub'))}"><b>✨ ${esc(t('prefNudge'))}</b> <span>${esc(t('prefNudgeSub'))}</span></div><button class="btn pri" data-prefs>${esc(t('prefSet'))}</button></div>`;
   const list=DATA.events.filter(e=>endOf(e)>=td&&prefScore(e)>0).sort((a,b)=>a.start.localeCompare(b.start));
   const kz=list.filter(e=>!isAbroad(e)).slice(0,4), ab=list.filter(isAbroad).slice(0,3);
   const chips=[...(PREFS.ind||[]).map(indName),...(PREFS.city||[]).map(cityName),...(PREFS.type||[]).map(x=>L().types[x]),...(PREFS.gov?[t('gov')]:[])].slice(0,8);

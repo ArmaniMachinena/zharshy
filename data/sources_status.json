@@ -588,6 +588,24 @@
    "error": ""
   },
   {
+   "name": "Telegram @atamekenbusiness",
+   "url": "https://t.me/s/atamekenbusiness",
+   "group": "telegram",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
+   "name": "Telegram @atamekenbusiness_qaz",
+   "url": "https://t.me/s/atamekenbusiness_qaz",
+   "group": "telegram",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "wait"
+  },
+  {
    "name": "WhatsApp (GREEN-API)",
    "url": "https://green-api.com",
    "group": "whatsapp",

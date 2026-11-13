@@ -2161,6 +2161,39 @@
    "country": "Казахстан"
   },
   {
+   "id": "congress-financiers-2026",
+   "title": "XIV Конгресс финансистов Казахстана",
+   "type": "congress",
+   "level": "republican",
+   "edition": 14,
+   "industries": [
+    "Финансы"
+   ],
+   "country": "Казахстан",
+   "city": "Алматы",
+   "venue": "",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "organizer": "Ассоциация финансистов Казахстана, НПП «Атамекен»",
+   "phone": "",
+   "email": "",
+   "site": "https://www.youtube.com/live/RHM6RI6LK_4",
+   "description": "Будущее финансового рынка, цифровые активы, криптоиндустрия и финансовые инновации. Проходит накануне Дня национальной валюты (15 ноября). Прямая трансляция — Атамекен Business на YouTube.",
+   "source_url": "https://t.me/atamekenbusiness_qaz",
+   "source_name": "Telegram @atamekenbusiness",
+   "found_at": "2026-11-13T13:45+06:00",
+   "i18n": {
+    "kk": {
+     "title": "Қазақстан қаржыгерлерінің XIV конгресі",
+     "description": "Қаржы нарығының болашағы, цифрлық активтер, криптоиндустрия және қаржылық инновациялар. Ұлттық валюта күні (15 қараша) қарсаңында өтеді. Тікелей эфир — Atameken Business YouTube арнасында."
+    },
+    "en": {
+     "title": "14th Congress of Financiers of Kazakhstan",
+     "description": "The future of the financial market, digital assets, crypto and financial innovation. Held ahead of National Currency Day (15 November). Live stream on Atameken Business YouTube."
+    }
+   }
+  },
+  {
    "id": "nonfood-asia-2026",
    "title": "Non-Food Asia Expo Kazakhstan 2026",
    "type": "exhibition",

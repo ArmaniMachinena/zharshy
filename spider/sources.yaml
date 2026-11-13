@@ -31,6 +31,8 @@ web:
 
 telegram:
   # Публичные каналы: имя после t.me/. Дополняйте своим списком.
+  - atamekenbusiness
+  - atamekenbusiness_qaz
   - astanahub
   - kapitalkz
   - digitalbusinesskz

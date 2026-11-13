@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T09:01+05:00",
+ "checked_at": "2026-11-13T12:23+05:00",
  "have_key": false,
  "sources": [
   {
@@ -357,10 +357,10 @@
    "name": "QazTrade — мероприятия",
    "url": "https://qaztrade.org.kz/ru/",
    "group": "web",
-   "ok": false,
-   "chars": 0,
+   "ok": true,
+   "chars": 5526,
    "events": null,
-   "error": "HTTPSConnectionPool(host='qaztrade.org.kz', port=443): Max retries exceeded with url: /ru/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='qaztrade.org.kz"
+   "error": ""
   },
   {
    "name": "KazakhExport — новости",
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8376,
+   "chars": 8821,
    "events": null,
    "error": ""
   },
@@ -513,7 +513,7 @@
    "ok": false,
    "chars": 0,
    "events": null,
-   "error": "HTTPSConnectionPool(host='www.mfa.gov.kz', port=443): Max retries exceeded with url: /ru (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.mfa.gov.kz', "
+   "error": "HTTPSConnectionPool(host='www.mfa.gov.kz', port=443): Max retries exceeded with url: /ru (Caused by NameResolutionError(\"HTTPSConnection(host='www.mfa.gov.kz', "
   },
   {
    "name": "ЕЭК (ЕАЭС) — календарь",
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8053,
+   "chars": 8287,
    "events": null,
    "error": ""
   },
@@ -574,7 +574,7 @@
    "url": "https://t.me/s/kapitalkz",
    "group": "telegram",
    "ok": true,
-   "chars": 21939,
+   "chars": 19075,
    "events": null,
    "error": ""
   },

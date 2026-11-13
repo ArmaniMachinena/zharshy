@@ -2299,6 +2299,44 @@
    "country": "Казахстан"
   },
   {
+   "id": "ceraweek-2027",
+   "title": "CERAWeek 2027 by S&P Global",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Энергетика",
+    "Нефть и газ",
+    "Водород"
+   ],
+   "country": "США",
+   "city": "Хьюстон",
+   "venue": "Hilton Americas-Houston, George R. Brown Convention Center",
+   "start": "2027-03-08",
+   "end": "2027-03-12",
+   "organizer": "S&P Global",
+   "phone": "",
+   "email": "",
+   "site": "https://www.ceraweek.com/en",
+   "description": "Главная мировая энергетическая конференция: нефть и газ, энергопереход, электроэнергия для ИИ и дата-центров.",
+   "source_url": "https://baxtel.com/events/ceraweek-2027",
+   "source_name": "Добавлено пользователем",
+   "user_submitted": true,
+   "found_at": "2026-11-13T12:20+05:00",
+   "i18n": {
+    "kk": {
+     "title": "CERAWeek 2027 by S&P Global",
+     "description": "Әлемдегі басты энергетикалық конференция: мұнай-газ, энергетикалық көшу, ЖИ мен дата-орталықтарға арналған электр энергиясы.",
+     "venue": "Hilton Americas-Houston"
+    },
+    "en": {
+     "title": "CERAWeek 2027 by S&P Global",
+     "description": "The world’s premier energy conference: oil & gas, energy transition, power for AI and data centers.",
+     "venue": "Hilton Americas-Houston, George R. Brown Convention Center"
+    }
+   }
+  },
+  {
    "id": "gulfood-2027",
    "title": "Gulfood 2027",
    "type": "exhibition",

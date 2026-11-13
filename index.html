@@ -905,7 +905,7 @@ function renderSponsor(){
 }
 /* ---------- добавить мероприятие + модерация ---------- */
 /* Куда уходят заявки: Google Форма (заполнить после создания формы). Пока action пустой — заявка сохраняется как текст для отправки. */
-const SUBMIT={action:'',fields:{title:'',type:'',start:'',end:'',city:'',country:'',venue:'',organizer:'',site:'',contacts:'',description:'',submitter:''}};
+const SUBMIT={"action":"https://docs.google.com/forms/d/e/1FAIpQLSdbXHzwEl0iakUkatfx3Vycb1hsFVzvDeyQw711Yg_FtM7EWg/formResponse","fields":{"title":"entry.892954838","type":"entry.155464715","start":"entry.1807918824","end":"entry.1611109471","city":"entry.1114017614","country":"entry.2084499020","venue":"entry.1337653281","organizer":"entry.1520084748","site":"entry.991005437","contacts":"entry.178629957","description":"entry.1485962437","submitter":"entry.80662840"}};
 const BAD=[/х[уy][йеёяю]/i,/п[иi]зд/i,/(^|[^а-яё])[её]б[аоуиеыл]/i,/бля/i,/(^|[^а-яё])сук[аи]/i,/муда[кч]/i,/пид[оа]р/i,/гандон/i,/залуп/i,/шлюх/i,/дроч/i,/f+u+c+k/i,/(^|\W)shit/i,/bitch/i,/cunt/i,/asshole/i,/(^|[^а-яәіңғүұқөһ])сік/i,/сігейін/i,/қотақ/i,/шешеңді/i];
 function checkText(s){s=String(s||'');const issues=[];if(BAD.some(r=>r.test(s)))issues.push(t('mBad'));
   if((s.match(/https?:\/\//g)||[]).length>3)issues.push(t('mLinks'));const letters=s.replace(/[^A-Za-zА-Яа-яЁёӘәІіҢңҒғҮүҰұҚқӨөҺһ]/g,'');

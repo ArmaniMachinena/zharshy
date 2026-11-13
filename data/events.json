@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T13:05+05:00",
+ "updated_at": "2026-11-13T13:58+05:00",
  "events": [
   {
    "title": "Central Asia Coatings Show 2026",
@@ -2211,6 +2211,56 @@
    "country": "Казахстан"
   },
   {
+   "title": "31-я Конференция сторон Рамочной конвенции ООН об изменении климата (COP31)",
+   "type": "summit",
+   "level": "international",
+   "edition": 31,
+   "industries": [
+    "Экология и ESG",
+    "Энергетика"
+   ],
+   "city": "Анталья",
+   "venue": "",
+   "start": "2026-11-09",
+   "end": "2026-11-20",
+   "organizer": "Организация Объединённых Наций",
+   "phone": "",
+   "email": "",
+   "site": "https://indico.un.org",
+   "description": "Международный климатический саммит ООН, на котором обсуждаются меры по снижению выбросов и адаптации к изменению климата. Премьер-министр Казахстана принимает в нём участие по поручению Президента.",
+   "source_url": "https://primeminister.kz/ru/news",
+   "source_name": "Премьер-министр РК — новости",
+   "country": "Турция",
+   "program_url": "",
+   "speakers": [
+    {
+     "name": "Олжас Бектенов",
+     "role": "Премьер-министр Республики Казахстан",
+     "company": "Правительство Республики Казахстан"
+    },
+    {
+     "name": "Василе Тофан",
+     "role": "Премьер-министр Республики Молдова",
+     "company": "Правительство Республики Молдова"
+    }
+   ],
+   "i18n": {
+    "kk": {
+     "title": "ООН-ның Климаттың өзгеруі туралы негізгі конвенциясы тараптарының 31-конференциясы (COP31)",
+     "description": "БҰҰ-ның климаттық өзгерістерге арналған халықаралық саммиті, онда шығарындыларды азайту және климаттың өзгеруіне бейімделу шаралары талқыланады. Қазақстан Премьер-Министрі Президенттің тапсырмасы бойынша осы іс-шараға қатысады."
+    },
+    "en": {
+     "title": "31st Conference of the Parties to the UN Framework Convention on Climate Change (COP31)",
+     "description": "UN international climate summit discussing measures to reduce emissions and adapt to climate change. The Prime Minister of Kazakhstan is taking part by instruction of the President."
+    }
+   },
+   "id": "31-ya-konferentsiya-storon-ramochnoy-kon-2026-46de95",
+   "found_at": "2026-11-13T13:58+05:00",
+   "also_in": [
+    "https://indico.un.org"
+   ]
+  },
+  {
    "id": "cop31-antalya-2026",
    "title": "COP31 — Конференция ООН по изменению климата",
    "type": "official",
@@ -2277,7 +2327,7 @@
    "organizer": "",
    "phone": "",
    "email": "",
-   "site": "",
+   "site": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions.htm",
    "description": "21-я Казахстанская международная выставка чистящих и моющих средств, оборудования для химчисток и прачечных, а также уборочной техники. Проходит в Алматы с 11 по 13 ноября 2026 года.",
    "source_url": "https://www.advantour.com/rus/kazakhstan/almaty/exhibitions.htm",
    "source_name": "Advantour — выставки Алматы",
@@ -2297,7 +2347,8 @@
     }
    },
    "id": "cleanexpo-qazaqstan-2026-ca5fd0",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "id": "foodexpo-qazaqstan-2026",
@@ -2567,7 +2618,8 @@
     }
    },
    "id": "ev-2026-4799e1",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "id": "independence-day-2026",
@@ -2886,7 +2938,8 @@
     }
    },
    "id": "kazakhstan-machinery-fair-2027-63f5f5",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "title": "SU ARNASY - Water Expo 2027",
@@ -2992,6 +3045,45 @@
    ]
   },
   {
+   "title": "XVI Международная выставка технологий водоснабжения, водоотведения, водоочистки и цифровизации водной инфраструктуры",
+   "type": "exhibition",
+   "level": "international",
+   "edition": 16,
+   "industries": [
+    "Водное хозяйство",
+    "Экология и ESG",
+    "IT и цифровизация"
+   ],
+   "city": "Астана",
+   "venue": "МВЦ «EXPO»",
+   "start": "2027-03-31",
+   "end": "2027-04-02",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.kmfexpo.kz/ru",
+   "description": "Выставка оборудования и технологий для водоснабжения, водоотведения и очистки воды, а также цифровых решений для водной инфраструктуры. Проходит одновременно с Kazakhstan Machinery Fair 2027 на одной площадке.",
+   "source_url": "https://www.kmfexpo.kz/ru",
+   "source_name": "Kazakhstan Machinery Fair",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "XVI Халықаралық су беру, су бұру, су тазарту технологиялары және су инфрақұрылымын цифрландыру көрмесі",
+     "description": "Су беру, су бұру және су тазарту жабдықтары мен технологияларының, сондай-ақ су инфрақұрылымына арналған цифрлық шешімдердің көрмесі. Kazakhstan Machinery Fair 2027-мен бір алаңда өтеді.",
+     "venue": "Астана, «EXPO» халықаралық көрме орталығы"
+    },
+    "en": {
+     "title": "XVI International Exhibition of Water Supply, Wastewater, Water Treatment and Digitalisation of Water Infrastructure Technologies",
+     "description": "An exhibition of equipment and technologies for water supply, wastewater disposal and water treatment, plus digital solutions for water infrastructure. It runs alongside Kazakhstan Machinery Fair 2027 at the same venue.",
+     "venue": "EXPO Exhibition Centre, Astana"
+    }
+   },
+   "id": "xvi-mezhdunarodnaya-vystavka-tehnologiy-2027-74dc94",
+   "found_at": "2026-11-13T13:58+05:00"
+  },
+  {
    "title": "Международная выставка промышленной энергетики и инженерной инфраструктуры предприятий",
    "type": "exhibition",
    "level": "international",
@@ -3027,7 +3119,8 @@
     }
    },
    "id": "ev-2027-7b23b6",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "id": "hannover-messe-2027",
@@ -3420,6 +3513,43 @@
    "edition": null
   },
   {
+   "title": "17-й Международный Горно-металлургический конгресс",
+   "type": "congress",
+   "level": "international",
+   "edition": 17,
+   "industries": [
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Астана",
+   "venue": "Отель \"Hilton Astana\", ул. Гейдара Алиева 14",
+   "start": "2027-06-10",
+   "end": "2027-06-11",
+   "organizer": "",
+   "phone": "+7 771 258 34 34, +7 727 258 34 34",
+   "email": "",
+   "site": "https://www.amm.kz",
+   "description": "Международный отраслевой конгресс по горнодобыче и металлургии, который пройдёт в Астане в июне 2027 года. Он объединит специалистов и участников горно-металлургического сектора.",
+   "source_url": "https://www.amm.kz",
+   "source_name": "AMM",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "17-ші Халықаралық тау-кен металлургиясы конгресі",
+     "description": "2027 жылдың маусымында Астанада өтетін тау-кен өндірісі мен металлургия салasындағы халықаралық салалық конгресс. Ол сала мамандарын және қатысушыларын біріктіреді.",
+     "venue": "\"Hilton Astana\" қонақ үйі, Ғайдар Әliev көшесі 14"
+    },
+    "en": {
+     "title": "17th International Mining and Metallurgy Congress",
+     "description": "An international industry congress on mining and metallurgy, taking place in Astana in June 2027. It will bring together specialists and participants of the mining and metallurgical sector.",
+     "venue": "Hilton Astana Hotel, 14 Geydar Aliyev St."
+    }
+   },
+   "id": "17-y-mezhdunarodnyy-gorno-metallurgiches-2027-76474f",
+   "found_at": "2026-11-13T13:58+05:00"
+  },
+  {
    "id": "amm-2027",
    "title": "Astana Mining & Metallurgy 2027 (AMM)",
    "type": "congress",
@@ -3494,7 +3624,8 @@
     }
    },
    "id": "electronica-expo-kazakhstan-2027-e3be05",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "id": "spief-2027",
@@ -3564,6 +3695,120 @@
      "venue": "уточняется"
     }
    }
+  },
+  {
+   "title": "KazDrilling: Upstream of Kazakhstan",
+   "type": "conference",
+   "level": "industry",
+   "edition": 4,
+   "industries": [
+    "Нефть и газ",
+    "Энергетика"
+   ],
+   "city": "Атырау",
+   "venue": "",
+   "start": "2027-08-27",
+   "end": "2027-08-27",
+   "organizer": "KazService",
+   "phone": "+7 7172 57-42-49",
+   "email": "conference@kazservice.kz",
+   "site": "https://kaz-drilling.com/",
+   "description": "Четвёртая ежегодная конференция по апстрим-сектору и буровым работам в Казахстане при поддержке Министерства энергетики и НПП «Атамекен». Участники обсудят повышение нефтеотдачи, разработку трудноизвлекаемых запасов, сланцевую нефть, налоговые преференции, закупки и местное содержание.",
+   "source_url": "https://kaz-drilling.com/",
+   "source_name": "KazDrilling",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [
+    {
+     "name": "Канат Шарлапаев",
+     "role": "Председатель президиума (модератор пленарной сессии)",
+     "company": "НПП «Атамекен»"
+    },
+    {
+     "name": "Ерлан Акбаров",
+     "role": "Вице-министр энергетики РК",
+     "company": "Министерство энергетики Республики Казахстан"
+    },
+    {
+     "name": "Мадияр Басшыбаев",
+     "role": "Прокурор Атырауской области",
+     "company": ""
+    },
+    {
+     "name": "Марат Мурзиев",
+     "role": "Заместитель акима Атырауской области",
+     "company": "Атырауская область"
+    },
+    {
+     "name": "Курмангазы Исказиев",
+     "role": "Первый заместитель председателя правления",
+     "company": "АО «НК «КазМунайГаз»"
+    },
+    {
+     "name": "Асылжан Даулетов",
+     "role": "Заместитель Председателя Правления по разведке и добыче",
+     "company": "АО «НК «QazaqGaz»"
+    },
+    {
+     "name": "Сюзанн Куган",
+     "role": "Старший Вице-Президент и Председатель концерна Шелл в Казахстане",
+     "company": "Shell"
+    },
+    {
+     "name": "Сегер Хойтинк",
+     "role": "Председатель и управляющий директор",
+     "company": "ENI Kazakhstan"
+    },
+    {
+     "name": "Уильям Лакоби",
+     "role": "Генеральный директор",
+     "company": "ТОО «Тенгизшевройл»"
+    },
+    {
+     "name": "Жандос Оразалиев",
+     "role": "Заместитель управляющего директора",
+     "company": "NCOC"
+    },
+    {
+     "name": "Никола Аллегро",
+     "role": "Заместитель генерального директора / директор по производству",
+     "company": "KPO"
+    },
+    {
+     "name": "Жанибек Катренов",
+     "role": "Председатель комитета по геологоразведке (модератор сессии «Разведка, сейсмика и бурение»)",
+     "company": "Kazservice"
+    },
+    {
+     "name": "Жандос Нурмаганбетов",
+     "role": "Генеральный директор ассоциации (модератор сессии «КРС и увеличение нефтеотдачи»)",
+     "company": "Kazenergy"
+    },
+    {
+     "name": "Фархат Абытов",
+     "role": "Заместитель председателя правления (модератор сессии «Сланцевая нефть и газ»)",
+     "company": "АО «Национальная геологическая служба»"
+    },
+    {
+     "name": "Нурлан Жумагулов",
+     "role": "Эксперт нефтегазовой отрасли (модератор сессии «Закупки и местное содержание»)",
+     "company": ""
+    }
+   ],
+   "i18n": {
+    "kk": {
+     "title": "KazDrilling: Upstream of Kazakhstan",
+     "description": "Қазақстандағы апстрим секторы мен бұрғылау жұмыстарына арналған төртінші жылдық конференция. Қазақстан Республикасы Энергетика министрлігі мен «Атамекен» ҰКП қолдауымен өтеді. Қатысушылар мұнай беру коэффициентін арттыру, қиын өндірілетін қорларды игеру, тақта мұнайы, салықтық преференциялар, сатып алу және жергілікті мазмұн мәселелерін талқылайды.",
+     "venue": "Атырау"
+    },
+    "en": {
+     "title": "KazDrilling: Upstream of Kazakhstan",
+     "description": "The fourth annual conference on upstream and drilling in Kazakhstan, held with the support of the Ministry of Energy and the National Chamber of Entrepreneurs Atameken. Participants will discuss enhanced oil recovery, hard-to-recover reserves, shale oil, tax preferences, procurement and local content.",
+     "venue": "Atyrau"
+    }
+   },
+   "id": "kazdrilling-upstream-of-kazakhstan-2027-a89943",
+   "found_at": "2026-11-13T13:58+05:00"
   },
   {
    "id": "eef-2027",
@@ -3637,7 +3882,8 @@
     }
    },
    "id": "31-kioge-2027-ddadb7",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "title": "30-я Казахстанская международная выставка транспорта и логистики TransLogistica",
@@ -3674,7 +3920,8 @@
     }
    },
    "id": "30-translogistica-2027-c90b10",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
   },
   {
    "title": "15-я Казахстанская международная выставка «Безопасность, противопожарная защита, информационные технологии, связь и дроны»",
@@ -3712,7 +3959,44 @@
     }
    },
    "id": "15-2027-bffdb4",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": []
+  },
+  {
+   "title": "FIATA Young Logistics Professionals Award 2027 (YLP Award 2027)",
+   "type": "competition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Транспорт и логистика",
+    "Образование"
+   ],
+   "city": "уточняется",
+   "venue": "",
+   "start": "2027-11-11",
+   "end": "2027-02-01",
+   "organizer": "FIATA и TT Club",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Международная премия для молодых специалистов в сфере логистики с ценными призами и профессиональными возможностями. Номинации принимаются до 1 февраля 2027 года.",
+   "source_url": "https://kffanek.kz/",
+   "source_name": "АНЭК",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "FIATA Young Logistics Professionals Award 2027 (YLP Award 2027)",
+     "description": "Логистика саласындағы жас mamandarға arnalǵan halyqaralyq syılyq. Ony jeńimpazdarǵa qundy syılyqtar men jańa kásibi múmkindikter berіledі. Nomınatsıyalarǵa ótinimder 2027 jylǵy 1 aqpanǵa deyін qabyldanady."
+    },
+    "en": {
+     "title": "FIATA Young Logistics Professionals Award 2027 (YLP Award 2027)",
+     "description": "An international award for young professionals in logistics, offering valuable prizes and new professional opportunities. Nominations are accepted until 1 February 2027."
+    }
+   },
+   "id": "fiata-young-logistics-professionals-awar-2027-f89c81",
+   "found_at": "2026-11-13T13:58+05:00"
   },
   {
    "id": "dubai-airshow-2027",

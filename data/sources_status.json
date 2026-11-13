@@ -1,5 +1,7 @@
 {
- "checked_at": "2026-11-13T13:05+05:00",
+ "checked_at": "2026-11-13T13:50+05:00",
+ "full_at": "2026-11-13T13:50+05:00",
+ "mode": "full",
  "have_key": true,
  "sources": [
   {
@@ -8,7 +10,7 @@
    "group": "web",
    "ok": true,
    "chars": 1992,
-   "events": 3,
+   "events": 0,
    "error": ""
   },
   {
@@ -115,7 +117,7 @@
    "url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html",
    "group": "web",
    "ok": true,
-   "chars": 9451,
+   "chars": 9455,
    "events": 0,
    "error": ""
   },
@@ -161,7 +163,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 5311,
-   "events": 1,
+   "events": 0,
    "error": ""
   },
   {
@@ -170,7 +172,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7386,
-   "events": 1,
+   "events": 0,
    "error": ""
   },
   {
@@ -179,7 +181,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 5526,
-   "events": 1,
+   "events": 0,
    "error": ""
   },
   {
@@ -233,7 +235,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7111,
-   "events": 0,
+   "events": 1,
    "error": ""
   },
   {
@@ -341,7 +343,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 8019,
-   "events": 0,
+   "events": 1,
    "error": ""
   },
   {
@@ -476,7 +478,7 @@
    "group": "state",
    "ok": true,
    "chars": 15692,
-   "events": 1,
+   "events": 0,
    "error": ""
   },
   {
@@ -484,7 +486,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8821,
+   "chars": 8781,
    "events": 0,
    "error": ""
   },
@@ -529,8 +531,8 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8000,
-   "events": 3,
+   "chars": 8521,
+   "events": 1,
    "error": ""
   },
   {
@@ -552,6 +554,159 @@
    "error": ""
   },
   {
+   "name": "10times — Казахстан",
+   "url": "https://10times.com/kazakhstan",
+   "group": "global",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://10times.com/kazakhstan"
+  },
+  {
+   "name": "EventsEye — выставки Казахстана",
+   "url": "https://www.eventseye.com/fairs/c1_trade-shows_kazakhstan.html",
+   "group": "global",
+   "ok": true,
+   "chars": 14043,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "AUMA — поиск выставок",
+   "url": "https://www.auma.de/en/find-your-fair/",
+   "group": "global",
+   "ok": true,
+   "chars": 10983,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "TradeFairDates",
+   "url": "https://www.tradefairdates.com",
+   "group": "global",
+   "ok": true,
+   "chars": 5789,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Eventbrite — Казахстан",
+   "url": "https://www.eventbrite.com/d/kazakhstan/business--events/",
+   "group": "global",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "405 Client Error: Not Allowed for url: https://www.eventbrite.com/d/kazakhstan/business--events/"
+  },
+  {
+   "name": "Luma — Discover",
+   "url": "https://lu.ma/discover",
+   "group": "global",
+   "ok": true,
+   "chars": 2884,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Meetup",
+   "url": "https://www.meetup.com",
+   "group": "global",
+   "ok": true,
+   "chars": 7777,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "AllEvents — Астана",
+   "url": "https://allevents.in/astana",
+   "group": "global",
+   "ok": true,
+   "chars": 1360,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "AllEvents — Алматы",
+   "url": "https://allevents.in/almaty",
+   "group": "global",
+   "ok": true,
+   "chars": 1326,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "IEEE Conferences",
+   "url": "https://events.ieee.org/search-ieee-conferences/",
+   "group": "global",
+   "ok": true,
+   "chars": 1201,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "WikiCFP",
+   "url": "http://www.wikicfp.com/cfp/",
+   "group": "global",
+   "ok": true,
+   "chars": 1264,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "SPE Events",
+   "url": "https://www.spe-events.org",
+   "group": "global",
+   "ok": true,
+   "chars": 1111,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "IEA Events",
+   "url": "https://www.iea.org/events",
+   "group": "global",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://www.iea.org/events"
+  },
+  {
+   "name": "World Economic Forum — события",
+   "url": "https://www.weforum.org/events",
+   "group": "global",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://www.weforum.org/events"
+  },
+  {
+   "name": "Indico.UN",
+   "url": "https://indico.un.org",
+   "group": "global",
+   "ok": true,
+   "chars": 4230,
+   "events": 1,
+   "error": ""
+  },
+  {
+   "name": "World Bank Live",
+   "url": "https://live.worldbank.org",
+   "group": "global",
+   "ok": true,
+   "chars": 5959,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "OECD Events",
+   "url": "https://www.oecd.org/en/events.html",
+   "group": "global",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://www.oecd.org/en/events.html"
+  },
+  {
    "name": "Календарь мероприятий KNS",
    "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
    "group": "sheets",
@@ -565,8 +720,8 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 9828,
-   "events": 2,
+   "chars": 10145,
+   "events": 1,
    "error": ""
   },
   {
@@ -574,8 +729,8 @@
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 10515,
-   "events": 2,
+   "chars": 11094,
+   "events": 1,
    "error": ""
   },
   {
@@ -593,7 +748,7 @@
    "group": "telegram",
    "ok": true,
    "chars": 19974,
-   "events": 1,
+   "events": 0,
    "error": ""
   },
   {

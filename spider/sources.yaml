@@ -86,6 +86,26 @@ more:
   - {name: ИННОПРОМ, url: https://www.innoprom.com/en/}
   - {name: World Hydrogen Summit, url: https://www.world-hydrogen-summit.com}
 
+# Мировые каталоги и календари международных организаций (список Армана, 13.11.2026)
+global:
+  - {name: 10times — Казахстан, url: https://10times.com/kazakhstan}
+  - {name: EventsEye — выставки Казахстана, url: https://www.eventseye.com/fairs/c1_trade-shows_kazakhstan.html}
+  - {name: AUMA — поиск выставок, url: https://www.auma.de/en/find-your-fair/}
+  - {name: TradeFairDates, url: https://www.tradefairdates.com}
+  - {name: Eventbrite — Казахстан, url: https://www.eventbrite.com/d/kazakhstan/business--events/}
+  - {name: Luma — Discover, url: https://lu.ma/discover}
+  - {name: Meetup, url: https://www.meetup.com}
+  - {name: AllEvents — Астана, url: https://allevents.in/astana}
+  - {name: AllEvents — Алматы, url: https://allevents.in/almaty}
+  - {name: IEEE Conferences, url: https://events.ieee.org/search-ieee-conferences/}
+  - {name: WikiCFP, url: http://www.wikicfp.com/cfp/}
+  - {name: SPE Events, url: https://www.spe-events.org}
+  - {name: IEA Events, url: https://www.iea.org/events}
+  - {name: World Economic Forum — события, url: https://www.weforum.org/events}
+  - {name: Indico.UN, url: https://indico.un.org}
+  - {name: World Bank Live, url: https://live.worldbank.org}
+  - {name: OECD Events, url: https://www.oecd.org/en/events.html}
+
 # Государственная повестка: визиты, саммиты, официальные мероприятия
 state:
   - {name: Акорда — график и визиты, url: https://www.akorda.kz/ru/events}

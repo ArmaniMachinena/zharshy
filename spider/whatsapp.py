@@ -1,7 +1,7 @@
 """WhatsApp через GREEN-API (green-api.com, Астана).
 
 Номер Жаршы подключён к GREEN-API по QR-коду и состоит в группах с анонсами.
-Раз в 3 часа паук забирает входящие сообщения за последние ~3,5 часа (lastIncomingMessages),
+Каждый час паук забирает входящие сообщения за последние ~75 минут (lastIncomingMessages),
 оставляет только групповые сообщения, похожие на анонс, и отдаёт их Claude на разбор.
 
 Секреты (GitHub → Settings → Secrets → Actions):
@@ -35,7 +35,7 @@ def message_text(m: dict) -> str:
     return str(ext.get("text") or "")
 
 
-def fetch_messages(minutes: int = 210) -> list[dict]:
+def fetch_messages(minutes: int = 75) -> list[dict]:
     import requests
     base = os.environ["GREEN_API_URL"].rstrip("/")
     url = f"{base}/waInstance{os.environ['GREEN_ID_INSTANCE']}/lastIncomingMessages/{os.environ['GREEN_API_TOKEN']}"

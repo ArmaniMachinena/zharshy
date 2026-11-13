@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Паук Жаршы: обходит источники, вытаскивает мероприятия через Claude, склеивает дубликаты,
-пишет data/events.json. Запускается GitHub Actions каждые 3 часа (см. .github/workflows/spider.yml).
+пишет data/events.json. GitHub Actions: каждый час Telegram, раз в 3 часа все источники (см. .github/workflows/spider.yml).
 
 Локально:  ANTHROPIC_API_KEY=... python spider/run.py
 Без ключа паук только скачивает страницы и ничего не меняет в базе.
@@ -268,6 +268,13 @@ def prune(events: list[dict], today: str, keep_days: int = 400) -> list[dict]:
     return [e for e in events if (e.get("end") or e["start"]) >= cutoff]
 
 
+def fingerprint(text: str) -> str:
+    """Отпечаток содержания страницы без цифр-счётчиков («5 минут назад», просмотры) и пробелов."""
+    t = re.sub(r"\d+", "", text.lower())
+    t = re.sub(r"\s+", " ", t)
+    return hashlib.sha1(t.encode()).hexdigest()[:16]
+
+
 # ---------------------------------------------------------------- main
 def main() -> int:
     import yaml
@@ -286,6 +293,21 @@ def main() -> int:
     jobs += [(s["name"], s["url"], "sheets") for s in cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 
+    # Быстрый проход (каждый час): только быстро меняющиеся источники. Полный — раз в 3 часа.
+    mode = os.environ.get("ZHARSHY_MODE", "full")
+    if mode == "fast":
+        jobs = [j for j in jobs if j[2] in ("telegram", "sheets")]
+    print(f"Режим: {mode}, источников: {len(jobs)}")
+
+    # Отпечатки страниц: Claude читает только то, что изменилось с прошлого раза (не чаще раза в сутки — принудительно)
+    cache_path = ROOT / "data" / "page_cache.json"
+    cache = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else {}
+    status_path = ROOT / "data" / "sources_status.json"
+    old_status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
+    prev = {x.get("url"): x for x in old_status.get("sources", [])}
+    now = dt.datetime.now(TZ)
+    skipped = 0
+
     found: list[dict] = []
     status: list[dict] = []
     for name, url, kind in jobs:
@@ -301,8 +323,18 @@ def main() -> int:
         if not have_key:
             print(f"  ✓ {name}: {len(text)} симв.")
             continue
+        digest = fingerprint(text)
+        c = cache.get(url) or {}
+        fresh = c.get("t") and (now - dt.datetime.fromisoformat(c["t"])) < dt.timedelta(hours=24)
+        if c.get("h") == digest and fresh:
+            st["events"] = (prev.get(url) or {}).get("events")
+            st["unchanged"] = True
+            skipped += 1
+            print(f"  = {name}: без изменений")
+            continue
         try:
             evs = extract(text, name, url, today)
+            cache[url] = {"h": digest, "t": now.isoformat(timespec="minutes")}
             st["events"] = len(evs)
             print(f"  ✓ {name}: {len(evs)} событий")
             found += evs
@@ -334,9 +366,15 @@ def main() -> int:
         print(f"  ✗ WhatsApp: {e}")
 
     (ROOT / "data").mkdir(exist_ok=True)
-    (ROOT / "data" / "sources_status.json").write_text(json.dumps(
-        {"checked_at": dt.datetime.now(TZ).isoformat(timespec="minutes"), "have_key": have_key, "sources": status},
+    if mode == "fast":  # источники, которые в быстром проходе не трогали, оставляем как были
+        seen = {x["url"] for x in status}
+        status = [x for x in old_status.get("sources", []) if x.get("url") not in seen and x.get("group") != "whatsapp"] + status
+    full_at = now.isoformat(timespec="minutes") if mode != "fast" else old_status.get("full_at", "")
+    status_path.write_text(json.dumps(
+        {"checked_at": now.isoformat(timespec="minutes"), "full_at": full_at, "mode": mode, "have_key": have_key, "sources": status},
         ensure_ascii=False, indent=1), encoding="utf-8")
+    cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=0), encoding="utf-8")
+    print(f"Без изменений (Claude не вызывали): {skipped}")
 
     if not have_key:
         return 0

@@ -1,7 +1,7 @@
 name: Жаршы — паук
 on:
   schedule:
-    - cron: "17 */3 * * *"   # каждые 3 часа
+    - cron: "17 * * * *"     # каждый час: Telegram и заявки; в 00, 03, 06… UTC — все источники
   workflow_dispatch: {}       # ручной запуск кнопкой
 permissions:
   contents: write
@@ -15,6 +15,10 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -r spider/requirements.txt
+      - name: Режим прохода
+        run: |
+          H=$(date -u +%-H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ $((H % 3)) -eq 0 ]; then echo "ZHARSHY_MODE=full" >> $GITHUB_ENV; else echo "ZHARSHY_MODE=fast" >> $GITHUB_ENV; fi
       - name: Обход источников
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -32,6 +36,7 @@ jobs:
           git config user.name "zharshy-bot"
           git config user.email "zharshy-bot@users.noreply.github.com"
           git add data/events.json data/sources_status.json
+          [ -f data/page_cache.json ] && git add data/page_cache.json || true
           [ -f data/moderation.json ] && git add data/moderation.json || true
           git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
           git push

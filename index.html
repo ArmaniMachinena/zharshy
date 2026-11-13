@@ -422,7 +422,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 const TZ='Asia/Almaty';
 /* ---------- словарь ---------- */
 const I18N={
- ru:{tagline:'Деловые мероприятия Казахстана',updated:'Обновлено',every3:'каждые 3 ч',how:'Как это работает',
+ ru:{tagline:'Деловые мероприятия Казахстана',updated:'Обновлено',every3:'каждый час',how:'Как это работает',
   attn:'Внимание!',attnSub:'Ближайшие события',today:'Сегодня',tomorrow:'Завтра',in5:'5 дней',mine:'Мои',
   emptyToday:'Сегодня событий нет',emptyTom:'Завтра пусто',empty5:'В ближайшие 5 дней пусто',emptyFav:'Нажмите ☆ у события, чтобы следить за ним',
   opening:'Открытие',dayN:'День {n}',inN:'через {n} дн.',liveNow:'идёт сейчас',
@@ -441,13 +441,13 @@ const I18N={
   types:{forum:'Форум',exhibition:'Выставка',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар',networking:'Нетворкинг',competition:'Чемпионат',official:'Госмероприятие',visit:'Официальный визит'},
   levels:{international:'Международный',republican:'Республиканский',regional:'Региональный',industry:'Отраслевой'},
   about:`<h2>Жаршы — как это работает</h2>
-  <p>В старину жаршы объезжал аулы и объявлял людям важные вести. Здесь его работу делает паук: каждые 3 часа он обходит сайты выставочных компаний, госорганов, агрегаторов и открытые Telegram-каналы, а ИИ вытаскивает название, даты, город, уровень, организатора и контакты — сразу на трёх языках. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
+  <p>В старину жаршы объезжал аулы и объявлял людям важные вести. Здесь его работу делает паук: каждый час он проверяет Telegram-каналы и заявки, а каждые 3 часа обходит все сайты выставочных компаний, госорганов, агрегаторов и открытые Telegram-каналы, а ИИ вытаскивает название, даты, город, уровень, организатора и контакты — сразу на трёх языках. Дубликаты склеиваются, прошедшие события уходят в архив.</p>
   <h3>Этапы</h3><ol>
   <li><b>Сейчас.</b> Сайты и открытые Telegram-каналы. Дашборд, 30 дней, карта, фильтры, ☆ и добавление в календарь.</li>
   <li><b>Далее.</b> Telegram-бот: перешлите ему анонс или вебинар из любого чата (в том числе из WhatsApp) — он сам разберёт и добавит. Форма для организаторов.</li>
   <li><b>Личный кабинет.</b> Подписки по отраслям и городам, напоминания за 7 дней / 1 день / 1 час, утренняя сводка.</li>
   <li><b>Соцсети.</b> Facebook, Instagram, TikTok — через официальные API и партнёрство с организаторами.</li></ol>`},
- kk:{tagline:'Қазақстанның іскерлік іс-шаралары',updated:'Жаңартылды',every3:'әр 3 сағат сайын',how:'Қалай жұмыс істейді',
+ kk:{tagline:'Қазақстанның іскерлік іс-шаралары',updated:'Жаңартылды',every3:'сағат сайын',how:'Қалай жұмыс істейді',
   attn:'Назар аударыңыз!',attnSub:'Жақын арадағы іс-шаралар',today:'Бүгін',tomorrow:'Ертең',in5:'5 күн ішінде',mine:'Менің',
   emptyToday:'Бүгін іс-шара жоқ',emptyTom:'Ертең бос',empty5:'Алдағы 5 күнде бос',emptyFav:'Іс-шараны бақылау үшін ☆ белгісін басыңыз',
   opening:'Ашылуы',dayN:'{n}-күн',inN:'{n} күннен кейін',liveNow:'қазір өтуде',
@@ -467,13 +467,13 @@ const I18N={
   types:{forum:'Форум',exhibition:'Көрме',conference:'Конференция',congress:'Конгресс',summit:'Саммит',webinar:'Вебинар',networking:'Нетворкинг',competition:'Чемпионат',official:'Мемлекеттік іс-шара',visit:'Ресми сапар'},
   levels:{international:'Халықаралық',republican:'Республикалық',regional:'Өңірлік',industry:'Салалық'},
   about:`<h2>Жаршы — қалай жұмыс істейді</h2>
-  <p>Ертеде жаршы ауыл аралап, елге маңызды хабарды жариялаған. Мұнда бұл жұмысты өрмекші-бағдарлама атқарады: әр 3 сағат сайын ол көрме компанияларының, мемлекеттік органдардың, агрегаторлардың сайттарын және ашық Telegram-арналарды аралайды, ал ЖИ атауын, күнін, қаласын, деңгейін, ұйымдастырушысы мен байланыстарын бірден үш тілде шығарады. Қайталанатын жазбалар біріктіріледі, өткен іс-шаралар мұрағатқа кетеді.</p>
+  <p>Ертеде жаршы ауыл аралап, елге маңызды хабарды жариялаған. Мұнда бұл жұмысты өрмекші-бағдарлама атқарады: сағат сайын Telegram-арналар мен өтінімдерді, ал әр 3 сағат сайын көрме компанияларының, мемлекеттік органдардың, агрегаторлардың сайттарын және ашық Telegram-арналарды аралайды, ал ЖИ атауын, күнін, қаласын, деңгейін, ұйымдастырушысы мен байланыстарын бірден үш тілде шығарады. Қайталанатын жазбалар біріктіріледі, өткен іс-шаралар мұрағатқа кетеді.</p>
   <h3>Кезеңдер</h3><ol>
   <li><b>Қазір.</b> Сайттар мен ашық Telegram-арналар. Дашборд, 30 күн, карта, сүзгілер, ☆ және күнтізбеге қосу.</li>
   <li><b>Келесі.</b> Telegram-бот: кез келген чаттан (WhatsApp-тан да) хабарландыру не вебинарды жіберсеңіз — өзі талдап, қосады. Ұйымдастырушыларға арналған форма.</li>
   <li><b>Жеке кабинет.</b> Салалар мен қалалар бойынша жазылым, 7 күн / 1 күн / 1 сағат бұрын еске салу, таңғы шолу.</li>
   <li><b>Әлеуметтік желілер.</b> Facebook, Instagram, TikTok — ресми API және ұйымдастырушылармен серіктестік арқылы.</li></ol>`},
- en:{tagline:'Business events in Kazakhstan',updated:'Updated',every3:'every 3 h',how:'How it works',
+ en:{tagline:'Business events in Kazakhstan',updated:'Updated',every3:'hourly',how:'How it works',
   attn:'Heads up!',attnSub:'Coming up next',today:'Today',tomorrow:'Tomorrow',in5:'Next 5 days',mine:'My events',
   emptyToday:'Nothing today',emptyTom:'Nothing tomorrow',empty5:'Nothing in the next 5 days',emptyFav:'Tap ☆ on an event to follow it',
   opening:'Opens',dayN:'Day {n}',inN:'in {n} d',liveNow:'happening now',
@@ -492,7 +492,7 @@ const I18N={
   types:{forum:'Forum',exhibition:'Exhibition',conference:'Conference',congress:'Congress',summit:'Summit',webinar:'Webinar',networking:'Networking',competition:'Championship',official:'State event',visit:'Official visit'},
   levels:{international:'International',republican:'National',regional:'Regional',industry:'Industry'},
   about:`<h2>Zharshy — how it works</h2>
-  <p>In the old steppe, the <i>zharshy</i> rode from village to village announcing important news. Here a crawler does that job: every 3 hours it visits exhibition organizers, government sites, aggregators and public Telegram channels, and AI extracts the title, dates, city, level, organizer and contacts — in three languages at once. Duplicates are merged and past events move to the archive.</p>
+  <p>In the old steppe, the <i>zharshy</i> rode from village to village announcing important news. Here a crawler does that job: every hour it checks Telegram channels and submissions, and every 3 hours visits exhibition organizers, government sites, aggregators and public Telegram channels, and AI extracts the title, dates, city, level, organizer and contacts — in three languages at once. Duplicates are merged and past events move to the archive.</p>
   <h3>Roadmap</h3><ol>
   <li><b>Now.</b> Websites and public Telegram channels. Dashboard, 30-day view, map, filters, ☆ and add-to-calendar.</li>
   <li><b>Next.</b> A Telegram bot: forward it an announcement or webinar from any chat (WhatsApp included) and it adds it. A form for organizers.</li>

@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-13T12:50+05:00",
- "have_key": false,
+ "checked_at": "2026-11-13T13:05+05:00",
+ "have_key": true,
  "sources": [
   {
    "name": "Iteca — новости и анонсы",
@@ -8,7 +8,7 @@
    "group": "web",
    "ok": true,
    "chars": 1992,
-   "events": null,
+   "events": 3,
    "error": ""
   },
   {
@@ -17,7 +17,7 @@
    "group": "web",
    "ok": true,
    "chars": 4799,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -26,7 +26,7 @@
    "group": "web",
    "ok": true,
    "chars": 3198,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -35,7 +35,7 @@
    "group": "web",
    "ok": true,
    "chars": 4172,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -44,7 +44,7 @@
    "group": "web",
    "ok": true,
    "chars": 58559,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -53,7 +53,7 @@
    "group": "web",
    "ok": true,
    "chars": 1974,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -62,7 +62,7 @@
    "group": "web",
    "ok": true,
    "chars": 4680,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -71,7 +71,7 @@
    "group": "web",
    "ok": true,
    "chars": 9169,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -98,7 +98,7 @@
    "group": "web",
    "ok": true,
    "chars": 898,
-   "events": null,
+   "events": 3,
    "error": ""
   },
   {
@@ -107,7 +107,7 @@
    "group": "web",
    "ok": true,
    "chars": 1522,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -116,7 +116,7 @@
    "group": "web",
    "ok": true,
    "chars": 9451,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -125,7 +125,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 12917,
-   "events": null,
+   "events": 3,
    "error": ""
   },
   {
@@ -134,7 +134,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 16692,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -152,7 +152,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 16515,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -161,7 +161,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 5311,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -170,7 +170,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7386,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -179,7 +179,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 5526,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -188,7 +188,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7882,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -206,7 +206,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 1433,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -215,7 +215,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7106,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -224,7 +224,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 352,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -233,7 +233,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7111,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -242,7 +242,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 2371,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -251,7 +251,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 60,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -260,7 +260,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 2281,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -269,7 +269,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 525,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -278,7 +278,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 7139,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -287,7 +287,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 1510,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -296,7 +296,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 2425,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -305,17 +305,17 @@
    "group": "organizers",
    "ok": true,
    "chars": 1747,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
    "name": "United Medical Expo",
    "url": "https://unitedmedicalexpo.com/",
    "group": "organizers",
-   "ok": true,
-   "chars": 24736,
+   "ok": false,
+   "chars": 0,
    "events": null,
-   "error": ""
+   "error": "403 Client Error: Forbidden for url: https://umtexpo.com/"
   },
   {
    "name": "AmCham Kazakhstan",
@@ -323,7 +323,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 436,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -332,7 +332,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 645,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -341,7 +341,7 @@
    "group": "organizers",
    "ok": true,
    "chars": 8019,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -359,7 +359,7 @@
    "group": "web",
    "ok": true,
    "chars": 5526,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -368,7 +368,7 @@
    "group": "web",
    "ok": true,
    "chars": 6175,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -377,7 +377,7 @@
    "group": "web",
    "ok": true,
    "chars": 1274,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -386,7 +386,7 @@
    "group": "web",
    "ok": true,
    "chars": 0,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -395,7 +395,7 @@
    "group": "web",
    "ok": true,
    "chars": 1670,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -413,7 +413,7 @@
    "group": "web",
    "ok": true,
    "chars": 4064,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -422,7 +422,7 @@
    "group": "web",
    "ok": true,
    "chars": 5860,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -440,7 +440,7 @@
    "group": "web",
    "ok": true,
    "chars": 3399,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -458,7 +458,7 @@
    "group": "web",
    "ok": true,
    "chars": 3948,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -467,7 +467,7 @@
    "group": "state",
    "ok": true,
    "chars": 1398,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -476,7 +476,7 @@
    "group": "state",
    "ok": true,
    "chars": 15692,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -484,8 +484,8 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8818,
-   "events": null,
+   "chars": 8821,
+   "events": 0,
    "error": ""
   },
   {
@@ -521,7 +521,7 @@
    "group": "state",
    "ok": true,
    "chars": 8332,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -529,8 +529,8 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8349,
-   "events": null,
+   "chars": 8000,
+   "events": 3,
    "error": ""
   },
   {
@@ -548,7 +548,7 @@
    "group": "state",
    "ok": true,
    "chars": 1614,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -557,7 +557,7 @@
    "group": "sheets",
    "ok": true,
    "chars": 8619,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -565,8 +565,8 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 10189,
-   "events": null,
+   "chars": 9828,
+   "events": 2,
    "error": ""
   },
   {
@@ -574,8 +574,8 @@
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 9750,
-   "events": null,
+   "chars": 10515,
+   "events": 2,
    "error": ""
   },
   {
@@ -584,7 +584,7 @@
    "group": "telegram",
    "ok": true,
    "chars": 63,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {
@@ -593,7 +593,7 @@
    "group": "telegram",
    "ok": true,
    "chars": 19974,
-   "events": null,
+   "events": 1,
    "error": ""
   },
   {
@@ -602,7 +602,7 @@
    "group": "telegram",
    "ok": true,
    "chars": 3313,
-   "events": null,
+   "events": 0,
    "error": ""
   },
   {

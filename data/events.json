@@ -2211,57 +2211,6 @@
    "country": "Казахстан"
   },
   {
-   "title": "31-я Конференция сторон Рамочной конвенции ООН об изменении климата (COP31)",
-   "type": "summit",
-   "level": "international",
-   "edition": 31,
-   "industries": [
-    "Экология и ESG",
-    "Энергетика"
-   ],
-   "city": "Анталья",
-   "venue": "",
-   "start": "2026-11-09",
-   "end": "2026-11-20",
-   "organizer": "Организация Объединённых Наций",
-   "phone": "",
-   "email": "",
-   "site": "https://indico.un.org",
-   "description": "Международный климатический саммит ООН, на котором обсуждаются меры по снижению выбросов и адаптации к изменению климата. Премьер-министр Казахстана принимает в нём участие по поручению Президента.",
-   "source_url": "https://primeminister.kz/ru/news",
-   "source_name": "Премьер-министр РК — новости",
-   "country": "Турция",
-   "program_url": "",
-   "speakers": [
-    {
-     "name": "Олжас Бектенов",
-     "role": "Премьер-министр Республики Казахстан",
-     "company": "Правительство Республики Казахстан"
-    },
-    {
-     "name": "Василе Тофан",
-     "role": "Премьер-министр Республики Молдова",
-     "company": "Правительство Республики Молдова"
-    }
-   ],
-   "i18n": {
-    "kk": {
-     "title": "ООН-ның Климаттың өзгеруі туралы негізгі конвенциясы тараптарының 31-конференциясы (COP31)",
-     "description": "БҰҰ-ның климаттық өзгерістерге арналған халықаралық саммиті, онда шығарындыларды азайту және климаттың өзгеруіне бейімделу шаралары талқыланады. Қазақстан Премьер-Министрі Президенттің тапсырмасы бойынша осы іс-шараға қатысады."
-    },
-    "en": {
-     "title": "31st Conference of the Parties to the UN Framework Convention on Climate Change (COP31)",
-     "description": "UN international climate summit discussing measures to reduce emissions and adapt to climate change. The Prime Minister of Kazakhstan is taking part by instruction of the President."
-    }
-   },
-   "id": "31-ya-konferentsiya-storon-ramochnoy-kon-2026-46de95",
-   "found_at": "2026-11-13T13:58+05:00",
-   "also_in": [
-    "https://indico.un.org",
-    "https://primeminister.kz/ru/events"
-   ]
-  },
-  {
    "id": "cop31-antalya-2026",
    "title": "COP31 — Конференция ООН по изменению климата",
    "type": "official",
@@ -2514,52 +2463,6 @@
      "company": "Агентство по регулированию и развитию финансового рынка"
     }
    ]
-  },
-  {
-   "title": "Қазақстан қаржыгерлерінің XIV конгресі",
-   "type": "congress",
-   "level": "republican",
-   "edition": 14,
-   "industries": [
-    "Финансы"
-   ],
-   "city": "Алматы",
-   "venue": "",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "organizer": "Ассоциация финансистов Казахстана при поддержке Национального Банка и Агентства по регулированию и развитию финансового рынка",
-   "phone": "",
-   "email": "",
-   "site": "",
-   "description": "XIV конгресс финансистов Казахстана с панельными сессиями о развитии финансового рынка, капитального рынка, пенсионных активов, страхования и криптоиндустрии. В ходе конгресса запланирован запуск первой токенизированной облигации и вручение лицензии исламского финансирования.",
-   "source_url": "https://t.me/s/atamekenbusiness_qaz",
-   "source_name": "Telegram @atamekenbusiness_qaz",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [
-    {
-     "name": "Тимур Сүлейменов",
-     "role": "Председатель",
-     "company": "Национальный Банк Республики Казахстан"
-    },
-    {
-     "name": "Мәдина Әбілқасымова",
-     "role": "Председатель",
-     "company": "Агентство по регулированию и развитию финансового рынка"
-    }
-   ],
-   "i18n": {
-    "kk": {
-     "title": "Қазақстан қаржыгерлерінің XIV конгресі",
-     "description": "Қазақстан қаржыгерлерінің XIV конгресі қаржы нарығын, капитал нарығын, зейнетақы активтерін, сақтандыруды және криптоиндустрияны дамыту мәселелері бойынша панельдік сессиялар өткізеді. Конгресс аясында алғашқы токенделген облигацияны іске қосу рәсімі өтеді."
-    },
-    "en": {
-     "title": "XIV Congress of Kazakhstan Financiers",
-     "description": "The XIV Congress of Kazakhstan Financiers features panel sessions on developing the financial and capital markets, pension assets, insurance and the crypto industry. The first tokenized bond launch and an Islamic financing license award are scheduled during the congress."
-    }
-   },
-   "id": "kazakstan-karzhygerlerinin-xiv-kongresi-2026-01d262",
-   "found_at": "2026-11-13T16:13+05:00"
   },
   {
    "title": "Заседание Комиссии по экономическим вопросам при Экономическом совете СНГ",
@@ -3209,45 +3112,6 @@
    ]
   },
   {
-   "title": "XVI Международная выставка технологий водоснабжения, водоотведения, водоочистки и цифровизации водной инфраструктуры",
-   "type": "exhibition",
-   "level": "international",
-   "edition": 16,
-   "industries": [
-    "Водное хозяйство",
-    "Экология и ESG",
-    "IT и цифровизация"
-   ],
-   "city": "Астана",
-   "venue": "МВЦ «EXPO»",
-   "start": "2027-03-31",
-   "end": "2027-04-02",
-   "organizer": "",
-   "phone": "",
-   "email": "",
-   "site": "https://www.kmfexpo.kz/ru",
-   "description": "Выставка оборудования и технологий для водоснабжения, водоотведения и очистки воды, а также цифровых решений для водной инфраструктуры. Проходит одновременно с Kazakhstan Machinery Fair 2027 на одной площадке.",
-   "source_url": "https://www.kmfexpo.kz/ru",
-   "source_name": "Kazakhstan Machinery Fair",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "XVI Халықаралық су беру, су бұру, су тазарту технологиялары және су инфрақұрылымын цифрландыру көрмесі",
-     "description": "Су беру, су бұру және су тазарту жабдықтары мен технологияларының, сондай-ақ су инфрақұрылымына арналған цифрлық шешімдердің көрмесі. Kazakhstan Machinery Fair 2027-мен бір алаңда өтеді.",
-     "venue": "Астана, «EXPO» халықаралық көрме орталығы"
-    },
-    "en": {
-     "title": "XVI International Exhibition of Water Supply, Wastewater, Water Treatment and Digitalisation of Water Infrastructure Technologies",
-     "description": "An exhibition of equipment and technologies for water supply, wastewater disposal and water treatment, plus digital solutions for water infrastructure. It runs alongside Kazakhstan Machinery Fair 2027 at the same venue.",
-     "venue": "EXPO Exhibition Centre, Astana"
-    }
-   },
-   "id": "xvi-mezhdunarodnaya-vystavka-tehnologiy-2027-74dc94",
-   "found_at": "2026-11-13T13:58+05:00"
-  },
-  {
    "title": "Международная выставка промышленной энергетики и инженерной инфраструктуры предприятий",
    "type": "exhibition",
    "level": "international",
@@ -3713,43 +3577,6 @@
    },
    "id": "gitex-ai-kazakhstan-2027-0fab75",
    "found_at": "2026-11-13T17:09+05:00"
-  },
-  {
-   "title": "17-й Международный Горно-металлургический конгресс",
-   "type": "congress",
-   "level": "international",
-   "edition": 17,
-   "industries": [
-    "Горнодобыча и металлургия"
-   ],
-   "city": "Астана",
-   "venue": "Отель \"Hilton Astana\", ул. Гейдара Алиева 14",
-   "start": "2027-06-10",
-   "end": "2027-06-11",
-   "organizer": "",
-   "phone": "+7 771 258 34 34, +7 727 258 34 34",
-   "email": "",
-   "site": "https://www.amm.kz",
-   "description": "Международный отраслевой конгресс по горнодобыче и металлургии, который пройдёт в Астане в июне 2027 года. Он объединит специалистов и участников горно-металлургического сектора.",
-   "source_url": "https://www.amm.kz",
-   "source_name": "AMM",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "17-ші Халықаралық тау-кен металлургиясы конгресі",
-     "description": "2027 жылдың маусымында Астанада өтетін тау-кен өндірісі мен металлургия салasындағы халықаралық салалық конгресс. Ол сала мамандарын және қатысушыларын біріктіреді.",
-     "venue": "\"Hilton Astana\" қонақ үйі, Ғайдар Әliev көшесі 14"
-    },
-    "en": {
-     "title": "17th International Mining and Metallurgy Congress",
-     "description": "An international industry congress on mining and metallurgy, taking place in Astana in June 2027. It will bring together specialists and participants of the mining and metallurgical sector.",
-     "venue": "Hilton Astana Hotel, 14 Geydar Aliyev St."
-    }
-   },
-   "id": "17-y-mezhdunarodnyy-gorno-metallurgiches-2027-76474f",
-   "found_at": "2026-11-13T13:58+05:00"
   },
   {
    "id": "amm-2027",

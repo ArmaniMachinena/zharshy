@@ -209,6 +209,18 @@ def same(a: dict, b: dict) -> bool:
     na, nb = norm(a["title"]), norm(b["title"])
     if na in nb or nb in na:
         return True
+    same_dates = a["start"] == b["start"] and (a.get("end") or a["start"]) == (b.get("end") or b["start"])
+    same_city = (a.get("city") or "") == (b.get("city") or "")
+    # одинаковые даты + город + номер проведения (XIV конгресс на русском и казахском, «XVI выставка» = SU ARNASY)
+    # (только если номер проведения написан в названии — совместные выставки под одной крышей так не склеятся)
+    ordinal = lambda t: bool(re.search(r"(^|\s)[ivxlc]{2,}(\s|$)|\d+\s?-?\s?(й|я|е|ші|шы|th|st|nd|rd)(\s|$)", t))
+    if (same_dates and same_city and a.get("edition") and a.get("edition") == b.get("edition")
+            and (ordinal(na) or ordinal(nb))):
+        return True
+    # общий код-аббревиатура с цифрами: COP31, AMM2027, KIOGE-2026…
+    codes = lambda t: {w for w in t.split() if len(w) >= 4 and re.search(r"[a-z]", w) and re.search(r"\d", w) and not w.isdigit()}
+    if a["start"] == b["start"] and codes(na) & codes(nb):
+        return True
     wa, wb = na.split(), nb.split()
     # один и тот же бренд в начале (HOREX, KIOGE, AMM…) и тот же день открытия
     if wa and wb and wa[0] == wb[0] and len(wa[0]) >= 3 and a["start"] == b["start"]:
@@ -238,9 +250,19 @@ def ai_twin(ev: dict, cands: list[dict]) -> dict | None:
         return None
 
 
+REMOVED = ROOT / "data" / "removed.json"   # удалённые вручную дубли/мусор — паук их больше не добавляет
+
+
+def removed_list() -> list[dict]:
+    return json.loads(REMOVED.read_text(encoding="utf-8")) if REMOVED.exists() else []
+
+
 def merge(existing: list[dict], found: list[dict]) -> tuple[list[dict], int]:
     added = 0
+    gone = removed_list()
     for ev in found:
+        if any(ev.get("id") == g.get("id") or same(g, ev) and (g.get("city") or "") == (ev.get("city") or "") for g in gone):
+            continue
         twin = next((e for e in existing if same(e, ev)), None)
         if twin is None:
             cands = [e for e in existing if abs((dt.date.fromisoformat(e["start"]) - dt.date.fromisoformat(ev["start"])).days) <= 1

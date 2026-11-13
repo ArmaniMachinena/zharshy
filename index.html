@@ -850,7 +850,7 @@ async function submitEvent(ev){
   if(dup)errs.push(t('mDup')+': '+fld(dup,'title'));
   if(errs.length){msg.className='w2 merr';msg.innerHTML='⚠ '+errs.map(esc).join('<br>⚠ ');return}
   if(SUBMIT.action){
-    const body=new URLSearchParams();Object.entries(SUBMIT.fields).forEach(([k,entry])=>{if(entry&&f[k])body.append(entry,f[k])});
+    const body=new URLSearchParams();Object.entries(SUBMIT.fields).forEach(([k,entry])=>{const v=k==='type'?(I18N.ru.types[f.type]||f.type):f[k];if(entry&&v)body.append(entry,v)});
     try{await fetch(SUBMIT.action,{method:'POST',mode:'no-cors',body});msg.className='w2 mok';msg.textContent='✓ '+t('addDone');ev.target.reset();return}catch(e){}
   }
   const text=Object.entries(f).filter(([k,v])=>k!=='ok'&&v).map(([k,v])=>`${k}: ${v}`).join('\n');

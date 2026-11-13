@@ -2211,58 +2211,6 @@
    "country": "Казахстан"
   },
   {
-   "title": "31-я Конференция сторон Рамочной конвенции ООН об изменении климата (COP31)",
-   "type": "summit",
-   "level": "international",
-   "edition": 31,
-   "industries": [
-    "Экология и ESG",
-    "Энергетика"
-   ],
-   "city": "Анталья",
-   "venue": "Анталья, Турция",
-   "start": "2026-11-09",
-   "end": "2026-11-20",
-   "organizer": "Рамочная конвенция ООН об изменении климата (РКИК ООН)",
-   "phone": "",
-   "email": "",
-   "site": "https://unfccc.int",
-   "description": "Премьер-министр Олжас Бектенов по поручению Президента участвует в саммите COP31 в Анталье. Мероприятие посвящено глобальной климатической повестке и международному сотрудничеству по климату.",
-   "source_url": "https://primeminister.kz/ru/news",
-   "source_name": "Премьер-министр РК — новости",
-   "country": "Турция",
-   "program_url": "",
-   "speakers": [
-    {
-     "name": "Олжас Бектенов",
-     "role": "Премьер-министр",
-     "company": "Республика Казахстан"
-    },
-    {
-     "name": "Василе Тофан",
-     "role": "Премьер-министр",
-     "company": "Республика Молдова"
-    }
-   ],
-   "i18n": {
-    "kk": {
-     "title": "COP31 саммиті: Біріккен Ұлттар Ұйымының Климаттың өзгеруі туралы негізгі конвенциясы тараптарының 31-конференциясы",
-     "description": "Қазақстан Премьер-министрі Олжас Бектенов Президенттің тапсырмасы бойынша Анталиядағы Климаттың өзгеруі туралы БҰҰ негізгі конвенциясы тараптарының 31-конференциясына (COP31) қатысады. Іс-шара климаттық күн тәртібі мен халықаралық ынтымақтастық мәселелеріне арналған.",
-     "venue": "Анталья, Түркия"
-    },
-    "en": {
-     "title": "COP31 Summit: 31st Conference of the Parties to the UN Framework Convention on Climate Change",
-     "description": "Prime Minister Olzhas Bektenov, on the instruction of the President, is taking part in the COP31 summit in Antalya. The event focuses on the global climate agenda and international cooperation on climate issues.",
-     "venue": "Antalya, Türkiye"
-    }
-   },
-   "id": "31-cop31-2026-46de95",
-   "found_at": "2026-11-13T13:05+05:00",
-   "also_in": [
-    "https://primeminister.kz/ru/events"
-   ]
-  },
-  {
    "id": "cop31-antalya-2026",
    "title": "COP31 — Конференция ООН по изменению климата",
    "type": "official",
@@ -2295,7 +2243,23 @@
      "description": "UN climate summit; heads of state and government segment on 11–12 November.",
      "venue": "Antalya EXPO Center"
     }
-   }
+   },
+   "also_in": [
+    "https://primeminister.kz/ru/news"
+   ],
+   "speakers": [
+    {
+     "name": "Олжас Бектенов",
+     "role": "Премьер-министр",
+     "company": "Республика Казахстан"
+    },
+    {
+     "name": "Василе Тофан",
+     "role": "Премьер-министр",
+     "company": "Республика Молдова"
+    }
+   ],
+   "found_at": "2026-11-13T13:05+05:00"
   },
   {
    "title": "CleanExpo Qazaqstan 2026",
@@ -2499,81 +2463,6 @@
    ]
   },
   {
-   "title": "Внеочередное заседание Совета Безопасности по развитию транспортно-логистической отрасли",
-   "type": "official",
-   "level": "republican",
-   "edition": null,
-   "industries": [
-    "Транспорт и логистика",
-    "Госуправление"
-   ],
-   "city": "уточняется",
-   "venue": "",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "organizer": "Администрация Президента Республики Казахстан",
-   "phone": "",
-   "email": "",
-   "site": "",
-   "description": "Внеочередное заседание Совета Безопасности под председательством Президента Касым-Жомарта Токаева по вопросам развития транспортно-логистической отрасли. Заседание проходит после задержания руководителей «Самұрық-Қазына» и «КТЖ» и посвящено принципам «Закон и Порядок», ответственности руководителей национальных компаний и прозрачности стратегических предприятий.",
-   "source_url": "https://t.me/s/atamekenbusiness_qaz",
-   "source_name": "Telegram @atamekenbusiness_qaz",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "Қазақстан Республикасы Қауіпсіздік кеңесінің көлік-логистика саласын дамыту мәселелері бойынша шұғыл отырысы",
-     "description": "Мемлекет басшысы Қасым-Жомарт Тоқаевтың төрағалығымен өтетін Қауіпсіздік кеңесінің шұғыл отырысы. Жиында «Самұрық-Қазына» мен «ҚТЖ» басшыларының ұсталуына байланысты мемлекеттің ұстанымы, ұлттық компания басшыларының жеке жауапкершілігі және стратегиялық кәсіпорындардағы заңдылық пен ашықтық мәселелері талқыланады."
-    },
-    "en": {
-     "title": "Extraordinary session of the Security Council on transport and logistics development",
-     "description": "An extraordinary session of the Security Council chaired by President Kassym-Jomart Tokayev on transport and logistics development. The meeting follows the detention of the heads of Samruk-Kazyna and KTZ and addresses the state's position, personal responsibility of national company heads, and lawfulness and transparency at strategic enterprises."
-    }
-   },
-   "id": "ev-2026-e4dc60",
-   "found_at": "2026-11-13T13:05+05:00"
-  },
-  {
-   "title": "Оперативное совещание Совета Безопасности по вопросам развития транспортно-логистической сферы",
-   "type": "official",
-   "level": "republican",
-   "edition": null,
-   "industries": [
-    "Транспорт и логистика",
-    "Госуправление"
-   ],
-   "city": "уточняется",
-   "venue": "",
-   "start": "2026-11-13",
-   "end": "2026-11-13",
-   "organizer": "Совет Безопасности РК",
-   "phone": "",
-   "email": "",
-   "site": "",
-   "description": "Под председательством Президента Токаева пройдёт оперативное совещание Совбеза о развитии транспортно-логистической сферы. Глава государства изложит позицию власти в связи с задержанием руководителей «Самрук-Қазына» и КТЖ.",
-   "source_url": "https://t.me/s/atamekenbusiness",
-   "source_name": "Telegram @atamekenbusiness",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "Көлік-логистика саласын дамыту мәселелері бойынша Қауіпсіздік кеңесінің жедел отырысы",
-     "description": "Мемлекет басшысы Қасым-Жомарт Тоқаевтың төрағалығымен көлік-логистика саласын дамыту мәселелері бойынша Қауіпсіздік кеңесінің жедел отырысы өтеді. Президент «Самрук-Қазына» және ҚТЖ басшыларының ұсталуына қатысты мемлекеттің ұстанымын баяндайды."
-    },
-    "en": {
-     "title": "Operational meeting of the Security Council on developing the transport and logistics sector",
-     "description": "Under the chairmanship of President Tokayev, an operational meeting of the Security Council will address the development of the transport and logistics sector. The head of state will set out the state's position regarding the detention of the heads of Samruk-Kazyna and KTZ."
-    }
-   },
-   "id": "ev-2026-91f7ff",
-   "found_at": "2026-11-13T13:05+05:00",
-   "also_in": [
-    "https://t.me/s/kapitalkz"
-   ]
-  },
-  {
    "title": "Заседание Комиссии по экономическим вопросам при Экономическом совете СНГ",
    "type": "official",
    "level": "international",
@@ -2607,41 +2496,6 @@
     }
    },
    "id": "ev-2026-04021c",
-   "found_at": "2026-11-13T13:05+05:00"
-  },
-  {
-   "title": "Заседание Совета постоянных полномочных представителей СНГ",
-   "type": "official",
-   "level": "international",
-   "edition": null,
-   "industries": [
-    "Госуправление"
-   ],
-   "city": "уточняется",
-   "venue": "",
-   "start": "2026-11-24",
-   "end": "2026-11-24",
-   "organizer": "Исполнительный комитет СНГ",
-   "phone": "(+7495) 190-54-00",
-   "email": "info@e-cis.info",
-   "site": "https://e-cis.info",
-   "description": "Очередное заседание Совета постоянных полномочных представителей государств СНГ, на котором готовятся решения для органов Содружества. Анонс размещён на портале Исполкома СНГ.",
-   "source_url": "https://e-cis.info/news/",
-   "source_name": "СНГ — исполком",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "ТМД тұрақты өкілетті өкілдерінің кеңесінің отырысы",
-     "description": "ТМД мемлекеттерінің тұрақты өкілетті өкілдері кеңесінің кезекті отырысы, онда Достастық органдарына арналған шешімдер дайындалады. Анонс ТМД Атқарушы комитетінің порталында орналастырылған."
-    },
-    "en": {
-     "title": "Meeting of the Council of Permanent Representatives of the CIS",
-     "description": "Regular meeting of the Council of Permanent Representatives of the CIS member states, where decisions for Commonwealth bodies are prepared. The announcement is posted on the CIS Executive Committee portal."
-    }
-   },
-   "id": "ev-2026-acf7bc",
    "found_at": "2026-11-13T13:05+05:00"
   },
   {
@@ -3132,45 +2986,10 @@
     }
    },
    "id": "su-arnasy-water-expo-2027-1aaf30",
-   "found_at": "2026-11-13T13:05+05:00"
-  },
-  {
-   "title": "XVI Международная выставка технологий водоснабжения, водоотведения, водоочистки и цифровизации водной инфраструктуры",
-   "type": "exhibition",
-   "level": "international",
-   "edition": 16,
-   "industries": [
-    "Водное хозяйство",
-    "IT и цифровизация"
-   ],
-   "city": "Астана",
-   "venue": "МВЦ «EXPO», пр-т Мангилик Ел 53/1",
-   "start": "2027-03-31",
-   "end": "2027-04-02",
-   "organizer": "Выставочная компания «Астана-Экспо КС»",
-   "phone": "+7 7172 64 23 23",
-   "email": "",
-   "site": "https://www.kmfexpo.kz/ru",
-   "description": "Международная выставка технологий и оборудования для водоснабжения, водоотведения и водоочистки, а также цифровизации водной инфраструктуры. Проходит одновременно с Kazakhstan Machinery Fair 2027 на одной площадке.",
-   "source_url": "https://www.kmfexpo.kz/ru",
-   "source_name": "Kazakhstan Machinery Fair",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "XVI Халықаралық су беру, су бұру, су тазалау және су инфрақұрылымын цифрландыру технологиялары көрмесі",
-     "description": "Су беру, су бұру және су тазарту үшін технологиялар мен жабдықтардың, сондай-ақ су инфрақұрылымын цифрландырудың халықаралық көрмесі. Kazakhstan Machinery Fair 2027-мен бір алаңда өтеді.",
-     "venue": "«EXPO» ХКО, Астана, Мәңгілік Ел даңғылы 53/1"
-    },
-    "en": {
-     "title": "XVI International Exhibition of Water Supply, Wastewater, Water Treatment and Digitalisation of Water Infrastructure Technologies",
-     "description": "International exhibition of technologies and equipment for water supply, wastewater disposal and water treatment, as well as digitalisation of water infrastructure. It takes place alongside Kazakhstan Machinery Fair 2027 at the same venue.",
-     "venue": "EXPO Exhibition Centre, 53/1 Mangilik El Avenue, Astana"
-    }
-   },
-   "id": "xvi-2027-74dc94",
-   "found_at": "2026-11-13T13:05+05:00"
+   "found_at": "2026-11-13T13:05+05:00",
+   "also_in": [
+    "https://www.kmfexpo.kz/ru"
+   ]
   },
   {
    "title": "Международная выставка промышленной энергетики и инженерной инфраструктуры предприятий",
@@ -3601,43 +3420,6 @@
    "edition": null
   },
   {
-   "title": "17-й Международный Горно-металлургический конгресс",
-   "type": "congress",
-   "level": "international",
-   "edition": 17,
-   "industries": [
-    "Горнодобыча и металлургия"
-   ],
-   "city": "Астана",
-   "venue": "Отель \"Hilton Astana\", ул. Гейдара Алиева 14",
-   "start": "2027-06-10",
-   "end": "2027-06-11",
-   "organizer": "",
-   "phone": "+7 771 258 34 34, +7 727 258 34 34",
-   "email": "",
-   "site": "https://www.amm.kz",
-   "description": "Международный отраслевой конгресс по горнодобыче и металлургии в Астане. Площадка для обсуждения трендов отрасли и деловых контактов.",
-   "source_url": "https://www.amm.kz",
-   "source_name": "AMM",
-   "country": "Казахстан",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "17-ші Халықаралық тау-кен металлургиясы конгресі",
-     "description": "Астанада өтетін тау-кен өндірісі мен металлургия саласы бойынша халықаралық конгресс. Салadағы трендтерді талқылауға және іскерлік байланыстар орнатуға арналған алаң.",
-     "venue": "\"Hilton Astana\" қонақ үйі, Гейдар Әлиев көшесі, 14"
-    },
-    "en": {
-     "title": "17th International Mining and Metallurgy Congress",
-     "description": "International industry congress on mining and metallurgy held in Astana. A platform for discussing industry trends and building business contacts.",
-     "venue": "Hilton Astana Hotel, 14 Geidar Aliyev St."
-    }
-   },
-   "id": "17-2027-76474f",
-   "found_at": "2026-11-13T13:05+05:00"
-  },
-  {
    "id": "amm-2027",
    "title": "Astana Mining & Metallurgy 2027 (AMM)",
    "type": "congress",
@@ -3653,7 +3435,7 @@
    "organizer": "Iteca",
    "phone": "+7 727 258 34 34",
    "email": "contact@iteca.kz",
-   "site": "",
+   "site": "https://www.amm.kz",
    "description": "Главный горно-металлургический конгресс страны; в 2026 году собрал более 1,5 тыс. делегатов из 16 стран.",
    "source_url": "https://www.eventseye.com/fairs-organizers/iteca-500-1.html",
    "source_name": "eventseye.com",
@@ -3669,7 +3451,11 @@
      "venue": "Hilton Astana, 14 G. Aliyev St."
     }
    },
-   "country": "Казахстан"
+   "country": "Казахстан",
+   "also_in": [
+    "https://www.amm.kz"
+   ],
+   "found_at": "2026-11-13T13:05+05:00"
   },
   {
    "title": "Electronica Expo Kazakhstan",
@@ -3851,41 +3637,6 @@
     }
    },
    "id": "31-kioge-2027-ddadb7",
-   "found_at": "2026-11-13T13:05+05:00"
-  },
-  {
-   "title": "XVI Международный контейнерный форум «ЕСЭ-2026»",
-   "type": "forum",
-   "level": "international",
-   "edition": 16,
-   "industries": [
-    "Транспорт и логистика"
-   ],
-   "city": "Сочи",
-   "venue": "",
-   "start": "2027-09-16",
-   "end": "2027-09-17",
-   "organizer": "Дирекция Форумов ЕСЭ",
-   "phone": "8 (904) 895-77-75",
-   "email": "info@eseforum.ru",
-   "site": "https://eseforum.ru/sobytiya",
-   "description": "Международный контейнерный форум с участием компаний из России, Казахстана, Китая, стран СНГ, БРИКС и ЕАЭС. Программа посвящена глобальным трендам контейнерных перевозок и поиску новых деловых партнёров.",
-   "source_url": "https://eseforum.ru/sobytiya",
-   "source_name": "ESE Forum",
-   "country": "Россия",
-   "program_url": "",
-   "speakers": [],
-   "i18n": {
-    "kk": {
-     "title": "XVI Халықаралық контейнерлік форумы «ЕСЭ-2026»",
-     "description": "Ресей, Қазақстан, Қытай, ТМД, БРИКС және ЕАЭО елдерінің компанияларының қатысуымен өтетін халықаралық контейнерлік форум. Бағдарламада контейнерлік тасымалдаудың жаһандық трендтері және жаңа іскерлік серіктестерді іздеу талқыланады."
-    },
-    "en": {
-     "title": "XVI International Container Forum “ESE-2026”",
-     "description": "An international container logistics forum with participants from Russia, Kazakhstan, China, CIS, BRICS and EAEU countries. The programme covers global container transport trends and the search for new business partners."
-    }
-   },
-   "id": "xvi-2027-248333",
    "found_at": "2026-11-13T13:05+05:00"
   },
   {

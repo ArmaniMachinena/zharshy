@@ -47,7 +47,9 @@ PROMPT = """Ты — сборщик анонсов деловых меропри
 онлайн для казахстанской аудитории или за рубежом, но важны для казахстанского бизнеса (СНГ, Каспий, отраслевые мировые события): форумы, выставки, конференции, конгрессы, саммиты, вебинары.
 Включай и государственную повестку: официальные визиты Президента и Премьер-министра (type "visit"), саммиты,
 заседания межгосударственных советов, государственные праздники и общенациональные мероприятия (type "official").
-Пропусти прошедшие события, концерты, спорт, развлечения и новости без конкретной даты.
+Пропусти закрытые служебные совещания и заседания (Совбез, оперативные совещания, заседания полпредов) — нужны только публичные события,
+саммиты и официальные визиты. Пропусти прошедшие события, концерты, спорт, развлечения и новости без конкретной даты.
+Если в названии указан год (например «ЕСЭ-2026»), даты должны быть в этом году.
 
 Верни ТОЛЬКО JSON-массив (может быть пустым []). Каждый элемент:
 {{"title": str, "type": one of {types}, "level": one of {levels},
@@ -142,6 +144,11 @@ def clean(it: dict, source: str, url: str) -> dict | None:
         return None
     if not DATE_RE.match(end) or end < start:
         end = start
+    ty = re.search(r"\b(20\d{2})\b", title)
+    if ty and start[:4] != ty.group(1):          # год в названии важнее угаданного
+        start, end = ty.group(1) + start[4:], ty.group(1) + end[4:]
+    if end < dt.datetime.now(TZ).date().isoformat():   # прошедшие не добавляем
+        return None
     city = str(it.get("city", "")).strip()
     city = CITIES.get(city.lower(), city) or "уточняется"
     inds = [x for x in it.get("industries", []) if x in INDUSTRIES][:3]
@@ -185,8 +192,13 @@ def norm(title: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
+TR = dict(zip("абвгдеёжзийклмнопрстуфхцчшщъыьэюяәіңғүұқөһ",
+              ["a","b","v","g","d","e","e","zh","z","i","y","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sch","","y","","e","yu","ya","a","i","n","g","u","u","k","o","h"]))
+
+
 def make_id(ev: dict) -> str:
-    base = re.sub(r"[^a-z0-9]+", "-", norm(ev["title"]).encode("ascii", "ignore").decode())[:40].strip("-")
+    lat = "".join(TR.get(c, c) for c in norm(ev["title"]))
+    base = re.sub(r"[^a-z0-9]+", "-", lat)[:40].strip("-")
     h = hashlib.sha1((norm(ev["title"]) + ev["start"]).encode()).hexdigest()[:6]
     return f"{base or 'ev'}-{ev['start'][:4]}-{h}"
 
@@ -207,10 +219,33 @@ def same(a: dict, b: dict) -> bool:
     return difflib.SequenceMatcher(None, na, nb).ratio() >= 0.82
 
 
+def ai_twin(ev: dict, cands: list[dict]) -> dict | None:
+    """Спорные случаи (тот же день и город, разные названия) решает Claude: одно ли это событие."""
+    if not cands or not os.environ.get("ANTHROPIC_API_KEY"):
+        return None
+    import anthropic
+    lst = "\n".join(f"{i}. {c['title']} | {c.get('organizer','')} | {c.get('venue','')}" for i, c in enumerate(cands))
+    q = (f"Новое событие: {ev['title']} | {ev.get('organizer','')} | {ev.get('venue','')} | {ev['start']} {ev['city']}\n"
+         f"Уже в базе (тот же день и город):\n{lst}\n"
+         "Это то же самое событие, что одно из списка (возможно, другое название или язык)? "
+         "Совместные выставки под одной крышей — разные события. Ответь только номером или словом нет.")
+    try:
+        r = anthropic.Anthropic().messages.create(model=MODEL, max_tokens=10, messages=[{"role": "user", "content": q}])
+        a = "".join(b.text for b in r.content if getattr(b, "type", "") == "text").strip().lower()
+        m = re.match(r"\d+", a)
+        return cands[int(m.group(0))] if m and int(m.group(0)) < len(cands) else None
+    except Exception:
+        return None
+
+
 def merge(existing: list[dict], found: list[dict]) -> tuple[list[dict], int]:
     added = 0
     for ev in found:
         twin = next((e for e in existing if same(e, ev)), None)
+        if twin is None:
+            cands = [e for e in existing if abs((dt.date.fromisoformat(e["start"]) - dt.date.fromisoformat(ev["start"])).days) <= 1
+                     and (e.get("city") == ev.get("city") or "уточняется" in (e.get("city"), ev.get("city")))]
+            twin = ai_twin(ev, cands[:12])
         if twin is None:
             ev["found_at"] = dt.datetime.now(TZ).isoformat(timespec="minutes")
             existing.append(ev)

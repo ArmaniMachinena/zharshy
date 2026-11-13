@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-13T17:06+05:00",
- "full_at": "2026-11-13T17:06+05:00",
+ "checked_at": "2026-11-13T17:49+05:00",
+ "full_at": "2026-11-13T17:49+05:00",
  "mode": "full",
  "have_key": true,
  "sources": [
@@ -57,10 +57,9 @@
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1974,
+   "chars": 1964,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Акорда — новости и события",
@@ -69,7 +68,8 @@
    "ok": true,
    "chars": 4683,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Премьер-министр РК — новости",
@@ -188,7 +188,8 @@
    "ok": true,
    "chars": 95,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AMM",
@@ -353,11 +354,10 @@
    "name": "QazTrade — мероприятия",
    "url": "https://qaztrade.org.kz/ru/",
    "group": "web",
-   "ok": true,
-   "chars": 5526,
-   "events": 0,
-   "error": "",
-   "unchanged": true
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='qaztrade.org.kz', port=443): Max retries exceeded with url: /ru/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='qaztrade.org.kz"
   },
   {
    "name": "KazakhExport — новости",
@@ -396,7 +396,8 @@
    "ok": true,
    "chars": 1639,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KAZENERGY",
@@ -405,7 +406,8 @@
    "ok": true,
    "chars": 2491,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Форум KAZENERGY",
@@ -414,7 +416,8 @@
    "ok": true,
    "chars": 34734,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Visit Almaty — события",
@@ -462,7 +465,8 @@
    "ok": true,
    "chars": 3146,
    "events": 2,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "World Hydrogen Summit",
@@ -481,7 +485,8 @@
    "ok": true,
    "chars": 1417,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Премьер-министр — мероприятия",
@@ -490,14 +495,15 @@
    "ok": true,
    "chars": 15685,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Kazinform — официальная хроника",
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8571,
+   "chars": 8529,
    "events": 0,
    "error": ""
   },
@@ -508,7 +514,8 @@
    "ok": true,
    "chars": 1274,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Kazinform — Парламент",
@@ -517,7 +524,8 @@
    "ok": true,
    "chars": 1498,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "ЕЭК (ЕАЭС) — календарь",
@@ -526,26 +534,26 @@
    "ok": true,
    "chars": 8295,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "СНГ — исполком",
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8395,
-   "events": 1,
-   "error": ""
+   "chars": 8560,
+   "events": null,
+   "error": "ИИ: credential validation failed"
   },
   {
    "name": "ШОС — новости",
    "url": "https://eng.sectsco.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 1614,
+   "chars": 1608,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "EventsEye — выставки Казахстана",
@@ -564,7 +572,8 @@
    "ok": true,
    "chars": 11100,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "TradeFairDates",
@@ -581,8 +590,8 @@
    "url": "https://lu.ma/discover",
    "group": "global",
    "ok": true,
-   "chars": 3414,
-   "events": 1,
+   "chars": 2432,
+   "events": 0,
    "error": ""
   },
   {
@@ -590,7 +599,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 7627,
+   "chars": 7472,
    "events": 0,
    "error": ""
   },
@@ -679,7 +688,7 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 11129,
+   "chars": 11149,
    "events": 1,
    "error": ""
   },
@@ -688,7 +697,7 @@
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 9841,
+   "chars": 10230,
    "events": 2,
    "error": ""
   },

@@ -18,10 +18,6 @@ web:
     url: https://www.akorda.kz/ru
   - name: Премьер-министр РК — новости
     url: https://primeminister.kz/ru/news
-  - name: gov.kz — МИД РК, мероприятия
-    url: https://www.gov.kz/memleket/entities/mfa/press/events?lang=ru
-  - name: gov.kz — Минпромстрой, мероприятия
-    url: https://www.gov.kz/memleket/entities/mps/press/events?lang=ru
   - name: Advantour — выставки Алматы
     url: https://www.advantour.com/rus/kazakhstan/almaty/exhibitions.htm
   - name: Advantour — выставки Астаны
@@ -46,13 +42,12 @@ sheets:
 organizers:
   - {name: Kazakhstan Machinery Fair, url: https://www.kmfexpo.kz/ru}
   - {name: SU ARNASY Water Expo, url: https://waterexpo.kz/}
-  - {name: CM EXPO, url: https://cmexpo.kz/}
   - {name: MINEX Kazakhstan, url: https://minexkazakhstan.com/}
   - {name: Energy Trends, url: https://energytrends.kz}
   - {name: ESE Forum, url: https://eseforum.ru/sobytiya}
   - {name: BT Expo, url: https://btexpo.kz/ru}
   - {name: Comtrux, url: https://comtrux.kz/}
-  - {name: GITEX Central Asia, url: https://www.gitexcac.com/rus/home}
+  - {name: GITEX Central Asia, url: https://www.gitexcac.com/}
   - {name: AMM, url: https://www.amm.kz}
   - {name: Electronica Expo, url: https://electronica-expo.com/}
   - {name: Mining Week Kazakhstan, url: https://miningweek.kz/en/}
@@ -65,34 +60,32 @@ organizers:
   - {name: TransLogistica, url: https://translogistica.kz/en/}
   - {name: Powerexpo, url: https://powerexpo.kz/ru/}
   - {name: Securex, url: https://securex.kz/}
-  - {name: United Medical Expo, url: https://unitedmedicalexpo.com/}
   - {name: AmCham Kazakhstan, url: https://amcham.kz/}
   - {name: КАО, url: https://kao.kz/ru/novosti/}
   - {name: АНЭК, url: https://kffanek.kz/}
 
 # Расширение источников (п. 11): палаты, экспорт, инвестиции, отраслевые ассоциации, зарубежье
 more:
-  - {name: НПП «Атамекен» — новости, url: https://atameken.kz/ru/news}
+  - {name: НПП «Атамекен», url: https://atameken.kz/ru}
   - {name: QazTrade — мероприятия, url: https://qaztrade.org.kz/ru/}
   - {name: KazakhExport — новости, url: https://www.kazakhexport.kz/ru/}
   - {name: Kazakh Invest — новости, url: https://invest.gov.kz/media-center/press-releases/}
   - {name: Astana International Forum, url: https://astanainternationalforum.org/}
   - {name: МФЦА (AIFC) — события, url: https://aifc.kz/news}
-  - {name: KAZENERGY — новости, url: https://www.kazenergy.com/ru/}
+  - {name: KAZENERGY, url: https://www.kazenergy.com/}
+  - {name: Форум KAZENERGY, url: https://kazenergyforum.com/}
   - {name: Visit Almaty — события, url: https://visitalmaty.kz/}
   - {name: Iteca — календарь выставок, url: https://iteca.events/ru}
-  - {name: Baku Energy Week, url: https://bakuenergyweek.com}
+  - {name: Baku Energy Week, url: https://www.bakuenergyweek.com}
   - {name: TIIF Ташкент, url: https://tiif.online/}
-  - {name: ИННОПРОМ, url: https://www.innoprom.com/en/}
+  - {name: ИННОПРОМ, url: https://innoprom.com/en/}
   - {name: World Hydrogen Summit, url: https://www.world-hydrogen-summit.com}
 
 # Мировые каталоги и календари международных организаций (список Армана, 13.11.2026)
 global:
-  - {name: 10times — Казахстан, url: https://10times.com/kazakhstan}
   - {name: EventsEye — выставки Казахстана, url: https://www.eventseye.com/fairs/c1_trade-shows_kazakhstan.html}
   - {name: AUMA — поиск выставок, url: https://www.auma.de/en/find-your-fair/}
   - {name: TradeFairDates, url: https://www.tradefairdates.com}
-  - {name: Eventbrite — Казахстан, url: https://www.eventbrite.com/d/kazakhstan/business--events/}
   - {name: Luma — Discover, url: https://lu.ma/discover}
   - {name: Meetup, url: https://www.meetup.com}
   - {name: AllEvents — Астана, url: https://allevents.in/astana}
@@ -100,21 +93,30 @@ global:
   - {name: IEEE Conferences, url: https://events.ieee.org/search-ieee-conferences/}
   - {name: WikiCFP, url: http://www.wikicfp.com/cfp/}
   - {name: SPE Events, url: https://www.spe-events.org}
-  - {name: IEA Events, url: https://www.iea.org/events}
-  - {name: World Economic Forum — события, url: https://www.weforum.org/events}
   - {name: Indico.UN, url: https://indico.un.org}
   - {name: World Bank Live, url: https://live.worldbank.org}
-  - {name: OECD Events, url: https://www.oecd.org/en/events.html}
 
 # Государственная повестка: визиты, саммиты, официальные мероприятия
 state:
   - {name: Акорда — график и визиты, url: https://www.akorda.kz/ru/events}
   - {name: Премьер-министр — мероприятия, url: https://primeminister.kz/ru/events}
   - {name: Kazinform — официальная хроника, url: https://www.inform.kz/ru/}
-  - {name: Парламент РК — новости, url: https://www.parlam.kz/ru/news}
-  - {name: Kazakh Invest — события, url: https://invest.gov.kz/ru/media-center/events/}
-  - {name: МИД РК — Kazakhstan Diplomatic Portal, url: https://www.mfa.gov.kz/ru}
+  - {name: Kazakh Invest — медиацентр, url: https://invest.gov.kz/media-center}
+  - {name: Kazinform — Парламент, url: https://www.inform.kz/ru/mazhilis_t326}
   - {name: ЕЭК (ЕАЭС) — календарь, url: https://eec.eaeunion.org/news/}
   - {name: СНГ — исполком, url: https://e-cis.info/news/}
-  - {name: Организация тюркских государств, url: https://www.turkicstates.org/en/news}
   - {name: ШОС — новости, url: https://eng.sectsco.org/news/}
+
+# Сайты, которые закрыты для автоматических роботов (защита от ботов, 403) или недоступны из-за рубежа.
+# Мы НЕ обходим защиту: такие площадки подключаются через партнёрство (их Telegram/рассылка, официальный API,
+# разрешение робота) или заявки организаторов через форму. Паук их не открывает, только показывает в «Источниках».
+blocked:
+  - {name: 10times — Казахстан, url: https://10times.com/kazakhstan, how: "закрыт для роботов — нужен партнёрский доступ"}
+  - {name: Eventbrite — Казахстан, url: https://www.eventbrite.com/d/kazakhstan/business--events/, how: "есть официальный API — нужен бесплатный ключ"}
+  - {name: IEA Events, url: https://www.iea.org/events, how: "закрыт для роботов — следим через рассылку"}
+  - {name: World Economic Forum — события, url: https://www.weforum.org/events, how: "закрыт для роботов — следим через рассылку"}
+  - {name: OECD Events, url: https://www.oecd.org/en/events.html, how: "закрыт для роботов — следим через рассылку"}
+  - {name: CM EXPO, url: https://cmexpo.kz/, how: "закрыт для роботов — пригласить организатора добавлять события"}
+  - {name: United Medical Expo, url: https://unitedmedicalexpo.com/, how: "закрыт для роботов — пригласить организатора"}
+  - {name: Организация тюркских государств, url: https://www.turkicstates.org/en/news, how: "закрыт для роботов"}
+  - {name: МИД РК / gov.kz, url: https://www.gov.kz/memleket/entities/mfa, how: "страницы собираются скриптом в браузере — нужен открытый API gov.kz"}

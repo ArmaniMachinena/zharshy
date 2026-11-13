@@ -342,6 +342,11 @@ def main() -> int:
             st["error"] = ("ИИ: " + str(e))[:160]
             print(f"  ✗ {name} (ИИ): {e}")
 
+    if mode != "fast":   # закрытые для роботов площадки — только показываем, не открываем
+        for b in cfg.get("blocked", []):
+            status.append({"name": b["name"], "url": b["url"], "group": "blocked", "ok": False, "chars": 0,
+                           "events": None, "error": "blocked", "how": b.get("how", "")})
+
     # WhatsApp-группы через GREEN-API
     wa = {"name": "WhatsApp (GREEN-API)", "url": "https://green-api.com", "group": "whatsapp", "ok": False, "chars": 0, "events": None, "error": ""}
     status.append(wa)

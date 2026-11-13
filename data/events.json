@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T15:13+05:00",
+ "updated_at": "2026-11-13T16:13+05:00",
  "events": [
   {
    "title": "Central Asia Coatings Show 2026",
@@ -2295,7 +2295,8 @@
     }
    },
    "also_in": [
-    "https://primeminister.kz/ru/news"
+    "https://primeminister.kz/ru/news",
+    "https://t.me/s/atamekenbusiness_qaz"
    ],
    "speakers": [
     {
@@ -2512,6 +2513,52 @@
      "company": "Агентство по регулированию и развитию финансового рынка"
     }
    ]
+  },
+  {
+   "title": "Қазақстан қаржыгерлерінің XIV конгресі",
+   "type": "congress",
+   "level": "republican",
+   "edition": 14,
+   "industries": [
+    "Финансы"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2026-11-13",
+   "end": "2026-11-13",
+   "organizer": "Ассоциация финансистов Казахстана при поддержке Национального Банка и Агентства по регулированию и развитию финансового рынка",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "XIV конгресс финансистов Казахстана с панельными сессиями о развитии финансового рынка, капитального рынка, пенсионных активов, страхования и криптоиндустрии. В ходе конгресса запланирован запуск первой токенизированной облигации и вручение лицензии исламского финансирования.",
+   "source_url": "https://t.me/s/atamekenbusiness_qaz",
+   "source_name": "Telegram @atamekenbusiness_qaz",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [
+    {
+     "name": "Тимур Сүлейменов",
+     "role": "Председатель",
+     "company": "Национальный Банк Республики Казахстан"
+    },
+    {
+     "name": "Мәдина Әбілқасымова",
+     "role": "Председатель",
+     "company": "Агентство по регулированию и развитию финансового рынка"
+    }
+   ],
+   "i18n": {
+    "kk": {
+     "title": "Қазақстан қаржыгерлерінің XIV конгресі",
+     "description": "Қазақстан қаржыгерлерінің XIV конгресі қаржы нарығын, капитал нарығын, зейнетақы активтерін, сақтандыруды және криптоиндустрияны дамыту мәселелері бойынша панельдік сессиялар өткізеді. Конгресс аясында алғашқы токенделген облигацияны іске қосу рәсімі өтеді."
+    },
+    "en": {
+     "title": "XIV Congress of Kazakhstan Financiers",
+     "description": "The XIV Congress of Kazakhstan Financiers features panel sessions on developing the financial and capital markets, pension assets, insurance and the crypto industry. The first tokenized bond launch and an Islamic financing license award are scheduled during the congress."
+    }
+   },
+   "id": "kazakstan-karzhygerlerinin-xiv-kongresi-2026-01d262",
+   "found_at": "2026-11-13T16:13+05:00"
   },
   {
    "title": "Заседание Комиссии по экономическим вопросам при Экономическом совете СНГ",

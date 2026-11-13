@@ -339,6 +339,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
 .press ul{margin:0;padding-left:16px}.press li{font-size:13.5px;margin-bottom:5px}.press li a{color:var(--ink);font-weight:600;text-decoration:none}.press li a:hover{color:var(--sky-d)}
 .press li small{display:block;color:var(--muted);font-size:11.5px}.press summary{font-size:12.5px;color:var(--sky-d);cursor:pointer;margin-top:4px}
 .tag.press-t{background:#eef7ff;color:#1d5f8a}
+.hbtn[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -356,7 +357,7 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
       <div class="langs" role="group" aria-label="Language">
         <button data-lang="kk">ҚАЗ</button><button data-lang="ru">РУС</button><button data-lang="en">ENG</button>
       </div>
-      <div class="hmeta"><span class="todaychip" id="todayChip"></span><span><span class="dot"></span><span id="upd">—</span></span><button class="hbtn addb" id="addBtn">＋ <span data-i="addBtn"></span></button><button class="hbtn ico" id="anBtn" data-tip="anBtn">📊</button><button class="hbtn src-btn" id="srcBtn" data-tip="src">📡 <b id="srcN"></b></button><button class="hbtn ico" id="fbBtn" data-tip="fbTitle">✉</button><button class="hbtn ico" id="aboutBtn" data-tip="how">?</button></div>
+      <div class="hmeta"><span class="todaychip" id="todayChip"></span><span><span class="dot"></span><span id="upd">—</span></span><button class="hbtn addb" id="addBtn">＋ <span data-i="addBtn"></span></button><button class="hbtn ico" id="anBtn" data-tip="anBtn">📊</button><button class="hbtn src-btn" id="srcBtn" data-tip="src" hidden>📡 <b id="srcN"></b></button><button class="hbtn ico" id="fbBtn" data-tip="fbTitle">✉</button><button class="hbtn ico" id="aboutBtn" data-tip="how">?</button></div>
     </div>
   </div>
 </header>
@@ -1108,7 +1109,9 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')$('modal').classList
 $('favOnly').onclick=()=>{favOnly=!favOnly;$('favOnly').classList.toggle('on',favOnly);render()};
 $('vList').onclick=()=>{setView('list');render()};
 $('vCal').onclick=()=>{setView('cal');render()};
-$('aboutBtn').onclick=openAbout;$('fbBtn').onclick=openFeedback;
+$('aboutBtn').onclick=openAbout;
+/* «Источники» скрыты из шапки: открываются по адресу …/#info */
+const infoHash=()=>{if(location.hash.toLowerCase()==='#info'){openSources();try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}};window.addEventListener('hashchange',infoHash);setTimeout(infoHash,300);$('fbBtn').onclick=openFeedback;
 document.addEventListener('click',e=>{if(e.target.closest('[data-feedback]'))openFeedback()});
 $('srcBtn').onclick=openSources;
 $('anBtn').onclick=openAnalytics;$('prefBtn').onclick=openPrefs;$('addBtn').onclick=openSubmit;$('expBtn').onclick=exportList;$('subBtn').onclick=openSubscribe;

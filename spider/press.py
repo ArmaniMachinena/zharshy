@@ -68,6 +68,16 @@ def query(e: dict) -> str:
     return f"\"{t}\"" if len(words) <= 2 else " ".join(words[:5])
 
 
+def queries(e: dict) -> list[str]:
+    """Основной запрос + запасной без римских цифр («XIV Конгресс финансистов» → «Конгресс финансистов»)."""
+    q1 = query(e)
+    t = re.sub(r"\b20\d\d\b|\b[IVXLC]{2,}\b|\d+-?(й|я|е)?\b", " ", e["title"])
+    t = re.split(r"\s[—–-]\s|:|«|\(", t)[0]
+    w = re.sub(r"[«»\"“”]", "", t).split()
+    q2 = " ".join(w[:3])
+    return [q1] + ([q2] if len(w) >= 2 and q2.strip('"') != q1.strip('"') else [])
+
+
 def fetch_rss(q: str, lang: str) -> list[dict]:
     import requests
     hl, gl, ceid = {"ru": ("ru", "KZ", "KZ:ru"), "en": ("en", "US", "US:en")}[lang]
@@ -127,11 +137,12 @@ def main() -> int:
         langs = ["ru"] + (["en"] if e.get("level") == "international" or re.search(r"[A-Za-z]{4}", e["title"]) else [])
         found = []
         for lang in langs:
-            try:
-                found += [x for x in fetch_rss(query(e), lang) if relevant(x, strong, normal, since, etypes)]
-            except Exception as ex:
-                print(f"  ✗ {e['title'][:50]} ({lang}): {ex}")
-            time.sleep(1.5)                # бережно к сервису
+            for q in queries(e):
+                try:
+                    found += [x for x in fetch_rss(q, lang) if relevant(x, strong, normal, since, etypes)]
+                except Exception as ex:
+                    print(f"  ✗ {e['title'][:50]} ({lang}): {ex}")
+                time.sleep(1.5)            # бережно к сервису
         have = {p["url"] for p in e.get("press", [])} | {p["title"].lower() for p in e.get("press", [])}
         fresh = [x for x in found if x["url"] not in have and x["title"].lower() not in have]
         seen = set()

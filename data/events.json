@@ -2710,6 +2710,46 @@
    "also_in": []
   },
   {
+   "title": "Qazaq Green Fest 2026 — V Международный деловой фестиваль по возобновляемой энергетике",
+   "type": "forum",
+   "level": "international",
+   "edition": 5,
+   "industries": [
+    "Энергетика",
+    "Экология и ESG"
+   ],
+   "country": "Казахстан",
+   "city": "Астана",
+   "venue": "Hilton Astana, зал Grand BallRoom, ул. Гейдара Алиева, 14",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "date_approx": false,
+   "organizer": "Ассоциация ВИЭ «Qazaq Green», Казахстанская электроэнергетическая ассоциация (КЭА)",
+   "phone": "+7 702 403 72 64",
+   "email": "registration@qazaqgreenfest.kz",
+   "site": "https://qazaqgreenfest.kz/",
+   "program_url": "",
+   "description": "Развитие энергосистемы Казахстана до 2035 года, роль возобновляемых источников энергии, технологии и инвестиции для отрасли. Участие в деловой программе — по предварительной регистрации, мест ограниченно.",
+   "source_url": "https://qazaqgreenfest.kz/",
+   "source_name": "Приглашение + qazaqgreenfest.kz",
+   "i18n": {
+    "kk": {
+     "title": "QAZAQ GREEN FEST 2026 — Жаңартылатын энергетика бойынша V халықаралық іскерлік фестиваль",
+     "description": "Қазақстан энергетика жүйесінің 2035 жылға дейінгі дамуы, жаңартылатын энергия көздерінің рөлі, салаға қажетті технологиялар мен инвестициялар. Іскерлік бағдарламаға алдын ала тіркелу қажет, орын саны шектеулі.",
+     "venue": "Hilton Astana, Grand BallRoom залы, Гейдар Әлиев к-сі, 14",
+     "organizer": "«Qazaq Green» ЖЭК қауымдастығы, Қазақстан электр энергетикалық қауымдастығы (ҚЭҚ)"
+    },
+    "en": {
+     "title": "Qazaq Green Fest 2026 — 5th International Business Festival on Renewable Energy",
+     "description": "Development of Kazakhstan's power system to 2035, the role of renewables, and the technology and investment the sector needs. Pre-registration required for the business programme; seats are limited.",
+     "venue": "Hilton Astana, Grand Ballroom, 14 Heydar Aliyev St",
+     "organizer": "Qazaq Green Renewable Energy Association, Kazakhstan Electricity Association (KEA)"
+    }
+   },
+   "found_at": "2026-11-13T16:20+05:00",
+   "id": "qazaq-green-fest-v-mezhdunarodnyy-delovo-2026-78c8dc"
+  },
+  {
    "id": "independence-day-2026",
    "title": "День Независимости Республики Казахстан",
    "type": "official",

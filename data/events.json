@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T16:13+05:00",
+ "updated_at": "2026-11-13T17:09+05:00",
  "events": [
   {
    "title": "Central Asia Coatings Show 2026",
@@ -2257,7 +2257,8 @@
    "id": "31-ya-konferentsiya-storon-ramochnoy-kon-2026-46de95",
    "found_at": "2026-11-13T13:58+05:00",
    "also_in": [
-    "https://indico.un.org"
+    "https://indico.un.org",
+    "https://primeminister.kz/ru/events"
    ]
   },
   {
@@ -2708,6 +2709,41 @@
    "id": "ev-2026-4799e1",
    "found_at": "2026-11-13T13:05+05:00",
    "also_in": []
+  },
+  {
+   "title": "NVIDIA GTC DC",
+   "type": "conference",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Вашингтон",
+   "venue": "",
+   "start": "2026-11-30",
+   "end": "2026-12-03",
+   "organizer": "NVIDIA",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Серия сайд-ивентов NVIDIA GTC в Вашингтоне, где политики, исследователи, стартапы и отраслевые лидеры обсуждают ИИ, ускоренные вычисления и инновации в госсекторе.",
+   "source_url": "https://lu.ma/discover",
+   "source_name": "Luma — Discover",
+   "country": "США",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "NVIDIA GTC DC",
+     "description": "Вашингтондағы NVIDIA GTC шеңберіндегі жанама іс-шаралар сериясы, онда саясаткерлер, зерттеушілер, стартаптар және салалық көшбасшылар жасанды интеллект, жеделдетілген есептеулер және мемлекеттік сектордағы инновациялар туралы талқылайды."
+    },
+    "en": {
+     "title": "NVIDIA GTC DC",
+     "description": "A series of side events of NVIDIA GTC in Washington, D.C., where policymakers, researchers, startups and industry leaders discuss AI, accelerated computing and public-sector innovation."
+    }
+   },
+   "id": "nvidia-gtc-dc-2026-09d673",
+   "found_at": "2026-11-13T17:09+05:00"
   },
   {
    "title": "Qazaq Green Fest 2026 — V Международный деловой фестиваль по возобновляемой энергетике",
@@ -3354,7 +3390,10 @@
     }
    },
    "phone": "",
-   "email": ""
+   "email": "",
+   "also_in": [
+    "https://innoprom.com/en/"
+   ]
   },
   {
    "id": "kitf-2027",
@@ -3641,6 +3680,41 @@
    "edition": null
   },
   {
+   "title": "GITEX AI KAZAKHSTAN",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2027-06-07",
+   "end": "2027-06-08",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "https://www.gitexcac.com/",
+   "description": "Международная выставка, посвящённая искусственному интеллекту и цифровым технологиям, пройдёт в Алматы 7–8 июня 2027 года. Мероприятие ориентировано на бизнес и технологические компании Казахстана и региона.",
+   "source_url": "https://www.gitexcac.com/",
+   "source_name": "GITEX Central Asia",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "GITEX AI Қазақстан",
+     "description": "Жасанды интеллект пен цифрлық технологияларға арналған халықаралық көрме 2027 жылғы 7–8 маусымда Алматыда өтеді. Іс-шара Қазақстан мен аймақтың бизнесіне және технологиялық компанияларына бағытталған."
+    },
+    "en": {
+     "title": "GITEX AI Kazakhstan",
+     "description": "An international exhibition on artificial intelligence and digital technologies will take place in Almaty on 7–8 June 2027. The event targets businesses and technology companies from Kazakhstan and the region."
+    }
+   },
+   "id": "gitex-ai-kazakhstan-2027-0fab75",
+   "found_at": "2026-11-13T17:09+05:00"
+  },
+  {
    "title": "17-й Международный Горно-металлургический конгресс",
    "type": "congress",
    "level": "international",
@@ -3823,6 +3897,43 @@
      "venue": "уточняется"
     }
    }
+  },
+  {
+   "title": "ИННОПРОМ",
+   "type": "exhibition",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Машиностроение",
+    "Энергетика",
+    "Горнодобыча и металлургия"
+   ],
+   "city": "Екатеринбург",
+   "venue": "",
+   "start": "2027-07-05",
+   "end": "2027-07-08",
+   "organizer": "ООО Formika Event",
+   "phone": "",
+   "email": "",
+   "site": "https://innoprom.com/en/",
+   "description": "Крупнейшая международная промышленная выставка, где собираются производители и покупатели со всего мира. Она даёт возможность показать передовые технологии и наладить B2B-контакты.",
+   "source_url": "https://innoprom.com/en/",
+   "source_name": "ИННОПРОМ",
+   "country": "Россия",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "ИННОПРОМ",
+     "description": "Әлемнің түкпір-түкпірінен өндірушілер мен сатып алушыларды жинайтын ірі халықаралық өнеркәсіптік көрме. Ол озық технологияларды көрсетуге және B2B байланыстар орнатуға мүмкіндік береді."
+    },
+    "en": {
+     "title": "INNOPROM",
+     "description": "A major international industrial exhibition that brings together manufacturers and buyers from around the world. It offers an opportunity to showcase advanced technologies and build B2B contacts."
+    }
+   },
+   "id": "innoprom-2027-4ff6ba",
+   "found_at": "2026-11-13T17:09+05:00"
   },
   {
    "title": "KazDrilling: Upstream of Kazakhstan",

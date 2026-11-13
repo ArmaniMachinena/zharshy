@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-13T02:54+05:00",
+ "checked_at": "2026-11-13T06:17+05:00",
  "have_key": false,
  "sources": [
   {
@@ -312,10 +312,10 @@
    "name": "United Medical Expo",
    "url": "https://unitedmedicalexpo.com/",
    "group": "organizers",
-   "ok": true,
-   "chars": 24736,
+   "ok": false,
+   "chars": 0,
    "events": null,
-   "error": ""
+   "error": "403 Client Error: Forbidden for url: https://umtexpo.com/"
   },
   {
    "name": "AmCham Kazakhstan",
@@ -484,7 +484,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8427,
+   "chars": 8482,
    "events": null,
    "error": ""
   },
@@ -529,7 +529,7 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8273,
+   "chars": 8283,
    "events": null,
    "error": ""
   },

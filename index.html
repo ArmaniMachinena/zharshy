@@ -317,6 +317,20 @@ main{max-width:1560px;margin:0 auto;padding:14px 20px 40px;display:grid;grid-tem
 .about ol{padding-left:20px;margin:6px 0}
 .about li{margin-bottom:6px}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30px}
+/* compact filters */
+.tools{padding:10px 10px 6px;gap:6px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.tools .trow{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tools .trow .toolsb{margin-left:auto}
+@media (max-width:640px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.tools input[type=search]{grid-column:1/-1}}
+.tools input[type=search]{grid-column:span 2;height:32px;padding:6px 10px;border-radius:8px;font-size:13.5px}
+.tools select{padding:5px 6px;border-radius:8px;font-size:13px;width:100%;min-width:0;height:32px}
+.tools .fav-toggle,.tools .tbtn,.tools .seg button{padding:5px 9px;font-size:12.5px;border-radius:8px}
+.tools .seg{border-radius:8px}
+.tools .toolsb{gap:6px}
+.count{font-size:12px!important;padding-top:0!important;padding-bottom:2px!important}
+.reco.empty{padding:7px 10px;margin:4px 0 8px;font-size:13px}
+.reco.empty span{display:none}
+.reco.empty .btn{padding:5px 12px;font-size:12.5px}
 </style>
 </head>
 <body>
@@ -369,10 +383,10 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:10px 20px 30p
         <select id="fType"></select>
         <select id="fPeriod"></select>
         <select id="fGeo"></select>
-        <button class="fav-toggle pref-btn" id="prefBtn">✨ <span data-i="prefBtn"></span></button>
+        <div class="trow"><button class="fav-toggle pref-btn" id="prefBtn">✨ <span data-i="prefBtn"></span></button>
         <button class="fav-toggle" id="favOnly" data-i="myBtn"></button>
         <div class="seg"><button id="vList" class="on" data-i="listV"></button><button id="vCal" data-i="calV"></button></div>
-        <div class="toolsb"><button class="tbtn" id="expBtn">⬇ <span data-i="expBtn"></span></button><button class="tbtn" id="subBtn">📅 <span data-i="subBtn"></span></button></div>
+        <div class="toolsb"><button class="tbtn" id="expBtn">⬇ <span data-i="expBtn"></span></button><button class="tbtn" id="subBtn">📅 <span data-i="subBtn"></span></button></div></div>
       </div>
       <div class="count" id="count"></div>
       <div class="list" id="list"></div>
@@ -952,7 +966,7 @@ function prefScore(e){
 }
 function recoBlock(){
   const td=todayISO();
-  if(!hasPrefs())return `<div class="reco empty"><div><b>✨ ${esc(t('prefNudge'))}</b><br><span>${esc(t('prefNudgeSub'))}</span></div><button class="btn pri" data-prefs>${esc(t('prefSet'))}</button></div>`;
+  if(!hasPrefs())return `<div class="reco empty"><div title="${esc(t('prefNudgeSub'))}"><b>✨ ${esc(t('prefNudge'))}</b> <span>${esc(t('prefNudgeSub'))}</span></div><button class="btn pri" data-prefs>${esc(t('prefSet'))}</button></div>`;
   const list=DATA.events.filter(e=>endOf(e)>=td&&prefScore(e)>0).sort((a,b)=>a.start.localeCompare(b.start));
   const kz=list.filter(e=>!isAbroad(e)).slice(0,4), ab=list.filter(isAbroad).slice(0,3);
   const chips=[...(PREFS.ind||[]).map(indName),...(PREFS.city||[]).map(cityName),...(PREFS.type||[]).map(x=>L().types[x]),...(PREFS.gov?[t('gov')]:[])].slice(0,8);

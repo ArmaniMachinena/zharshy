@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Жаршы — «Пресса о событии»: публикации СМИ о мероприятиях, которые идут сейчас или только что прошли.
 
-Работает БЕЗ ИИ и без токенов:
+Сбор ссылок работает БЕЗ ИИ и без токенов; выжимка «Главное» — одна маленькая ИИ-сводка по заголовкам (см. ai_digest):
   • для каждого события в окне [начало − 2 дня … окончание + 3 дня] берём публичную RSS-ленту
     поиска Google News по названию (на русском, а для международных — ещё и на английском);
   • отбираем публикации по ключевым словам названия (бренд, номер проведения, отличительные слова)
@@ -118,6 +118,45 @@ def relevant(item: dict, strong: list[str], normal: list[str], since: str, etype
     return not strong and hit_n >= min(2, len(normal))
 
 
+def ai_digest(e: dict) -> dict | None:
+    """Короткая ИИ-выжимка по ЗАГОЛОВКАМ публикаций (не по статьям): главное, 3 инсайта, итог.
+    Экономно: только заголовки (~1–2 тыс. токенов на вход, ~400 на выход), модель Haiku,
+    пересчёт только при 3+ новых публикациях, не чаще раза в 6 часов, и один финальный раз после окончания."""
+    import os
+    if not os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("PRESS_AI", "1") == "0":
+        return None
+    import anthropic
+    heads = "\n".join(f"- {p['title']} ({p.get('source','')}, {p.get('date','')[:10]})" for p in e["press"][:30])
+    done = (e.get("end") or e["start"]) < dt.datetime.now(run.TZ).date().isoformat()
+    prompt = (f"Событие: {e['title']} ({e['start']}–{e.get('end') or e['start']}, {e.get('city','')}). "
+              f"{'Событие завершилось — подведи итоги.' if done else 'Событие идёт сейчас.'}\n"
+              "Ниже заголовки публикаций СМИ о нём. Опираясь ТОЛЬКО на них (ничего не выдумывай, без оценок и мнений), верни JSON:\n"
+              "{\"ru\": {\"key\": \"главный месседж одним предложением\", \"insights\": [\"3 коротких инсайта: кто что предложил, "
+              "какие решения, о чём спорят\"], \"summary\": \"2 предложения — кратко о ходе события\"}, "
+              "\"kk\": {то же на казахском}, \"en\": {то же на английском}}\n\nЗаголовки:\n" + heads)
+    msg = anthropic.Anthropic().messages.create(model=run.MODEL, max_tokens=1200, messages=[{"role": "user", "content": prompt}])
+    raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+    m = re.search(r"\{.*\}", raw, re.S)
+    if not m:
+        return None
+    out = json.loads(m.group(0))
+    out.update({"at": dt.datetime.now(run.TZ).isoformat(timespec="minutes"), "n": len(e["press"]), "final": done})
+    return out
+
+
+def need_digest(e: dict) -> bool:
+    pr, d = e.get("press") or [], e.get("press_ai") or {}
+    if len(pr) < 3:
+        return False
+    done = (e.get("end") or e["start"]) < dt.datetime.now(run.TZ).date().isoformat()
+    if done:
+        return not d.get("final")
+    if not d:
+        return True
+    age = dt.datetime.now(run.TZ) - dt.datetime.fromisoformat(d["at"])
+    return len(pr) - d.get("n", 0) >= 3 and age >= dt.timedelta(hours=6)
+
+
 def main() -> int:
     today = dt.datetime.now(run.TZ).date()
     db = json.loads(DB.read_text(encoding="utf-8"))
@@ -152,6 +191,14 @@ def main() -> int:
             n_new += len(fresh)
         n_ev += 1
         print(f"  📰 {e['title'][:60]}: +{len(fresh)} (всего {len(e.get('press', []))})")
+        if need_digest(e):
+            try:
+                dg = ai_digest(e)
+                if dg:
+                    e["press_ai"] = dg
+                    print("     ✨ выжимка обновлена")
+            except Exception as ex:
+                print(f"     ✗ выжимка: {ex}")
     DB.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Пресса: событий в окне {n_ev}, новых публикаций {n_new}")
     return 0

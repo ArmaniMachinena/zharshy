@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-14T06:26+05:00",
+ "checked_at": "2026-11-14T13:56+05:00",
  "full_at": "2026-11-13T17:55+05:00",
  "mode": "fast",
  "have_key": true,
@@ -772,8 +772,7 @@
    "ok": true,
    "chars": 8619,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @atamekenbusiness",
@@ -802,8 +801,7 @@
    "ok": true,
    "chars": 63,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @kapitalkz",
@@ -822,8 +820,7 @@
    "ok": true,
    "chars": 3313,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "WhatsApp (GREEN-API)",

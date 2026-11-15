@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-15T06:00+05:00",
+ "checked_at": "2026-11-15T12:50+05:00",
  "full_at": "2026-11-14T20:47+05:00",
  "mode": "fast",
  "have_key": true,
@@ -721,10 +721,9 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 10324,
+   "chars": 10582,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @atamekenbusiness_qaz",

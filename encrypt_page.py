@@ -54,11 +54,11 @@ const D={salt:"__SALT__",iv:"__IV__",ct:"__CT__",it:__ITER__};
 const T={ru:["Закрытое тестирование","Сайт доступен участникам тестирования. Введите пароль — его выдаёт Арман.","Запомнить на этом устройстве","Войти","Неверный пароль","Пароль"],
 kk:["Жабық тестілеу","Сайт тестілеуге қатысушыларға қолжетімді. Құпиясөзді енгізіңіз — оны Арман береді.","Осы құрылғыда есте сақтау","Кіру","Құпиясөз қате","Құпиясөз"],
 en:["Private testing","This site is open to testers only. Enter the password — Arman will give it to you.","Remember on this device","Sign in","Wrong password","Password"]};
-let L=(navigator.language||"ru").slice(0,2);if(!T[L])L="ru";try{L=localStorage.getItem("zh-lang")||L}catch(e){}
+let L=(navigator.language||"ru").slice(0,2);try{const v=localStorage.getItem("zh-lang");if(v){try{L=JSON.parse(v)}catch(e){L=v}}}catch(e){}if(!T[L])L="ru";
 const $=i=>document.getElementById(i);
 function tr(){const t=T[L];$("t1").textContent=t[0];$("t2").textContent=t[1];$("t3").textContent=t[2];$("go").textContent=t[3];$("pw").placeholder=t[5];
  document.querySelectorAll("[data-l]").forEach(b=>b.classList.toggle("on",b.dataset.l===L))}
-document.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem("zh-lang",L)}catch(e){}tr()});tr();
+document.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem("zh-lang",JSON.stringify(L))}catch(e){}tr()});tr();
 const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 async function keyFrom(pw){const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveBits"]);
  return new Uint8Array(await crypto.subtle.deriveBits({name:"PBKDF2",salt:b64(D.salt),iterations:D.it,hash:"SHA-256"},base,256))}

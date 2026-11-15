@@ -44,21 +44,20 @@ jobs:
           [ -f data/moderation.json ] && git add data/moderation.json || true
           git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
           git push
-      - name: Выложить базу на публичный сайт (zharshy-web)
+      - name: Выложить зашифрованный сайт (zharshy-web)
         env:
           WEB_TOKEN: ${{ secrets.WEB_TOKEN }}
+          ZHARSHY_WEB_PASSWORD: ${{ secrets.ZHARSHY_WEB_PASSWORD }}
+          ZHARSHY_WEB_SALT: ${{ secrets.ZHARSHY_WEB_SALT }}
         run: |
-          if [ -z "$WEB_TOKEN" ]; then echo "WEB_TOKEN не задан — пропускаю"; exit 0; fi
+          if [ -z "$WEB_TOKEN" ] || [ -z "$ZHARSHY_WEB_PASSWORD" ] || [ -z "$ZHARSHY_WEB_SALT" ]; then echo "нет WEB_TOKEN / пароля сайта — пропускаю (открытую версию не выкладываем никогда)"; exit 0; fi
           python build.py
+          python encrypt_page.py
           git clone --depth 1 "https://x-access-token:${WEB_TOKEN}@github.com/ArmaniMachinena/zharshy-web.git" web
-          mkdir -p web/data
-          cp data/events.json web/data/events.json
-          cp data/sources_status.json web/data/sources_status.json
-          cp dist/index.html web/index.html
-          cp dist/zharshy.ics web/zharshy.ics
+          cp dist/public/index.html web/index.html
           cd web
           git config user.name "zharshy-bot"
           git config user.email "zharshy-bot@users.noreply.github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "Обновление базы $(date -u +%F\ %H:%M)"
+          git diff --cached --quiet || git commit -m "Обновление $(date -u +%F\ %H:%M)"
           git push

@@ -3163,6 +3163,46 @@
    "found_at": "2026-11-13T13:05+05:00"
   },
   {
+   "title": "Мосты сотрудничества: гражданское общество, бизнес и государство",
+   "type": "conference",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Госуправление",
+    "Образование"
+   ],
+   "country": "Казахстан",
+   "city": "Алматы",
+   "venue": "MOST Holding, ул. Ходжанова, 2/2, 3 этаж",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "date_approx": false,
+   "organizer": "Ассоциация развития гражданского общества «АРГО», MOST Hub Almaty при поддержке Фонда имени Конрада Аденауэра",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "program_url": "",
+   "description": "Конференция о партнёрстве гражданского общества, бизнеса и государства. Около 50 участников: НКО, бизнес, госорганы, эксперты и международные организации.",
+   "source_url": "",
+   "source_name": "Концепция конференции (от организаторов)",
+   "i18n": {
+    "kk": {
+     "title": "Ынтымақтастық көпірлері: азаматтық қоғам, бизнес және мемлекет",
+     "description": "Азаматтық қоғам, бизнес және мемлекет серіктестігі туралы конференция. 50-ге жуық қатысушы: ҮЕҰ, бизнес, мемлекеттік органдар, сарапшылар және халықаралық ұйымдар.",
+     "venue": "MOST Holding, Ходжанов к-сі, 2/2, 3-қабат",
+     "organizer": "«АРГО» азаматтық қоғамды дамыту қауымдастығы, MOST Hub Almaty, Конрад Аденауэр қорының қолдауымен"
+    },
+    "en": {
+     "title": "Bridges of Cooperation: Civil Society, Business and the State",
+     "description": "Conference on partnership between civil society, business and government. About 50 participants: NGOs, business, government bodies, experts and international organisations.",
+     "venue": "MOST Holding, 2/2 Khodzhanov St, 3rd floor",
+     "organizer": "ARGO Civil Society Development Association, MOST Hub Almaty, supported by the Konrad Adenauer Foundation"
+    }
+   },
+   "found_at": "2026-11-16T19:44+05:00",
+   "id": "mosty-sotrudnichestva-grazhdanskoe-obsch-2026-689595"
+  },
+  {
    "title": "Digital Tañba 2026 «От маркировки товаров к доверию потребителей»",
    "type": "forum",
    "level": "republican",

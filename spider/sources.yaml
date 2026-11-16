@@ -107,6 +107,18 @@ state:
   - {name: СНГ — исполком, url: https://e-cis.info/news/}
   - {name: ШОС — новости, url: https://eng.sectsco.org/news/}
 
+# Культура, светская жизнь, презентации, спорт (только значимые события — см. PROMPT)
+life:
+  - {name: Sxodim — Алматы, url: https://sxodim.com/almaty}
+  - {name: Sxodim — Астана, url: https://sxodim.com/astana}
+  - {name: Ticketon — Астана, url: https://ticketon.kz/astana}
+  - {name: Ticketon — Алматы, url: https://ticketon.kz/almaty}
+  - {name: Astana Opera — афиша, url: https://astanaopera.kz/ru/afisha/}
+  - {name: Astana Ballet — афиша, url: https://astanaballet.kz/ru/afisha/}
+  - {name: Казахконцерт — афиша, url: https://kazakhconcert.kz/ru/afisha}
+  - {name: Национальный олимпийский комитет РК, url: https://olympic.kz/ru/news}
+  - {name: Vesti.kz — спорт, url: https://vesti.kz/}
+
 # Сайты, которые закрыты для автоматических роботов (защита от ботов, 403) или недоступны из-за рубежа.
 # Мы НЕ обходим защиту: такие площадки подключаются через партнёрство (их Telegram/рассылка, официальный API,
 # разрешение робота) или заявки организаторов через форму. Паук их не открывает, только показывает в «Источниках».

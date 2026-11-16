@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-16T18:44+05:00",
- "full_at": "2026-11-16T18:44+05:00",
+ "checked_at": "2026-11-16T20:26+05:00",
+ "full_at": "2026-11-16T20:26+05:00",
  "mode": "full",
  "have_key": true,
  "sources": [
@@ -59,7 +59,8 @@
    "ok": true,
    "chars": 1964,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Акорда — новости и события",
@@ -68,14 +69,15 @@
    "ok": true,
    "chars": 4651,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Премьер-министр РК — новости",
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9154,
+   "chars": 9040,
    "events": 0,
    "error": ""
   },
@@ -395,7 +397,8 @@
    "ok": true,
    "chars": 1620,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KAZENERGY",
@@ -483,15 +486,16 @@
    "ok": true,
    "chars": 1281,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Премьер-министр — мероприятия",
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 15740,
-   "events": 0,
+   "chars": 15775,
+   "events": 1,
    "error": ""
   },
   {
@@ -499,7 +503,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8608,
+   "chars": 8552,
    "events": 0,
    "error": ""
   },
@@ -528,7 +532,7 @@
    "url": "https://eec.eaeunion.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 8311,
+   "chars": 8320,
    "events": 0,
    "error": ""
   },
@@ -537,8 +541,8 @@
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8177,
-   "events": 0,
+   "chars": 8552,
+   "events": 1,
    "error": ""
   },
   {
@@ -566,7 +570,7 @@
    "url": "https://www.auma.de/en/find-your-fair/",
    "group": "global",
    "ok": true,
-   "chars": 11070,
+   "chars": 11041,
    "events": 0,
    "error": ""
   },
@@ -585,7 +589,7 @@
    "url": "https://lu.ma/discover",
    "group": "global",
    "ok": true,
-   "chars": 2836,
+   "chars": 2426,
    "events": 0,
    "error": ""
   },
@@ -594,7 +598,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 7990,
+   "chars": 7852,
    "events": 0,
    "error": ""
   },
@@ -655,7 +659,8 @@
    "ok": true,
    "chars": 4450,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "World Bank Live",
@@ -672,7 +677,7 @@
    "url": "https://sxodim.com/almaty",
    "group": "life",
    "ok": true,
-   "chars": 36886,
+   "chars": 36762,
    "events": 4,
    "error": ""
   },
@@ -683,25 +688,8 @@
    "ok": true,
    "chars": 33455,
    "events": 0,
-   "error": ""
-  },
-  {
-   "name": "Ticketon — Астана",
-   "url": "https://ticketon.kz/astana",
-   "group": "life",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "403 Client Error: Forbidden for url: https://ticketon.kz/astana"
-  },
-  {
-   "name": "Ticketon — Алматы",
-   "url": "https://ticketon.kz/almaty",
-   "group": "life",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "403 Client Error: Forbidden for url: https://ticketon.kz/almaty"
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Astana Opera — афиша",
@@ -710,7 +698,8 @@
    "ok": true,
    "chars": 1210,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Astana Ballet — афиша",
@@ -732,20 +721,20 @@
   },
   {
    "name": "Национальный олимпийский комитет РК",
-   "url": "https://olympic.kz/ru/news",
+   "url": "https://olympic.kz/",
    "group": "life",
-   "ok": false,
-   "chars": 0,
-   "events": null,
-   "error": "404 Client Error: Not Found for url: https://olympic.kz/ru/news"
+   "ok": true,
+   "chars": 1979,
+   "events": 0,
+   "error": ""
   },
   {
    "name": "Vesti.kz — спорт",
    "url": "https://vesti.kz/",
    "group": "life",
    "ok": true,
-   "chars": 12800,
-   "events": 0,
+   "chars": 12828,
+   "events": 1,
    "error": ""
   },
   {
@@ -763,7 +752,7 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 8281,
+   "chars": 9116,
    "events": 0,
    "error": ""
   },
@@ -774,7 +763,8 @@
    "ok": true,
    "chars": 8852,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @astanahub",
@@ -793,7 +783,8 @@
    "ok": true,
    "chars": 20323,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @digitalbusinesskz",
@@ -894,6 +885,16 @@
    "events": null,
    "error": "blocked",
    "how": "страницы собираются скриптом в браузере — нужен открытый API gov.kz"
+  },
+  {
+   "name": "Ticketon — афиша Казахстана",
+   "url": "https://ticketon.kz/",
+   "group": "blocked",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "blocked",
+   "how": "закрыт для роботов — нужен партнёрский доступ к афише"
   },
   {
    "name": "WhatsApp (GREEN-API)",

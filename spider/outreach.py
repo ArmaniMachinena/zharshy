@@ -92,6 +92,8 @@ def make_drafts(db: dict, st: dict, today: dt.date) -> int:
         start = dt.date.fromisoformat(e["start"])
         if not (today + dt.timedelta(days=3) <= start <= today + dt.timedelta(days=45)):
             continue
+        if e.get("type") in ("official", "visit", "summit"):
+            continue                       # госорганам и межгосударственным структурам не пишем
         to = (e.get("email") or "").strip()
         if not to or "@" not in to or e["id"] in have or to.lower() in st["optout"] or e.get("user_submitted"):
             continue

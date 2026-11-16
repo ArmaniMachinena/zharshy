@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-16T12:57+05:00",
- "full_at": "2026-11-16T02:02+05:00",
- "mode": "fast",
+ "checked_at": "2026-11-16T18:44+05:00",
+ "full_at": "2026-11-16T18:44+05:00",
+ "mode": "full",
  "have_key": true,
  "sources": [
   {
@@ -11,7 +11,8 @@
    "ok": true,
    "chars": 1992,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Expomap — все выставки Казахстана",
@@ -48,14 +49,15 @@
    "ok": true,
    "chars": 58559,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Astana Hub — события",
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1974,
+   "chars": 1964,
    "events": 0,
    "error": ""
   },
@@ -64,18 +66,17 @@
    "url": "https://www.akorda.kz/ru",
    "group": "web",
    "ok": true,
-   "chars": 4551,
+   "chars": 4651,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Премьер-министр РК — новости",
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9291,
-   "events": 1,
+   "chars": 9154,
+   "events": 0,
    "error": ""
   },
   {
@@ -85,7 +86,8 @@
    "ok": true,
    "chars": 388,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Advantour — выставки Астаны",
@@ -94,7 +96,8 @@
    "ok": true,
    "chars": 1522,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "EventsEye — Iteca",
@@ -103,7 +106,8 @@
    "ok": true,
    "chars": 9455,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Kazakhstan Machinery Fair",
@@ -112,7 +116,8 @@
    "ok": true,
    "chars": 12917,
    "events": 3,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "SU ARNASY Water Expo",
@@ -121,7 +126,8 @@
    "ok": true,
    "chars": 16692,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "MINEX Kazakhstan",
@@ -130,7 +136,8 @@
    "ok": true,
    "chars": 16515,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Energy Trends",
@@ -139,7 +146,8 @@
    "ok": true,
    "chars": 5311,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "ESE Forum",
@@ -148,7 +156,8 @@
    "ok": true,
    "chars": 7386,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "BT Expo",
@@ -157,7 +166,8 @@
    "ok": true,
    "chars": 5526,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Comtrux",
@@ -166,7 +176,8 @@
    "ok": true,
    "chars": 7882,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "GITEX Central Asia",
@@ -175,7 +186,8 @@
    "ok": true,
    "chars": 95,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AMM",
@@ -184,7 +196,8 @@
    "ok": true,
    "chars": 1433,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Electronica Expo",
@@ -203,7 +216,8 @@
    "ok": true,
    "chars": 352,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KazDrilling",
@@ -212,7 +226,8 @@
    "ok": true,
    "chars": 7111,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KIOGE",
@@ -221,7 +236,8 @@
    "ok": true,
    "chars": 2371,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Astana Finance Days",
@@ -230,7 +246,8 @@
    "ok": true,
    "chars": 60,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Space Days",
@@ -239,7 +256,8 @@
    "ok": true,
    "chars": 2281,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AI Digital Bridge",
@@ -248,7 +266,8 @@
    "ok": true,
    "chars": 525,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "People&Projects",
@@ -257,7 +276,8 @@
    "ok": true,
    "chars": 7139,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "TransLogistica",
@@ -266,7 +286,8 @@
    "ok": true,
    "chars": 1510,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Powerexpo",
@@ -275,7 +296,8 @@
    "ok": true,
    "chars": 2425,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Securex",
@@ -284,7 +306,8 @@
    "ok": true,
    "chars": 1747,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AmCham Kazakhstan",
@@ -293,7 +316,8 @@
    "ok": true,
    "chars": 436,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "КАО",
@@ -302,7 +326,8 @@
    "ok": true,
    "chars": 645,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "АНЭК",
@@ -311,7 +336,8 @@
    "ok": true,
    "chars": 8019,
    "events": 1,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "НПП «Атамекен»",
@@ -329,7 +355,8 @@
    "ok": true,
    "chars": 5526,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "KazakhExport — новости",
@@ -338,7 +365,8 @@
    "ok": true,
    "chars": 6175,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Kazakh Invest — новости",
@@ -347,7 +375,8 @@
    "ok": true,
    "chars": 1216,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Astana International Forum",
@@ -356,14 +385,15 @@
    "ok": true,
    "chars": 0,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "МФЦА (AIFC) — события",
    "url": "https://aifc.kz/news",
    "group": "web",
    "ok": true,
-   "chars": 1639,
+   "chars": 1620,
    "events": 0,
    "error": ""
   },
@@ -374,7 +404,8 @@
    "ok": true,
    "chars": 2491,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Форум KAZENERGY",
@@ -383,7 +414,8 @@
    "ok": true,
    "chars": 34734,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Visit Almaty — события",
@@ -392,7 +424,8 @@
    "ok": true,
    "chars": 4064,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Iteca — календарь выставок",
@@ -401,7 +434,8 @@
    "ok": true,
    "chars": 5946,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Baku Energy Week",
@@ -419,7 +453,8 @@
    "ok": true,
    "chars": 3399,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "ИННОПРОМ",
@@ -428,7 +463,8 @@
    "ok": true,
    "chars": 3146,
    "events": 2,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "World Hydrogen Summit",
@@ -437,25 +473,25 @@
    "ok": true,
    "chars": 3948,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Акорда — график и визиты",
    "url": "https://www.akorda.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 1308,
+   "chars": 1281,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Премьер-министр — мероприятия",
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 15741,
-   "events": 1,
+   "chars": 15740,
+   "events": 0,
    "error": ""
   },
   {
@@ -463,7 +499,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8452,
+   "chars": 8608,
    "events": 0,
    "error": ""
   },
@@ -474,7 +510,8 @@
    "ok": true,
    "chars": 1216,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Kazinform — Парламент",
@@ -483,25 +520,25 @@
    "ok": true,
    "chars": 1498,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "ЕЭК (ЕАЭС) — календарь",
    "url": "https://eec.eaeunion.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 8295,
+   "chars": 8311,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "СНГ — исполком",
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8241,
-   "events": 1,
+   "chars": 8177,
+   "events": 0,
    "error": ""
   },
   {
@@ -511,7 +548,8 @@
    "ok": true,
    "chars": 1553,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "EventsEye — выставки Казахстана",
@@ -520,14 +558,15 @@
    "ok": true,
    "chars": 14043,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AUMA — поиск выставок",
    "url": "https://www.auma.de/en/find-your-fair/",
    "group": "global",
    "ok": true,
-   "chars": 11046,
+   "chars": 11070,
    "events": 0,
    "error": ""
   },
@@ -538,14 +577,15 @@
    "ok": true,
    "chars": 5489,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Luma — Discover",
    "url": "https://lu.ma/discover",
    "group": "global",
    "ok": true,
-   "chars": 2427,
+   "chars": 2836,
    "events": 0,
    "error": ""
   },
@@ -554,7 +594,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 8218,
+   "chars": 7990,
    "events": 0,
    "error": ""
   },
@@ -565,7 +605,8 @@
    "ok": true,
    "chars": 1360,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "AllEvents — Алматы",
@@ -574,7 +615,8 @@
    "ok": true,
    "chars": 1326,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "IEEE Conferences",
@@ -583,7 +625,8 @@
    "ok": true,
    "chars": 1201,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "WikiCFP",
@@ -592,7 +635,8 @@
    "ok": true,
    "chars": 1264,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "SPE Events",
@@ -601,17 +645,17 @@
    "ok": true,
    "chars": 1111,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Indico.UN",
    "url": "https://indico.un.org",
    "group": "global",
    "ok": true,
-   "chars": 4452,
+   "chars": 4450,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "World Bank Live",
@@ -620,7 +664,146 @@
    "ok": true,
    "chars": 5959,
    "events": 1,
+   "error": "",
+   "unchanged": true
+  },
+  {
+   "name": "Sxodim — Алматы",
+   "url": "https://sxodim.com/almaty",
+   "group": "life",
+   "ok": true,
+   "chars": 36886,
+   "events": 4,
    "error": ""
+  },
+  {
+   "name": "Sxodim — Астана",
+   "url": "https://sxodim.com/astana",
+   "group": "life",
+   "ok": true,
+   "chars": 33455,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Ticketon — Астана",
+   "url": "https://ticketon.kz/astana",
+   "group": "life",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://ticketon.kz/astana"
+  },
+  {
+   "name": "Ticketon — Алматы",
+   "url": "https://ticketon.kz/almaty",
+   "group": "life",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "403 Client Error: Forbidden for url: https://ticketon.kz/almaty"
+  },
+  {
+   "name": "Astana Opera — афиша",
+   "url": "https://astanaopera.kz/ru/afisha/",
+   "group": "life",
+   "ok": true,
+   "chars": 1210,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Astana Ballet — афиша",
+   "url": "https://astanaballet.kz/ru/afisha/",
+   "group": "life",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='astanaballet.kz', port=443): Max retries exceeded with url: /ru/afisha/ (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFI"
+  },
+  {
+   "name": "Казахконцерт — афиша",
+   "url": "https://kazakhconcert.kz/ru/afisha",
+   "group": "life",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='kazakhconcert.kz', port=443): Max retries exceeded with url: /ru/afisha (Caused by NameResolutionError(\"HTTPSConnection(host='kazakhco"
+  },
+  {
+   "name": "Национальный олимпийский комитет РК",
+   "url": "https://olympic.kz/ru/news",
+   "group": "life",
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "404 Client Error: Not Found for url: https://olympic.kz/ru/news"
+  },
+  {
+   "name": "Vesti.kz — спорт",
+   "url": "https://vesti.kz/",
+   "group": "life",
+   "ok": true,
+   "chars": 12800,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Календарь мероприятий KNS",
+   "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
+   "group": "sheets",
+   "ok": true,
+   "chars": 8619,
+   "events": 0,
+   "error": "",
+   "unchanged": true
+  },
+  {
+   "name": "Telegram @atamekenbusiness",
+   "url": "https://t.me/s/atamekenbusiness",
+   "group": "telegram",
+   "ok": true,
+   "chars": 8281,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Telegram @atamekenbusiness_qaz",
+   "url": "https://t.me/s/atamekenbusiness_qaz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 8852,
+   "events": 1,
+   "error": ""
+  },
+  {
+   "name": "Telegram @astanahub",
+   "url": "https://t.me/s/astanahub",
+   "group": "telegram",
+   "ok": true,
+   "chars": 63,
+   "events": 0,
+   "error": "",
+   "unchanged": true
+  },
+  {
+   "name": "Telegram @kapitalkz",
+   "url": "https://t.me/s/kapitalkz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 20323,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Telegram @digitalbusinesskz",
+   "url": "https://t.me/s/digitalbusinesskz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 3313,
+   "events": 0,
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "10times — Казахстан",
@@ -711,63 +894,6 @@
    "events": null,
    "error": "blocked",
    "how": "страницы собираются скриптом в браузере — нужен открытый API gov.kz"
-  },
-  {
-   "name": "Календарь мероприятий KNS",
-   "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
-   "group": "sheets",
-   "ok": true,
-   "chars": 8619,
-   "events": 0,
-   "error": "",
-   "unchanged": true
-  },
-  {
-   "name": "Telegram @atamekenbusiness",
-   "url": "https://t.me/s/atamekenbusiness",
-   "group": "telegram",
-   "ok": true,
-   "chars": 11669,
-   "events": 0,
-   "error": ""
-  },
-  {
-   "name": "Telegram @atamekenbusiness_qaz",
-   "url": "https://t.me/s/atamekenbusiness_qaz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 8583,
-   "events": 0,
-   "error": ""
-  },
-  {
-   "name": "Telegram @astanahub",
-   "url": "https://t.me/s/astanahub",
-   "group": "telegram",
-   "ok": true,
-   "chars": 63,
-   "events": 0,
-   "error": "",
-   "unchanged": true
-  },
-  {
-   "name": "Telegram @kapitalkz",
-   "url": "https://t.me/s/kapitalkz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 20366,
-   "events": 0,
-   "error": ""
-  },
-  {
-   "name": "Telegram @digitalbusinesskz",
-   "url": "https://t.me/s/digitalbusinesskz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 3313,
-   "events": 0,
-   "error": "",
-   "unchanged": true
   },
   {
    "name": "WhatsApp (GREEN-API)",

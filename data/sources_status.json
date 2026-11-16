@@ -1,6 +1,6 @@
 {
- "checked_at": "2026-11-16T20:26+05:00",
- "full_at": "2026-11-16T20:26+05:00",
+ "checked_at": "2026-11-16T23:30+05:00",
+ "full_at": "2026-11-16T23:30+05:00",
  "mode": "full",
  "have_key": true,
  "sources": [
@@ -39,8 +39,7 @@
    "ok": true,
    "chars": 4172,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Invest.gov.kz — календарь",
@@ -77,7 +76,7 @@
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9040,
+   "chars": 9130,
    "events": 0,
    "error": ""
   },
@@ -208,8 +207,7 @@
    "ok": true,
    "chars": 7042,
    "events": 1,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Mining Week Kazakhstan",
@@ -463,11 +461,10 @@
    "name": "ИННОПРОМ",
    "url": "https://innoprom.com/en/",
    "group": "web",
-   "ok": true,
-   "chars": 3146,
-   "events": 2,
-   "error": "",
-   "unchanged": true
+   "ok": false,
+   "chars": 0,
+   "events": null,
+   "error": "HTTPSConnectionPool(host='innoprom.com', port=443): Max retries exceeded with url: /en/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='innoprom.com', por"
   },
   {
    "name": "World Hydrogen Summit",
@@ -494,7 +491,7 @@
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 15775,
+   "chars": 15724,
    "events": 1,
    "error": ""
   },
@@ -503,7 +500,7 @@
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8552,
+   "chars": 8798,
    "events": 0,
    "error": ""
   },
@@ -534,14 +531,15 @@
    "ok": true,
    "chars": 8320,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "СНГ — исполком",
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8552,
+   "chars": 8213,
    "events": 1,
    "error": ""
   },
@@ -572,7 +570,8 @@
    "ok": true,
    "chars": 11041,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "TradeFairDates",
@@ -598,7 +597,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 7852,
+   "chars": 7914,
    "events": 0,
    "error": ""
   },
@@ -657,10 +656,9 @@
    "url": "https://indico.un.org",
    "group": "global",
    "ok": true,
-   "chars": 4450,
+   "chars": 4304,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "World Bank Live",
@@ -677,8 +675,8 @@
    "url": "https://sxodim.com/almaty",
    "group": "life",
    "ok": true,
-   "chars": 36762,
-   "events": 4,
+   "chars": 36838,
+   "events": 0,
    "error": ""
   },
   {
@@ -686,10 +684,9 @@
    "url": "https://sxodim.com/astana",
    "group": "life",
    "ok": true,
-   "chars": 33455,
+   "chars": 33436,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Astana Opera — афиша",
@@ -726,15 +723,16 @@
    "ok": true,
    "chars": 1979,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Vesti.kz — спорт",
    "url": "https://vesti.kz/",
    "group": "life",
    "ok": true,
-   "chars": 12828,
-   "events": 1,
+   "chars": 12754,
+   "events": 0,
    "error": ""
   },
   {
@@ -744,8 +742,7 @@
    "ok": true,
    "chars": 8619,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @atamekenbusiness",
@@ -754,7 +751,8 @@
    "ok": true,
    "chars": 9116,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @atamekenbusiness_qaz",
@@ -773,8 +771,7 @@
    "ok": true,
    "chars": 63,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @kapitalkz",
@@ -793,8 +790,7 @@
    "ok": true,
    "chars": 3313,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "10times — Казахстан",

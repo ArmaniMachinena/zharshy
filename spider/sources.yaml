@@ -111,12 +111,10 @@ state:
 life:
   - {name: Sxodim — Алматы, url: https://sxodim.com/almaty}
   - {name: Sxodim — Астана, url: https://sxodim.com/astana}
-  - {name: Ticketon — Астана, url: https://ticketon.kz/astana}
-  - {name: Ticketon — Алматы, url: https://ticketon.kz/almaty}
   - {name: Astana Opera — афиша, url: https://astanaopera.kz/ru/afisha/}
   - {name: Astana Ballet — афиша, url: https://astanaballet.kz/ru/afisha/}
   - {name: Казахконцерт — афиша, url: https://kazakhconcert.kz/ru/afisha}
-  - {name: Национальный олимпийский комитет РК, url: https://olympic.kz/ru/news}
+  - {name: Национальный олимпийский комитет РК, url: https://olympic.kz/}
   - {name: Vesti.kz — спорт, url: https://vesti.kz/}
 
 # Сайты, которые закрыты для автоматических роботов (защита от ботов, 403) или недоступны из-за рубежа.
@@ -132,3 +130,4 @@ blocked:
   - {name: United Medical Expo, url: https://unitedmedicalexpo.com/, how: "закрыт для роботов — пригласить организатора"}
   - {name: Организация тюркских государств, url: https://www.turkicstates.org/en/news, how: "закрыт для роботов"}
   - {name: МИД РК / gov.kz, url: https://www.gov.kz/memleket/entities/mfa, how: "страницы собираются скриптом в браузере — нужен открытый API gov.kz"}
+  - {name: Ticketon — афиша Казахстана, url: https://ticketon.kz/, how: "закрыт для роботов — нужен партнёрский доступ к афише"}

@@ -134,12 +134,27 @@ def ai_digest(e: dict) -> dict | None:
               "{\"ru\": {\"key\": \"главный месседж одним предложением\", \"insights\": [\"3 коротких инсайта: кто что предложил, "
               "какие решения, о чём спорят\"], \"summary\": \"2 предложения — кратко о ходе события\"}, "
               "\"kk\": {то же на казахском}, \"en\": {то же на английском}}\n\nЗаголовки:\n" + heads)
-    msg = anthropic.Anthropic().messages.create(model=run.MODEL, max_tokens=1200, messages=[{"role": "user", "content": prompt}])
-    raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
-    m = re.search(r"\{.*\}", raw, re.S)
-    if not m:
+    prompt += ("\n\nВажно: верни строго валидный JSON. Внутри текстов не используй двойные кавычки — "
+               "только «ёлочки» или одинарные.")
+    out = None
+    for attempt in range(2):
+        msg = anthropic.Anthropic().messages.create(model=run.MODEL, max_tokens=1400, messages=[{"role": "user", "content": prompt}])
+        raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+        m = re.search(r"\{.*\}", raw, re.S)
+        if not m:
+            continue
+        try:
+            out = json.loads(m.group(0))
+            break
+        except json.JSONDecodeError:
+            txt = re.sub(r",\s*([}\]])", r"\1", m.group(0))      # лишние запятые
+            try:
+                out = json.loads(txt)
+                break
+            except json.JSONDecodeError:
+                continue
+    if not out:
         return None
-    out = json.loads(m.group(0))
     out.update({"at": dt.datetime.now(run.TZ).isoformat(timespec="minutes"), "n": len(e["press"]), "final": done})
     return out
 

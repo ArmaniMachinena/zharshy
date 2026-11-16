@@ -34,7 +34,7 @@ import enrich  # noqa: E402
 import run  # noqa: E402
 
 STATE = run.ROOT / "data" / "outreach.json"
-MODE = os.environ.get("OUTREACH_MODE", "draft")
+MODE = os.environ.get("OUTREACH_MODE") or "draft"
 STOP = re.compile(r"\b(стоп|stop|отпис|unsubscribe|не пишите|тоқта)", re.I)
 NEED_RU = {"time": "время начала (открытия)", "venue": "точный адрес / площадку", "program_url": "программу мероприятия",
            "registration_url": "ссылку на регистрацию"}

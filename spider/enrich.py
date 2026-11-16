@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import time as _t
 import json
 import os
 import re
@@ -17,7 +18,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import run  # noqa: E402
 
-MAX_PER_RUN = 12
+MAX_PER_RUN = 8
 
 
 def missing(e: dict) -> list[str]:
@@ -56,8 +57,9 @@ def main() -> int:
     today = dt.datetime.now(run.TZ).date()
     db = json.loads(run.DB.read_text(encoding="utf-8"))
     n = 0
+    t0 = _t.time()
     for e in sorted(db["events"], key=lambda x: x["start"]):
-        if n >= MAX_PER_RUN:
+        if n >= MAX_PER_RUN or _t.time() - t0 > 180:   # не больше 3 минут за проход
             break
         start = dt.date.fromisoformat(e["start"])
         if not (today <= start <= today + dt.timedelta(days=60)) or not e.get("site"):

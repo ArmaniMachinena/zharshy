@@ -10,8 +10,10 @@
 from __future__ import annotations
 
 import datetime as dt
+import time as _t
 import json
 import math
+import re
 import sys
 import time
 from pathlib import Path
@@ -20,13 +22,13 @@ sys.path.insert(0, str(Path(__file__).parent))
 import run  # noqa: E402
 
 UA = "ZharshyBot/1.0 (events calendar of Kazakhstan; https://github.com/ArmaniMachinena)"
-MAX_PER_RUN = 15
+MAX_PER_RUN = 6
 KIND = {"hotel": "hotel", "guest_house": "guest", "hostel": "hostel", "apartment": "apart", "motel": "motel"}
 
 
 def get(url: str, **params) -> dict | list:
     import requests
-    r = requests.get(url, params=params, headers={"User-Agent": UA, "Accept-Language": "ru,en"}, timeout=60)
+    r = requests.get(url, params=params, headers={"User-Agent": UA, "Accept-Language": "ru,en"}, timeout=20)
     r.raise_for_status()
     return r.json()
 
@@ -34,7 +36,18 @@ def get(url: str, **params) -> dict | list:
 def geocode(e: dict) -> dict | None:
     venue = (e.get("venue") or "").strip()
     city, country = e.get("city") or "", e.get("country") or "Казахстан"
-    tries = ([(f"{venue}, {city}, {country}", True)] if venue and venue != "уточняется" else []) + [(f"{city}, {country}", False)]
+    tries = []
+    if venue and venue != "уточняется":
+        parts = [p.strip() for p in venue.split(",") if p.strip()]
+        street = next((p for p in parts if re.search(r"(ул\.|улица|пр\.|проспект|көше|даңғыл|street|st\b|ave)", p, re.I)), "")
+        num = next((p for p in parts if re.fullmatch(r"\d+[\w/-]*", p)), "")
+        cand = [venue, parts[0]] + ([f"{street} {num}".strip()] if street else [])
+        seen = set()
+        for c in cand:
+            if c and c.lower() not in seen:
+                seen.add(c.lower())
+                tries.append((f"{c}, {city}, {country}", True))
+    tries.append((f"{city}, {country}", False))
     for q, precise in tries:
         time.sleep(1.1)                       # правило Nominatim: не чаще 1 запроса в секунду
         res = get("https://nominatim.openstreetmap.org/search", q=q, format="json", limit=1)
@@ -50,12 +63,21 @@ def dist(a, b) -> int:
 
 
 def hotels_near(lat: float, lon: float, radius: int = 3000) -> list[dict]:
-    q = f"""[out:json][timeout:40];
+    q = f"""[out:json][timeout:30];
 (nwr["tourism"~"^(hotel|guest_house|hostel|apartment|motel)$"]["name"](around:{radius},{lat},{lon}););
 out center tags 80;"""
     import requests
-    r = requests.post("https://overpass-api.de/api/interpreter", data={"data": q}, headers={"User-Agent": UA}, timeout=90)
-    r.raise_for_status()
+    r = None
+    for url in ("https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"):
+        try:
+            r = requests.post(url, data={"data": q}, headers={"User-Agent": UA}, timeout=45)
+            r.raise_for_status()
+            break
+        except Exception:
+            r = None
+            time.sleep(3)
+    if r is None:
+        raise RuntimeError("Overpass недоступен")
     out = []
     for el in r.json().get("elements", []):
         tg = el.get("tags", {})
@@ -81,10 +103,11 @@ def main() -> int:
     today = dt.datetime.now(run.TZ).date()
     db = json.loads(run.DB.read_text(encoding="utf-8"))
     done = 0
+    t0 = _t.time()
     for e in sorted(db["events"], key=lambda x: x["start"]):
-        if done >= MAX_PER_RUN:
+        if done >= MAX_PER_RUN or _t.time() - t0 > 180:   # не больше 3 минут за проход
             break
-        if e.get("city") in (None, "", "Онлайн", "уточняется", "Вся страна") or e.get("type") == "webinar":
+        if e.get("city") in (None, "", "Онлайн", "уточняется", "Вся страна") or e.get("type") in ("webinar", "official", "visit"):
             continue
         start, end = dt.date.fromisoformat(e["start"]), dt.date.fromisoformat(e.get("end") or e["start"])
         if end < today or start > today + dt.timedelta(days=150):

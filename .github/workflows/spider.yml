@@ -37,6 +37,7 @@ jobs:
         run: python spider/press.py || echo "пресса - ошибка, пропускаю"
       - name: Дозаполнение карточек и отели рядом (раз в 3 часа)
         if: env.ZHARSHY_MODE == 'full'
+        timeout-minutes: 8
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |

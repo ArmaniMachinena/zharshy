@@ -3169,6 +3169,7 @@
    "edition": null,
    "industries": [
     "Госуправление",
+    "Экология и ESG",
     "Образование"
    ],
    "country": "Казахстан",
@@ -3182,19 +3183,19 @@
    "email": "",
    "site": "",
    "program_url": "",
-   "description": "Конференция о партнёрстве гражданского общества, бизнеса и государства. Около 50 участников: НКО, бизнес, госорганы, эксперты и международные организации.",
+   "description": "Как государству, бизнесу и гражданскому обществу вместе отвечать на вызовы: развитие регионов, качество жизни, ESG, поддержка предпринимательства, человеческий капитал и Цели устойчивого развития. Около 50 участников: НКО, бизнес, госорганы, эксперты и международные организации.",
    "source_url": "",
    "source_name": "Концепция конференции (от организаторов)",
    "i18n": {
     "kk": {
      "title": "Ынтымақтастық көпірлері: азаматтық қоғам, бизнес және мемлекет",
-     "description": "Азаматтық қоғам, бизнес және мемлекет серіктестігі туралы конференция. 50-ге жуық қатысушы: ҮЕҰ, бизнес, мемлекеттік органдар, сарапшылар және халықаралық ұйымдар.",
+     "description": "Мемлекет, бизнес және азаматтық қоғам сын-қатерлерге бірге қалай жауап береді: өңірлерді дамыту, өмір сапасы, ESG, кәсіпкерлікті қолдау, адами капитал және Тұрақты даму мақсаттары. 50-ге жуық қатысушы: ҮЕҰ, бизнес, мемлекеттік органдар, сарапшылар және халықаралық ұйымдар.",
      "venue": "MOST Holding, Ходжанов к-сі, 2/2, 3-қабат",
      "organizer": "«АРГО» азаматтық қоғамды дамыту қауымдастығы, MOST Hub Almaty, Конрад Аденауэр қорының қолдауымен"
     },
     "en": {
      "title": "Bridges of Cooperation: Civil Society, Business and the State",
-     "description": "Conference on partnership between civil society, business and government. About 50 participants: NGOs, business, government bodies, experts and international organisations.",
+     "description": "How government, business and civil society can jointly respond to today's challenges: regional development, quality of life, ESG, support for entrepreneurship, human capital and the Sustainable Development Goals. About 50 participants: NGOs, business, government, experts and international organisations.",
      "venue": "MOST Holding, 2/2 Khodzhanov St, 3rd floor",
      "organizer": "ARGO Civil Society Development Association, MOST Hub Almaty, supported by the Konrad Adenauer Foundation"
     }

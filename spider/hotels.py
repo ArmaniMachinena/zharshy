@@ -113,7 +113,8 @@ def main() -> int:
         if end < today or start > today + dt.timedelta(days=150):
             continue
         at = e.get("hotels_at")
-        if at and (today - dt.date.fromisoformat(at[:10])).days < 30:
+        fresh = 30 if (e.get("geo") or {}).get("precise") else 3   # по центру города — перепроверяем чаще
+        if at and (today - dt.date.fromisoformat(at[:10])).days < fresh:
             continue
         try:
             g = geocode(e)

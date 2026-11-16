@@ -4,7 +4,9 @@ root = pathlib.Path(__file__).parent
 data = json.loads((root/"data/events.json").read_text(encoding="utf-8"))
 st = root/"data/sources_status.json"
 status = json.loads(st.read_text(encoding="utf-8")) if st.exists() else None
-html = (root/"index.html").read_text(encoding="utf-8").replace("__SEED__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")).replace("__STATUS__", json.dumps(status, ensure_ascii=False).replace("</", "<\\/"))
+op = root/"data/outreach.json"   # черновики писем организаторам — видны только после пароля, по адресу #outreach
+outreach = [{k: t.get(k) for k in ("title","to","subject","body","status","created","sent_at")} for t in (json.loads(op.read_text(encoding="utf-8"))["threads"] if op.exists() else [])]
+html = (root/"index.html").read_text(encoding="utf-8").replace("__SEED__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")).replace("__STATUS__", json.dumps(status, ensure_ascii=False).replace("</", "<\\/")).replace("__OUTREACH__", json.dumps(outreach, ensure_ascii=False).replace("</", "<\\/"))
 (root/"dist").mkdir(exist_ok=True); (root/"dist/index.html").write_text(html, encoding="utf-8")
 print("dist/index.html", len(html))
 

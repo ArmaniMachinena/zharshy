@@ -35,12 +35,32 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python spider/press.py || echo "пресса - ошибка, пропускаю"
+      - name: Дозаполнение карточек и отели рядом (раз в 3 часа)
+        if: env.ZHARSHY_MODE == 'full'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python spider/enrich.py || echo "дозаполнение - ошибка, пропускаю"
+          python spider/hotels.py || echo "отели - ошибка, пропускаю"
+      - name: Письма организаторам
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OUTREACH_MODE: ${{ secrets.OUTREACH_MODE }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          IMAP_HOST: ${{ secrets.IMAP_HOST }}
+          OWNER_EMAIL: ${{ secrets.OWNER_EMAIL }}
+        run: python spider/outreach.py || echo "письма - ошибка, пропускаю"
       - name: Сохранить базу
         run: |
           git config user.name "zharshy-bot"
           git config user.email "zharshy-bot@users.noreply.github.com"
           git add data/events.json data/sources_status.json
           [ -f data/page_cache.json ] && git add data/page_cache.json || true
+          [ -f data/outreach.json ] && git add data/outreach.json || true
           [ -f data/moderation.json ] && git add data/moderation.json || true
           git diff --cached --quiet || git commit -m "Жаршы: обновление базы $(date -u +%F\ %H:%M)"
           git push

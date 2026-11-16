@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-16T06:00+05:00",
+ "checked_at": "2026-11-16T12:57+05:00",
  "full_at": "2026-11-16T02:02+05:00",
  "mode": "fast",
  "have_key": true,
@@ -727,20 +727,18 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 10582,
+   "chars": 11669,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @atamekenbusiness_qaz",
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 9621,
-   "events": 1,
-   "error": "",
-   "unchanged": true
+   "chars": 8583,
+   "events": 0,
+   "error": ""
   },
   {
    "name": "Telegram @astanahub",
@@ -757,10 +755,9 @@
    "url": "https://t.me/s/kapitalkz",
    "group": "telegram",
    "ok": true,
-   "chars": 20318,
+   "chars": 20366,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @digitalbusinesskz",

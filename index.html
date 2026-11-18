@@ -53,6 +53,11 @@ main{max-width:1560px;margin:0 auto;padding:14px 20px 40px;display:grid;grid-tem
 @media (max-width:1250px){main{grid-template-columns:310px minmax(0,1fr)}.col.right{grid-column:1;grid-row:2}}
 @media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}main>.col{display:contents}
   .p-alerts{order:1}.sponsor{order:1}.p-list{order:2}.p-strip{order:3}.p-stats{order:4}.p-map{order:5}}
+/* раскладка по реальной ширине окна (JS ставит l3/l2/l1) — надёжнее медиазапросов при масштабировании и во встроенных окнах */
+main.l3{grid-template-columns:310px minmax(0,1fr) 340px}main.l3>.col{display:flex}main.l3 .col.right{grid-column:auto;grid-row:auto}
+main.l2{grid-template-columns:300px minmax(0,1fr)}main.l2>.col{display:flex}main.l2 .col.right{grid-column:1;grid-row:2}main.l2 .col.center{grid-column:2;grid-row:1/span 2}
+main.l1{grid-template-columns:1fr;padding:14px 12px 40px}main.l1>.col{display:contents}
+main.l1 .p-alerts{order:1}main.l1 .sponsor{order:1}main.l1 .p-list{order:2}main.l1 .p-strip{order:3}main.l1 .p-stats{order:4}main.l1 .p-map{order:5}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
 .ptitle{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:14px 14px 0}
@@ -1160,6 +1165,10 @@ $('favOnly').onclick=()=>{favOnly=!favOnly;$('favOnly').classList.toggle('on',fa
 $('vList').onclick=()=>{setView('list');render()};
 $('vCal').onclick=()=>{setView('cal');render()};
 $('aboutBtn').onclick=openAbout;
+(function(){const m=document.querySelector('main');if(!m)return;
+  const fit=()=>{const w=(m.parentElement||document.body).clientWidth||window.innerWidth;const c=w>=1320?'l3':w>=860?'l2':'l1';
+    if(!m.classList.contains(c)){m.classList.remove('l1','l2','l3');m.classList.add(c)}};
+  fit();window.addEventListener('resize',fit);try{new ResizeObserver(fit).observe(m.parentElement||document.body)}catch(e){}})();
 /* «Источники» скрыты из шапки: открываются по адресу …/#info */
 const infoHash=()=>{const h=location.hash.toLowerCase();if(h==='#outreach'){openOutreach();try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}return}if(h==='#info'){openSources();try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}};window.addEventListener('hashchange',infoHash);setTimeout(infoHash,300);$('fbBtn').onclick=openFeedback;
 document.addEventListener('click',e=>{if(e.target.closest('[data-feedback]'))openFeedback()});

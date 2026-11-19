@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-19T07:32+05:00",
+ "checked_at": "2026-11-19T16:35+05:00",
  "full_at": "2026-11-16T23:30+05:00",
  "mode": "fast",
  "have_key": true,
@@ -842,27 +842,26 @@
    "ok": true,
    "chars": 8619,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @atamekenbusiness",
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 14750,
+   "chars": 12090,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @atamekenbusiness_qaz",
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 13042,
+   "chars": 13310,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @astanahub",
@@ -871,17 +870,17 @@
    "ok": true,
    "chars": 63,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @kapitalkz",
    "url": "https://t.me/s/kapitalkz",
    "group": "telegram",
    "ok": true,
-   "chars": 24109,
+   "chars": 21627,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Telegram @digitalbusinesskz",
@@ -890,7 +889,8 @@
    "ok": true,
    "chars": 3313,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "WhatsApp (GREEN-API)",

@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-19T16:35+05:00",
+ "checked_at": "2026-11-20T01:32+05:00",
  "full_at": "2026-11-16T23:30+05:00",
  "mode": "fast",
  "have_key": true,
@@ -850,7 +850,7 @@
    "url": "https://t.me/s/atamekenbusiness",
    "group": "telegram",
    "ok": true,
-   "chars": 12090,
+   "chars": 11384,
    "events": 0,
    "error": ""
   },
@@ -859,7 +859,7 @@
    "url": "https://t.me/s/atamekenbusiness_qaz",
    "group": "telegram",
    "ok": true,
-   "chars": 13310,
+   "chars": 12231,
    "events": 0,
    "error": ""
   },
@@ -880,7 +880,8 @@
    "ok": true,
    "chars": 21627,
    "events": 0,
-   "error": ""
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "Telegram @digitalbusinesskz",

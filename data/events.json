@@ -3841,7 +3841,46 @@
      "dist": 1292
     }
    ],
-   "hotels_at": "2026-11-20"
+   "hotels_at": "2026-11-20",
+   "press_q": [
+    "форум по корпоративному управлению",
+    "корпоративному управлению Атамекен",
+    "Корпоративтік басқару форумы",
+    "Corporate Governance Forum Astana"
+   ],
+   "press_ai": {
+    "from_program": true,
+    "at": "2026-11-20T18:40+05:00",
+    "n": 0,
+    "final": false,
+    "ru": {
+     "key": "Форум подводит итоги реформ корпоративного управления в Казахстане и смотрит, как превратить их в результат: сильные советы директоров, государство как профессиональный собственник, честные правила для инвесторов.",
+     "insights": [
+      "НСКУ «Атамекен» и KPMG представляют предварительные результаты обзора практик корпоративного управления в Казахстане.",
+      "Отдельное пленарное заседание — «Государство как профессиональный собственник»: с участием АРРФР, Минфина, Агентства по делам госслужбы и бизнес-омбудсмена.",
+      "Новые темы года — ИИ в корпоративном управлении, качество решений советов директоров, «Независимый директор 2.0» и управление в регионах; выходит книга «50 кейсов, которые изменили корпоративное управление» и вручаются премии."
+     ],
+     "summary": "Около 30 спикеров из госорганов, Атамекена, IFC, ОЭСР, KPMG, PwC, McKinsey и нацкомпаний; два пленарных заседания и восемь параллельных сессий. Итоги дня появятся здесь по мере выхода публикаций."
+    },
+    "kk": {
+     "key": "Форум Қазақстандағы корпоративтік басқару реформаларының қорытындысын шығарып, оларды нәтижеге айналдыру жолын талқылайды: күшті директорлар кеңестері, мемлекет — кәсіби меншік иесі, инвесторларға әділ ереже.",
+     "insights": [
+      "«Атамекен» ҰКБК мен KPMG Қазақстандағы корпоративтік басқару тәжірибесіне шолудың алдын ала нәтижелерін ұсынады.",
+      "Жеке пленарлық отырыс — «Мемлекет кәсіби меншік иесі ретінде»: ҚНРДА, Қаржымині, Мемлекеттік қызмет істері агенттігі қатысады.",
+      "Жылдың жаңа тақырыптары — корпоративтік басқарудағы ЖИ, директорлар кеңесі шешімдерінің сапасы, «Тәуелсіз директор 2.0» және өңірлердегі басқару; кітап таныстырылымы мен сыйлық."
+     ],
+     "summary": "Мемлекеттік органдардан, «Атамекеннен», IFC, ЭЫДҰ, KPMG, PwC, McKinsey және ұлттық компаниялардан 30-ға жуық спикер; екі пленарлық отырыс пен сегіз параллель сессия."
+    },
+    "en": {
+     "key": "The forum takes stock of Kazakhstan's corporate governance reforms and how to turn them into results: strong boards, the state as a professional owner and fair rules for investors.",
+     "insights": [
+      "The National Council (Atameken) and KPMG present preliminary findings of a review of corporate governance practice in Kazakhstan.",
+      "A dedicated plenary, ‘The state as a professional owner’, brings in the financial regulator, the Ministry of Finance, the Civil Service Agency and the business ombudsman.",
+      "New themes this year: AI in corporate governance, board decision quality, ‘Independent Director 2.0’ and regional governance; plus a book launch and awards."
+     ],
+     "summary": "About 30 speakers from government, Atameken, IFC, OECD, KPMG, PwC, McKinsey and national companies; two plenaries and eight parallel sessions."
+    }
+   }
   },
   {
    "title": "Digital Tañba 2026 «От маркировки товаров к доверию потребителей»",

@@ -78,7 +78,8 @@ def queries(e: dict) -> list[str]:
     t = re.split(r"\s[—–-]\s|:|«|\(", t)[0]
     w = re.sub(r"[«»\"“”]", "", t).split()
     q2 = " ".join(w[:3])
-    return [q1] + ([q2] if len(w) >= 2 and q2.strip('"') != q1.strip('"') else [])
+    extra = list(e.get("press_q") or [])          # ручные варианты названия: как его называют СМИ
+    return [q1] + ([q2] if len(w) >= 2 and q2.strip('"') != q1.strip('"') else []) + extra
 
 
 def fetch_rss(q: str, lang: str) -> list[dict]:
@@ -164,6 +165,8 @@ def ai_digest(e: dict) -> dict | None:
 
 def need_digest(e: dict) -> bool:
     pr, d = e.get("press") or [], e.get("press_ai") or {}
+    if d.get("from_program"):
+        d = {}                                       # выжимка по программе — заменяем первой настоящей
     if len(pr) < 3:
         return False
     done = (e.get("end") or e["start"]) < dt.datetime.now(run.TZ).date().isoformat()
@@ -187,6 +190,10 @@ def main() -> int:
         if not (start - dt.timedelta(days=2) <= today <= end + dt.timedelta(days=3)):
             continue
         strong, normal = keywords(e)
+        for q in e.get("press_q") or []:
+            s2, n2 = keywords({"title": q})
+            strong += [w for w in s2 if w not in strong]
+            normal += [w for w in n2 if w not in normal]
         if not strong and len(normal) < 2:
             continue                       # слишком общее название — будет мусор
         since = (start - dt.timedelta(days=5)).isoformat()

@@ -34,6 +34,9 @@ international summit саммит конгресс конгресса congress �
 """.split())
 
 
+KZ_MARK = re.compile(r"казахстан|қазақстан|kazakh|астан|astana|алмат|almaty|шымкент|атырау|караганд|актау|атамекен|самрук|\\bQID\\b|МФЦА|AIFC", re.I)
+
+
 def keywords(e: dict) -> tuple[list[str], list[str]]:
     """(обязательные «сильные» слова, обычные отличительные слова) из названия события."""
     title = re.sub(r"\b20\d\d\b", " ", e["title"])
@@ -198,6 +201,9 @@ def main() -> int:
                     print(f"  ✗ {e['title'][:50]} ({lang}): {ex}")
                 time.sleep(1.5)            # бережно к сервису
         have = {p["url"] for p in e.get("press", [])} | {p["title"].lower() for p in e.get("press", [])}
+        if (e.get("country") or "Казахстан") == "Казахстан":   # казахстанское событие — только казахстанские упоминания
+            found = [x for x in found if KZ_MARK.search(x["title"]) or ".kz" in (x.get("source") or "").lower()
+                     or "kazakh" in (x.get("source") or "").lower() or "казах" in (x.get("source") or "").lower()]
         fresh = [x for x in found if x["url"] not in have and x["title"].lower() not in have]
         seen = set()
         fresh = [x for x in fresh if not (x["title"].lower() in seen or seen.add(x["title"].lower()))]

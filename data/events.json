@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T15:46+05:00",
+ "updated_at": "2026-11-20T15:55+05:00",
  "events": [
   {
    "title": "Central Asia Coatings Show 2026",
@@ -3778,7 +3778,70 @@
     "lat": 51.122533,
     "lon": 71.427083,
     "precise": true
-   }
+   },
+   "hotels": [
+    {
+     "name": "Шератон",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 22
+    },
+    {
+     "name": "The Ritz-Carlton, Astana",
+     "stars": 5,
+     "kind": "hotel",
+     "dist": 384
+    },
+    {
+     "name": "Шағын",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 397
+    },
+    {
+     "name": "Пекин палас Soluxe Hotel Astana",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 417
+    },
+    {
+     "name": "Ботагоз",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 598
+    },
+    {
+     "name": "Belon lux hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 750
+    },
+    {
+     "name": "Elysian",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 953
+    },
+    {
+     "name": "Дипломат",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 1011
+    },
+    {
+     "name": "Jasmine",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 1265
+    },
+    {
+     "name": "Bed and Breakfast Good Hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 1292
+    }
+   ],
+   "hotels_at": "2026-11-20"
   },
   {
    "title": "Digital Tañba 2026 «От маркировки товаров к доверию потребителей»",
@@ -3828,67 +3891,67 @@
    },
    "hotels": [
     {
-     "name": "MirOtel",
+     "name": "Дипломат",
      "stars": null,
      "kind": "hotel",
-     "dist": 1817
-    },
-    {
-     "name": "Elysian",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 1978
-    },
-    {
-     "name": "ibis hotel Astana",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 2285
-    },
-    {
-     "name": "Казжол",
-     "stars": 4,
-     "kind": "hotel",
-     "dist": 2329
+     "dist": 372
     },
     {
      "name": "Belon lux hotel",
      "stars": null,
      "kind": "hotel",
-     "dist": 2535
-    },
-    {
-     "name": "Аланда",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 2548
-    },
-    {
-     "name": "Beijing Palace Soluxe Hotel Astana",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 2567
-    },
-    {
-     "name": "ASYL Hotel",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 2622
+     "dist": 400
     },
     {
      "name": "The Ritz-Carlton, Astana",
      "stars": 5,
      "kind": "hotel",
-     "dist": 2687
+     "dist": 430
     },
     {
-     "name": "Nur Sat Guesthouse",
+     "name": "Шағын",
      "stars": null,
-     "kind": "guest",
-     "dist": 2456
+     "kind": "hotel",
+     "dist": 475
+    },
+    {
+     "name": "Beijing Palace Soluxe Hotel Astana",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 564
+    },
+    {
+     "name": "Jasmine",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 589
+    },
+    {
+     "name": "Bed and Breakfast Good Hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 629
+    },
+    {
+     "name": "EXPO HOSTEL",
+     "stars": null,
+     "kind": "hostel",
+     "dist": 442
+    },
+    {
+     "name": "Hostel Nochleg",
+     "stars": null,
+     "kind": "hostel",
+     "dist": 632
+    },
+    {
+     "name": "Шератон",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 703
     }
    ],
-   "hotels_at": "2026-11-16"
+   "hotels_at": "2026-11-20"
   },
   {
    "title": "III форум работников сельского хозяйства",
@@ -3968,6 +4031,9 @@
      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBMQUZlT2xRVm9kcElhRjFfT0M0dEdSSGdDdW45M1VGRlNKLWd6WHh0OEJJSXZvbDVpZkJGUjZQZ1VoQnB2bnhWR3FoVG9YeU0wYWtQd3g4ODR0elYtSzRaZHlMZjRRdkNWZEpHWFpoZGR1Njg?oc=5",
      "date": "2026-11-20T14:44+05:00"
     }
+   ],
+   "also_in": [
+    "https://www.akorda.kz/ru"
    ]
   },
   {
@@ -4346,7 +4412,7 @@
      "dist": 1066
     }
    ],
-   "hotels_at": "2026-11-16"
+   "hotels_at": "2026-11-20"
   },
   {
    "title": "Qazaq Green Fest 2026 — V Международный деловой фестиваль по возобновляемой энергетике",
@@ -4389,73 +4455,73 @@
    "id": "qazaq-green-fest-v-mezhdunarodnyy-delovo-2026-78c8dc",
    "enrich_at": "2026-11-16",
    "geo": {
-    "lat": 51.115993,
-    "lon": 71.467706,
-    "precise": false
+    "lat": 51.09066,
+    "lon": 71.410623,
+    "precise": true
    },
    "hotels": [
     {
-     "name": "MirOtel",
-     "stars": null,
+     "name": "Hilton Astana",
+     "stars": 5,
      "kind": "hotel",
-     "dist": 1817
+     "dist": 0
     },
     {
-     "name": "Elysian",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 1978
-    },
-    {
-     "name": "ibis hotel Astana",
-     "stars": null,
-     "kind": "hotel",
-     "dist": 2285
-    },
-    {
-     "name": "Казжол",
+     "name": "Eco Apart Hotel Astana",
      "stars": 4,
      "kind": "hotel",
-     "dist": 2329
+     "dist": 611
     },
     {
-     "name": "Belon lux hotel",
+     "name": "Wyndham Garden Astana",
      "stars": null,
      "kind": "hotel",
-     "dist": 2535
+     "dist": 962
     },
     {
-     "name": "Аланда",
+     "name": "Alau",
      "stars": null,
      "kind": "hotel",
-     "dist": 2548
+     "dist": 1544
     },
     {
-     "name": "Beijing Palace Soluxe Hotel Astana",
+     "name": "Hampton by Hilton Astana Triumphal Arch",
+     "stars": 3,
+     "kind": "hotel",
+     "dist": 1584
+    },
+    {
+     "name": "Torre Astana by Wyndham",
      "stars": null,
      "kind": "hotel",
-     "dist": 2567
+     "dist": 2056
     },
     {
      "name": "ASYL Hotel",
      "stars": null,
      "kind": "hotel",
-     "dist": 2622
+     "dist": 2397
     },
     {
-     "name": "The Ritz-Carlton, Astana",
-     "stars": 5,
+     "name": "Holiday Inn Express Astana Turan",
+     "stars": null,
      "kind": "hotel",
-     "dist": 2687
+     "dist": 2627
+    },
+    {
+     "name": "Aykun hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 2727
     },
     {
      "name": "Nur Sat Guesthouse",
      "stars": null,
      "kind": "guest",
-     "dist": 2456
+     "dist": 2448
     }
    ],
-   "hotels_at": "2026-11-16"
+   "hotels_at": "2026-11-20"
   },
   {
    "title": "Концерт Tynda Music: The best of Anime в Алматы",

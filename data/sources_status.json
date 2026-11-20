@@ -1,7 +1,7 @@
 {
- "checked_at": "2026-11-20T16:33+05:00",
- "full_at": "2026-11-20T15:53+05:00",
- "mode": "fast",
+ "checked_at": "2026-11-20T18:32+05:00",
+ "full_at": "2026-11-20T18:32+05:00",
+ "mode": "full",
  "have_key": true,
  "sources": [
   {
@@ -39,8 +39,7 @@
    "ok": true,
    "chars": 4172,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Invest.gov.kz — календарь",
@@ -57,18 +56,17 @@
    "url": "https://astanahub.com/en/event/",
    "group": "web",
    "ok": true,
-   "chars": 1964,
+   "chars": 1974,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Акорда — новости и события",
    "url": "https://www.akorda.kz/ru",
    "group": "web",
    "ok": true,
-   "chars": 4946,
-   "events": 1,
+   "chars": 4872,
+   "events": 0,
    "error": ""
   },
   {
@@ -76,10 +74,9 @@
    "url": "https://primeminister.kz/ru/news",
    "group": "web",
    "ok": true,
-   "chars": 9570,
+   "chars": 9603,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Advantour — выставки Алматы",
@@ -484,27 +481,25 @@
    "url": "https://www.akorda.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 1407,
+   "chars": 1416,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Премьер-министр — мероприятия",
    "url": "https://primeminister.kz/ru/events",
    "group": "state",
    "ok": true,
-   "chars": 16034,
+   "chars": 15984,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Kazinform — официальная хроника",
    "url": "https://www.inform.kz/ru/",
    "group": "state",
    "ok": true,
-   "chars": 8655,
+   "chars": 8476,
    "events": 0,
    "error": ""
   },
@@ -533,17 +528,16 @@
    "url": "https://eec.eaeunion.org/news/",
    "group": "state",
    "ok": true,
-   "chars": 8345,
+   "chars": 8329,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "СНГ — исполком",
    "url": "https://e-cis.info/news/",
    "group": "state",
    "ok": true,
-   "chars": 8500,
+   "chars": 8600,
    "events": 0,
    "error": ""
   },
@@ -572,7 +566,7 @@
    "url": "https://www.auma.de/en/find-your-fair/",
    "group": "global",
    "ok": true,
-   "chars": 10990,
+   "chars": 11054,
    "events": 0,
    "error": ""
   },
@@ -600,7 +594,7 @@
    "url": "https://www.meetup.com",
    "group": "global",
    "ok": true,
-   "chars": 7642,
+   "chars": 7609,
    "events": 0,
    "error": ""
   },
@@ -659,10 +653,9 @@
    "url": "https://indico.un.org",
    "group": "global",
    "ok": true,
-   "chars": 4439,
+   "chars": 4436,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "World Bank Live",
@@ -699,7 +692,7 @@
    "url": "https://astanaopera.kz/ru/afisha/",
    "group": "life",
    "ok": true,
-   "chars": 1210,
+   "chars": 960,
    "events": 0,
    "error": "",
    "unchanged": true
@@ -727,19 +720,75 @@
    "url": "https://olympic.kz/",
    "group": "life",
    "ok": true,
-   "chars": 2204,
+   "chars": 2139,
    "events": 0,
-   "error": "",
-   "unchanged": true
+   "error": ""
   },
   {
    "name": "Vesti.kz — спорт",
    "url": "https://vesti.kz/",
    "group": "life",
    "ok": true,
-   "chars": 12714,
+   "chars": 12675,
+   "events": 1,
+   "error": ""
+  },
+  {
+   "name": "Календарь мероприятий KNS",
+   "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
+   "group": "sheets",
+   "ok": true,
+   "chars": 8619,
+   "events": 0,
+   "error": "",
+   "unchanged": true
+  },
+  {
+   "name": "Telegram @atamekenbusiness",
+   "url": "https://t.me/s/atamekenbusiness",
+   "group": "telegram",
+   "ok": true,
+   "chars": 17825,
    "events": 0,
    "error": ""
+  },
+  {
+   "name": "Telegram @atamekenbusiness_qaz",
+   "url": "https://t.me/s/atamekenbusiness_qaz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 11347,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Telegram @astanahub",
+   "url": "https://t.me/s/astanahub",
+   "group": "telegram",
+   "ok": true,
+   "chars": 63,
+   "events": 0,
+   "error": "",
+   "unchanged": true
+  },
+  {
+   "name": "Telegram @kapitalkz",
+   "url": "https://t.me/s/kapitalkz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 24054,
+   "events": 0,
+   "error": ""
+  },
+  {
+   "name": "Telegram @digitalbusinesskz",
+   "url": "https://t.me/s/digitalbusinesskz",
+   "group": "telegram",
+   "ok": true,
+   "chars": 3313,
+   "events": 0,
+   "error": "",
+   "unchanged": true
   },
   {
    "name": "10times — Казахстан",
@@ -840,64 +889,6 @@
    "events": null,
    "error": "blocked",
    "how": "закрыт для роботов — нужен партнёрский доступ к афише"
-  },
-  {
-   "name": "Календарь мероприятий KNS",
-   "url": "https://docs.google.com/spreadsheets/d/15kIRa-3yiKZELWbd2OLwsgF_peoe76zSdq3SqFFVfBA/export?format=csv&gid=0",
-   "group": "sheets",
-   "ok": true,
-   "chars": 8619,
-   "events": 0,
-   "error": "",
-   "unchanged": true
-  },
-  {
-   "name": "Telegram @atamekenbusiness",
-   "url": "https://t.me/s/atamekenbusiness",
-   "group": "telegram",
-   "ok": true,
-   "chars": 16887,
-   "events": 0,
-   "error": ""
-  },
-  {
-   "name": "Telegram @atamekenbusiness_qaz",
-   "url": "https://t.me/s/atamekenbusiness_qaz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 11732,
-   "events": 1,
-   "error": ""
-  },
-  {
-   "name": "Telegram @astanahub",
-   "url": "https://t.me/s/astanahub",
-   "group": "telegram",
-   "ok": true,
-   "chars": 63,
-   "events": 0,
-   "error": "",
-   "unchanged": true
-  },
-  {
-   "name": "Telegram @kapitalkz",
-   "url": "https://t.me/s/kapitalkz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 21723,
-   "events": 0,
-   "error": "",
-   "unchanged": true
-  },
-  {
-   "name": "Telegram @digitalbusinesskz",
-   "url": "https://t.me/s/digitalbusinesskz",
-   "group": "telegram",
-   "ok": true,
-   "chars": 3313,
-   "events": 0,
-   "error": "",
-   "unchanged": true
   },
   {
    "name": "WhatsApp (GREEN-API)",

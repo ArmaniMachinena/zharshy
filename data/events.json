@@ -3645,6 +3645,136 @@
    "hotels_at": "2026-11-16"
   },
   {
+   "title": "Corporate Governance Forum 2026 «Корпоративное управление: от реформ к результатам. Взгляд в будущее»",
+   "type": "forum",
+   "level": "republican",
+   "edition": null,
+   "industries": [
+    "Финансы и инвестиции",
+    "Госуправление"
+   ],
+   "country": "Казахстан",
+   "city": "Астана",
+   "venue": "Sheraton Astana, ул. Сыганак, 60/1",
+   "time": "09:30",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "date_approx": false,
+   "organizer": "Национальный совет по корпоративному управлению при НПП «Атамекен», Qazaq Independent Directors и профильные ассоциации",
+   "phone": "+7 705 402 6169",
+   "email": "info@cgf.kz",
+   "site": "http://www.cgf.kz/",
+   "program_url": "https://drive.google.com/uc?export=download&id=1zORR56g1HncdCS-LKJdyil1H-Fn5ijn9",
+   "registration_url": "https://ticketon.kz/knowledge-skills/event/tckt2-corporate-governance-forum-astana",
+   "speakers": [
+    {
+     "name": "Канат Шарлапаев",
+     "role": "Председатель Президиума",
+     "company": "НПП «Атамекен»"
+    },
+    {
+     "name": "Мадина Абылкасымова",
+     "role": "Председатель",
+     "company": "АРРФР"
+    },
+    {
+     "name": "Дархан Жазыкбай",
+     "role": "Председатель",
+     "company": "Агентство по делам госслужбы"
+    },
+    {
+     "name": "Алибек Куантыров",
+     "role": "Министр экологии и природных ресурсов",
+     "company": "Правительство РК"
+    },
+    {
+     "name": "Арман Касенов",
+     "role": "Вице-министр национальной экономики",
+     "company": "МНЭ РК"
+    },
+    {
+     "name": "Канат Нуров",
+     "role": "Уполномоченный по защите прав предпринимателей",
+     "company": "при Президенте РК"
+    },
+    {
+     "name": "Нурмахан Адилбеков",
+     "role": "Председатель Комитета госимущества и приватизации",
+     "company": "Минфин РК"
+    },
+    {
+     "name": "Нина Читая",
+     "role": "Аналитик",
+     "company": "ОЭСР"
+    },
+    {
+     "name": "Зафар Хашимов",
+     "role": "Глава IFC в Казахстане",
+     "company": "IFC"
+    },
+    {
+     "name": "Роджер Баркер",
+     "role": "Руководитель исследований, Центр корпоративного управления",
+     "company": "Суверенный фонд Саудовской Аравии"
+    },
+    {
+     "name": "Габит Мусрепов",
+     "role": "Партнёр",
+     "company": "KPMG"
+    },
+    {
+     "name": "Алмаз Садыков",
+     "role": "Партнёр",
+     "company": "PwC Kazakhstan"
+    },
+    {
+     "name": "Дулатбек Икбаев",
+     "role": "Управляющий партнёр, Центральная Азия",
+     "company": "McKinsey & Company"
+    },
+    {
+     "name": "Жанат Бердалина",
+     "role": "Независимый директор",
+     "company": "Solidcore Resources plc"
+    },
+    {
+     "name": "Болат Жамишев",
+     "role": "Независимый директор",
+     "company": "Самрук-Казына"
+    },
+    {
+     "name": "Марат Елибаев",
+     "role": "Председатель",
+     "company": "Банк развития Казахстана"
+    },
+    {
+     "name": "Алихан Байдусенов",
+     "role": "Председатель",
+     "company": "Qazaq Independent Directors"
+    }
+   ],
+   "description": "Регистрация с 08:30, открытие в 09:30. Два пленарных заседания («Корпоративное управление и экономическое развитие», «Государство как профессиональный собственник»), 8 параллельных сессий: советы директоров, Евразия, независимые директора, регионы, риски и комплаенс, ИИ в управлении, этика. Презентация книги «50 кейсов, которые изменили корпоративное управление», премия, вечером Black Tie Event.",
+   "source_url": "http://www.cgf.kz/",
+   "source_name": "cgf.kz",
+   "i18n": {
+    "kk": {
+     "title": "Corporate Governance Forum 2026 «Корпоративтік басқару: реформалардан нәтижеге. Болашаққа көзқарас»",
+     "description": "Тіркелу 08:30-дан, ашылуы 09:30. Екі пленарлық отырыс және 8 параллель сессия: директорлар кеңестері, Еуразия, тәуелсіз директорлар, өңірлер, тәуекелдер мен комплаенс, басқарудағы ЖИ, этика. Кітап таныстырылымы, сыйлық, кешкі Black Tie Event.",
+     "venue": "Sheraton Astana, Сығанақ к-сі, 60/1",
+     "organizer": "«Атамекен» ҰКП жанындағы Корпоративтік басқару жөніндегі ұлттық кеңес, Qazaq Independent Directors және салалық қауымдастықтар"
+    },
+    "en": {
+     "title": "Corporate Governance Forum 2026 “Corporate governance: from reforms to results. A look into the future”",
+     "description": "Registration from 08:30, opening at 09:30. Two plenaries (corporate governance and economic development; the state as a professional owner) and 8 parallel sessions: boards, Eurasia, independent directors, regions, risk and compliance, AI governance, ethics. Book launch, awards and an evening Black Tie Event.",
+     "venue": "Sheraton Astana, 60/1 Syganak St",
+     "organizer": "National Council on Corporate Governance at Atameken, Qazaq Independent Directors and professional associations"
+    }
+   },
+   "found_at": "2026-11-20T15:38+05:00",
+   "featured": false,
+   "id": "corporate-governance-forum-korporativnoe-2026-6701c7"
+  },
+  {
    "title": "Digital Tañba 2026 «От маркировки товаров к доверию потребителей»",
    "type": "forum",
    "level": "republican",

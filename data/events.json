@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T14:50+05:00",
+ "updated_at": "2026-11-21T17:22+05:00",
  "events": [
   {
    "title": "Central Asia Coatings Show 2026",
@@ -2445,35 +2445,13 @@
    ],
    "press_ai": {
     "ru": {
-     "key": "COP31 в Анталье стала самой посещаемой климатической конференцией ООН в истории; главная тема — деньги на климат для уязвимых стран.",
-     "insights": [
-      "Лидеры и глава ООН призывают ускорить действия: от «мы боремся за наши жизни» до требований удешевить займы на климатическую устойчивость.",
-      "Центральная Азия активна: Туркменистан предложил цифровой атлас климата и «Десятилетие климатической устойчивости», Ташкент — систему раннего предупреждения, запущена региональная программа устойчивости.",
-      "Есть и критика: хозяйка саммита Турция получила низкую оценку климатической политики, а ставку саммита на электроэнергию эксперты ставят под вопрос."
-     ],
-     "summary": "Конференция идёт с 9 ноября, в повестке — климатическое финансирование, адаптация и сокращение загрязнений. На полях проходят двусторонние встречи, в том числе Россия—Турция и страны Центральной Азии с Азербайджаном."
+     "key": "На COP31 сохранялись серьезные разногласия по ископаемому топливу и финансированию климатических мер, которые угрожали достижению глоб",
+     "insights": [],
+     "summary": ""
     },
-    "kk": {
-     "key": "Анталиядағы COP31 тарихтағы ең көп қатысушы жиналған БҰҰ климат конференциясы болды; басты тақырып — осал елдерге климаттық қаржы.",
-     "insights": [
-      "Көшбасшылар мен БҰҰ басшысы әрекетті жеделдетуге шақырады, климаттық тұрақтылыққа арзан несие сұралуда.",
-      "Орталық Азия белсенді: Түрікменстан климаттың цифрлық атласын және «Климаттық тұрақтылық онжылдығын» ұсынды, Ташкент — ерте ескерту жүйесін.",
-      "Сын да бар: саммит иесі Түркияның климат саясаты төмен бағаланды, электр энергиясына басымдық беру күмән туғызуда."
-     ],
-     "summary": "Конференция 9 қарашадан бері өтуде, күн тәртібінде — климаттық қаржы, бейімделу және ластануды азайту. Кулуарда екіжақты кездесулер өтіп жатыр."
-    },
-    "en": {
-     "key": "COP31 in Antalya became the best-attended UN climate conference ever; the central issue is climate finance for vulnerable countries.",
-     "insights": [
-      "Leaders and the UN chief call for faster action, including cheaper borrowing for climate resilience.",
-      "Central Asia is active: Turkmenistan proposed a digital climate atlas and a ‘Decade of Climate Resilience’, Tashkent an early-warning system.",
-      "Criticism too: host Türkiye scored low on climate policy, and the summit’s bet on electrification is questioned."
-     ],
-     "summary": "The conference has run since 9 November, focusing on climate finance, adaptation and cutting pollution, with many bilateral meetings on the sidelines."
-    },
-    "at": "2026-11-13T19:30+05:00",
+    "at": "2026-11-21T17:22+05:00",
     "n": 30,
-    "final": false
+    "final": true
    },
    "geo": {
     "lat": 36.939779,
@@ -3533,7 +3511,17 @@
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQTZCZnpNOXVmZVJtM0VFRnNwQW5oZkVtZU9JZDdWQ1I1eEpESVlQUWF6enE5amRlamhkUjh6X1owM2xNcldMTkI2RDdQUTg2UGtHNDVObk01NlBuM2t6RGNaOU1uSnluQ0ZXdFZ4dFg3STQ2dkVpUVY3SWVnREpUWU1pZUdPOXc0d05KdEtZS3VkX0FhOXM4?oc=5",
      "date": "2026-11-19T16:41+05:00"
     }
-   ]
+   ],
+   "press_ai": {
+    "ru": {
+     "key": "В Москве прошло заседание Комиссии по экономическим вопрос",
+     "insights": [],
+     "summary": ""
+    },
+    "at": "2026-11-21T17:22+05:00",
+    "n": 3,
+    "final": true
+   }
   },
   {
    "title": "Мосты сотрудничества: гражданское общество, бизнес и государство",
@@ -4215,7 +4203,15 @@
     }
    },
    "found_at": "2026-11-21T16:59+05:00",
-   "id": "profit-security-day-2026-e33de7"
+   "id": "profit-security-day-2026-e33de7",
+   "press": [
+    {
+     "title": "Прямой эфир: PROFIT Security Day 2026",
+     "source": "PROFIT.kz",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE16TERZMFFHSHd2TWpycHdLNktIUF9CcWpHNkpjR1lPcWRheEJSenNnRDVkM1NtbnN5U2dxUkJTanBudWlKcHBHa1JfYnYwMEVGenB5Umk1R3hLRURsVTFUbHVWVF90YWV5QmRzMHBQZWJKbWRETGc?oc=5",
+     "date": "2026-11-20T06:30+05:00"
+    }
+   ]
   },
   {
    "title": "Прямая трансляция матча «Барыс» с конкурентом по конференции КХЛ",
@@ -4301,6 +4297,12 @@
    "id": "kubok-mira-po-konkuru-otborochnye-sorevn-2026-38827a",
    "found_at": "2026-11-21T14:50+05:00",
    "press": [
+    {
+     "title": "Всадники из пяти стран поборются в Астане за выход в финал Кубка мира",
+     "source": "Ак Жайык",
+     "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBsZ3IzbzZwRHdTUVpQbHJjSWV1VDhtWVhMczI2M3FIUjRHYk5oNXlUQWtyLWZCRXU0TFRYSkx2Y0ZGQnNTZzRfNGln?oc=5",
+     "date": "2026-11-21T16:26+05:00"
+    },
     {
      "title": "Всадники из пяти стран разыгрывают в Астане путевки в Гранд-финал Кубка мира по конкуру",
      "source": "Казинформ",
@@ -4418,7 +4420,115 @@
      "dist": 703
     }
    ],
-   "hotels_at": "2026-11-21"
+   "hotels_at": "2026-11-21",
+   "press_ai": {
+    "ru": {
+     "key": "В Астане проходит финал Евразийской лиги Кубка мира FEI по конкуру, где всадники из пяти стран борются за путёвки в Гранд-финал.",
+     "insights": [
+      "В одном из заголовков говорится о более чем 40 всадниках из 11 стран, которые борются за путёвки на Кубок мира в Астане"
+     ],
+     "summary": ""
+    },
+    "at": "2026-11-21T17:23+05:00",
+    "n": 9,
+    "final": false
+   }
+  },
+  {
+   "title": "Отбор в Гранд-финал Кубка мира по конкуру в Астане",
+   "type": "sport",
+   "level": "international",
+   "edition": null,
+   "industries": [
+    "Спорт"
+   ],
+   "city": "Астана",
+   "venue": "",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "В Астане всадники из пяти стран разыгрывают путевки в Гранд-финал Кубка мира по конкуру. Дата взята из даты публикации новости, точные сроки и место проведения нужно уточнить.",
+   "source_url": "https://www.inform.kz/ru/",
+   "source_name": "Kazinform — официальная хроника",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "Астанадағы конкур бойынша Әлем кубогының Гранд-финалына іріктеу",
+     "description": "Астанада beş елден келген атлеттер конкур бойынша Әлем кубогының Гранд-финалына жолдама үшін жарысады. Күні жаңалық жарияланған күнінен алынған, нақты мерзімдері мен өткізу орнын нақтылау қажет.",
+     "venue": "Астана"
+    },
+    "en": {
+     "title": "Qualifier for the FEI World Cup Show Jumping Final in Astana",
+     "description": "In Astana, riders from five countries are competing for places in the FEI World Cup Show Jumping Final. The date is taken from the news publication date; exact dates and venue need to be confirmed.",
+     "venue": "Astana"
+    }
+   },
+   "id": "otbor-v-grand-final-kubka-mira-po-konkur-2026-cb831b",
+   "found_at": "2026-11-21T17:22+05:00",
+   "press": [
+    {
+     "title": "Всадники из пяти стран разыгрывают в Астане путевки в Гранд-финал Кубка мира по конкуру",
+     "source": "Казинформ",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdGVubG9uT1VEcVgtczZoTHVNYUEyenBYcEd5ZnZNWWNXS0tQelN3VHhkcW54cE1QSVNVYUJkTWRWSEZyTXNqanJoLW4ycURka3J3OHg0bjZ5Y0dwckhuaTFZaXZGdl8yTERmQUJfazV5TzlRVW1pbExsNTA4ZlVsTkM0cTBKWUs4bGZWc1VFVXJ5b2w0dmdNdnl0V01PTG5neEs1dXNmR185cHIxTWdjeEJ1YUjSAbYBQVVfeXFMTk9xU0J0Y3Boano3V2UzY29MYmh5bVNPcEt5WVJsaF9iZmE4OXp5cVZybGJaS2JrMlVUTXpEYkI2TzVzWXRKMERCVV9jWURMUnlXQmNXVzVUOUdURks1dkJaWFRBUTdmZmRqTEs0RllUNldPdDdUa1FuaWtvZmJ2clBITWw3UHVpdVNrdF9Vc2plQXJIalBuU01zcUFxR3pBMU5qNng5R2hvX0lHMm9xOGNyLTRUYlE?oc=5",
+     "date": "2026-11-21T14:34+05:00"
+    },
+    {
+     "title": "Более 40 всадников из 11 стран поборются за путевки на Кубок мира в Астане",
+     "source": "Казинформ",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM002VmZrek9SaEpNY216WjEteERVSWIwS0h3M0xXQVpFTXB5SGtiMWFoSzh1VWNyQTgzV1k2cGVkNjYxRExaVEFEdEV0WE5NblFuZlZvYTNObDRpUmxFeUdmeXdxUTFKTVdrMlZMczJDZDhNU2xxSTlZdEtHQ3BZZ0RXd1pacV80c29yYXJNODhXS2pWZkc5c0NvdWY2QUhHZkNEa1JOUTEwRTAzTmhn0gGwAUFVX3lxTE02ODlOam56QXFlM0lUdS1HeFFNR3EyR01pbTRvXzhxbU9rampWS3ZJaVBEbUpUNFZaVkM5RFFCczJZRTA1Ym41akZYZ0xUVGtHUzBvUDhmUVplZ2hkSjhYaVpXVVdBVjQtVV9DdGZjYXJsQ2h3ZXg4MFEwY1AwOWtycVdQV1MzVDBrMm5RbHM1LUtLeWZ6M05qRkk4NzRKYXo3dHFNVjF3eGhwVTlBcFZk?oc=5",
+     "date": "2026-11-19T10:12+05:00"
+    }
+   ],
+   "geo": {
+    "lat": 51.12828,
+    "lon": 71.430471,
+    "precise": false
+   }
+  },
+  {
+   "title": "X Международный банковский форум",
+   "type": "forum",
+   "level": "international",
+   "edition": 10,
+   "industries": [
+    "Финансы"
+   ],
+   "city": "Баку",
+   "venue": "",
+   "start": "2026-11-24",
+   "end": "2026-11-25",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Ведущая платформа финансового сектора региона, ежегодно объединяющая участников высокого уровня. Проходит в Баку (Каспийский регион).",
+   "source_url": "https://profit.kz/calendar/",
+   "source_name": "PROFIT.kz — календарь IT-событий",
+   "country": "Азербайджан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "X Халықаралық банк форумы",
+     "description": "Өңірдегі қаржы секторының жетекші платформасы, жыл сайын жоғары деңгейдегі қатысушыларды біріктіреді. Баку қаласында (Каспий өңірі) өтеді."
+    },
+    "en": {
+     "title": "X International Banking Forum",
+     "description": "A leading platform for the region's financial sector that brings together high-level participants every year. Held in Baku (Caspian region)."
+    }
+   },
+   "id": "x-mezhdunarodnyy-bankovskiy-forum-2026-96fe08",
+   "found_at": "2026-11-21T17:22+05:00",
+   "geo": {
+    "lat": 40.375588,
+    "lon": 49.832801,
+    "precise": false
+   }
   },
   {
    "title": "Заседания по управлению Всемирного антидопингового агентства (WADA)",
@@ -4558,6 +4668,152 @@
     }
    ],
    "hotels_at": "2026-11-20"
+  },
+  {
+   "title": "Встреча Nobel Night 2026",
+   "type": "conference",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Образование"
+   ],
+   "city": "Астана",
+   "venue": "Onergy Hub, Nazarbayev University, ул. Кабанбай батыра, 53, блок 32",
+   "start": "2026-11-25",
+   "end": "2026-11-25",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Встреча «Nobel Night 2026» в Nazarbayev University 25 ноября в 19:30. Стоимость билета 1000 тенге.",
+   "source_url": "https://sxodim.com/astana",
+   "source_name": "Sxodim — Астана",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "Nobel Night 2026 кездесуі",
+     "description": "25 қарашада сағат 19:30-да Nazarbayev University-де «Nobel Night 2026» кездесуі. Билеттің бағасы 1000 теңге.",
+     "venue": "Onergy Hub, Nazarbayev University, Қабанбай батыр көшесі, 53, 32 блок"
+    },
+    "en": {
+     "title": "Nobel Night 2026 Meeting",
+     "description": "The Nobel Night 2026 meeting at Nazarbayev University on November 25 at 19:30. Ticket price is 1,000 tenge.",
+     "venue": "Onergy Hub, Nazarbayev University, 53 Kabanbai Batyr St., Block 32"
+    }
+   },
+   "id": "vstrecha-nobel-night-2026-bb9a79",
+   "found_at": "2026-11-21T17:22+05:00",
+   "geo": {
+    "lat": 51.12828,
+    "lon": 71.430471,
+    "precise": false
+   },
+   "hotels": [
+    {
+     "name": "Дипломат",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 372
+    },
+    {
+     "name": "Belon lux hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 400
+    },
+    {
+     "name": "The Ritz-Carlton, Astana",
+     "stars": 5,
+     "kind": "hotel",
+     "dist": 430
+    },
+    {
+     "name": "Шағын",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 475
+    },
+    {
+     "name": "Beijing Palace Soluxe Hotel Astana",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 564
+    },
+    {
+     "name": "Jasmine",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 589
+    },
+    {
+     "name": "Bed and Breakfast Good Hotel",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 629
+    },
+    {
+     "name": "EXPO HOSTEL",
+     "stars": null,
+     "kind": "hostel",
+     "dist": 442
+    },
+    {
+     "name": "Hostel Nochleg",
+     "stars": null,
+     "kind": "hostel",
+     "dist": 632
+    },
+    {
+     "name": "Шератон",
+     "stars": null,
+     "kind": "hotel",
+     "dist": 703
+    }
+   ],
+   "hotels_at": "2026-11-21"
+  },
+  {
+   "title": "13-й Бизнес-форум 1С:ERP",
+   "type": "forum",
+   "level": "international",
+   "edition": 13,
+   "industries": [
+    "IT и цифровизация",
+    "Финансы"
+   ],
+   "city": "Москва",
+   "venue": "",
+   "start": "2026-11-26",
+   "end": "2026-11-26",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Бизнес-форум о возможностях и преимуществах флагманского продукта линейки «1С» — «1С:ERP», с презентациями из первых рук.",
+   "source_url": "https://profit.kz/calendar/",
+   "source_name": "PROFIT.kz — календарь IT-событий",
+   "country": "Россия",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "13-ші 1С:ERP бизнес-форумы",
+     "description": "«1С» өнімдер желісінің басты өнімі — «1С:ERP» мүмкіндіктері мен артықшылықтары туралы бірінші қолдан білу мүмкіндігі."
+    },
+    "en": {
+     "title": "13th 1C:ERP Business Forum",
+     "description": "A business forum on the capabilities and advantages of 1C:ERP, the flagship product of the 1C line, presented first-hand."
+    }
+   },
+   "id": "13-y-biznes-forum-1s-erp-2026-726a53",
+   "found_at": "2026-11-21T17:22+05:00",
+   "geo": {
+    "lat": 55.625578,
+    "lon": 37.606392,
+    "precise": false
+   }
   },
   {
    "title": "Заседание Экономического совета СНГ",
@@ -4744,7 +5000,8 @@
      "dist": 2939
     }
    ],
-   "hotels_at": "2026-11-21"
+   "hotels_at": "2026-11-21",
+   "also_in": []
   },
   {
    "title": "NVIDIA GTC DC",
@@ -5167,6 +5424,43 @@
    "hotels_at": "2026-11-20"
   },
   {
+   "title": "Венский бал 2026",
+   "type": "social",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Культура и искусство"
+   ],
+   "city": "Астана",
+   "venue": "Торжественный дом «Салтанат Сарайы», пр. Кабанбай батыра, 3",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Торжественный благотворительный бал в формате Венского бала в Астане, 14 декабря в 19:30. Стоимость билета от 45 000 тенге.",
+   "source_url": "https://sxodim.com/astana",
+   "source_name": "Sxodim — Астана",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "Венская балы 2026",
+     "description": "14 желтоқсанда сағат 19:30-да Астанада Вена балы форматындағы салтанатты бал. Билеттің бағасы 45 000 теңгеден басталады.",
+     "venue": "«Салтанат Сарайы» салтанатты үйі, Қабанбай батыр даңғылы, 3"
+    },
+    "en": {
+     "title": "Vienna Ball 2026",
+     "description": "A festive ball in the style of the Vienna Ball in Astana on December 14 at 19:30. Tickets start from 45,000 tenge.",
+     "venue": "Festive House \"Saltanat Sarayy\", Kabanbai Batyr Avenue, 3"
+    }
+   },
+   "id": "venskiy-bal-2026-de2115",
+   "found_at": "2026-11-21T17:22+05:00"
+  },
+  {
    "id": "independence-day-2026",
    "title": "День Независимости Республики Казахстан",
    "type": "official",
@@ -5305,6 +5599,43 @@
     }
    ],
    "hotels_at": "2026-11-16"
+  },
+  {
+   "title": "Концерт Gaissin Orchestra: Suiemin в Астане",
+   "type": "culture",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "Культура и искусство"
+   ],
+   "city": "Астана",
+   "venue": "«Қазақконцерт» им. Розы Баглановой, пр. Мангилик Ел, 10/1",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Концерт оркестра Gaissin Orchestra с программой Suiemin в концертном зале «Қазақконцерт» 19 декабря в 19:00. Билеты от 6000 тенге.",
+   "source_url": "https://sxodim.com/astana",
+   "source_name": "Sxodim — Астана",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "Gaissin Orchestra: Suiemin Астанадағы концерті",
+     "description": "19 желтоқсанда сағат 19:00-де «Қазақконцерт» концерт залында Gaissin Orchestra оркестрінің Suiemin бағдарламасымен концерті. Билеттің бағасы 6000 теңгеден басталады.",
+     "venue": "Роза Бағланова атындағы «Қазақконцерт», Мәңгілік Ел даңғылы, 10/1"
+    },
+    "en": {
+     "title": "Gaissin Orchestra: Suiemin Concert in Astana",
+     "description": "A concert by Gaissin Orchestra with the Suiemin program at the Kazakhconcert Hall named after Roza Baglanova on December 19 at 19:00. Tickets start from 6,000 tenge.",
+     "venue": "Kazakhconcert named after Roza Baglanova, Mangilik El Avenue, 10/1"
+    }
+   },
+   "id": "kontsert-gaissin-orchestra-suiemin-v-ast-2026-3c518c",
+   "found_at": "2026-11-21T17:22+05:00"
   },
   {
    "title": "J.P. Morgan Healthcare Conference",
@@ -6703,6 +7034,42 @@
    "country": "Казахстан"
   },
   {
+   "title": "PROFIT Telecom Day",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация",
+    "Транспорт и логистика"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2027-05-21",
+   "end": "2027-05-21",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Конференция о новейших технологиях построения цифровых сетей в Казахстане.",
+   "source_url": "https://profit.kz/calendar/",
+   "source_name": "PROFIT.kz — календарь IT-событий",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "PROFIT Telecom Day",
+     "description": "Қазақстандағы цифрлық желілерді құрудың жаңа технологиялары туралы конференция."
+    },
+    "en": {
+     "title": "PROFIT Telecom Day",
+     "description": "A conference on the latest technologies for building digital networks in Kazakhstan."
+    }
+   },
+   "id": "profit-telecom-day-2027-4dc6fe",
+   "found_at": "2026-11-21T17:22+05:00"
+  },
+  {
    "title": "Выставка казахстанских производителей «ULTTYQ ÓNIM 2027»",
    "type": "exhibition",
    "level": "republican",
@@ -6807,7 +7174,9 @@
    },
    "id": "gitex-ai-kazakhstan-2027-0fab75",
    "found_at": "2026-11-13T17:09+05:00",
-   "also_in": []
+   "also_in": [
+    "https://dknews.kz/ru/dk-it"
+   ]
   },
   {
    "id": "amm-2027",
@@ -7331,6 +7700,42 @@
      "venue": "Dubai World Central"
     }
    }
+  },
+  {
+   "title": "PROFIT Healthcare Day",
+   "type": "conference",
+   "level": "industry",
+   "edition": null,
+   "industries": [
+    "Медицина",
+    "IT и цифровизация"
+   ],
+   "city": "Алматы",
+   "venue": "",
+   "start": "2027-12-03",
+   "end": "2027-12-03",
+   "organizer": "",
+   "phone": "",
+   "email": "",
+   "site": "",
+   "description": "Конференция об информационных технологиях в здравоохранении для владельцев, руководителей и ИТ-директоров медицинских учреждений.",
+   "source_url": "https://profit.kz/calendar/",
+   "source_name": "PROFIT.kz — календарь IT-событий",
+   "country": "Казахстан",
+   "program_url": "",
+   "speakers": [],
+   "i18n": {
+    "kk": {
+     "title": "PROFIT Healthcare Day",
+     "description": "Денсаулық сақтаудағы ақпараттық технологиялар туралы конференция: медициналық мекемелердің иелері, басшылары және ИТ-директорлары үшін."
+    },
+    "en": {
+     "title": "PROFIT Healthcare Day",
+     "description": "A conference on information technology in healthcare for owners, managers and IT directors of medical institutions."
+    }
+   },
+   "id": "profit-healthcare-day-2027-68594b",
+   "found_at": "2026-11-21T17:22+05:00"
   }
  ]
 }

@@ -65,9 +65,11 @@ async function keyFrom(pw){const base=await crypto.subtle.importKey("raw",new Te
 async function open_(raw,remember){const k=await crypto.subtle.importKey("raw",raw,"AES-GCM",false,["decrypt"]);
  const html=new TextDecoder().decode(await crypto.subtle.decrypt({name:"AES-GCM",iv:b64(D.iv)},k,b64(D.ct)));
  if(remember){try{localStorage.setItem(KEY,btoa(String.fromCharCode(...raw)))}catch(e){}}
+ document.querySelectorAll("style,link[rel=stylesheet]").forEach(x=>x.remove());document.body.removeAttribute("style");
  document.open();document.write(html);document.close()}
 const KEY="zh-access-"+D.salt.slice(0,8);
-(async()=>{try{const s=localStorage.getItem(KEY);if(s){await open_(b64(s));return}}catch(e){try{localStorage.removeItem(KEY)}catch(_){}}})();
+const auto=async()=>{try{const s=localStorage.getItem(KEY);if(s){await open_(b64(s));return}}catch(e){try{localStorage.removeItem(KEY)}catch(_){}}};
+if(document.readyState==="complete")auto();else window.addEventListener("load",()=>setTimeout(auto,0));
 $("f").onsubmit=async ev=>{ev.preventDefault();$("go").disabled=true;$("err").textContent="";
  const remember=$("rm").checked;let raw;
  try{raw=await keyFrom($("pw").value);await open_(raw,remember)}

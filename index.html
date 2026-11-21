@@ -17,7 +17,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
+body{display:block!important;min-height:0!important;align-items:normal!important;justify-content:normal!important;font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
 button,input,select{font:inherit;color:inherit}
 a{color:var(--sky-d)}
 /* header */
@@ -49,7 +49,7 @@ header::after{content:"";position:absolute;right:-30px;top:-60px;width:150px;hei
 .hbtn:hover{background:rgba(255,255,255,.26)}
 @media (max-width:760px){.logo small{display:none}.hmeta #upd{display:none}.hmeta .dot{margin:0}.hwrap{flex-wrap:nowrap}.src-btn [data-i]{display:none}}
 /* layout */
-main{max-width:1560px;margin:0 auto;padding:14px 20px 40px;display:grid;grid-template-columns:310px minmax(0,1fr) 340px;gap:18px;align-items:start}
+main{width:100%;box-sizing:border-box;max-width:1560px;margin:0 auto;padding:14px 20px 40px;display:grid;grid-template-columns:310px minmax(0,1fr) 340px;gap:18px;align-items:start}
 @media (max-width:1250px){main{grid-template-columns:310px minmax(0,1fr)}.col.right{grid-column:1;grid-row:2}}
 @media (max-width:900px){main{grid-template-columns:1fr;padding:14px 12px 40px}main>.col{display:contents}
   .p-alerts{order:1}.sponsor{order:1}.p-list{order:2}.p-strip{order:3}.p-stats{order:4}.p-map{order:5}}

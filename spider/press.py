@@ -219,6 +219,21 @@ def main() -> int:
                     print("     ✨ выжимка обновлена")
             except Exception as ex:
                 print(f"     ✗ выжимка: {ex}")
+    # досоздаём итоги для недавно прошедших событий, где пресса есть, а выжимки нет (не больше 4 за проход)
+    back = 0
+    for e in db["events"]:
+        if back >= 4:
+            break
+        end = dt.date.fromisoformat(e.get("end") or e["start"])
+        if end < today - dt.timedelta(days=3) and end >= today - dt.timedelta(days=30) and need_digest(e):
+            try:
+                dg = ai_digest(e)
+                if dg:
+                    e["press_ai"] = dg
+                    back += 1
+                    print(f"  ✨ итоги задним числом: {e['title'][:55]}")
+            except Exception as ex:
+                print(f"     ✗ выжимка: {ex}")
     DB.write_text(json.dumps(db, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Пресса: событий в окне {n_ev}, новых публикаций {n_new}")
     return 0

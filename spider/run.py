@@ -323,6 +323,7 @@ def main() -> int:
     jobs += [(s["name"], s["url"], "state") for s in cfg.get("state", [])]
     jobs += [(s["name"], s["url"], "global") for s in cfg.get("global", [])]
     jobs += [(s["name"], s["url"], "life") for s in cfg.get("life", [])]
+    jobs += [(s["name"], s["url"], "tech") for s in cfg.get("tech", [])]
     jobs += [(s["name"], s["url"], "sheets") for s in cfg.get("sheets", [])]
     jobs += [(f"Telegram @{c}", f"https://t.me/s/{c}", "telegram") for c in cfg.get("telegram", [])]
 

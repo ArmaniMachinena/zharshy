@@ -107,6 +107,15 @@ state:
   - {name: СНГ — исполком, url: https://e-cis.info/news/}
   - {name: ШОС — новости, url: https://eng.sectsco.org/news/}
 
+# IT-события и мероприятия вендоров (их часто нет в общих афишах)
+tech:
+  - {name: PROFIT.kz — календарь IT-событий, url: https://profit.kz/calendar/}
+  - {name: Huawei Казахстан — новости, url: https://www.huawei.com/kz-ru/news}
+  - {name: Huawei Enterprise — события, url: https://e.huawei.com/kz/events}
+  - {name: Astana Hub — события, url: https://astanahub.com/ru/event/}
+  - {name: Digital Business — IT-новости, url: https://digitalbusiness.kz/}
+  - {name: DKNews — IT, url: https://dknews.kz/ru/dk-it}
+
 # Культура, светская жизнь, презентации, спорт (только значимые события — см. PROMPT)
 life:
   - {name: Sxodim — Алматы, url: https://sxodim.com/almaty}

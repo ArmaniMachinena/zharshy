@@ -4147,6 +4147,45 @@
    ]
   },
   {
+   "title": "PROFIT Security Day 2026",
+   "type": "conference",
+   "level": "regional",
+   "edition": null,
+   "industries": [
+    "IT и цифровизация"
+   ],
+   "country": "Казахстан",
+   "city": "Алматы",
+   "venue": "InterContinental Almaty, ул. Желтоксан, 181",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "date_approx": false,
+   "organizer": "PROFIT.kz",
+   "phone": "",
+   "email": "",
+   "site": "https://profit.kz/calendar/16236/PROFIT-Security-Day-Almati/",
+   "program_url": "",
+   "description": "Конференция по информационной безопасности для бизнеса: защита данных, киберугрозы, защита ИТ-систем. Офлайн и онлайн. Среди партнёров PROFIT-конференций — Huawei.",
+   "source_url": "https://profit.kz/calendar/16236/PROFIT-Security-Day-Almati/",
+   "source_name": "profit.kz",
+   "i18n": {
+    "kk": {
+     "title": "PROFIT Security Day 2026",
+     "description": "Бизнеске арналған ақпараттық қауіпсіздік конференциясы: деректерді қорғау, киберқауіптер, IT-жүйелерді қорғау. Офлайн және онлайн.",
+     "venue": "InterContinental Almaty, Желтоқсан к-сі, 181",
+     "organizer": "PROFIT.kz"
+    },
+    "en": {
+     "title": "PROFIT Security Day 2026",
+     "description": "Information security conference for business: data protection, cyber threats, protecting IT systems. Offline and online.",
+     "venue": "InterContinental Almaty, 181 Zheltoksan St",
+     "organizer": "PROFIT.kz"
+    }
+   },
+   "found_at": "2026-11-21T16:59+05:00",
+   "id": "profit-security-day-2026-e33de7"
+  },
+  {
    "title": "Прямая трансляция матча «Барыс» с конкурентом по конференции КХЛ",
    "type": "sport",
    "level": "international",

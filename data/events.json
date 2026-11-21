@@ -4024,7 +4024,7 @@
     "Агро и пищепром",
     "Финансы"
    ],
-   "city": "уточняется",
+   "city": "Астана",
    "venue": "",
    "start": "2026-11-20",
    "end": "2026-11-20",
@@ -4144,7 +4144,39 @@
    ],
    "also_in": [
     "https://www.akorda.kz/ru"
-   ]
+   ],
+   "press_ai": {
+    "at": "2026-11-21T18:10+06:00",
+    "n": 14,
+    "final": true,
+    "ru": {
+     "key": "Президент Касым-Жомарт Токаев выступил на III Форуме работников сельского хозяйства в Астане и сделал ставку на доступные долгие кредиты для аграриев и продовольственную безопасность.",
+     "insights": [
+      "Глава государства призвал банки активнее кредитовать аграриев на длительных и выгодных условиях и поручил решить вопрос с возвратом кредитов фермерами.",
+      "Отдельный акцент — климатические вызовы: их нужно учитывать в обеспечении продовольственной безопасности.",
+      "Президент поблагодарил людей труда на селе; на форуме — делегации регионов, в том числе ВКО."
+     ],
+     "summary": "Форум прошёл 20 ноября в Астане и стал главной новостью дня для Khabar, Tengrinews, «Казахстанской правды», «Первого канала Евразия» и других СМИ. Программные заявления Президента разошлись по 12 изданиям."
+    },
+    "kk": {
+     "key": "Президент Қасым-Жомарт Тоқаев Астанада ауыл шаруашылығы қызметкерлерінің III форумында сөз сөйлеп, аграрийлерге қолжетімді ұзақ мерзімді несие мен азық-түлік қауіпсіздігіне басымдық берді.",
+     "insights": [
+      "Мемлекет басшысы банктерді аграрийлерді ұзақ әрі тиімді шартпен белсенді несиелендіруге шақырып, фермерлердің несиені қайтару мәселесін шешуді тапсырды.",
+      "Климаттық сын-қатерлерді азық-түлік қауіпсіздігін қамтамасыз етуде ескеру қажет екені айтылды.",
+      "Президент ауыл еңбеккерлеріне алғыс айтты; форумға өңірлердің, соның ішінде ШҚО-ның делегациялары қатысты."
+     ],
+     "summary": "Форум 20 қарашада Астанада өтті және Khabar, Tengrinews, «Казахстанская правда», «Еуразия бірінші арнасы» сияқты БАҚ-тың басты жаңалығына айналды."
+    },
+    "en": {
+     "key": "President Kassym-Jomart Tokayev addressed the 3rd Forum of Agricultural Workers in Astana, focusing on affordable long-term loans for farmers and food security.",
+     "insights": [
+      "The President urged banks to lend more actively to farmers on long, favourable terms and instructed the government to resolve farmers' loan repayment issues.",
+      "He stressed taking climate challenges into account in ensuring food security.",
+      "He thanked rural workers; regional delegations, including East Kazakhstan, took part."
+     ],
+     "summary": "The forum took place on 20 November in Astana and led the day's news on Khabar, Tengrinews, Kazakhstanskaya Pravda, Eurasia First Channel and other outlets."
+    }
+   }
   },
   {
    "title": "PROFIT Security Day 2026",

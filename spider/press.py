@@ -123,9 +123,9 @@ def relevant(item: dict, strong: list[str], normal: list[str], since: str, etype
 
 
 def ai_digest(e: dict) -> dict | None:
-    """Короткая ИИ-выжимка по ЗАГОЛОВКАМ публикаций (не по статьям): главное, 3 инсайта, итог.
-    Экономно: только заголовки (~1–2 тыс. токенов на вход, ~400 на выход), модель Haiku,
-    пересчёт только при 3+ новых публикациях, не чаще раза в 6 часов, и один финальный раз после окончания."""
+    """Короткая ИИ-выжимка по ЗАГОЛОВКАМ публикаций (не по статьям): главное, 3 инсайта, итог — на 3 языках.
+    Экономно: только заголовки, модель Haiku, пересчёт только при 3+ новых публикациях, не чаще раза в 6 часов,
+    и один финальный раз после окончания. Формат ответа — строки с метками (надёжнее JSON)."""
     import os
     if not os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("PRESS_AI", "1") == "0":
         return None
@@ -134,30 +134,22 @@ def ai_digest(e: dict) -> dict | None:
     done = (e.get("end") or e["start"]) < dt.datetime.now(run.TZ).date().isoformat()
     prompt = (f"Событие: {e['title']} ({e['start']}–{e.get('end') or e['start']}, {e.get('city','')}). "
               f"{'Событие завершилось — подведи итоги.' if done else 'Событие идёт сейчас.'}\n"
-              "Ниже заголовки публикаций СМИ о нём. Опираясь ТОЛЬКО на них (ничего не выдумывай, без оценок и мнений), верни JSON:\n"
-              "{\"ru\": {\"key\": \"главный месседж одним предложением\", \"insights\": [\"3 коротких инсайта: кто что предложил, "
-              "какие решения, о чём спорят\"], \"summary\": \"2 предложения — кратко о ходе события\"}, "
-              "\"kk\": {то же на казахском}, \"en\": {то же на английском}}\n\nЗаголовки:\n" + heads)
-    prompt += ("\n\nВажно: верни строго валидный JSON. Внутри текстов не используй двойные кавычки — "
-               "только «ёлочки» или одинарные.")
-    out = None
-    for attempt in range(2):
-        msg = anthropic.Anthropic().messages.create(model=run.MODEL, max_tokens=1400, messages=[{"role": "user", "content": prompt}])
-        raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
-        m = re.search(r"\{.*\}", raw, re.S)
-        if not m:
-            continue
-        try:
-            out = json.loads(m.group(0))
-            break
-        except json.JSONDecodeError:
-            txt = re.sub(r",\s*([}\]])", r"\1", m.group(0))      # лишние запятые
-            try:
-                out = json.loads(txt)
-                break
-            except json.JSONDecodeError:
-                continue
-    if not out:
+              "Ниже заголовки публикаций СМИ о нём. Опираясь ТОЛЬКО на них (ничего не выдумывай, без оценок), "
+              "ответь РОВНО 15 строками в таком формате, без лишнего текста:\n"
+              "RU_KEY: главный месседж одним предложением\nRU_I1: инсайт\nRU_I2: инсайт\nRU_I3: инсайт\nRU_SUM: два предложения о ходе события\n"
+              "KK_KEY: … (то же на казахском)\nKK_I1: …\nKK_I2: …\nKK_I3: …\nKK_SUM: …\n"
+              "EN_KEY: … (то же на английском)\nEN_I1: …\nEN_I2: …\nEN_I3: …\nEN_SUM: …\n\nЗаголовки:\n" + heads)
+    msg = anthropic.Anthropic().messages.create(model=run.MODEL, max_tokens=1500, messages=[{"role": "user", "content": prompt}])
+    raw = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+    got = {m.group(1): m.group(2).strip() for m in re.finditer(r"^\s*\**((?:RU|KK|EN)_(?:KEY|I1|I2|I3|SUM))\**\s*:\s*(.+)$", raw, re.M)}
+    out = {}
+    for lg in ("ru", "kk", "en"):
+        L = lg.upper()
+        if got.get(f"{L}_KEY"):
+            out[lg] = {"key": got[f"{L}_KEY"], "insights": [got[k] for k in (f"{L}_I1", f"{L}_I2", f"{L}_I3") if got.get(k)],
+                       "summary": got.get(f"{L}_SUM", "")}
+    if "ru" not in out:
+        print("     ✗ выжимка: не удалось разобрать ответ:", raw[:200].replace("\n", " | "))
         return None
     out.update({"at": dt.datetime.now(run.TZ).isoformat(timespec="minutes"), "n": len(e["press"]), "final": done})
     return out
